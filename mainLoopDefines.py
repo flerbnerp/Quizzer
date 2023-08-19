@@ -1,5 +1,6 @@
 import json
 import random
+from constants import QA_FILE
 
 def get_random_qa():
     with open('qa.json', 'r') as file:
@@ -22,3 +23,20 @@ def get_md_content(file_name):
                 return md_file.read()
         else:
             return "Error: Markdown file not found."
+
+def update_score(question, correct=True):
+    """
+    Update the score of the provided question based on user's answer.
+    """
+    with open(QA_FILE, 'r') as file:
+        data = json.load(file)
+
+    for qa_pair in data:
+        if qa_pair['question'] == question:
+            qa_pair['total_attempts'] += 1
+            if correct:
+                qa_pair['correct_attempts'] += 1
+            break
+
+    with open(QA_FILE, 'w') as file:
+        json.dump(data, file, indent=4)

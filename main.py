@@ -1,7 +1,7 @@
 from initialize import initialize_education_directory
 from initializeFilePath import construct_filepaths_directory
 from defineQA import setup_qa
-from mainLoopDefines import get_random_qa, get_md_content
+from mainLoopDefines import get_random_qa, get_md_content, update_score
 
 
 def main():
@@ -25,7 +25,17 @@ def main():
             print(f"\nCorrect Answer: {answer}\n")
 
         # 4. Prompt the user to continue
-        input("Enter any command to continue: ")
+        while True:
+            user_input = input("Question Correct? Enter Yes or No:").lower()
+
+            if user_input == "yes":
+                update_score(question, correct=True)
+                break
+            elif user_input == "no":
+                update_score(question, correct=False)
+                break
+            else:
+                print("Invalid input. Please enter 'Yes' or 'No'.")
 
 if __name__ == "__main__":
     main()

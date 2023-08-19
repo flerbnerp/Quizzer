@@ -1,10 +1,32 @@
 [
     {
         "question": "What is Python?",
-        "answer": "Python is a programming language."
+        "answer": "Python is a programming language.",
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     {
         "question": "Describe Active Recall?",
-        "answer": "Active Recall.md"
+        "answer": "Active Recall.md",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Describe Spaced Repetition?",
+        "answer": "Spaced Repetition.md",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Describe Interleaving?",
+        "answer": "interleaving.md",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What are the three core concepts of learning in a scientific manner?",
+        "answer": "Active Recall, Spaced Repetition, and Interleaving.",
+        "correct_attempts": 1,
+        "total_attempts": 1
     }
 ]
