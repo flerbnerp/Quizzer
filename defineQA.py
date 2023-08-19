@@ -48,6 +48,18 @@ def define_questions_and_answers():
             "answer": "git status, git add ., git commit -m 'message', git push origin main",
             "correct_attempts": 0,
             "total_attempts": 0
+        },
+        {
+            "question": "Please describe the concept of Overlearning.",
+            "answer": "Overlearning.md",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "Please explain the concept of the Forgetting Curve.",
+            "answer": "Forgetting Curve.md",
+            "correct_attempts": 0,
+            "total_attempts": 0
         }
     ]
 
