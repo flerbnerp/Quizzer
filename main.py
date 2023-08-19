@@ -44,9 +44,13 @@ if __name__ == "__main__":
     main()
     
 #Github instructions
+# Run this first if you have made changes to the software on another system. Best to
+# run this before you start working on the software on your system.
+# git fetch origin
+# git pull origin main
+
+# Run these commands to push your changes to the repository
 # git status
 # git add .
 # git commit -m "message"
 # git push origin main
-# git pull origin main
-# git clone
