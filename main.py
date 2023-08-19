@@ -29,3 +29,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+#Github instructions
+# git status
+# git add .
+# git commit -m "message"
+# git push origin main
+# git pull origin main
+# git clone

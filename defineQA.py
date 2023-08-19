@@ -14,6 +14,18 @@ def define_questions_and_answers():
         {
             "question": "Describe Active Recall?",
             "answer": "Active Recall.md"
+        },
+        {
+            "question": "Describe Spaced Repetition?",
+            "answer": "Spaced Repetition.md"
+        },
+        {
+            "question": "Describe Interleaving?",
+            "answer": "interleaving.md"
+        },
+        {
+            "question": "What are the three core concepts of learning in a scientific manner?",
+            "answer": "Active Recall, Spaced Repetition, and Interleaving."
         }
     ]
 
