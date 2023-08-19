@@ -36,13 +36,13 @@ def define_questions_and_answers():
             "answer": "Active Recall, Spaced Repetition, and Interleaving.",
             "correct_attempts": 0,
             "total_attempts": 0        
-        }
+        },
         {
             "question": "How do you properly fetch and pull from an established repository on Github?",
             "answer": "git fetch origin, git pull origin main",
             "correct_attempts": 0, 
             "total_attempts": 0
-        }
+        },
         {
             "question": "How do you properly push your changes to the Github repository?",
             "answer": "git status, git add ., git commit -m 'message', git push origin main",
