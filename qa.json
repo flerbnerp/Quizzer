@@ -14,19 +14,19 @@
     {
         "question": "Describe Spaced Repetition?",
         "answer": "Spaced Repetition.md",
-        "correct_attempts": 1,
-        "total_attempts": 1
+        "correct_attempts": 2,
+        "total_attempts": 2
     },
     {
         "question": "Describe Interleaving?",
         "answer": "Interleaving.md",
-        "correct_attempts": 1,
-        "total_attempts": 1
+        "correct_attempts": 2,
+        "total_attempts": 2
     },
     {
         "question": "What are the three core concepts of learning in a scientific manner?",
         "answer": "Active Recall, Spaced Repetition, and Interleaving.",
         "correct_attempts": 1,
         "total_attempts": 1
-    }
+    }    
 ]
