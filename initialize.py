@@ -72,20 +72,27 @@ def initialize_education_directory():
     config_content = read_config()
     if config_content is not None:
         print("")
-    #Define Obsidian directory and write to the config file
+    
     # Check if the directory is already in the config file
     existing_directory = get_from_config('education_directory')
     if existing_directory:
-        print(f"Education directory already exists in config: {existing_directory}")
-        return
-    
-    # If not, search for the Education directory
+        print(f"Education directory found in config: {existing_directory}")
+        
+        # Validate if the existing_directory is still valid
+        if os.path.exists(existing_directory) and os.path.isdir(existing_directory):
+            print(f"Education directory is valid: {existing_directory}")
+            return
+        else:
+            print(f"Education directory in config is no longer valid. Searching for a new directory...")
+
+    # If not in the config or the existing directory is invalid, search for the Education directory
     education_dir = find_education_directory()
     if education_dir:
-        print(f"Education directory found: {education_dir}")
+        print(f"New Education directory found: {education_dir}")
         save_to_config('education_directory', education_dir)
     else:
         print("Education directory not found.")
+
 
 if __name__ == "__main__":
     initialize_education_directory()
