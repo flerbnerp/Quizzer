@@ -1,7 +1,8 @@
 from initialize import initialize_education_directory
 from initializeFilePath import construct_filepaths_directory
 from defineQA import setup_qa
-from mainLoopDefines import get_random_qa, get_md_content, update_score
+from mainLoopDefines import get_md_content, update_score
+from selectionLogic import get_weighted_question
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
     # Main loop
     while True:
         # 1. Get a random question and its answer
-        question, answer = get_random_qa()
+        question, answer = get_weighted_question()
 
         # 2. Prompt the user with the question
         user_input = input(f"\n{question}\nYour answer: ")
@@ -33,6 +34,8 @@ def main():
                 break
             elif user_input == "no":
                 update_score(question, correct=False)
+                break
+            elif user_input == "debug":
                 break
             else:
                 print("Invalid input. Please enter 'Yes' or 'No'.")

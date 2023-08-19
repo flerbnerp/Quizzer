@@ -2,8 +2,8 @@
     {
         "question": "What is Python?",
         "answer": "Python is a programming language.",
-        "correct_attempts": 1,
-        "total_attempts": 1
+        "correct_attempts": 2,
+        "total_attempts": 2
     },
     {
         "question": "Describe Active Recall?",
@@ -19,9 +19,9 @@
     },
     {
         "question": "Describe Interleaving?",
-        "answer": "interleaving.md",
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "answer": "Interleaving.md",
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     {
         "question": "What are the three core concepts of learning in a scientific manner?",
