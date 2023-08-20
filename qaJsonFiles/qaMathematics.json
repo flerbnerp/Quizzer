@@ -1,0 +1,8 @@
+[
+    {
+        "question": "What is an imaginary number? Explain at length.",
+        "answer": "An imaginary number is a number that is expressed in terms of the square root of a negative number (usually the square root of -1, which is represented by the letter i). Imaginary numbers are used in complex numbers, which are used to solve problems in electrical engineering and physics.",
+        "correct_attempts": 2,
+        "total_attempts": 3
+    }
+]

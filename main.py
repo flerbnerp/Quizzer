@@ -1,7 +1,8 @@
 import os
+import random
 from initialize import initialize_education_directory
 from initializeFilePath import construct_filepaths_directory
-from defineQA import setup_qa
+# from defineQA import setup_qa
 from mainLoopDefines import get_md_content, update_score
 from selectionLogic import get_weighted_question
 
@@ -10,14 +11,22 @@ def main():
     # Initialize directories and config files
     initialize_education_directory()
     construct_filepaths_directory()
-    setup_qa()
+    # setup_qa()
     # Main loop
+    main_list = []  # A list to store the questions for the current batch
+
     while True:
-        # 1. Get a random question and its answer
-        question, answer = get_weighted_question()
+        # If main_list is empty, repopulate it
+        if not main_list:
+            main_list = get_weighted_question()
+
+        # Get a random question and its answer from the main list
+        idx = random.randint(0, len(main_list) - 1)
+        question, answer, filename = main_list.pop(idx)
 
         # 2. Prompt the user with the question
         os.system('cls' if os.name == 'nt' else 'clear')
+        print(f"Number of questions left in the main list: {len(main_list)}")
         user_input = input(f"\n{question}\nYour answer: ")
 
         # 3. Display the correct answer
@@ -32,10 +41,11 @@ def main():
             user_input = input("Question Correct? Enter Yes or No:").lower()
 
             if user_input == "yes":
-                update_score(question, correct=True)
+                update_score(question, filename, correct=True)
+
                 break
             elif user_input == "no":
-                update_score(question, correct=False)
+                update_score(question, filename, correct=False)
                 break
             elif user_input == "debug":
                 break

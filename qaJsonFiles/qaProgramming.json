@@ -1,0 +1,350 @@
+[
+    {
+        "question": "How do you properly fetch and pull from an established repository on Github?",
+        "answer": "git fetch origin, git pull origin main",
+        "correct_attempts": 2,
+        "total_attempts": 3
+    },
+    {
+        "question": "How do you check the status of the tor service on a linux machine?",
+        "answer": "sudo systemctl status tor",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is the len() function? What data type does it evaluate to?",
+        "answer": "The len() function is a built-in function that returns the number of items in an object. It evaluates to an integer data type.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "How do you get the length of a string?",
+        "answer": "len('Hello, World!')",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "How do you evaluate an integer to a string?",
+        "answer": "str(3)",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "How long can a source code document be?",
+        "answer": "A source code document can be as long as you want it to be.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Can an integer be negative?",
+        "answer": "Yes, an integer can be negative.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the difference between indexed and unindexed collections",
+        "answer": "Indexed collections are collections that are ordered and can be accessed by their index. Unindexed collections are collections that are unordered and cannot be accessed by their index.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the use case for an unindexed unordered collection?",
+        "answer": "An unindexed unordered collection is useful when you want to store a collection of unique items.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "How do you properly push your changes to the Github repository?",
+        "answer": "git status, git add ., git commit -m 'message', git push origin main",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is string concatenation? and how is it done?",
+        "answer": "String concatenation is the process of joining two or more strings together to create a new string. It is done by using the + operator.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the difference between the + and * operators when used with strings?",
+        "answer": "The + operator is used to concatenate strings, while the * operator is used to repeat strings.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a variable name? What makes it valid or invalid?",
+        "answer": "A variable name is the name given to a variable. A variable name must start with a letter or the underscore character. A variable name cannot start with a number. A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ). Variable names are case-sensitive (age, Age and AGE are three different variables).",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is camelcase? and why is it used?",
+        "answer": "Camelcase is a naming convention in which a name is formed of multiple words that are joined together as a single word with the first letter of each of the multiple words capitalized so that each word that makes up the name can easily be read. It is used to make variable names easier to read.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is snakecase? and why is it used?",
+        "answer": "Snakecase is a naming convention in which a name is formed of multiple words that are joined together as a single word with an underscore between each of the multiple words so that each word that makes up the name can easily be read. It is used to make variable names easier to read.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "In programming, what is a comment? Why is it used?",
+        "answer": "A comment is a line of code that is not executed by the interpreter. It is used to explain what the code is doing.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "In Python? What is the print function? Please provide an example of proper syntax.",
+        "answer": "The print function is a built-in function that prints the specified message to the screen. print('Hello, World!')",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "In Python? What is the input function? Please provide an example of proper syntax.",
+        "answer": "The input function is a built-in function that prompts the user for input and returns the input as a string. input('What is your name?')",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What data type is user input evaluated to?",
+        "answer": "User input is evaluated to a string data type.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "How do you convert a string to an integer?",
+        "answer": "int('3')",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a bytearray data type?",
+        "answer": "A bytearray data type is a data type that stores a mutable sequence of numbers in the range 0 <= x < 256.",
+        "correct_attempts": 1,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a range data type?",
+        "answer": "A range data type is a data type that stores an immutable sequence of numbers.",
+        "correct_attempts": 0,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a None data type?",
+        "answer": "A None data type is a data type that stores a None value.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Provide an example of a complex data type.",
+        "answer": "x = 3+5j",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a variable?",
+        "answer": "A variable is a container for storing a value.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "How do you comment out a block of code all at once in VSCode?",
+        "answer": "Highlight the block of code and press Ctrl + /",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is floor division?",
+        "answer": "Floor division is a normal division operation except that it returns the largest possible integer. Ignoring fractions.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is the difference between the /' and //' operators?",
+        "answer": "The /' operator returns a floating point number, while the //' operator returns an integer.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Please give a list of all data types in Python.",
+        "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
+        "correct_attempts": 2,
+        "total_attempts": 6
+    },
+    {
+        "question": "What is an int or integer data type?",
+        "answer": "An int or integer data type is a whole number, positive or negative, without decimals, of unlimited length.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a float or floating point data type?",
+        "answer": "A float or floating point data type is a number, positive or negative, containing one or more decimals.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a str or string data type?",
+        "answer": "A str or string data type is a sequence of characters, either as a literal constant or as some kind of variable.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a bool or boolean data type?",
+        "answer": "A bool or boolean data type is a data type with one of two possible values: True or False.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a list data type?",
+        "answer": "A list data type is a collection which is ordered and changeable. Allows duplicate members.",
+        "correct_attempts": 0,
+        "total_attempts": 3
+    },
+    {
+        "question": "What is a tuple data type?",
+        "answer": "A tuple data type is a collection which is ordered and unchangeable. Allows duplicate members.",
+        "correct_attempts": 2,
+        "total_attempts": 3
+    },
+    {
+        "question": "What is a dict or dictionary data type?",
+        "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
+        "correct_attempts": 1,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a set data type?",
+        "answer": "A set data type is a collection which is unordered and unindexed. No duplicate members.",
+        "correct_attempts": 1,
+        "total_attempts": 4
+    },
+    {
+        "question": "What is a frozenset data type?",
+        "answer": "A frozenset data type is a collection which is unordered and unindexed. No duplicate members. Immutable.",
+        "correct_attempts": 2,
+        "total_attempts": 5
+    },
+    {
+        "question": "What is a complex data type?",
+        "answer": "A complex data type is a number, positive or negative, containing one or more decimals. Written with a j as the imaginary part.",
+        "correct_attempts": 1,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a bytes data type?",
+        "answer": "A bytes data type is a data type that stores an immutable sequence of numbers in the range 0 <= x < 256.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What operator is used for remainder division?",
+        "answer": "The %' operator is used for remainder division.",
+        "correct_attempts": 1,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is the **' operator called?",
+        "answer": "The **' operator is called the exponent operator.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What operator is used for exponentiation?",
+        "answer": "The **' operator is used for exponentiation.",
+        "correct_attempts": 2,
+        "total_attempts": 3
+    },
+    {
+        "question": "What is the *' operator called?",
+        "answer": "The *' operator is called the multiplication operator.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What operator is used for multiplication?",
+        "answer": "The *' operator is used for multiplication.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the /' operator called?",
+        "answer": "The /' operator is called the division operator.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What operator is used for division?",
+        "answer": "The /' operator is used for division.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the //' operator called?",
+        "answer": "The //' operator is called the floor division operator.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What operator is used for floor division?",
+        "answer": "The //' operator is used for floor division.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the +' operator called?",
+        "answer": "The +' operator is called the addition operator.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What operator is used for addition?",
+        "answer": "The +' operator is used for addition.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is the -' operator called?",
+        "answer": "The -' operator is called the subtraction operator.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What operator is used for subtraction?",
+        "answer": "The -' operator is used for subtraction.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is programming?",
+        "answer": "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "In programming, what is an operator?",
+        "answer": "An operator is a special symbol that represents a simple computation like addition, multiplication, or string concatenation.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "In programming, what are all the specific operators?",
+        "answer": "%, **, *, /, //, +, -",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is the %' operator called?",
+        "answer": "The %' operator is called the modulus operator.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is Python?",
+        "answer": "Python is a programming language.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    }
+]
