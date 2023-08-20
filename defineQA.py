@@ -60,7 +60,122 @@ def define_questions_and_answers():
             "answer": "Forgetting Curve.md",
             "correct_attempts": 0,
             "total_attempts": 0
+        },
+        {
+            "question": "What is programming?",
+            "answer": "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "The name Python in the Python programming language was inspired by what?",
+            "answer": "Monty Python",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "In programming, what is an operator?",
+            "answer": "An operator is a special symbol that represents a simple computation like addition, multiplication, or string concatenation.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "In programming, what are all the specific operators?",
+            "answer": "%, **, *, /, //, +, -",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the %' operator called?",
+            "answer": "The %' operator is called the modulus operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for remainder division?",
+            "answer": "The %' operator is used for remainder division.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the **' operator called?",
+            "answer": "The **' operator is called the exponent operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for exponentiation?",
+            "answer": "The **' operator is used for exponentiation.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the *' operator called?",
+            "answer": "The *' operator is called the multiplication operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for multiplication?",
+            "answer": "The *' operator is used for multiplication.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the /' operator called?",
+            "answer": "The /' operator is called the division operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for division?",
+            "answer": "The /' operator is used for division.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the //' operator called?",
+            "answer": "The //' operator is called the floor division operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for floor division?",
+            "answer": "The //' operator is used for floor division.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the +' operator called?",
+            "answer": "The +' operator is called the addition operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for addition?",
+            "answer": "The +' operator is used for addition.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the -' operator called?",
+            "answer": "The -' operator is called the subtraction operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What operator is used for subtraction?",
+            "answer": "The -' operator is used for subtraction.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is floor division?",
+            "answer": "Floor division is a normal division operation except that it returns the largest possible integer. Ignoring fractions.",
+            "correct_attempts": 0,
+            "total_attempts": 0
         }
+        
     ]
 
     return qa_pairs
