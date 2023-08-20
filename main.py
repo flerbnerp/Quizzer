@@ -1,3 +1,4 @@
+import os
 from initialize import initialize_education_directory
 from initializeFilePath import construct_filepaths_directory
 from defineQA import setup_qa

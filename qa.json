@@ -358,5 +358,23 @@
         "answer": "A source code document can be as long as you want it to be.",
         "correct_attempts": 0,
         "total_attempts": 0
+    },
+    {
+        "question": "Can an integer be negative?",
+        "answer": "Yes, an integer can be negative.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is the difference between indexed and unindexed collections",
+        "answer": "Indexed collections are collections that are ordered and can be accessed by their index. Unindexed collections are collections that are unordered and cannot be accessed by their index.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is the use case for an unindexed unordered collection?",
+        "answer": "An unindexed unordered collection is useful when you want to store a collection of unique items.",
+        "correct_attempts": 0,
+        "total_attempts": 0
     }
 ]
