@@ -18,13 +18,13 @@ def get_weighted_question():
     # Sort by ratio
     indexed_ratios.sort(key=lambda x: x[0])
     
-    # Collect candidates until we have at least 5 or have exhausted the list
-    candidates = []
-    i = 0
-    while len(candidates) < 5 and i < len(indexed_ratios):
-        current_ratio = indexed_ratios[i][0]
-        candidates.extend([x[1] for x in indexed_ratios if x[0] == current_ratio])
-        i += 1
+    # Collect candidates from the lowest 10 ratios
+    candidates = [x[1] for x in indexed_ratios[:10]]
+    
+    # Add 3 random questions from the entire dataset
+    all_indices = list(range(len(qa_data)))
+    random_indices = random.sample(all_indices, 3)  # Randomly select 3 indices without replacement
+    candidates.extend(random_indices)
 
     # Randomly choose a question from the candidates
     selected_index = random.choice(candidates)

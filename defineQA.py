@@ -175,7 +175,6 @@ def define_questions_and_answers():
             "correct_attempts": 0,
             "total_attempts": 0
         }
-        
     ]
 
     return qa_pairs
