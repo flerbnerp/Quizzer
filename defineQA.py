@@ -248,6 +248,12 @@ def define_questions_and_answers():
             "total_attempts": 0
         },
         {
+            "question": "Provide an example of a complex data type.",
+            "answer": "x = 3+5j",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
             "question": "What is a bytes data type?",
             "answer": "A bytes data type is a data type that stores an immutable sequence of numbers in the range 0 <= x < 256.",
             "correct_attempts": 0,
@@ -268,6 +274,96 @@ def define_questions_and_answers():
         {
             "question": "What is a None data type?",
             "answer": "A None data type is a data type that stores a None value.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is a variable?",
+            "answer": "A variable is a container for storing a value.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "How do you comment out a block of code all at once in VSCode?",
+            "answer": "Highlight the block of code and press Ctrl + /",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is an imaginary number? Explain at length.",
+            "answer": "An imaginary number is a number that is expressed in terms of the square root of a negative number (usually the square root of -1, which is represented by the letter i). Imaginary numbers are used in complex numbers, which are used to solve problems in electrical engineering and physics.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "When was the term imaginary number first used? By whom?",
+            "answer": "The term imaginary number was first used in the 17th century by René Descartes.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is string concatenation? and how is it done?",
+            "answer": "String concatenation is the process of joining two or more strings together to create a new string. It is done by using the + operator.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is the difference between the + and * operators when used with strings?",
+            "answer": "The + operator is used to concatenate strings, while the * operator is used to repeat strings.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is a variable name? What makes it valid or invalid?",
+            "answer": "A variable name is the name given to a variable. A variable name must start with a letter or the underscore character. A variable name cannot start with a number. A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ). Variable names are case-sensitive (age, Age and AGE are three different variables).",
+            "correct_attempts": 0,
+            "total_attempts": 0        
+        },
+        {
+            "question": "What is camelcase? and why is it used?",
+            "answer": "Camelcase is a naming convention in which a name is formed of multiple words that are joined together as a single word with the first letter of each of the multiple words capitalized so that each word that makes up the name can easily be read. It is used to make variable names easier to read.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What is snakecase? and why is it used?",
+            "answer": "Snakecase is a naming convention in which a name is formed of multiple words that are joined together as a single word with an underscore between each of the multiple words so that each word that makes up the name can easily be read. It is used to make variable names easier to read.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "In programming, what is a comment? Why is it used?",
+            "answer": "A comment is a line of code that is not executed by the interpreter. It is used to explain what the code is doing.",
+            "correct_attempts": 0,
+            "total_attempts": 0            
+        },
+        {
+            "question": "In Python? What is the print function? Please provide an example of proper syntax.",
+            "answer": "The print function is a built-in function that prints the specified message to the screen. print('Hello, World!')",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "In Python? What is the input function? Please provide an example of proper syntax.",
+            "answer": "The input function is a built-in function that prompts the user for input and returns the input as a string. input('What is your name?')",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "What data type is user input evaluated to?",
+            "answer": "User input is evaluated to a string data type.",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "How do you convert a string to an integer?",
+            "answer": "int('3')",
+            "correct_attempts": 0,
+            "total_attempts": 0
+        },
+        {
+            "question": "How long can a source code document be?",
+            "answer": "A source code document can be as long as you want it to be.",
             "correct_attempts": 0,
             "total_attempts": 0
         }

@@ -38,8 +38,8 @@
     {
         "question": "How do you properly push your changes to the Github repository?",
         "answer": "git status, git add ., git commit -m 'message', git push origin main",
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     {
         "question": "Please describe the concept of Overlearning.",
@@ -87,7 +87,7 @@
         "question": "What operator is used for remainder division?",
         "answer": "The %' operator is used for remainder division.",
         "correct_attempts": 1,
-        "total_attempts": 1
+        "total_attempts": 2
     },
     {
         "question": "What is the **' operator called?",
@@ -164,6 +164,102 @@
     {
         "question": "What is floor division?",
         "answer": "Floor division is a normal division operation except that it returns the largest possible integer. Ignoring fractions.",
+        "correct_attempts": 2,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is the difference between the /' and //' operators?",
+        "answer": "The /' operator returns a floating point number, while the //' operator returns an integer.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "Please give a list of all data types in Python.",
+        "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
+        "correct_attempts": 0,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is an int or integer data type?",
+        "answer": "An int or integer data type is a whole number, positive or negative, without decimals, of unlimited length.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is a float or floating point data type?",
+        "answer": "A float or floating point data type is a number, positive or negative, containing one or more decimals.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a str or string data type?",
+        "answer": "A str or string data type is a sequence of characters, either as a literal constant or as some kind of variable.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a bool or boolean data type?",
+        "answer": "A bool or boolean data type is a data type with one of two possible values: True or False.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a list data type?",
+        "answer": "A list data type is a collection which is ordered and changeable. Allows duplicate members.",
+        "correct_attempts": 0,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a tuple data type?",
+        "answer": "A tuple data type is a collection which is ordered and unchangeable. Allows duplicate members.",
+        "correct_attempts": 1,
+        "total_attempts": 2
+    },
+    {
+        "question": "What is a dict or dictionary data type?",
+        "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is a set data type?",
+        "answer": "A set data type is a collection which is unordered and unindexed. No duplicate members.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is a frozenset data type?",
+        "answer": "A frozenset data type is a collection which is unordered and unindexed. No duplicate members. Immutable.",
+        "correct_attempts": 0,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a complex data type?",
+        "answer": "A complex data type is a number, positive or negative, containing one or more decimals. Written with a j as the imaginary part.",
+        "correct_attempts": 0,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a bytes data type?",
+        "answer": "A bytes data type is a data type that stores an immutable sequence of numbers in the range 0 <= x < 256.",
+        "correct_attempts": 1,
+        "total_attempts": 1
+    },
+    {
+        "question": "What is a bytearray data type?",
+        "answer": "A bytearray data type is a data type that stores a mutable sequence of numbers in the range 0 <= x < 256.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is a range data type?",
+        "answer": "A range data type is a data type that stores an immutable sequence of numbers.",
+        "correct_attempts": 0,
+        "total_attempts": 0
+    },
+    {
+        "question": "What is a None data type?",
+        "answer": "A None data type is a data type that stores a None value.",
         "correct_attempts": 1,
         "total_attempts": 1
     }
