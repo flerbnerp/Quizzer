@@ -16,6 +16,7 @@ def main():
         question, answer = get_weighted_question()
 
         # 2. Prompt the user with the question
+        os.system('cls' if os.name == 'nt' else 'clear')
         user_input = input(f"\n{question}\nYour answer: ")
 
         # 3. Display the correct answer
