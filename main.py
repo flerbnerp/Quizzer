@@ -14,7 +14,6 @@ def main():
     # Set up interrupt handling
     signal.signal(signal.SIGINT, handle_interrupt)
     guiMain.start_gui()
-    # return
 
 if __name__ == "__main__":
     main()
