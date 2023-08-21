@@ -13,9 +13,8 @@ def main():
     construct_filepaths_directory()
     # Set up interrupt handling
     signal.signal(signal.SIGINT, handle_interrupt)
-    # setup_qa()
     guiMain.start_gui()
-    return
+    # return
 
 if __name__ == "__main__":
     main()
