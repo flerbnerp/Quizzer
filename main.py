@@ -5,13 +5,24 @@ from initializeFilePath import construct_filepaths_directory
 # from defineQA import setup_qa
 from mainLoopDefines import get_md_content, update_score
 from selectionLogic import get_weighted_question
+from gui import guiMain
 
+def launch_gui():
+    guiMain.start_gui()
 
 def main():
     # Initialize directories and config files
     initialize_education_directory()
     construct_filepaths_directory()
     # setup_qa()
+
+    os.system('cls' if os.name == 'nt' else 'clear')
+    choice = input("Enter 'start' to begin the question loop or 'gui' to launch GUI test module: ").lower()
+
+    if choice == "gui":
+        launch_gui()
+        return
+    
     # Main loop
     main_list = []  # A list to store the questions for the current batch
 
