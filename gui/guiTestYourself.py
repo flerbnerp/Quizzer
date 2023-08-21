@@ -9,6 +9,7 @@ class TestYourself(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master, bg='black')
         self.master = master
+        
         self.grid(row=1, rowspan=2, column=0, columnspan=3, sticky="nsew")
         # Row configurations
         self.grid_rowconfigure(0, weight=9)  # 90% of the height for the question
@@ -18,15 +19,27 @@ class TestYourself(tk.Frame):
         self.grid_columnconfigure(0, weight=1)  # 1st column that will take up half the width
         self.grid_columnconfigure(1, weight=0)  # 2nd column
         
-        # Question prompt label spanning both columns
+        # Create a Canvas widget to hold the question frame
+        self.canvas = tk.Canvas(self, bg='black', bd=0, highlightthickness=0)
+        self.canvas.grid(row=0, column=0, columnspan=2, sticky="nsew")
+        # Create a Frame widget inside the Canvas
+        self.question_frame = tk.Frame(self.canvas, bg='black')
+        self.canvas.create_window((0, 0), window=self.question_frame, anchor="nw")
+        # Create a Label widget inside the Frame
         self.question_field = "DEBUG, QUESTION LOOP IS BROKEN"  # Variable to hold the question label text
-        self.question_label = tk.Label(self, text=self.question_field, wraplength=500)
-        self.question_label.grid(row=0, column=0, columnspan=2, sticky="nsew")
+        self.question_label = tk.Label(self.question_frame, text="", wraplength=500, bg='black', fg='white')
+        self.question_label.pack(side="top", anchor="w")
+        # Create a vertical scrollbar
+        self.scrollbar = tk.Scrollbar(self, orient="vertical", command=self.canvas.yview)
+        self.scrollbar.grid(row=0, column=2, sticky="ns")
+        # Configure canvas to use the scrollbar
+        self.canvas.config(yscrollcommand=self.scrollbar.set)
+        # Bind an event to update the canvas scrolling when the question_label's size changes
+        self.question_label.bind("<Configure>", self.update_scroll_region)
         
         # Input field
         self.input_field = tk.Text(self, bg='white', height=3, wrap=tk.WORD)  # Height is set to 3 lines and text will wrap at word boundaries
         self.input_field.grid(row=1, column=0, sticky="nsew")
-        
         # Bindings for the input field
         self.input_field.bind('<Return>', self.on_enter_pressed)
         self.input_field.bind('<Shift-Return>', self.insert_linebreak)
@@ -38,12 +51,15 @@ class TestYourself(tk.Frame):
         # Create a StringVar to store user input
         self.user_input_var = tk.StringVar()
         self.user_input_var.set("")  # Initialize to empty string
-
+        
         # Start the question loop in a separate thread
         self.question_thread = threading.Thread(target=self.question_loop)
         self.question_thread.daemon = True  # Allow the thread to be terminated when the GUI closes
         self.question_thread.start()
-        
+    
+    def update_scroll_region(self, event=None):
+        self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+
     def on_enter_pressed(self, event=None):
         self.submit_button.invoke()
         return "break"  # Stops the event from propagating

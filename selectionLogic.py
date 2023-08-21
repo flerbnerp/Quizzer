@@ -1,6 +1,7 @@
 import json
 import random
 import os
+from mathQuestionGenerators import run_all_generators
 
 QA_DIR = "qaJsonFiles"
 
@@ -35,6 +36,7 @@ def select_question_from_file(filepath):
     return qa_data[selected_index]['question'], qa_data[selected_index]['answer']
 
 def get_weighted_question():
+    run_all_generators()
     qa_files = get_files_in_directory(QA_DIR, "qa")
     random.shuffle(qa_files)
 
