@@ -14,7 +14,7 @@
     {
         "question": "The name Python in the Python programming language was inspired by what?",
         "answer": "Monty Python",
-        "correct_attempts": 1,
-        "total_attempts": 1
+        "correct_attempts": 2,
+        "total_attempts": 2
     }
 ]

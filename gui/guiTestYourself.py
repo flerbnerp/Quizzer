@@ -1,9 +1,9 @@
 import tkinter as tk
 import random
-from initialize import initialize_education_directory
-from initializeFilePath import construct_filepaths_directory
-from mainLoopDefines import get_md_content, update_score
 from selectionLogic import get_weighted_question
+from mainLoopDefines import get_md_content, update_score
+import os
+import threading
 
 class TestYourself(tk.Frame):
     def __init__(self, master=None):
@@ -19,9 +19,10 @@ class TestYourself(tk.Frame):
         self.grid_columnconfigure(1, weight=0)  # 2nd column
         
         # Question prompt label spanning both columns
-        self.question_label = tk.Label(self, text="Question will go here.", wraplength=500)  # wraplength can be adjusted
+        self.question_field = "DEBUG, QUESTION LOOP IS BROKEN"  # Variable to hold the question label text
+        self.question_label = tk.Label(self, text=self.question_field, wraplength=500)
         self.question_label.grid(row=0, column=0, columnspan=2, sticky="nsew")
-
+        
         # Input field
         self.input_field = tk.Text(self, bg='white', height=3, wrap=tk.WORD)  # Height is set to 3 lines and text will wrap at word boundaries
         self.input_field.grid(row=1, column=0, sticky="nsew")
@@ -34,6 +35,15 @@ class TestYourself(tk.Frame):
         self.submit_button = tk.Button(self, text="Submit", command=self.submit_answer)
         self.submit_button.grid(row=1, column=1)
         
+        # Create a StringVar to store user input
+        self.user_input_var = tk.StringVar()
+        self.user_input_var.set("")  # Initialize to empty string
+
+        # Start the question loop in a separate thread
+        self.question_thread = threading.Thread(target=self.question_loop)
+        self.question_thread.daemon = True  # Allow the thread to be terminated when the GUI closes
+        self.question_thread.start()
+        
     def on_enter_pressed(self, event=None):
         self.submit_button.invoke()
         return "break"  # Stops the event from propagating
@@ -43,11 +53,53 @@ class TestYourself(tk.Frame):
         return "break"  # Stops the event from propagating
 
     def submit_answer(self):
-        # Get the text from the input field
-        answer_text = self.input_field.get("1.0", tk.END).strip()  # "1.0" refers to the start of the text widget, and tk.END refers to the end of the widget.
-
-        # Set the text of the question label to the answer text
-        self.question_label.config(text=answer_text)
-
-        # Optionally, clear the input field if desired
+        self.user_input_var.set(self.input_field.get("1.0", tk.END).strip())
         self.input_field.delete("1.0", tk.END)
+    # Question loop
+    def question_loop(self):
+        # Main loop
+        main_list = []  # A list to store the questions for the current batch
+        user_input = self.user_input_var.get().strip().lower()
+        
+        while True:
+            # If main_list is empty, repopulate it
+            if not main_list:
+                main_list = get_weighted_question()
+
+            # Get a random question and its answer from the main list
+            idx = random.randint(0, len(main_list) - 1)
+            question, answer, filename = main_list.pop(idx)
+
+            # 2. Prompt the user with the question
+            self.question_field = question
+            self.question_label.config(text=self.question_field)
+            self.master.wait_variable(self.user_input_var)
+            # Concatenate user input to the question label's current text
+            self.question_field = self.question_field + "\n\nYour Answer: " + self.user_input_var.get()
+            self.question_label.config(text=self.question_field)
+            
+            # 3. Display the correct answer
+            if answer.endswith(".md"):
+                md_content = get_md_content(answer)
+                answer_text = f"Correct Answer:\n{md_content}\n"
+            else:
+                answer_text = f"Correct Answer: {answer}\n"
+            # Concatenate the answer to the question_label field
+            self.question_field = self.question_field + "\n\n" + answer_text
+            self.question_field = self.question_field + "\n\nQuestion Correct? Enter yes or no:"
+            self.question_label.config(text=self.question_field)
+            # 4. Prompt the user to continue
+            while True:
+                self.master.wait_variable(self.user_input_var)
+                user_input = self.user_input_var.get().strip().lower()
+                if user_input == "yes":
+                    update_score(question, filename, correct=True)
+                    break
+                elif user_input == "no":
+                    update_score(question, filename, correct=False)
+                    break
+                elif user_input == "debug":
+                    break
+                else:
+                    self.question_field = self.question_field + "\n\nInvalid input. Please enter 'Yes' or 'No'."
+                    self.question_label.config(text=self.question_field)

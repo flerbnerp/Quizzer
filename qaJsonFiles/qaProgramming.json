@@ -26,8 +26,8 @@
     {
         "question": "How do you evaluate an integer to a string?",
         "answer": "str(3)",
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     {
         "question": "How long can a source code document be?",
