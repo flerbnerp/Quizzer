@@ -142,15 +142,15 @@
     {
         "question": "What is a bytearray data type?",
         "answer": "A bytearray data type is a data type that stores a mutable sequence of numbers in the range 0 <= x < 256.",
-        "correct_attempts": 1,
-        "total_attempts": 2,
+        "correct_attempts": 2,
+        "total_attempts": 3,
         "unique_id": "programming00021"
     },
     {
         "question": "What is a range data type?",
         "answer": "A range data type is a data type that stores an immutable sequence of numbers.",
-        "correct_attempts": 0,
-        "total_attempts": 2,
+        "correct_attempts": 2,
+        "total_attempts": 4,
         "unique_id": "programming00022"
     },
     {
@@ -199,7 +199,7 @@
         "question": "Please give a list of all data types in Python.",
         "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
         "correct_attempts": 2,
-        "total_attempts": 6,
+        "total_attempts": 7,
         "unique_id": "programming00029"
     },
     {

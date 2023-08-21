@@ -9,8 +9,8 @@
     {
         "question": "Please explain the concept of the Forgetting Curve.",
         "answer": "Forgetting Curve.md",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "psychology00002"
     },
     {
@@ -23,8 +23,8 @@
     {
         "question": "What are the three core concepts of learning in a scientific manner?",
         "answer": "Active Recall, Spaced Repetition, and Interleaving.",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "psychology00004"
     },
     {
@@ -37,8 +37,8 @@
     {
         "question": "Describe Active Recall?",
         "answer": "Active Recall.md",
-        "correct_attempts": 4,
-        "total_attempts": 4,
+        "correct_attempts": 5,
+        "total_attempts": 5,
         "unique_id": "psychology00006"
     }
 ]

@@ -2,8 +2,8 @@
     {
         "question": "When was the term imaginary number first used? By whom?",
         "answer": "The term imaginary number was first used in the 17th century by Ren\u00e9 Descartes.",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "history00001"
     },
     {
@@ -16,8 +16,8 @@
     {
         "question": "The name Python in the Python programming language was inspired by what?",
         "answer": "Monty Python",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 4,
+        "total_attempts": 4,
         "unique_id": "history00003"
     }
 ]

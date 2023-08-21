@@ -7,7 +7,6 @@ import signal
 
 def handle_interrupt(signum, frame):
     print("Exiting...")
-    guiMain.stop_question_loop()
     exit(0)
 
 def main():

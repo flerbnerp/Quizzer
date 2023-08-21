@@ -9,8 +9,8 @@
     {
         "question": "What is a numerator?",
         "answer": "The numerator is the top number in a fraction. It represents the number of parts you have out of the total number of parts.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "math0002"
     },
     {
@@ -21,10 +21,24 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n5140 + 8741 = x",
-        "answer": "13881",
+        "question": "Solve for x:\n\n320 + 9960 = x",
+        "answer": "10280",
         "correct_attempts": 0,
         "total_attempts": 1,
         "unique_id": "math0004"
+    },
+    {
+        "question": "Please write the following number as a rational number:\n\n1228",
+        "answer": "1228\n---\n  1",
+        "correct_attempts": 3,
+        "total_attempts": 3,
+        "unique_id": "math0005"
+    },
+    {
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n0.46749654218533887",
+        "answer": "repeating",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0006"
     }
 ]

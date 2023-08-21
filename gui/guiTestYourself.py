@@ -27,8 +27,8 @@ class TestYourself(tk.Frame):
         self.canvas.create_window((0, 0), window=self.question_frame, anchor="nw")
         # Create a Label widget inside the Frame
         self.question_field = "DEBUG, QUESTION LOOP IS BROKEN"  # Variable to hold the question label text
-        self.question_label = tk.Label(self.question_frame, text="", wraplength=500, bg='black', fg='white')
-        self.question_label.pack(side="top", anchor="w")
+        self.question_label = tk.Label(self.question_frame, text="", bg='black', fg='white', anchor="w", justify="left")
+        self.question_label.pack(side="top", anchor="w", fill="both", expand=True)  # Fill and expand to fill available space
         # Create a vertical scrollbar
         self.scrollbar = tk.Scrollbar(self, orient="vertical", command=self.canvas.yview)
         self.scrollbar.grid(row=0, column=2, sticky="ns")
@@ -36,6 +36,8 @@ class TestYourself(tk.Frame):
         self.canvas.config(yscrollcommand=self.scrollbar.set)
         # Bind an event to update the canvas scrolling when the question_label's size changes
         self.question_label.bind("<Configure>", self.update_scroll_region)
+
+
         
         # Input field
         self.input_field = tk.Text(self, bg='white', height=3, wrap=tk.WORD)  # Height is set to 3 lines and text will wrap at word boundaries
@@ -99,7 +101,7 @@ class TestYourself(tk.Frame):
                 md_content = get_md_content(answer)
                 answer_text = f"Correct Answer:\n{md_content}\n"
             else:
-                answer_text = f"Correct Answer: {answer}\n"
+                answer_text = f"Correct Answer:\n {answer}\n"
             # Concatenate the answer to the question_label field
             self.question_field = self.question_field + "\n\n" + answer_text
             self.question_field = self.question_field + "\n\nQuestion Correct? Enter yes or no:"
