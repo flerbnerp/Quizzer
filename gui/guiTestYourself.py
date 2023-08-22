@@ -37,8 +37,6 @@ class TestYourself(tk.Frame):
         # Bind an event to update the canvas scrolling when the question_label's size changes
         self.question_label.bind("<Configure>", self.update_scroll_region)
 
-
-        
         # Input field
         self.input_field = tk.Text(self, bg='white', height=3, wrap=tk.WORD)  # Height is set to 3 lines and text will wrap at word boundaries
         self.input_field.grid(row=1, column=0, sticky="nsew")
@@ -93,7 +91,7 @@ class TestYourself(tk.Frame):
             self.question_label.config(text=self.question_field)
             self.master.wait_variable(self.user_input_var)
             # Concatenate user input to the question label's current text
-            self.question_field = self.question_field + "\n\nYour Answer: " + self.user_input_var.get()
+            self.question_field = self.question_field + "\n\nYour Answer: \n" + self.user_input_var.get()
             self.question_label.config(text=self.question_field)
             
             # 3. Display the correct answer

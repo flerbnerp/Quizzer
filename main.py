@@ -1,5 +1,6 @@
 from initialize import initialize_education_directory
 from initializeFilePath import construct_filepaths_directory
+from initializeQaCategories import initialize_qa_categories
 from gui import guiMain
 import signal
 
@@ -13,6 +14,7 @@ def main():
     # Initialize directories and config files
     initialize_education_directory()
     construct_filepaths_directory()
+    initialize_qa_categories()
     # Set up interrupt handling
     signal.signal(signal.SIGINT, handle_interrupt)
     guiMain.start_gui()

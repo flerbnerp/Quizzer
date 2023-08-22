@@ -4,10 +4,8 @@ import os
 from mathQuestionGenerators import run_all_generators
 
 QA_DIR = "qaJsonFiles"
-
-def get_files_in_directory(directory, prefix):
-    """Get all files in a directory with a specific prefix."""
-    return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and f.startswith(prefix)]
+CONFIG_DIR = "config"
+CONFIG_FILE = "qaCategoriesConfig.json"
 
 def select_question_from_file(filepath):
     with open(filepath, 'r') as file:
@@ -36,17 +34,23 @@ def select_question_from_file(filepath):
     return qa_data[selected_index]['question'], qa_data[selected_index]['answer']
 
 def get_weighted_question():
+    # Run all generators
     run_all_generators()
-    qa_files = get_files_in_directory(QA_DIR, "qa")
-    random.shuffle(qa_files)
 
-    # Use all available files if less than 5, otherwise use 5.
-    num_files_to_use = min(len(qa_files), 5)
+    # Load the qaCategories configuration
+    with open(os.path.join(CONFIG_DIR, CONFIG_FILE), 'r') as file:
+        categories_config = json.load(file)
 
     main_list = []
-    for i in range(num_files_to_use):
-        question, answer = select_question_from_file(os.path.join(QA_DIR, qa_files[i]))
-        main_list.append((question, answer, os.path.join(QA_DIR, qa_files[i])))
+
+    for category in categories_config:
+        filepath = category["qaFilePath"]
+        num_questions_to_pick = category["Number of questions to pick"]
+
+        # Select the specified number of questions for the category
+        for _ in range(num_questions_to_pick):
+            question, answer = select_question_from_file(filepath)
+            main_list.append((question, answer, filepath))
 
     return main_list  # Return the full list of question-answer pairs
 

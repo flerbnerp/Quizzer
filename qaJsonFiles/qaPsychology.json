@@ -2,8 +2,8 @@
     {
         "question": "Describe Spaced Repetition?",
         "answer": "Spaced Repetition.md",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "psychology00001"
     },
     {
@@ -16,8 +16,8 @@
     {
         "question": "Please describe the concept of Overlearning.",
         "answer": "Overlearning.md",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "psychology00003"
     },
     {

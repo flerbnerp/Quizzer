@@ -1,0 +1,26 @@
+[
+    {
+        "qaCategory": "Psychology",
+        "qaFileName": "qaPsychology.json",
+        "qaFilePath": "qaJsonFiles/qaPsychology.json",
+        "Number of questions to pick": 2
+    },
+    {
+        "qaCategory": "Mathematics",
+        "qaFileName": "qaMathematics.json",
+        "qaFilePath": "qaJsonFiles/qaMathematics.json",
+        "Number of questions to pick": 5
+    },
+    {
+        "qaCategory": "Programming",
+        "qaFileName": "qaProgramming.json",
+        "qaFilePath": "qaJsonFiles/qaProgramming.json",
+        "Number of questions to pick": 5
+    },
+    {
+        "qaCategory": "History",
+        "qaFileName": "qaHistory.json",
+        "qaFilePath": "qaJsonFiles/qaHistory.json",
+        "Number of questions to pick": 1
+    }
+]

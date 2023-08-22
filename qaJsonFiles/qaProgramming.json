@@ -2,8 +2,8 @@
     {
         "question": "How do you properly fetch and pull from an established repository on Github?",
         "answer": "git fetch origin, git pull origin main",
-        "correct_attempts": 2,
-        "total_attempts": 3,
+        "correct_attempts": 3,
+        "total_attempts": 4,
         "unique_id": "programming00001"
     },
     {
@@ -198,8 +198,8 @@
     {
         "question": "Please give a list of all data types in Python.",
         "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
-        "correct_attempts": 2,
-        "total_attempts": 7,
+        "correct_attempts": 3,
+        "total_attempts": 8,
         "unique_id": "programming00029"
     },
     {
