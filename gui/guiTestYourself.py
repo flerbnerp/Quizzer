@@ -2,6 +2,7 @@ import tkinter as tk
 import random
 from selectionLogic import get_weighted_question
 from mainLoopDefines import get_md_content, update_score
+from PIL import Image, ImageTk
 import os
 import threading
 
@@ -27,8 +28,9 @@ class TestYourself(tk.Frame):
         self.canvas.create_window((0, 0), window=self.question_frame, anchor="nw")
         # Create a Label widget inside the Frame
         self.question_field = "DEBUG, QUESTION LOOP IS BROKEN"  # Variable to hold the question label text
-        self.question_label = tk.Label(self.question_frame, text="", bg='black', fg='white', anchor="w", justify="left")
+        self.question_label = tk.Label(self.question_frame, text="", bg='black', fg='white', anchor="w", justify="left", wraplength=1200)
         self.question_label.pack(side="top", anchor="w", fill="both", expand=True)  # Fill and expand to fill available space
+        
         # Create a vertical scrollbar
         self.scrollbar = tk.Scrollbar(self, orient="vertical", command=self.canvas.yview)
         self.scrollbar.grid(row=0, column=2, sticky="ns")
@@ -56,7 +58,24 @@ class TestYourself(tk.Frame):
         self.question_thread = threading.Thread(target=self.question_loop)
         self.question_thread.daemon = True  # Allow the thread to be terminated when the GUI closes
         self.question_thread.start()
-    
+        
+    def display_image(self, image_path):
+        """Displays an image on the canvas."""
+        # Open the image with PIL
+        pil_image = Image.open(image_path)
+        pil_image.thumbnail((800, 800))  # Resize to fit in canvas
+        self.photo = ImageTk.PhotoImage(pil_image)  # Convert to PhotoImage to display in Tkinter
+            
+        # Add image to canvas
+        self.canvas.create_image(0, 0, anchor="nw", image=self.photo)
+        self.canvas.image = self.photo  # Keep a reference to avoid garbage collection
+            
+        # Adjust scroll region to include the image
+        self.canvas.config(scrollregion=self.canvas.bbox("all"))
+            
+        # Update scroll region after adding image
+        self.update_scroll_region()
+
     def update_scroll_region(self, event=None):
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
 
@@ -84,17 +103,27 @@ class TestYourself(tk.Frame):
 
             # Get a random question and its answer from the main list
             idx = random.randint(0, len(main_list) - 1)
-            question, answer, filename = main_list.pop(idx)
+            data = main_list.pop(idx)
+            if "qaMathematics.json" in data:
+                question, answer, filename, image_path_question, _ = data
+            else:
+                question, answer, filename = data[:3]
+                image_path_question = ""
+            
+            # 1. Prompt the user with the question
+            if image_path_question and os.path.exists(image_path_question):
+                print(f"Image Path: {image_path_question}")
+                self.display_image(image_path_question)
+            else:
+                self.question_field = question
+                self.question_label.config(text=self.question_field)
 
-            # 2. Prompt the user with the question
-            self.question_field = question
-            self.question_label.config(text=self.question_field)
             self.master.wait_variable(self.user_input_var)
             # Concatenate user input to the question label's current text
             self.question_field = self.question_field + "\n\nYour Answer: \n" + self.user_input_var.get()
             self.question_label.config(text=self.question_field)
-            
-            # 3. Display the correct answer
+
+            # 2. Display the correct answer
             if answer.endswith(".md"):
                 md_content = get_md_content(answer)
                 answer_text = f"Correct Answer:\n{md_content}\n"
@@ -104,7 +133,7 @@ class TestYourself(tk.Frame):
             self.question_field = self.question_field + "\n\n" + answer_text
             self.question_field = self.question_field + "\n\nQuestion Correct? Enter yes or no:"
             self.question_label.config(text=self.question_field)
-            # 4. Prompt the user to continue
+            # 3. Prompt the user to continue
             while True:
                 self.master.wait_variable(self.user_input_var)
                 user_input = self.user_input_var.get().strip().lower()
