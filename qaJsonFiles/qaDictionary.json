@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What is the definition of autonoetic?",
+        "answer": "autonoetic.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "dictionary00001"
+    },
+    {
+        "question": "What is the definition of sen qa non",
+        "answer": "sine qua non.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00002"
+    },
+    {
+        "question": "What is the definition of 'modus operandi'?",
+        "answer": "modus operandi.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "dictionary00003"
+    },
+    {
+        "question": "What is the definition of zeitgeist?",
+        "answer": "zeitgeist.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "dictionary00004"
+    }
+]

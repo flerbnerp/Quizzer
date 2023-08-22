@@ -7,7 +7,7 @@ QA_DIR = "qaJsonFiles"
 CONFIG_DIR = "config"
 CONFIG_FILE = "qaCategoriesConfig.json"
 
-def select_question_from_file(filepath):
+def select_questions_from_file(filepath, num_questions_to_pick=1):
     with open(filepath, 'r') as file:
         qa_data = json.load(file)
 
@@ -23,15 +23,17 @@ def select_question_from_file(filepath):
     candidates = [x[1] for x in indexed_ratios[:10]]
 
     all_indices = list(range(len(qa_data)))
-    
+
     # Number of random samples depends on the length of qa_data
     num_samples = min(3, len(qa_data))
     random_indices = random.sample(all_indices, num_samples)
 
     candidates.extend(random_indices)
-    selected_index = random.choice(candidates)
-
-    return qa_data[selected_index]['question'], qa_data[selected_index]['answer']
+    
+    # Ensure unique selection
+    selected_indices = random.sample(candidates, min(num_questions_to_pick, len(candidates)))
+    
+    return [(qa_data[i]['question'], qa_data[i]['answer']) for i in selected_indices]
 
 def get_weighted_question():
     # Run all generators
@@ -48,9 +50,9 @@ def get_weighted_question():
         num_questions_to_pick = category["Number of questions to pick"]
 
         # Select the specified number of questions for the category
-        for _ in range(num_questions_to_pick):
-            question, answer = select_question_from_file(filepath)
-            main_list.append((question, answer, filepath))
+        selected_qas = select_questions_from_file(filepath, num_questions_to_pick)
+        for q, a in selected_qas:
+            main_list.append((q, a, filepath))
 
     return main_list  # Return the full list of question-answer pairs
 
