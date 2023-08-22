@@ -20,14 +20,13 @@ def select_questions_from_file(filepath, num_questions_to_pick=1):
 
     indexed_ratios.sort(key=lambda x: x[0])
 
-    candidates = [x[1] for x in indexed_ratios[:10]]
+    candidates = [x[1] for x in indexed_ratios[:5]]
 
     all_indices = list(range(len(qa_data)))
 
     # Number of random samples depends on the length of qa_data
-    num_samples = min(3, len(qa_data))
+    num_samples = min(1, len(qa_data))
     random_indices = random.sample(all_indices, num_samples)
-
     candidates.extend(random_indices)
     
     # Ensure unique selection

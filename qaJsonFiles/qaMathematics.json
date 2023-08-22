@@ -1,56 +1,79 @@
 [
     {
-        "question": "What is an imaginary number? Explain at length.",
-        "answer": "An imaginary number is a number that is expressed in terms of the square root of a negative number (usually the square root of -1, which is represented by the letter i). Imaginary numbers are used in complex numbers, which are used to solve problems in electrical engineering and physics.",
-        "correct_attempts": 5,
-        "total_attempts": 6,
-        "unique_id": "math0001",
-        "image_path_answer": "",
-        "image_path_question": ""
+        "question": "What are natural numbers?",
+        "answer": "natural numbers.md",
+        "correct_attempts": 2,
+        "total_attempts": 2,
+        "unique_id": "math0001"
     },
     {
         "question": "What is a numerator?",
         "answer": "The numerator is the top number in a fraction. It represents the number of parts you have out of the total number of parts.",
-        "correct_attempts": 3,
-        "total_attempts": 3,
-        "unique_id": "math0002",
-        "image_path_answer": "",
-        "image_path_question": ""
+        "correct_attempts": 4,
+        "total_attempts": 4,
+        "unique_id": "math0002"
     },
     {
         "question": "What is a denominator?",
         "answer": "The denominator is the bottom number in a fraction. It represents the total number of parts in the whole.",
-        "correct_attempts": 1,
-        "total_attempts": 1,
-        "unique_id": "math0003",
-        "image_path_answer": "",
-        "image_path_question": ""
-    },
-    {
-        "question": "Solve for x:\n\n2020 + 9857 = x",
-        "answer": "11877",
         "correct_attempts": 3,
-        "total_attempts": 5,
-        "unique_id": "math0004",
-        "image_path_answer": "",
-        "image_path_question": "matLabImages/generate_addition_question_question.png"
+        "total_attempts": 3,
+        "unique_id": "math0003"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n8910",
-        "answer": "8910\n---\n  1",
-        "correct_attempts": 5,
-        "total_attempts": 5,
-        "unique_id": "math0005",
-        "image_path_answer": "matLabImages/generate_rational_number_question_answer.png",
-        "image_path_question": ""
+        "question": "Solve for x:\n\n2243 + 279 = x",
+        "answer": "2522",
+        "correct_attempts": 6,
+        "total_attempts": 9,
+        "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n5699/8969",
+        "question": "Please write the following number as a rational number:\n\n1698",
+        "answer": "1698\n---\n  1",
+        "correct_attempts": 7,
+        "total_attempts": 7,
+        "unique_id": "math0005"
+    },
+    {
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n38 \n --- \n 49",
         "answer": "repeating",
+        "correct_attempts": 4,
+        "total_attempts": 4,
+        "unique_id": "math0006"
+    },
+    {
+        "question": "What are whole numbers",
+        "answer": "whole numbers.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0007"
+    },
+    {
+        "question": "What are integers?",
+        "answer": "integers.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0008"
+    },
+    {
+        "question": "What are irrational numbers? Provide an example of an irrational number.",
+        "answer": "Irrational numbers.md",
         "correct_attempts": 2,
         "total_attempts": 2,
-        "unique_id": "math0006",
-        "image_path_answer": "",
-        "image_path_question": "matLabImages/generateWriteAsEitherTerminatingOrRepeatingDecimal_question.png"
+        "unique_id": "math0009"
+    },
+    {
+        "question": "What is the order of operations?",
+        "answer": "order of operations.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0010"
+    },
+    {
+        "question": "Solve for x:\n\n0 x 6 = x",
+        "answer": "0",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0011"
     }
 ]

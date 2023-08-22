@@ -103,22 +103,13 @@ class TestYourself(tk.Frame):
 
             # Get a random question and its answer from the main list
             idx = random.randint(0, len(main_list) - 1)
-            data = main_list.pop(idx)
-            if "qaMathematics.json" in data:
-                question, answer, filename, image_path_question, _ = data
-            else:
-                question, answer, filename = data[:3]
-                image_path_question = ""
+            question, answer, filename = main_list.pop(idx)
             
             # 1. Prompt the user with the question
-            if image_path_question and os.path.exists(image_path_question):
-                print(f"Image Path: {image_path_question}")
-                self.display_image(image_path_question)
-            else:
-                self.question_field = question
-                self.question_label.config(text=self.question_field)
-
+            self.question_field = question
+            self.question_label.config(text=self.question_field)
             self.master.wait_variable(self.user_input_var)
+            
             # Concatenate user input to the question label's current text
             self.question_field = self.question_field + "\n\nYour Answer: \n" + self.user_input_var.get()
             self.question_label.config(text=self.question_field)

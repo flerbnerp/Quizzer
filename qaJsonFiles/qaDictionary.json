@@ -2,8 +2,8 @@
     {
         "question": "What is the definition of autonoetic?",
         "answer": "autonoetic.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "dictionary00001"
     },
     {
@@ -16,8 +16,8 @@
     {
         "question": "What is the definition of 'modus operandi'?",
         "answer": "modus operandi.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "dictionary00003"
     },
     {
@@ -26,5 +26,12 @@
         "correct_attempts": 1,
         "total_attempts": 1,
         "unique_id": "dictionary00004"
+    },
+    {
+        "question": "What is the definition of Ontogeny?",
+        "answer": "ontogeny.md",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "dictionary00005"
     }
 ]

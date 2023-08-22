@@ -9,22 +9,22 @@
     {
         "question": "How do you check the status of the tor service on a linux machine?",
         "answer": "sudo systemctl status tor",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 2,
+        "total_attempts": 3,
         "unique_id": "programming00002"
     },
     {
         "question": "What is the len() function? What data type does it evaluate to?",
         "answer": "The len() function is a built-in function that returns the number of items in an object. It evaluates to an integer data type.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 2,
+        "total_attempts": 3,
         "unique_id": "programming00003"
     },
     {
         "question": "How do you get the length of a string?",
         "answer": "len('Hello, World!')",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00004"
     },
     {
@@ -86,15 +86,15 @@
     {
         "question": "What is a variable name? What makes it valid or invalid?",
         "answer": "A variable name is the name given to a variable. A variable name must start with a letter or the underscore character. A variable name cannot start with a number. A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ). Variable names are case-sensitive (age, Age and AGE are three different variables).",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "programming00013"
     },
     {
         "question": "What is camelcase? and why is it used?",
         "answer": "Camelcase is a naming convention in which a name is formed of multiple words that are joined together as a single word with the first letter of each of the multiple words capitalized so that each word that makes up the name can easily be read. It is used to make variable names easier to read.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00014"
     },
     {
@@ -142,29 +142,29 @@
     {
         "question": "What is a bytearray data type?",
         "answer": "A bytearray data type is a data type that stores a mutable sequence of numbers in the range 0 <= x < 256.",
-        "correct_attempts": 2,
-        "total_attempts": 3,
+        "correct_attempts": 3,
+        "total_attempts": 4,
         "unique_id": "programming00021"
     },
     {
         "question": "What is a range data type?",
         "answer": "A range data type is a data type that stores an immutable sequence of numbers.",
-        "correct_attempts": 2,
-        "total_attempts": 4,
+        "correct_attempts": 3,
+        "total_attempts": 5,
         "unique_id": "programming00022"
     },
     {
         "question": "What is a None data type?",
         "answer": "A None data type is a data type that stores a None value.",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "programming00023"
     },
     {
         "question": "Provide an example of a complex data type.",
         "answer": "x = 3+5j",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "programming00024"
     },
     {
@@ -198,8 +198,8 @@
     {
         "question": "Please give a list of all data types in Python.",
         "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
-        "correct_attempts": 3,
-        "total_attempts": 8,
+        "correct_attempts": 4,
+        "total_attempts": 11,
         "unique_id": "programming00029"
     },
     {
@@ -247,22 +247,22 @@
     {
         "question": "What is a dict or dictionary data type?",
         "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
-        "correct_attempts": 1,
-        "total_attempts": 2,
+        "correct_attempts": 2,
+        "total_attempts": 4,
         "unique_id": "programming00036"
     },
     {
         "question": "What is a set data type?",
         "answer": "A set data type is a collection which is unordered and unindexed. No duplicate members.",
         "correct_attempts": 1,
-        "total_attempts": 4,
+        "total_attempts": 5,
         "unique_id": "programming00037"
     },
     {
         "question": "What is a frozenset data type?",
         "answer": "A frozenset data type is a collection which is unordered and unindexed. No duplicate members. Immutable.",
-        "correct_attempts": 2,
-        "total_attempts": 5,
+        "correct_attempts": 3,
+        "total_attempts": 6,
         "unique_id": "programming00038"
     },
     {
@@ -275,15 +275,15 @@
     {
         "question": "What is a bytes data type?",
         "answer": "A bytes data type is a data type that stores an immutable sequence of numbers in the range 0 <= x < 256.",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "programming00040"
     },
     {
         "question": "What operator is used for remainder division?",
         "answer": "The %' operator is used for remainder division.",
-        "correct_attempts": 1,
-        "total_attempts": 2,
+        "correct_attempts": 2,
+        "total_attempts": 3,
         "unique_id": "programming00041"
     },
     {
@@ -345,8 +345,8 @@
     {
         "question": "What is the +' operator called?",
         "answer": "The +' operator is called the addition operator.",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "programming00050"
     },
     {
@@ -394,8 +394,8 @@
     {
         "question": "What is the %' operator called?",
         "answer": "The %' operator is called the modulus operator.",
-        "correct_attempts": 2,
-        "total_attempts": 2,
+        "correct_attempts": 3,
+        "total_attempts": 3,
         "unique_id": "programming00057"
     },
     {
