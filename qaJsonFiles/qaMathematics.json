@@ -21,21 +21,21 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n2243 + 279 = x",
-        "answer": "2522",
+        "question": "Solve for x:\n\n1394 + 3336 = x",
+        "answer": "4730",
         "correct_attempts": 6,
         "total_attempts": 9,
         "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n1698",
-        "answer": "1698\n---\n  1",
+        "question": "Please write the following number as a rational number:\n\n3477",
+        "answer": "3477\n---\n  1",
         "correct_attempts": 7,
         "total_attempts": 7,
         "unique_id": "math0005"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n38 \n --- \n 49",
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n17 \n --- \n 19",
         "answer": "repeating",
         "correct_attempts": 4,
         "total_attempts": 4,
@@ -44,15 +44,15 @@
     {
         "question": "What are whole numbers",
         "answer": "whole numbers.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "math0007"
     },
     {
         "question": "What are integers?",
         "answer": "integers.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "math0008"
     },
     {
@@ -65,15 +65,99 @@
     {
         "question": "What is the order of operations?",
         "answer": "order of operations.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "math0010"
     },
     {
-        "question": "Solve for x:\n\n0 x 6 = x",
-        "answer": "0",
+        "question": "Solve for x:\n\n3 x 9 = x",
+        "answer": "27",
         "correct_attempts": 1,
         "total_attempts": 1,
         "unique_id": "math0011"
+    },
+    {
+        "question": "What is the commutative property of addition?",
+        "answer": "commutative property of addition.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0012"
+    },
+    {
+        "question": "What is the commutative property of multiplication?",
+        "answer": "commutative property of multiplication.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0013"
+    },
+    {
+        "question": "What is the associative property of multiplication?",
+        "answer": "associative property of multiplication.md",
+        "correct_attempts": 1,
+        "total_attempts": 2,
+        "unique_id": "math0014"
+    },
+    {
+        "question": "What is the distributive property?",
+        "answer": "distributive property.md",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "math0015"
+    },
+    {
+        "question": "What is the identity property of addition?",
+        "answer": "identity property of addition.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0016"
+    },
+    {
+        "question": "What is the identity property of multiplication?",
+        "answer": "identity property of multiplication.md",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "math0017"
+    },
+    {
+        "question": "What is the inverse property of addition?",
+        "answer": "inverse property of addition.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0018"
+    },
+    {
+        "question": "What is the inverse property of multiplication?",
+        "answer": "inverse property of multiplication.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0019"
+    },
+    {
+        "question": "In Mathematics, what is a constant?",
+        "answer": "a constant is a value that does not change",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0020"
+    },
+    {
+        "question": "In Mathematics, what is a variable?",
+        "answer": "a variable is a symbol for a number we don't know yet. It is usually a letter like x or y. It a variable because it does not change",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0021"
+    },
+    {
+        "question": "In Mathemetics, what is an equation?",
+        "answer": "an equation says that two things are equal. It will have an equals sign = like this: 7 + 2 = 10 - 1",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0022"
+    },
+    {
+        "question": "In Mathematics, what is a formula?",
+        "answer": "a formula is a special type of equation that shows the relationship between different variables",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0023"
     }
 ]

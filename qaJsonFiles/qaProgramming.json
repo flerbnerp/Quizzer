@@ -198,8 +198,8 @@
     {
         "question": "Please give a list of all data types in Python.",
         "answer": "int, float, str, bool, list, tuple, dict, set, frozenset, complex, bytes, bytearray, range, None",
-        "correct_attempts": 4,
-        "total_attempts": 11,
+        "correct_attempts": 5,
+        "total_attempts": 12,
         "unique_id": "programming00029"
     },
     {
@@ -233,8 +233,8 @@
     {
         "question": "What is a list data type?",
         "answer": "A list data type is a collection which is ordered and changeable. Allows duplicate members.",
-        "correct_attempts": 0,
-        "total_attempts": 3,
+        "correct_attempts": 2,
+        "total_attempts": 6,
         "unique_id": "programming00034"
     },
     {
@@ -247,22 +247,22 @@
     {
         "question": "What is a dict or dictionary data type?",
         "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
-        "correct_attempts": 2,
-        "total_attempts": 4,
+        "correct_attempts": 3,
+        "total_attempts": 6,
         "unique_id": "programming00036"
     },
     {
         "question": "What is a set data type?",
         "answer": "A set data type is a collection which is unordered and unindexed. No duplicate members.",
-        "correct_attempts": 1,
-        "total_attempts": 5,
+        "correct_attempts": 3,
+        "total_attempts": 7,
         "unique_id": "programming00037"
     },
     {
         "question": "What is a frozenset data type?",
         "answer": "A frozenset data type is a collection which is unordered and unindexed. No duplicate members. Immutable.",
-        "correct_attempts": 3,
-        "total_attempts": 6,
+        "correct_attempts": 4,
+        "total_attempts": 7,
         "unique_id": "programming00038"
     },
     {

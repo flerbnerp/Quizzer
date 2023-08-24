@@ -27,6 +27,6 @@
         "qaCategory": "History",
         "qaFileName": "qaHistory.json",
         "qaFilePath": "qaJsonFiles/qaHistory.json",
-        "Number of questions to pick": 1
+        "Number of questions to pick": 0
     }
 ]

@@ -1,10 +1,8 @@
 import random
-import os
 import json
-import matplotlib
-matplotlib.use('Agg') 
-import matplotlib.pyplot as plt
-
+from sympy import symbols, simplify
+##############################################################################################################
+# Helper Functions
 def find_and_update_question_entry(unique_id, question, answer, filename, image_path_question=None, image_path_answer=None):
     with open(filename, 'r') as file:
         questions = json.load(file)
@@ -15,19 +13,16 @@ def find_and_update_question_entry(unique_id, question, answer, filename, image_
             break
     with open(filename, 'w') as file:
         json.dump(questions, file, indent=4)
-        
+
 def count_decimal_digits(number):
-    # Convert the number to a string
     number_str = str(number)
-    # Find the position of the decimal point
     decimal_point_index = number_str.find('.')
-    # If there is no decimal point, return 0
     if decimal_point_index == -1:
         return 0
-    # Count the digits after the decimal point
     digits_after_decimal = len(number_str) - decimal_point_index - 1
-    
     return digits_after_decimal
+##############################################################################################################
+# Question Generators
 def generate_multiplication_question():
     num1 = random.randint(0, 12)
     num2 = random.randint(0, 12)
@@ -38,7 +33,7 @@ def generate_multiplication_question():
     filename = "qaJsonFiles/qaMathematics.json"
     find_and_update_question_entry(unique_id, question, answer, filename)
     return question, answer
-            
+
 def generate_addition_question():
     num1 = random.randint(0, 9999)
     num2 = random.randint(0, 9999)

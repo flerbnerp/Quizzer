@@ -9,8 +9,8 @@
     {
         "question": "Please explain the concept of the Forgetting Curve.",
         "answer": "Forgetting Curve.md",
-        "correct_attempts": 4,
-        "total_attempts": 4,
+        "correct_attempts": 6,
+        "total_attempts": 6,
         "unique_id": "psychology00002"
     },
     {
@@ -47,5 +47,131 @@
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "psychology00007"
+    },
+    {
+        "question": "Explain the concept of sleep dependent memory consolidation.",
+        "answer": "Sleep Dependent Memory Consolidation.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00008"
+    },
+    {
+        "question": "In classical view, what is memory defined as?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00009"
+    },
+    {
+        "question": "Why is it important to understand the concept of memory?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00010"
+    },
+    {
+        "question": "What does the classic view of memory emphasize regarding an individual's experience?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00011"
+    },
+    {
+        "question": "How is memory traditionally linked to changes in behavior?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00012"
+    },
+    {
+        "question": "Why are 'behaviorial' definitions of memory significant in understanding the classic view of memory?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00013"
+    },
+    {
+        "question": "How has the concept of memory evolved from early philosophical views to experimental psychology terminology?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00014"
+    },
+    {
+        "question": "What is the core relation between experience and behavior in the context of memory?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00015"
+    },
+    {
+        "question": "Why might understanding the behaviorial aspect of memory be crucial for studying cognitive functions?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00016"
+    },
+    {
+        "question": "Explain the significance of the adaptivity concept in early definitions of memory.",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00017"
+    },
+    {
+        "question": "How does the Panglossian paradigm influence interpretations of adaptivity within memory concepts?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00018"
+    },
+    {
+        "question": "Discuss the challenges in distinguishing between memory and other experience-dependent changes in behavior such as fatigue or injury.",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00019"
+    },
+    {
+        "question": "How might latent changes in behavior challenge traditional views on memory?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00020"
+    },
+    {
+        "question": "Define \"knowledge\" in the context of its importance to the concept of memory.",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00021"
+    },
+    {
+        "question": "How does Plato's perspective on the interplay between the soul, knowledge, learning, and practice contribute to contemporary views on memory?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00022"
+    },
+    {
+        "question": "What implications does the statement \"memory needs knowledge to start with\" have for our broader understanding of cognition and memory formation?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00023"
+    },
+    {
+        "question": "Delve into the challenges that arise when trying to unveil and measure knowledge, particularly latent knowledge, within the science of memory.",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00024"
+    },
+    {
+        "question": "If memory is understood as \"organized knowledge\" as suggested by thinkers like Charniak and McDermott, how might this perspective influence our strategies for learning and retention?",
+        "answer": "Science of MEMORY - Chapter 2 - Memory.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00025"
     }
 ]
