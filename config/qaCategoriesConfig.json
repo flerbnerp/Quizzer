@@ -3,7 +3,7 @@
         "qaCategory": "Psychology",
         "qaFileName": "qaPsychology.json",
         "qaFilePath": "qaJsonFiles/qaPsychology.json",
-        "Number of questions to pick": 1
+        "Number of questions to pick": 3
     },
     {
         "qaCategory": "Mathematics",
@@ -15,18 +15,18 @@
         "qaCategory": "Programming",
         "qaFileName": "qaProgramming.json",
         "qaFilePath": "qaJsonFiles/qaProgramming.json",
-        "Number of questions to pick": 5
+        "Number of questions to pick": 2
     },
     {
         "qaCategory": "Dictionary",
         "qaFileName": "qaDictionary.json",
         "qaFilePath": "qaJsonFiles/qaDictionary.json",
-        "Number of questions to pick": 1
+        "Number of questions to pick": 2
     },
     {
         "qaCategory": "History",
         "qaFileName": "qaHistory.json",
         "qaFilePath": "qaJsonFiles/qaHistory.json",
-        "Number of questions to pick": 0
+        "Number of questions to pick": 1
     }
 ]

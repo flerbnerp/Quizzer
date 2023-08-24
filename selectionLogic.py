@@ -32,9 +32,10 @@ def select_questions_from_file(filepath, num_questions_to_pick=1):
     
     all_indices = list(range(len(qa_data)))
     random_indices = random.sample(all_indices, randomPick)
-
-    selected_indices = list(set(ratio_candidates + correct_attempts_candidates + random_indices))
-
+    ratio_indices = [index for value, index in ratio_candidates]
+    correct_attempts_indices = [index for value, index in correct_attempts_candidates]
+    selected_indices = list(set(ratio_indices + correct_attempts_indices + random_indices))
+    
     return [(qa_data[i]['question'], qa_data[i]['answer']) for i in selected_indices]
 
 

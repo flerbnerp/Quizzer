@@ -9,8 +9,8 @@
     {
         "question": "What is the definition of sen qa non? How would you use it in a sentence?",
         "answer": "sine qua non.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "dictionary00002"
     },
     {
@@ -23,8 +23,8 @@
     {
         "question": "What is the definition of zeitgeist? How would you use it in a sentence?",
         "answer": "zeitgeist.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "dictionary00004"
     },
     {
@@ -37,8 +37,8 @@
     {
         "question": "What is the definition of Taxonomy? How would you use it in a sentence?",
         "answer": "taxonomy.md",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "dictionary00006"
     }
 ]

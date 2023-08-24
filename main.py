@@ -4,8 +4,6 @@ from initializeQaCategories import initialize_qa_categories
 from gui import guiMain
 import signal
 
-
-
 def handle_interrupt(signum, frame):
     print("Exiting...")
     exit(0)
