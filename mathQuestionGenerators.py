@@ -57,7 +57,7 @@ def generate_rational_number_question():
 
 def generateWriteAsEitherTerminatingOrRepeatingDecimal():
     num1 = random.randint(0, 50)
-    num2 = random.randint(0, 50)
+    num2 = random.randint(1, 50)
     result = num1 / num2
     digits = count_decimal_digits(result)
     if digits > 7:

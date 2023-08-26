@@ -9,15 +9,15 @@
     {
         "question": "How do you check the status of the tor service on a linux machine?",
         "answer": "sudo systemctl status tor",
-        "correct_attempts": 2,
-        "total_attempts": 4,
+        "correct_attempts": 3,
+        "total_attempts": 5,
         "unique_id": "programming00002"
     },
     {
         "question": "What is the len() function? What data type does it evaluate to?",
         "answer": "The len() function is a built-in function that returns the number of items in an object. It evaluates to an integer data type.",
-        "correct_attempts": 2,
-        "total_attempts": 4,
+        "correct_attempts": 3,
+        "total_attempts": 5,
         "unique_id": "programming00003"
     },
     {
@@ -234,7 +234,7 @@
         "question": "What is a list data type?",
         "answer": "A list data type is a collection which is ordered and changeable. Allows duplicate members.",
         "correct_attempts": 3,
-        "total_attempts": 8,
+        "total_attempts": 9,
         "unique_id": "programming00034"
     },
     {
@@ -248,7 +248,7 @@
         "question": "What is a dict or dictionary data type?",
         "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
         "correct_attempts": 3,
-        "total_attempts": 7,
+        "total_attempts": 8,
         "unique_id": "programming00036"
     },
     {
@@ -404,5 +404,33 @@
         "correct_attempts": 1,
         "total_attempts": 1,
         "unique_id": "programming00058"
+    },
+    {
+        "question": "How do you use the dict data type?",
+        "answer": "x = {'name': 'John', 'age': 36}",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "programming00059"
+    },
+    {
+        "question": "Why is the dict data type important?",
+        "answer": "The dict data type is important because it is used to store data in key:value pairs.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "programming00060"
+    },
+    {
+        "question": "What is the use case for the dict data type?",
+        "answer": "The dict data type is useful when you want to store data in key:value pairs.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "programming00061"
+    },
+    {
+        "question": "Why are key:value pairs useful? What are the implications?",
+        "answer": "Key:value pairs are useful because they allow you to store data in a way that is easy to access. The implications are that you can access the data by using the key.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "programming00062"
     }
 ]
