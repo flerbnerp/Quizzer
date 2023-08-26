@@ -40,5 +40,47 @@
         "correct_attempts": 1,
         "total_attempts": 2,
         "unique_id": "dictionary00006"
+    },
+    {
+        "question": "What is the definition of conflated?",
+        "answer": "The definition of conflated is to combine two or more things into one. An example of conflated is a restaurant that serves both Chinese and Japanese food.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00007"
+    },
+    {
+        "question": "What does implicit and explicit mean?",
+        "answer": "Implicit means implied or understood though not plainly or directly expressed. Explicit means stated clearly and in detail, leaving no room for confusion or doubt.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00008"
+    },
+    {
+        "question": "What is the definition of Aplysia?",
+        "answer": "Aplysia is a genus of medium-sized to extremely large sea slugs, specifically sea hares, which are one clade of large sea slugs, marine gastropod mollusks.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00009"
+    },
+    {
+        "question": "What is the definition of impinge?",
+        "answer": "Impinge means to have an effect, especially a negative one.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00010"
+    },
+    {
+        "question": "What is the definition of labile?",
+        "answer": "Labile means liable to change; easily altered.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00011"
+    },
+    {
+        "question": "What does epigenetic mean?",
+        "answer": "Epigenetic means relating to or arising from non-genetic influences on gene expression.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00012"
     }
 ]
