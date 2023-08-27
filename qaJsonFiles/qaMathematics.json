@@ -21,21 +21,21 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n2577 + 2679 = x",
-        "answer": "5256",
+        "question": "Solve for x:\n\n8134 + 9646 = x",
+        "answer": "17780",
         "correct_attempts": 6,
         "total_attempts": 9,
         "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n2922",
-        "answer": "2922\n---\n  1",
+        "question": "Please write the following number as a rational number:\n\n5275",
+        "answer": "5275\n---\n  1",
         "correct_attempts": 7,
         "total_attempts": 7,
         "unique_id": "math0005"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n14 \n --- \n 26",
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n44 \n --- \n 34",
         "answer": "repeating",
         "correct_attempts": 4,
         "total_attempts": 4,
@@ -70,8 +70,8 @@
         "unique_id": "math0010"
     },
     {
-        "question": "Solve for x:\n\n4 x 7 = x",
-        "answer": "28",
+        "question": "Solve for x:\n\n3 x 12 = x",
+        "answer": "36",
         "correct_attempts": 2,
         "total_attempts": 2,
         "unique_id": "math0011"
@@ -171,35 +171,35 @@
         "question": "Why is the Quadratic Formula important?",
         "answer": "The quadratic formula is important because it allows us to solve for the roots of a quadratic equation",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "math0025"
     },
     {
         "question": "What is a quadratic equation?",
         "answer": "A quadratic equation is an equation of the form ax^2 + bx + c = 0, where a, b, and c are constants and a is not equal to 0",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "math0026"
     },
     {
         "question": "In what context do we use a quadratic equation?",
         "answer": "We use quadratic equations to model real world situations such as the trajectory of a ball thrown into the air",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "math0027"
     },
     {
         "question": "What are special product formulas?",
         "answer": "Special product formulas are formulas that allow us to quickly multiply certain types of polynomials",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "math0028"
     },
     {
         "question": "What are the special product formulas?",
         "answer": "The special product formulas are as follows:\n\n(a + b)^2 = a^2 + 2ab + b^2\n\n(a - b)^2 = a^2 - 2ab + b^2\n\n(a + b)(a - b) = a^2 - b^2",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "math0029"
     }
 ]

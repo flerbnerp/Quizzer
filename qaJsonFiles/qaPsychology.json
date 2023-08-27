@@ -156,8 +156,8 @@
     {
         "question": "What implications does the statement \"memory needs knowledge to start with\" have for our broader understanding of cognition and memory formation?",
         "answer": "Science of MEMORY - Chapter 2 - Memory.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00023"
     },
     {
@@ -184,8 +184,8 @@
     {
         "question": "Why might the concept of \"internal representation\" be more suitable for neuroscience analysis compared to the concept of \"knowledge\"?",
         "answer": "Science of MEMORY - Chapter 2 - Memory.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00027"
     },
     {
@@ -268,8 +268,8 @@
     {
         "question": "What is the relevance of priming?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00039"
     },
     {
@@ -282,8 +282,8 @@
     {
         "question": "In memory science what is retrieval?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00041"
     },
     {
@@ -317,8 +317,8 @@
     {
         "question": "How would we go about preventing negative transformation of the engram during encoding or retrieval?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00046"
     },
     {
@@ -345,15 +345,15 @@
     {
         "question": "What is semantic memory?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00050"
     },
     {
         "question": "What is procedural memory?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00051"
     },
     {
@@ -373,8 +373,8 @@
     {
         "question": "What are the \"widely agreed upon \" forms of memory? and why should we see/view memory as having different forms?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00054"
     },
     {
@@ -388,7 +388,7 @@
         "question": "What is explicit vs implicit memory?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "psychology00056"
     },
     {
@@ -399,7 +399,7 @@
         "unique_id": "psychology00057"
     },
     {
-        "question": "What kind of persisting after-effects ould we ant to exclude from our core notion of memory?",
+        "question": "What kind of persisting after-effects would we want to exclude from our core notion of memory?",
         "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
@@ -425,5 +425,34 @@
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "psychology00061"
+    },
+    {
+        "question": "Each qualitatively distinct type of memory is, or at least should be, anchored with respect to such parameters as the type of information represented, the encoding rules, the persistence of the information storage over time, the sensitivity to different kinds of brain damage, and the flexibility with which information can be expressed or recalled. Why is this so?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00062"
+    },
+    {
+        "question": "What is the primary distinction between engram and Memory?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00063"
+    },
+    {
+        "question": "What is Moscovitch's multiple trace theory?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00064"
+    },
+    {
+        "question": "Why does Dudai bring up a distinction between experience-dependent changes in nervous systems that have to do with encoded information and those that are merely house-keeping?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "psychology00065"
     }
+    
 ]

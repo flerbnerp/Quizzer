@@ -408,8 +408,8 @@
     {
         "question": "How do you use the dict data type?",
         "answer": "x = {'name': 'John', 'age': 36}",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00059"
     },
     {
@@ -429,8 +429,8 @@
     {
         "question": "Why are key:value pairs useful? What are the implications?",
         "answer": "Key:value pairs are useful because they allow you to store data in a way that is easy to access. The implications are that you can access the data by using the key.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00062"
     }
 ]

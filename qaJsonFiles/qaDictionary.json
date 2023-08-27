@@ -30,8 +30,8 @@
     {
         "question": "What is the definition of Ontogeny? How would you use it in a sentence?",
         "answer": "ontogeny.md",
-        "correct_attempts": 0,
-        "total_attempts": 3,
+        "correct_attempts": 1,
+        "total_attempts": 4,
         "unique_id": "dictionary00005"
     },
     {
@@ -51,8 +51,8 @@
     {
         "question": "What does implicit and explicit mean?",
         "answer": "Implicit means implied or understood though not plainly or directly expressed. Explicit means stated clearly and in detail, leaving no room for confusion or doubt.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "dictionary00008"
     },
     {
@@ -96,5 +96,33 @@
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "dictionary00014"
+    },
+    {
+        "question": "What is the definition of eclectic?",
+        "answer": "eclectic.md",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00015"
+    },
+    {
+        "question": "What is the definition of isomorphic?",
+        "answer": "isomorphic.md",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00016"
+    },
+    {
+        "question": "What is the definition of colloquially?",
+        "answer": "colloquially.md",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00017"
+    },
+    {
+        "question": "What is the definition of putative?",
+        "answer": "putative.md",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00018"
     }
 ]
