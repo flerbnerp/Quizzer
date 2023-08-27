@@ -159,5 +159,47 @@
         "correct_attempts": 1,
         "total_attempts": 2,
         "unique_id": "math0023"
+    },
+    {
+        "question": "What is the Quadratic Formula?",
+        "answer": "The quadractic formula is as follows: x = -b +/- sqrt(b^2 - 4ac) / 2a",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0024"
+    },
+    {
+        "question": "Why is the Quadratic Formula important?",
+        "answer": "The quadratic formula is important because it allows us to solve for the roots of a quadratic equation",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0025"
+    },
+    {
+        "question": "What is a quadratic equation?",
+        "answer": "A quadratic equation is an equation of the form ax^2 + bx + c = 0, where a, b, and c are constants and a is not equal to 0",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0026"
+    },
+    {
+        "question": "In what context do we use a quadratic equation?",
+        "answer": "We use quadratic equations to model real world situations such as the trajectory of a ball thrown into the air",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0027"
+    },
+    {
+        "question": "What are special product formulas?",
+        "answer": "Special product formulas are formulas that allow us to quickly multiply certain types of polynomials",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0028"
+    },
+    {
+        "question": "What are the special product formulas?",
+        "answer": "The special product formulas are as follows:\n\n(a + b)^2 = a^2 + 2ab + b^2\n\n(a - b)^2 = a^2 - 2ab + b^2\n\n(a + b)(a - b) = a^2 - b^2",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "math0029"
     }
 ]

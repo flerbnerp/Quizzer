@@ -82,5 +82,19 @@
         "correct_attempts": 0,
         "total_attempts": 1,
         "unique_id": "dictionary00012"
+    },
+    {
+        "question": "What does dileneate mean?",
+        "answer": "Delineate means to describe or portray (something) precisely.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00013"
+    },
+    {
+        "question": "What is the definition of provisionally?",
+        "answer": "Provisionally means for the present; temporarily.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00014"
     }
 ]
