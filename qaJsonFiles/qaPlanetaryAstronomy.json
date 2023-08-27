@@ -128,7 +128,7 @@
     },
     {
         "question": "What is Astronomy defined as?",
-        "answer": "",        
+        "answer": "Astronomy is defined as the study of the objects that lie beyond our planet Earth and the processes by which these objects interact with one another.",        
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00019"
@@ -170,14 +170,14 @@
     },
     {
         "question": "Which arm of the Milky Way Galaxy is the planet Earth in?",
-        "answer": "",        
+        "answer": "Earth is in the Orion Arm of the Milky Way Galaxy, it's situated in a minor spiral arm called the Orion Arm or sometimes the Orion Spur. The Orion Arm is sandwiched between two major spiral arms: the Sagittarius Arm and the Perseus Arm. Our solar system is about 27,000 light years away from the galactic center and orbits around it roughly once every 225-250 million years.",        
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00025"
     },
     {
         "question": "What \"arms\" make up the Milky Way Galaxy?",
-        "answer": "",        
+        "answer": "Milky Way Galaxy.md",        
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00026"

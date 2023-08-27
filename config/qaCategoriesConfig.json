@@ -18,6 +18,12 @@
         "Number of questions to pick": 2
     },
     {
+        "qaCategory": "PlanetaryAstronomy",
+        "qaFileName": "qaPlanetaryAstronomy.json",
+        "qaFilePath": "qaJsonFiles/qaPlanetaryAstronomy.json",
+        "Number of questions to pick": 10
+    },
+    {
         "qaCategory": "Dictionary",
         "qaFileName": "qaDictionary.json",
         "qaFilePath": "qaJsonFiles/qaDictionary.json",

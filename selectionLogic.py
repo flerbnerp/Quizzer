@@ -21,7 +21,10 @@ def select_questions_from_file(filepath, num_questions_to_pick=1):
         correct_attempts = qa.get("correct_attempts", 0)
         ratio = 0 if total_attempts == 0 else correct_attempts / total_attempts
         random_factor = random.random()
-        score = 0.495 * ratio + 0.495 * (correct_attempts / max_correct_attempts) + 0.01 * random_factor
+        try:
+            score = 0.495 * ratio + 0.495 * (correct_attempts / max_correct_attempts) + 0.01 * random_factor
+        except ZeroDivisionError:
+            score = 0
         scored_qa.append((score, qa))
 
     # Sort the scored questions by score
@@ -32,9 +35,10 @@ def select_questions_from_file(filepath, num_questions_to_pick=1):
     tied_questions = [qa for score, qa in scored_qa if score == threshold_score]
     
     if len(tied_questions) > 1:
-        random.shuffle(tied_questions)  # Randomly shuffle tied questions
+        random.shuffle(tied_questions)
         num_tied_to_pick = num_questions_to_pick - scored_qa.index((threshold_score, tied_questions[0])) 
-        selected_qas = scored_qa[:num_questions_to_pick - num_tied_to_pick] + tied_questions[:num_tied_to_pick]
+        # Use a list comprehension to maintain (score, qa) format for tied_questions
+        selected_qas = scored_qa[:num_questions_to_pick - num_tied_to_pick] + [(threshold_score, qa) for qa in tied_questions[:num_tied_to_pick]]
     else:
         selected_qas = scored_qa[:num_questions_to_pick]
 
