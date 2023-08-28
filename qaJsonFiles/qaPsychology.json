@@ -198,8 +198,8 @@
     {
         "question": "Given the understanding that memory encodes models of the world, how might this perspective influence our approach to studying memory and cognition?",
         "answer": "Science of MEMORY - Chapter 2 - Memory.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00029"
     },
     {
@@ -261,8 +261,8 @@
     {
         "question": "What is priming? How does it relate to memory?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "psychology00038"
     },
     {
@@ -324,8 +324,8 @@
     {
         "question": "How do we encode cues alongside knowledge?",
         "answer": "",
-        "correct_attempts": 1,
-        "total_attempts": 2,
+        "correct_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "psychology00047"
     },
     {
@@ -385,13 +385,6 @@
         "unique_id": "psychology00055"
     },
     {
-        "question": "What is explicit vs implicit memory?",
-        "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 2,
-        "unique_id": "psychology00056"
-    },
-    {
         "question": "Why is it problematic to characterize memory as the recollection or re-experiencing of some aspect of the past in the present?",
         "answer": "",
         "correct_attempts": 1,
@@ -420,7 +413,7 @@
         "unique_id": "psychology00060"
     },
     {
-        "question": "What is meant bny \"memory dileneated as the neurocognitive capacity to encode, store, and retrieve information\"?",
+        "question": "What is meant by \"memory dileneated as the neurocognitive capacity to encode, store, and retrieve information\"?",
         "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
@@ -443,8 +436,8 @@
     {
         "question": "What is Moscovitch's multiple trace theory?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "psychology00064"
     },
     {
@@ -462,13 +455,6 @@
         "unique_id": "psychology00066"
     },
     {
-        "question": "What is the definition of juxtaposition?",
-        "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
-        "unique_id": "psychology00067"
-    },
-    {
         "question": "Regarding Dudai's dilemma - How will we identify which of these correlates are uniquely involved in memory processing and which are involved in house-keeping?",
         "answer": "",
         "correct_attempts": 0,
@@ -478,8 +464,8 @@
     {
         "question": "What is your current understanding of Learning?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00069"
     },
     {
@@ -492,29 +478,29 @@
     {
         "question": "How might the process of \"habituation\" differ from \"Pavlovian conditioning\" and \"instrumental learning\" in the context of animal learning?",
         "answer": "Within the \ufb01eld of animal learning, the primary differential experiences that have been identified as interesting have been given labels, \u2018habituation\u2019, \u2018Pavlovian conditioning\u2019 and \u2018instrumental learning\u2019. see page 57 of 465 Science of Memory Concepts",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 0,
+        "total_attempts": 0,
         "unique_id": "psychology00071"
     },
     {
         "question": "What is habituation in the field of animal learning?",
         "answer": "",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 0,
+        "total_attempts": 0,
         "unique_id": "psychology00072"
     },
     {
         "question": "What is Pavlovian conditioning?",
         "answer": "",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 0,
+        "total_attempts": 0,
         "unique_id": "psychology00073"
     },
     {
         "question": "What is instrumental learning in the field of animal learning?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "psychology00074"
     },
     {

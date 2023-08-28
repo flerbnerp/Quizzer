@@ -3,7 +3,7 @@
         "question": "In the UoM Planetary Astronomy class, What are the course objectives?",
         "answer": "Appreciate the scientific process and how it works \n Develop familiarity with the night sky and how it changes with time and position on Earth\n Work with classmates to arrive at a deeper understanding of astronomical concepts and processes \n Understand certain basic physical laws, and the processes that govern astronomical quantities \n Explore the variety of observed objects in the universe, and their relationships to one another \n Infer the nature, scale, and structure and evolution of the universe, and objects therein",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00001"
     },
     {
@@ -79,8 +79,8 @@
     {
         "question": "If a hypothesis requires testing and experiments, why doesn't the astrology field use empirical study only instead of proposing certain views. Why not just base our understanding off a vast array of data?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00012"
     },
     {
@@ -93,8 +93,8 @@
     {
         "question": "What is a hypothesis?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00014"
     },
     {
@@ -114,8 +114,8 @@
     {
         "question": "How big is the Valles Marineris? and Where can it be found?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00017"
     },
     {
@@ -129,7 +129,7 @@
         "question": "How is a stellar corpse formed?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00018"
     },
     {
@@ -170,15 +170,15 @@
     {
         "question": "What is a Pulsar Beam? What is its relationship with magnetic fields?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00024"
     },
     {
         "question": "Which arm of the Milky Way Galaxy is the planet Earth in?",
         "answer": "Earth is in the Orion Arm of the Milky Way Galaxy, it's situated in a minor spiral arm called the Orion Arm or sometimes the Orion Spur. The Orion Arm is sandwiched between two major spiral arms: the Sagittarius Arm and the Perseus Arm. Our solar system is about 27,000 light years away from the galactic center and orbits around it roughly once every 225-250 million years.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00025"
     },
     {
@@ -205,15 +205,15 @@
     {
         "question": "What is the diameter of Earth?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00029"
     },
     {
         "question": "What makes Earth distinguishable from other planets?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00030"
     },
     {
@@ -303,8 +303,8 @@
     {
         "question": "What is dark matter and why do we call it as such?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00043"
     },
     {
@@ -316,86 +316,86 @@
     },
     {
         "question": "How far is and When was the closest galaxy discovered?",
-        "answer": "In 1993, about 70,000 light years from our sun in the direction of the constellation Sagittarius.",        
+        "answer": "In 1993, about 70,000 light years from our sun in the direction of the constellation Sagittarius.",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00045"
     },
     {
         "question": "What is a constellation?",
-        "answer": "one of the 88 sections into which astronomers divide the sky, each named after a prominent star pattern within it.",        
+        "answer": "one of the 88 sections into which astronomers divide the sky, each named after a prominent star pattern within it.",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00046"
     },
     {
         "question": "What are the Magellanic Clouds?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00047"
     },
     {
         "question": "How did the Magellanic Clouds get its name?",
-        "answer": "Because they were recorded by Ferdinand Magellan in 1519",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "Because they were recorded by Ferdinand Magellan in 1519",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00048"
     },
     {
         "question": "What is the name given to the nearest large galaxy?",
-        "answer": "The Andromeda galaxy",        
+        "answer": "The Andromeda galaxy",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00049"
     },
     {
         "question": "How do galaxies interact with one another?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00050"
     },
     {
         "question": "galaxies that have grouped into larger groups are called what?",
-        "answer": "They are called superclusters",        
+        "answer": "They are called superclusters",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00051"
     },
     {
         "question": "What are superclusters?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00052"
     },
     {
         "question": "What is the Virgo Supercluster and what is The Local Group?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00053"
     },
     {
         "question": "What are quasars?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00054"
     },
     {
         "question": "What are Molecules?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00055"
     },
     {
         "question": "What four forces can explain everything that happens in the universe?",
-        "answer": "gravity, electromagnetism, and two forces that act at the nuclear level.",        
+        "answer": "gravity, electromagnetism, and two forces that act at the nuclear level.",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00056"
-    }    
+    }
 ]

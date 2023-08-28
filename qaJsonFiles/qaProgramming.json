@@ -233,8 +233,8 @@
     {
         "question": "What is a list data type?",
         "answer": "A list data type is a collection which is ordered and changeable. Allows duplicate members.",
-        "correct_attempts": 3,
-        "total_attempts": 9,
+        "correct_attempts": 4,
+        "total_attempts": 10,
         "unique_id": "programming00034"
     },
     {
@@ -248,7 +248,7 @@
         "question": "What is a dict or dictionary data type?",
         "answer": "A dict or dictionary data type is a collection which is unordered, changeable and indexed. No duplicate members.",
         "correct_attempts": 3,
-        "total_attempts": 8,
+        "total_attempts": 9,
         "unique_id": "programming00036"
     },
     {
@@ -268,8 +268,8 @@
     {
         "question": "What is a complex data type?",
         "answer": "A complex data type is a number, positive or negative, containing one or more decimals. Written with a j as the imaginary part.",
-        "correct_attempts": 2,
-        "total_attempts": 3,
+        "correct_attempts": 3,
+        "total_attempts": 4,
         "unique_id": "programming00039"
     },
     {
