@@ -37,8 +37,8 @@
     {
         "question": "What is a black hole? What allowed us to get to the point where we could observe and identify them?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00006"
     },
     {
@@ -52,7 +52,7 @@
         "question": "How close is the nearest star from Earth, not counting the sun?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00008"
     },
     {
@@ -72,15 +72,15 @@
     {
         "question": "If there is strong evidence of vast quantities of invisible \"dark energy\" how come we have no convincing explanation of what that dark energy actually is?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00011"
     },
     {
         "question": "If a hypothesis requires testing and experiments, why doesn't the astrology field use empirical study only instead of proposing certain views. Why not just base our understanding off a vast array of data?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00012"
     },
     {
@@ -135,8 +135,8 @@
     {
         "question": "What is Astronomy defined as?",
         "answer": "Astronomy is defined as the study of the objects that lie beyond our planet Earth and the processes by which these objects interact with one another.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00019"
     },
     {
@@ -149,8 +149,8 @@
     {
         "question": "What is one of the most important parts of modern astronomy?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00021"
     },
     {
@@ -163,15 +163,15 @@
     {
         "question": "What model did early/ancient astronomers devise? How did they reach this conclusion?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00023"
     },
     {
         "question": "What is a Pulsar Beam? What is its relationship with magnetic fields?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00024"
     },
     {
@@ -185,7 +185,7 @@
         "question": "What \"arms\" make up the Milky Way Galaxy?",
         "answer": "Milky Way Galaxy.md",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00026"
     },
     {
@@ -199,121 +199,203 @@
         "question": "How is a solar mass defined?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00028"
     },
     {
-    "question": "What is the diameter of Earth?",
-    "answer": "",        
-    "correct_attempts": 0,
-    "total_attempts": 0,
-    "unique_id": "planetaryastronomy00029"
+        "question": "What is the diameter of Earth?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00029"
     },
     {
         "question": "What makes Earth distinguishable from other planets?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00030"
     },
     {
         "question": "How much of the Earth's surface is covered in water?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00031"
     },
     {
         "question": "How far away is Earth's moon from Earth? and what is its diameter?",
-        "answer": "384,000km distance and 3476km/dm",        
+        "answer": "384,000km distance and 3476km/dm",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00032"
     },
     {
         "question": "How fast does light travel?",
-        "answer": "3 x 10^5 km/s",        
+        "answer": "3 x 10^5 km/s",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00033"
     },
     {
         "question": "How far is the sun from the Earth?",
-        "answer": "1.5 x 10^7",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "1.5 x 10^7",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00034"
     },
     {
         "question": "The Earth-Sun distance is called a what?",
-        "answer": "an astronomical unit (AU)",        
+        "answer": "an astronomical unit (AU)",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00035"
     },
     {
         "question": "Why do we call an astronomical unit an astronomical unit?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00036"
     },
     {
         "question": "How fast does the Earth move around the sun in order to maintain a full orbit of the sun every year?",
-        "answer": "110,000 km/hr",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "110,000 km/hr",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00037"
     },
     {
         "question": "What is the definition of a planet?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00038"
     },
     {
         "question": "What allows us to see nearby planets in our solar system?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00039"
     },
     {
         "question": "What is interstellar dust?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00040"
     },
     {
         "question": "What exists between the stars and planets of the Milky Way Galaxy?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00041"
     },
     {
         "question": "What are the consequences of interstellar dust?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00042"
     },
     {
         "question": "What is dark matter and why do we call it as such?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00043"
     },
     {
         "question": "What are star clusters? How big are some star clusters?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00044"
+    },
+    {
+        "question": "How far is and When was the closest galaxy discovered?",
+        "answer": "In 1993, about 70,000 light years from our sun in the direction of the constellation Sagittarius.",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00045"
+    },
+    {
+        "question": "What is a constellation?",
+        "answer": "one of the 88 sections into which astronomers divide the sky, each named after a prominent star pattern within it.",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00046"
+    },
+    {
+        "question": "What are the Magellanic Clouds?",
         "answer": "",        
         "correct_attempts": 0,
         "total_attempts": 0,
-        "unique_id": "planetaryastronomy00044"
-    }
-    
-
+        "unique_id": "planetaryastronomy00047"
+    },
+    {
+        "question": "How did the Magellanic Clouds get its name?",
+        "answer": "Because they were recorded by Ferdinand Magellan in 1519",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00048"
+    },
+    {
+        "question": "What is the name given to the nearest large galaxy?",
+        "answer": "The Andromeda galaxy",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00049"
+    },
+    {
+        "question": "How do galaxies interact with one another?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00050"
+    },
+    {
+        "question": "galaxies that have grouped into larger groups are called what?",
+        "answer": "They are called superclusters",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00051"
+    },
+    {
+        "question": "What are superclusters?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00052"
+    },
+    {
+        "question": "What is the Virgo Supercluster and what is The Local Group?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00053"
+    },
+    {
+        "question": "What are quasars?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00054"
+    },
+    {
+        "question": "What are Molecules?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00055"
+    },
+    {
+        "question": "What four forces can explain everything that happens in the universe?",
+        "answer": "gravity, electromagnetism, and two forces that act at the nuclear level.",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00056"
+    }    
 ]

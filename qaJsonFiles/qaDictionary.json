@@ -66,7 +66,7 @@
         "question": "What is the definition of impinge?",
         "answer": "Impinge means to have an effect, especially a negative one.",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "dictionary00010"
     },
     {
@@ -94,35 +94,63 @@
         "question": "What is the definition of provisionally?",
         "answer": "Provisionally means for the present; temporarily.",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "dictionary00014"
     },
     {
         "question": "What is the definition of eclectic?",
-        "answer": "eclectic.md",        
+        "answer": "eclectic.md",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "dictionary00015"
     },
     {
         "question": "What is the definition of isomorphic?",
-        "answer": "isomorphic.md",        
+        "answer": "isomorphic.md",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "dictionary00016"
     },
     {
         "question": "What is the definition of colloquially?",
-        "answer": "colloquially.md",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "colloquially.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "dictionary00017"
     },
     {
         "question": "What is the definition of putative?",
-        "answer": "putative.md",        
+        "answer": "putative.md",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "dictionary00018"
+    },
+    {
+        "question": "What does concomitant mean?",
+        "answer": "concomitant.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00019"
+    },
+    {
+        "question": "What does heterogenous mean?",
+        "answer": "heterogenous.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00020"
+    },
+    {
+        "question": "What does differential mean?",
+        "answer": "differential.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00021"
+    },
+    {
+        "question": "What is the definition of juxtaposition?",
+        "answer": "juxtaposition.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "dictionary00022"
     }
 ]

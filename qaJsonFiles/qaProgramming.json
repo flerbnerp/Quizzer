@@ -415,15 +415,15 @@
     {
         "question": "Why is the dict data type important?",
         "answer": "The dict data type is important because it is used to store data in key:value pairs.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00060"
     },
     {
         "question": "What is the use case for the dict data type?",
         "answer": "The dict data type is useful when you want to store data in key:value pairs.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "programming00061"
     },
     {

@@ -3,7 +3,7 @@
         "qaCategory": "Psychology",
         "qaFileName": "qaPsychology.json",
         "qaFilePath": "qaJsonFiles/qaPsychology.json",
-        "Number of questions to pick": 10
+        "Number of questions to pick": 15
     },
     {
         "qaCategory": "Mathematics",
@@ -21,7 +21,7 @@
         "qaCategory": "PlanetaryAstronomy",
         "qaFileName": "qaPlanetaryAstronomy.json",
         "qaFilePath": "qaJsonFiles/qaPlanetaryAstronomy.json",
-        "Number of questions to pick": 10
+        "Number of questions to pick": 15
     },
     {
         "qaCategory": "Dictionary",
