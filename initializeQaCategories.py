@@ -38,6 +38,16 @@ def initialize_qa_categories():
     # Save the new data to the config file
     with open(config_file, 'w') as f:
         json.dump(new_data, f, indent=4)
+    # Read the current contents of the config file
+    with open(config_file, 'r') as f:
+        data_to_sort = json.load(f)
+
+    # Sort the data by the qaCategory field alphabetically
+    sorted_data = sorted(data_to_sort, key=lambda x: x["qaCategory"].lower())
+
+    # Save the sorted data back to the config file
+    with open(config_file, 'w') as f:
+        json.dump(sorted_data, f, indent=4)
 
 if __name__ == "__main__":
     initialize_qa_categories()

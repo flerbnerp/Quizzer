@@ -1,0 +1,37 @@
+[
+    {
+        "question": "From the Hobo-Dyer Map, viewing it, What do you see differently from this new perspective?",
+        "answer": "Links back to the misinformation effect, By changing the visual cues we change the way in which memories would have be retrieved had the cue been the standard map we're all use to",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00001"
+    },
+    {
+        "question": "Describe The Hobo-Dyer-Map",
+        "answer": "Shows Earth with the south pole on top and north on the bottom. A different orientation. Both sets of continents have been rotated in place 180 Degrees. Though the proportions are still accurate.",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00002"
+    },
+    {
+        "question": "How do maps shape the way you think about the world and its people?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00003"
+    },
+    {
+        "question": "The Earth is round. So every flat, rectangular map involves distortions. But which distortions?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00004"
+    },
+    {
+        "question": "How do the Peters World Map and Hobo-Dyer-Map differ from the standard Mercator projection?",
+        "answer": "",        
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00005"
+    }    
+]

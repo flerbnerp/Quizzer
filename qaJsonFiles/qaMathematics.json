@@ -21,21 +21,21 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n636 + 6070 = x",
-        "answer": "6706",
+        "question": "Solve for x:\n\n7333 + 4578 = x",
+        "answer": "11911",
         "correct_attempts": 6,
         "total_attempts": 9,
         "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n4630",
-        "answer": "4630\n---\n  1",
+        "question": "Please write the following number as a rational number:\n\n4989",
+        "answer": "4989\n---\n  1",
         "correct_attempts": 7,
         "total_attempts": 7,
         "unique_id": "math0005"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n28 \n --- \n 33",
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n23 \n --- \n 29",
         "answer": "repeating",
         "correct_attempts": 4,
         "total_attempts": 4,
@@ -70,8 +70,8 @@
         "unique_id": "math0010"
     },
     {
-        "question": "Solve for x:\n\n5 x 1 = x",
-        "answer": "5",
+        "question": "Solve for x:\n\n3 x 0 = x",
+        "answer": "0",
         "correct_attempts": 2,
         "total_attempts": 2,
         "unique_id": "math0011"
