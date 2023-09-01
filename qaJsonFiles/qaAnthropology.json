@@ -1,37 +1,555 @@
 [
     {
         "question": "From the Hobo-Dyer Map, viewing it, What do you see differently from this new perspective?",
-        "answer": "Links back to the misinformation effect, By changing the visual cues we change the way in which memories would have be retrieved had the cue been the standard map we're all use to",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "Links back to the misinformation effect, By changing the visual cues we change the way in which memories would have be retrieved had the cue been the standard map we're all use to",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "anthropology00001"
     },
     {
         "question": "Describe The Hobo-Dyer-Map",
-        "answer": "Shows Earth with the south pole on top and north on the bottom. A different orientation. Both sets of continents have been rotated in place 180 Degrees. Though the proportions are still accurate.",        
+        "answer": "Shows Earth with the south pole on top and north on the bottom. A different orientation. Both sets of continents have been rotated in place 180 Degrees. Though the proportions are still accurate.",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "anthropology00002"
     },
     {
         "question": "How do maps shape the way you think about the world and its people?",
-        "answer": "",        
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "anthropology00003"
     },
     {
         "question": "The Earth is round. So every flat, rectangular map involves distortions. But which distortions?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "anthropology00004"
     },
     {
         "question": "How do the Peters World Map and Hobo-Dyer-Map differ from the standard Mercator projection?",
-        "answer": "",        
+        "answer": "",
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "anthropology00005"
-    }    
+    },
+    {
+        "question": "What has been central to anthropological analysis since the beginning of the field?",
+        "answer": "The concept of [[culture]]",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00006"
+    },
+    {
+        "question": "What is culture",
+        "answer": "culture.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00007"
+    },
+    {
+        "question": "What does the relationship between power and culture tell us about the world?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00008"
+    },
+    {
+        "question": "In the contemporary period of rapid globalization what has intensified and become more explicit?",
+        "answer": "The movement, connection, and interrelatedness that have always been a part of human reality.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00009"
+    },
+    {
+        "question": "How will we develop the skills and strategies for engaging and navigating the complex, multicultural, global, and rapidly changing reality of the world around us?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00010"
+    },
+    {
+        "question": "What is Cultural Anthropology?",
+        "answer": "Cultural Anthropology.md",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00011"
+    },
+    {
+        "question": "How did we use material [[culture]] in the distant past?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00012"
+    },
+    {
+        "question": "What types of changes (physical and cultural) mark significant shifts in human history/ prehistory?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00013"
+    },
+    {
+        "question": "How did we evolve genetically and physiologically?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00014"
+    },
+    {
+        "question": "How do these physical changes differentiate us from our primate relatives and hominin ancestors?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00015"
+    },
+    {
+        "question": "In what ways are groups of humans biologically similar vs. unique?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00016"
+    },
+    {
+        "question": "How does language influence culture?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00017"
+    },
+    {
+        "question": "When and how did the human capacity for language arise?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "anthropology00018"
+    },
+    {
+        "question": "How does sound and structure give rise to meaning?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00019"
+    },
+    {
+        "question": "How can we better understand the key differences in cultural patterns such as marriage, kinship, and family?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00020"
+    },
+    {
+        "question": "What is the nature of political and economic organization?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00021"
+    },
+    {
+        "question": "How can we use our understanding of culture to solve problems?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00022"
+    },
+    {
+        "question": "What is Ethnography?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00023"
+    },
+    {
+        "question": "What is anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00024"
+    },
+    {
+        "question": "Through what lenses do anthropologists gain a comprehensive view of human cultures?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00025"
+    },
+    {
+        "question": "What is globalization, and why is it important for anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00026"
+    },
+    {
+        "question": "How is globalization transforming anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00027"
+    },
+    {
+        "question": "Do these exotic rituals of a seemingly distant tribe sound completely strange to you, or are they vaguely familiar?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00028"
+    },
+    {
+        "question": "How do biology, culture, and the environment interact to shape who we are as humans, individually and as groups?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00029"
+    },
+    {
+        "question": "Relating to prehistoric archaeology, Through excavation and analysis of these material remains, archaeologists reconstruct family and work life. What animals did the people eat? What seeds did they plant? What tools and crafts did they make?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00030"
+    },
+    {
+        "question": "What might an anthropologist 200 years from now learn about your community by studying its garbage?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00031"
+    },
+    {
+        "question": "Given the advancement of communication technology from words, to letters, to emails, to instant messaging, How much time do you have to respond to an email or a text message before someone thinks you are rude or irresponsible? How does the theory of time-space compression play into this?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00032"
+    },
+    {
+        "question": "Regarding climate change, How will the planet cope with the growth of the human population from 7.7 billion in 2020 to more than 9.8 billion in 2050?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00033"
+    },
+    {
+        "question": "What is ethnocentrism?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00034"
+    },
+    {
+        "question": "What is ethnographic fieldwork?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00035"
+    },
+    {
+        "question": "In regards to Anthropology, what is the cross-cultural and comparative approach?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00036"
+    },
+    {
+        "question": "In regards to Anthropology, what is the four-field approach?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00037"
+    },
+    {
+        "question": "What is Holism?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00038"
+    },
+    {
+        "question": "What is Biological Anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00039"
+    },
+    {
+        "question": "What is Paleoanthropology?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00040"
+    },
+    {
+        "question": "What is Primatology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00041"
+    },
+    {
+        "question": "What is Archaeology, historic archaeology, and prehistoric archaeology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00042"
+    },
+    {
+        "question": "What is Linguistic anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00043"
+    },
+    {
+        "question": "What are Descriptive linguists, Sociolinguists, and Historic linguists?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00044"
+    },
+    {
+        "question": "What is Cultural Anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00045"
+    },
+    {
+        "question": "In regards to Cultural Anthropology what is participant observation?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00046"
+    },
+    {
+        "question": "What is Ethnology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "anthropology00047"
+    },
+    {
+        "question": "In regards to Anthropology what is time-space compression?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00048"
+    },
+    {
+        "question": "In regards to Anthropology what is flexible accumulation?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "anthropology00049"
+    },
+    {
+        "question": "In regards to Anthropology what does increasing migration mean?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00050"
+    },
+    {
+        "question": "In regards to Anthropology what is uneven development?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00051"
+    },
+    {
+        "question": "What is the Anthropocene?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00052"
+    },
+    {
+        "question": "In regards to Anthropology, What is climate change?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00053"
+    },
+    {
+        "question": "Why has the global demand for digital materials fueled conflict in the Democratic Republic of the Congo?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00054"
+    },
+    {
+        "question": "As of 2020, where did the vast majority of the world's coltan supply come from?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00055"
+    },
+    {
+        "question": "Miner hypothesizes that underlying the extensive rituals he has documented lies a belief that the human body is essentially ugly, Expound on this. How might aspects of your culture relate to this belief?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00056"
+    },
+    {
+        "question": "Who were the Nacirema?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00057"
+    },
+    {
+        "question": "Anthropologists in the modern era focus on what?",
+        "answer": "The details and patterns of human life in the local community and then examines how particular cultures connect with the rest of humanity.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00058"
+    },
+    {
+        "question": "Anthropologists adopt [[ethnographic fieldwork]] as their primary research strategy. Why?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00059"
+    },
+    {
+        "question": "What is meant by elites 'studying up'?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00060"
+    },
+    {
+        "question": "Why do anthropologists seek to 'understand the agency' of local people, in other words, the central role of individuals and groups in determining their own lives, even in the face of overwhelming structures of power?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00061"
+    },
+    {
+        "question": "Many of the so-called primitive tribes in Africa and the Americas we find that many were complex state societies before colonialism. What led to their collapse?",
+        "answer": "The Slave Trade led to their collapse.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00062"
+    },
+    {
+        "question": "Is Globalization a new phenomenon or just an intensification of what was before?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00063"
+    },
+    {
+        "question": "Why have we adopted the four-field approach to the study of anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00064"
+    },
+    {
+        "question": "What is Holism and why is it important?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00065"
+    },
+    {
+        "question": "What is [[Biological anthropology]] and how does it contribute to the field of anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00066"
+    },
+    {
+        "question": "What is Paleoanthropology and how does it contribute to the field of anthropology?",
+        "answer": "This branch is the study of human remains and tracks the evolution of the species over time. Homo sapiens were found to originate in Africa around 150,000 years ago because of this.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00067"
+    },
+    {
+        "question": "What is Primatology and how does it contribute to the field of anthropology?",
+        "answer": "The study of non-human primates to find clues about our origins.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00068"
+    },
+    {
+        "question": "What has led to the notion that race is not a biological thing?",
+        "answer": "Grouping, to be distinct they would have to share more in common within the group than without, for 'race' no such distinction is made only the self-evident skin color which does not constitute a major difference from human to human. No firm basis in [[genetics]].",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00069"
+    },
+    {
+        "question": "What is archaeology and how does it contribute to the field of anthropology?",
+        "answer": "The study of physical remains (non-biological).",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00070"
+    },
+    {
+        "question": "What are some examples of the physical remains that archeologists find and analyze?",
+        "answer": "The terra-cotta warriors, the pyramids of giza, stone tools, the emergence of early states in place like egypt and Babylon.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00071"
+    },
+    {
+        "question": "How might we get information on what ancient peoples ate?",
+        "answer": "Coprolites.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00072"
+    },
+    {
+        "question": "What time period does prehistoric archaeology cover?",
+        "answer": "The time period pre-writing era.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00073"
+    },
+    {
+        "question": "What time period does historic archeology cover?",
+        "answer": "The time period post-writing era. More recent historical events. By analyzing artifacts in addition to texts and writings we can get a more holistic view of the past.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00074"
+    },
+    {
+        "question": "What is Linguistic Anthropology and how does it contribute to the field of anthropology?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00075"
+    },
+    {
+        "question": "Linguistic anthropologists suggest that language may also limit and constrain a people's views of the world, In other words, can we think clearly about something if we don't have an adequately sophisticated language?",
+        "answer": "This is a reflective question.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00076"
+    },
+    {
+        "question": "What is the difference between Descriptive, Historic, and Socio-linguists?",
+        "answer": "Descriptive linguists carefully describe spoken languages and work to preserve them. Historic study how language has changed over time, sociolinguists focus on the context of language use and why we use the language in the way that we do.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00077"
+    },
+    {
+        "question": "How does Cultural Anthropology contribute to the field of anthropology?",
+        "answer": "Cultural anthropologists focus on the day to day lives, the mundane aspects of peoples lives and how they interact within their communities and how that effects interactions on a global scale, they search for patterns of meanings embedded within each culture.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00078"
+    },
+    {
+        "question": "How does the process of ethnology differ from participant observation?",
+        "answer": "Ethnology is method by which examine the data, while participant observation and ethnographic fieldwork is a method by which we collect that data. In more detail ethnology is how cultural anthropologists analyze and compare ethnographic data across cultures.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "anthropology00079"
+    }
 ]

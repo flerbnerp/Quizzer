@@ -303,8 +303,8 @@
     {
         "question": "In what ways can learning and memory be conceptualized?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 3,
+        "correct_attempts": 1,
+        "total_attempts": 4,
         "unique_id": "psychology00044"
     },
     {
@@ -366,8 +366,8 @@
     {
         "question": "What is working memory?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "psychology00053"
     },
     {
@@ -381,7 +381,7 @@
         "question": "What is declaritive vs non-declaritive memory?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "psychology00055"
     },
     {
@@ -457,8 +457,8 @@
     {
         "question": "Regarding Dudai's dilemma - How will we identify which of these correlates are uniquely involved in memory processing and which are involved in house-keeping?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00068"
     },
     {
@@ -471,8 +471,8 @@
     {
         "question": "How are the terms Learning and plasticity interrelated?",
         "answer": "see page 57 of 465 Science of Memory Concepts",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00070"
     },
     {
@@ -486,42 +486,42 @@
         "question": "What is habituation in the field of animal learning?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "psychology00072"
     },
     {
         "question": "What is Pavlovian conditioning?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00073"
     },
     {
         "question": "What is instrumental learning in the field of animal learning?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "psychology00074"
     },
     {
         "question": "In psychological testing, more specifically memory science t1 and t2 refer to what?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00075"
     },
     {
         "question": "In psychological testing, more specifically memory science, it has been posited that t1 and t2 measurements as a stand-alone are invalid rather experiments should involve two organisms. The control group would not be exposed to t1, then measure the results of the two. What are the implications of such a change in procedure when experimenting with learning?",
         "answer": "first, it forces one to confront seriously the question of what is a good comparison treatment at t1 involving not receiving the experience. Secondly, it opens up the class of differences that are taken as evidence at t2 to include behaviors and other features that are not measured at t1. Thirdly, it implies that acquisition curves are useless in the study of learning. Data taken during the t1 acquisition period almost invariably come from animals receiving different treatments dictated by the independent variables of interest. That means that they are not taken under comparable conditions for the different groups. As a result, one cannot be sure any differences reflect differences in learning as distinct from differences in local conditions in which the data are taken. A common t2 test naturally addresses that problem",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00076"
     },
     {
         "question": "Can you provide a list of factors that are \"outside the ballpark\" of t2 changes as a result of t1 experiences?",
         "answer": "Hearst (1988) provides a typical list: motor fatigue, sensory adaptation, brain damage, disease, motivational factors, aging, poor health, drugs, maturation.",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "psychology00077"
     }
 ]

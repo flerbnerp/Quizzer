@@ -177,8 +177,8 @@
     {
         "question": "How do you comment out a block of code all at once in VSCode?",
         "answer": "Highlight the block of code and press Ctrl + /",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "programming00026"
     },
     {

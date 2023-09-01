@@ -27,8 +27,8 @@ def select_questions_from_file(filepath, num_questions_to_pick=1, last_selected=
         total_attempts = qa.get("total_attempts", 0)
         correct_attempts = qa.get("correct_attempts", 0)
         ratio = 0 if total_attempts == 0 else correct_attempts / total_attempts
-        random_factor = random.randint(0, 100)
-        score = 35 * ratio + 50 * (correct_attempts / max_correct_attempts) + 0.10 * random_factor
+        random_factor = random.randint(0, 25)
+        score = 40 * ratio + 35 * (correct_attempts / max_correct_attempts) + random_factor
         scored_qa.append((score, qa))
     print(f"Total scored questions for {filepath}: {len(scored_qa)}")
 

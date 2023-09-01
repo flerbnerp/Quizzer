@@ -21,22 +21,22 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n7333 + 4578 = x",
-        "answer": "11911",
+        "question": "Solve for x:\n\n3581 + 1462 = x",
+        "answer": "5043",
         "correct_attempts": 6,
         "total_attempts": 9,
         "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n4989",
-        "answer": "4989\n---\n  1",
+        "question": "Please write the following number as a rational number:\n\n6138",
+        "answer": "6138\n---\n  1",
         "correct_attempts": 7,
         "total_attempts": 7,
         "unique_id": "math0005"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n23 \n --- \n 29",
-        "answer": "repeating",
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n26 \n --- \n 4",
+        "answer": "terminating",
         "correct_attempts": 4,
         "total_attempts": 4,
         "unique_id": "math0006"
@@ -70,8 +70,8 @@
         "unique_id": "math0010"
     },
     {
-        "question": "Solve for x:\n\n3 x 0 = x",
-        "answer": "0",
+        "question": "Solve for x:\n\n1 x 8 = x",
+        "answer": "8",
         "correct_attempts": 2,
         "total_attempts": 2,
         "unique_id": "math0011"
@@ -79,15 +79,15 @@
     {
         "question": "What is the commutative property of addition?",
         "answer": "commutative property of addition.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "math0012"
     },
     {
         "question": "What is the commutative property of multiplication?",
         "answer": "commutative property of multiplication.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "math0013"
     },
     {
@@ -121,8 +121,8 @@
     {
         "question": "What is the inverse property of addition?",
         "answer": "inverse property of addition.md",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "math0018"
     },
     {
@@ -135,8 +135,8 @@
     {
         "question": "In Mathematics, what is a constant?",
         "answer": "a constant is a value that does not change",
-        "correct_attempts": 1,
-        "total_attempts": 1,
+        "correct_attempts": 2,
+        "total_attempts": 2,
         "unique_id": "math0020"
     },
     {
@@ -164,7 +164,7 @@
         "question": "What is the Quadratic Formula?",
         "answer": "The quadractic formula is as follows: x = -b +/- sqrt(b^2 - 4ac) / 2a",
         "correct_attempts": 0,
-        "total_attempts": 3,
+        "total_attempts": 4,
         "unique_id": "math0024"
     },
     {
@@ -184,8 +184,8 @@
     {
         "question": "In what context do we use a quadratic equation?",
         "answer": "We use quadratic equations to model real world situations such as the trajectory of a ball thrown into the air",
-        "correct_attempts": 2,
-        "total_attempts": 3,
+        "correct_attempts": 3,
+        "total_attempts": 4,
         "unique_id": "math0027"
     },
     {
@@ -201,5 +201,26 @@
         "correct_attempts": 2,
         "total_attempts": 3,
         "unique_id": "math0029"
+    },
+    {
+        "question": "What is a function?",
+        "answer": "A function is a relation between a set of inputs and a set of outputs where each input is related to exactly one output",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0030"
+    },
+    {
+        "question": "At a coffee shop, the menu consists of items and their prices. Is price a function of the item? Is the item a function of the price?",
+        "answer": "We could say that price is a function of the item, since each input of an item has one output of a price corresponding to it. We could not say that item is a function of price, since two items might have the same price.",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0031"
+    },
+    {
+        "question": "In many classes the overall percentage you earn in the course corresponds to a decimal grade point. Is decimal grade a function of percentage? Is percentage a function of decimal grade? ",
+        "answer": "For any percentage earned, there would be a decimal grade associated, so we could say that the decimal grade is a function of percentage. That is, if you input the percentage, your output would be a decimal grade. Percentage may or may not be a function of decimal grade, depending upon the teacher\u2019s grading scheme. With some grading systems, there are a range of percentages that correspond to the same decimal grade.",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "math0032"
     }
 ]

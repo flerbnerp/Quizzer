@@ -2,22 +2,22 @@
     {
         "question": "When was the term imaginary number first used? By whom?",
         "answer": "The term imaginary number was first used in the 17th century by Ren\u00e9 Descartes.",
-        "correct_attempts": 7,
-        "total_attempts": 7,
+        "correct_attempts": 8,
+        "total_attempts": 8,
         "unique_id": "history00001"
     },
     {
         "question": "Who coined the term 'overlearning'? When was it coined?",
         "answer": "Hermann Ebbinghaus coined the term 'overlearning' in 1885.",
-        "correct_attempts": 6,
-        "total_attempts": 6,
+        "correct_attempts": 7,
+        "total_attempts": 7,
         "unique_id": "history00002"
     },
     {
         "question": "The name Python in the Python programming language was inspired by what?",
         "answer": "Monty Python",
-        "correct_attempts": 7,
-        "total_attempts": 7,
+        "correct_attempts": 8,
+        "total_attempts": 8,
         "unique_id": "history00003"
     }
 ]

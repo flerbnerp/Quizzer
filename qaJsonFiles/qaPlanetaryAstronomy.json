@@ -16,8 +16,8 @@
     {
         "question": "What rules determine the motion of stars?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00003"
     },
     {
@@ -65,8 +65,8 @@
     {
         "question": "How is the fact that light takes so long to reach earth from distance solar bodies beneficial to us? How would this be detrimental?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00010"
     },
     {
@@ -142,8 +142,8 @@
     {
         "question": "How does the cosmos \"evolve\"?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00020"
     },
     {
@@ -184,8 +184,8 @@
     {
         "question": "What \"arms\" make up the Milky Way Galaxy?",
         "answer": "Milky Way Galaxy.md",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00026"
     },
     {
@@ -199,7 +199,7 @@
         "question": "How is a solar mass defined?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "planetaryastronomy00028"
     },
     {
@@ -247,15 +247,15 @@
     {
         "question": "The Earth-Sun distance is called a what?",
         "answer": "an astronomical unit (AU)",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00035"
     },
     {
         "question": "Why do we call an astronomical unit an astronomical unit?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00036"
     },
     {
@@ -275,8 +275,8 @@
     {
         "question": "What allows us to see nearby planets in our solar system?",
         "answer": "",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00039"
     },
     {
@@ -367,7 +367,7 @@
         "question": "What are superclusters?",
         "answer": "",
         "correct_attempts": 0,
-        "total_attempts": 0,
+        "total_attempts": 1,
         "unique_id": "planetaryastronomy00052"
     },
     {
@@ -397,5 +397,684 @@
         "correct_attempts": 0,
         "total_attempts": 0,
         "unique_id": "planetaryastronomy00056"
+    },
+    {
+        "question": "",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00057"
+    },
+    {
+        "question": "Please define the main features of the celestial sphere.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00057"
+    },
+    {
+        "question": "What system do astronomers use to describe the sky, and how does this system work?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00058"
+    },
+    {
+        "question": "How do the motions of the stars appear to us on Earth?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00059"
+    },
+    {
+        "question": "How does the motions of the Sun, Moon, and planets appear to us on Earth?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00060"
+    },
+    {
+        "question": "What is the modern meaning of the term constellation?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00061"
+    },
+    {
+        "question": "What does the term geocentric view or 'geocentric perspective' of the universe refer to?",
+        "answer": "The idea that the universe revolves around the Earth.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00062"
+    },
+    {
+        "question": "When did a geocentric view of the universe stop being the dominant view?",
+        "answer": "During the European Renaissance",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00063"
+    },
+    {
+        "question": "What is the Zenith in the Celestial Sphere?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00064"
+    },
+    {
+        "question": "What is the horizon in the Celestial Sphere?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00065"
+    },
+    {
+        "question": "What is a planetarium and why do we use them?",
+        "answer": "A structure where we project a representation of the night sky onto a white dome. Used to help visualize astronomy to those less skilled in the practice or for the sheer joy of seeing it.",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00066"
+    },
+    {
+        "question": "What is the Big Dipper?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00067"
+    },
+    {
+        "question": "What are shooting stars? Why are they called as such?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00068"
+    },
+    {
+        "question": "What is 'cosmic dust'?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00069"
+    },
+    {
+        "question": "How can we use the fact that the celestial sphere seems to turn together?",
+        "answer": "We can use it to help setup systems for keeping track of what things are visible in the sky and where they happen to be at a given time.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00070"
+    },
+    {
+        "question": "What are the celestial poles?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00071"
+    },
+    {
+        "question": "What is the celestial equator?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00072"
+    },
+    {
+        "question": "Why would it be important to place observatories along the north and south poles, and along the equator of the Earth?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00073"
+    },
+    {
+        "question": "What is the north circumpolar zone?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00074"
+    },
+    {
+        "question": "What is the south circumpolar zone?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00075"
+    },
+    {
+        "question": "What is a circumpolar zone?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00076"
+    },
+    {
+        "question": "What is the star Polaris? How did it get its name?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00077"
+    },
+    {
+        "question": "What star lies at the north celestial pole?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00078"
+    },
+    {
+        "question": "In native american mythology, what was Polaris nicknamed?",
+        "answer": "the 'fastener of the sky'",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00079"
+    },
+    {
+        "question": "What makes the star Polaris special compared to other stars?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00080"
+    },
+    {
+        "question": "What do we call the path the sun appears to take around the celestial sphere each year?",
+        "answer": "the ecleptic",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00081"
+    },
+    {
+        "question": "What is the ecleptic?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00082"
+    },
+    {
+        "question": "What does the Meridian refer to?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00083"
+    },
+    {
+        "question": "What does Local Noon refer to?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00084"
+    },
+    {
+        "question": "What are Azimuth and Altitude?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00085"
+    },
+    {
+        "question": "What is Declination?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00086"
+    },
+    {
+        "question": "What is Right Ascension?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00087"
+    },
+    {
+        "question": "What are Celestial Coordinates?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00088"
+    },
+    {
+        "question": "What is longitude?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00089"
+    },
+    {
+        "question": "What is lattitude?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00090"
+    },
+    {
+        "question": "From where on Earth could you observe all of the stars during the course of a year? What fraction of the sky can be seen from the North Pole?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00091"
+    },
+    {
+        "question": "Give four ways to demonstrate that Earth is spherical.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00092"
+    },
+    {
+        "question": "Explain, according to both geocentric and heliocentric cosmologies, why we see retrograde motion of the planets.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00093"
+    },
+    {
+        "question": "In what ways did the work of Copernicus and Galileo differ from the views of the ancient Greeks and of their contemporaries?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00094"
+    },
+    {
+        "question": "What were four of Galileo\u2019s discoveries that were important to astronomy?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00095"
+    },
+    {
+        "question": "Explain the origin of the magnitude designation for determining the brightness of stars. Why does it seem to go backward, with smaller numbers indicating brighter stars?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00096"
+    },
+    {
+        "question": "Ursa Minor contains the pole star, Polaris, and the asterism known as the Little Dipper. From most locations in the Northern Hemisphere, all of the stars in Ursa Minor are circumpolar. Does that mean these stars are also above the horizon during the day? Explain.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00097"
+    },
+    {
+        "question": "How many degrees does the Sun move per day relative to the fixed stars How many days does it take for the Sun to return to its original location relative to the fixed stars?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00098"
+    },
+    {
+        "question": "How many degrees does the Sun move per day relative to the fixed stars? How many days does it take for the Sun to return to its original location relative to the fixed stars?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00098"
+    },
+    {
+        "question": "How many degrees does the Moon move per day relative to the fixed stars? How many days does it take for the Moon to return to its original location relative to the fixed stars?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00099"
+    },
+    {
+        "question": "Explain how the zodiacal constellations are different from the other constellations.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00100"
+    },
+    {
+        "question": "The Sun was once thought to be a planet. Explain why.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00101"
+    },
+    {
+        "question": "Is the ecliptic the same thing as the celestial equator? Explain.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00102"
+    },
+    {
+        "question": "What is an asterism? Can you name an example?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00103"
+    },
+    {
+        "question": "Why did Pythagoras believe that Earth should be spherical?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00104"
+    },
+    {
+        "question": "How did Aristotle deduce that the Sun is farther away from Earth than the Moon?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00105"
+    },
+    {
+        "question": "What are two ways in which Aristotle deduced that Earth is spherical?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00106"
+    },
+    {
+        "question": "How did Hipparchus discover the wobble of Earth\u2019s axis, known as precession?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00107"
+    },
+    {
+        "question": "Why did Ptolemy have to introduce multiple circles of motion for the planets instead of a single, simple circle to represent the planet\u2019s motion around the Earth?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00108"
+    },
+    {
+        "question": "Why did Copernicus want to develop a completely new system for predicting planetary positions? Provide two reasons.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00109"
+    },
+    {
+        "question": "What two factors made it difficult, at first, for astronomers to choose between the Copernican heliocentric model and the Ptolemaic geocentric model?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00110"
+    },
+    {
+        "question": "What phases would Venus show if the geocentric model were correct?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00111"
+    },
+    {
+        "question": "Describe a practical way to determine in which constellation the Sun is found at any time of the year.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00112"
+    },
+    {
+        "question": "What is a constellation as astronomers define it today? What does it mean when an astronomer says, 'I saw a comet in Orion last night'?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00113"
+    },
+    {
+        "question": "Draw a picture that explains why Venus goes through phases the way the Moon does, according to the heliocentric cosmology. Does Jupiter also go through phases as seen from Earth? Why?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00114"
+    },
+    {
+        "question": "Show with a simple diagram how the lower parts of a ship disappear first as it sails away from you on a spherical Earth. Use the same diagram to show why lookouts on old sailing ships could see farther from the masthead than from the deck. Would there be any advantage to posting lookouts on the mast if Earth were flat?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00115"
+    },
+    {
+        "question": "Parallaxes of stars were not observed by ancient astronomers. How can this fact be reconciled with the heliocentric hypothesis?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00116"
+    },
+    {
+        "question": "Why do you think so many people still believe in astrology and spend money on it? What psychological needs does such a belief system satisfy?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00117"
+    },
+    {
+        "question": "Consider three cosmological perspectives\u2014the geocentric perspective, the heliocentric perspective, and the modern perspective\u2014in which the Sun is a minor star on the outskirts of one galaxy among billions. Discuss some of the cultural and philosophical implications of each point of view.",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00118"
+    },
+    {
+        "question": "The north celestial pole appears at an altitude above the horizon that is equal to the observer\u2019s latitude. Identify Polaris, the North Star, which lies very close to the north celestial pole. Measure its altitude. Compare this estimate with your latitude.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00119"
+    },
+    {
+        "question": "What were two arguments or lines of evidence in support of the geocentric model?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00120"
+    },
+    {
+        "question": "Although the Copernican system was largely correct to place the Sun at the center of all planetary motion, the model still gave inaccurate predictions for planetary positions. Explain the flaw in the Copernican model that hindered its accuracy.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00121"
+    },
+    {
+        "question": "During a retrograde loop of Mars, would you expect Mars to be brighter than usual in the sky, about average in brightness, or fainter than usual in the sky? Explain.",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00122"
+    },
+    {
+        "question": "The Great Pyramid of Giza was constructed nearly 5000 years ago. Within the pyramid, archaeologists discovered a shaft leading from the central chamber out of the pyramid, oriented for favorable viewing of the bright star Thuban at that time. Thinking about Earth\u2019s precession, explain why Thuban might have been an important star to the ancient Egyptians.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00123"
+    },
+    {
+        "question": "Explain why more stars are circumpolar for observers at higher latitudes.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00124"
+    },
+    {
+        "question": "What is the altitude of the north celestial pole in the sky from your latitude? If you do not know your latitude, look it up. If you are in the Southern Hemisphere, answer this question for the south celestial pole, since the north celestial pole is not visible from your location.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00125"
+    },
+    {
+        "question": "If you were to drive to some city south of your current location, how would the altitude of the celestial pole in the sky change?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00126"
+    },
+    {
+        "question": "Hipparchus could have warned us that the dates associated with each of the natal astrology sun signs would eventually be wrong. Explain why.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00127"
+    },
+    {
+        "question": "Explain three lines of evidence that argue against the validity of astrology.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00128"
+    },
+    {
+        "question": "What did Galileo discover about the planet Jupiter that cast doubt on exclusive geocentrism?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00129"
+    },
+    {
+        "question": "What did Galileo discover about Venus that cast doubt on geocentrism?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00130"
+    },
+    {
+        "question": "Suppose Eratosthenes had found that, in Alexandria, at noon on the first day of summer, the line to the Sun makes an angle 30\u00b0 with the vertical. What, then, would he have found for Earth\u2019s circumference?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00131"
+    },
+    {
+        "question": "Suppose Eratosthenes\u2019 results for Earth\u2019s circumference were quite accurate. If the diameter of Earth is 12,740 km, what is the length of his stadium in kilometers?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00132"
+    },
+    {
+        "question": "Suppose you are on a strange planet and observe, at night, that the stars do not rise and set, but circle parallel to the horizon. Next, you walk in a constant direction for 8000 miles, and at your new location on the planet, you find that all stars rise straight up in the east and set straight down in the west, perpendicular to the horizon. How could you determine the circumference of the planet without any further observations? What is the circumference, in miles, of the planet?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00133"
+    },
+    {
+        "question": "What are the zodiacs?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00134"
+    },
+    {
+        "question": "What is our planet's angle compared to the sun/ecliptic?",
+        "answer": "23.5\u00b0",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00135"
+    },
+    {
+        "question": "How long is the Lunar Cycle?",
+        "answer": "Hint: the moon is 0.5\u00b0 in the sky and moves about as much per hour.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00136"
+    },
+    {
+        "question": "The celestial equator crosses the meridian at X degrees, what is your local latitude?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00137"
+    },
+    {
+        "question": "Define compass directions and altitude in the horizontal/local reference frame.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00138"
+    },
+    {
+        "question": "Describe the motion of a typical star over the course of the night.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00139"
+    },
+    {
+        "question": "Define the celestial poles and describe them in relation to the Earth",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00140"
+    },
+    {
+        "question": "Describe the effect of an observer's latitude on the apparent position of the North Star",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00141"
+    },
+    {
+        "question": "Define precession and describe how it will affect what we see as the North Star.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00142"
+    },
+    {
+        "question": "The ancients found groupings of stars that made some familiar geometric pattern. What do we call these groupings?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00143"
+    },
+    {
+        "question": "How many constellations are there? Can you name them all?",
+        "answer": "88 see page 1119 of 1133 Apendix L The Constellations for a full list.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00144"
+    },
+    {
+        "question": "What is an asterism?",
+        "answer": "",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "planetaryastronomy00145"
+    },
+    {
+        "question": "Some people use a term to denote an especially noticeable star pattern within a constellation. What is this term?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00146"
+    },
+    {
+        "question": "Describe early examples of astronomy around the world",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00147"
+    },
+    {
+        "question": "Explain how Greek astronomers were able to deduce that Earth is spherical",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00148"
+    },
+    {
+        "question": "Explain how Greek astronomers were able to calculate Earth's size",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00149"
+    },
+    {
+        "question": "Describe the motion of Earth called [[precession]]",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00150"
+    },
+    {
+        "question": "Describe Ptolemy's geocentric system of planetary motion",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "planetaryastronomy00151"
     }
 ]

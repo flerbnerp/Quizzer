@@ -3,7 +3,7 @@
         "qaCategory": "Anthropology",
         "qaFileName": "qaAnthropology.json",
         "qaFilePath": "qaJsonFiles/qaAnthropology.json",
-        "Number of questions to pick": 5
+        "Number of questions to pick": 15
     },
     {
         "qaCategory": "Dictionary",
@@ -24,6 +24,12 @@
         "Number of questions to pick": 5
     },
     {
+        "qaCategory": "Philosophy",
+        "qaFileName": "qaPhilosophy.json",
+        "qaFilePath": "qaJsonFiles/qaPhilosophy.json",
+        "Number of questions to pick": 1
+    },
+    {
         "qaCategory": "PlanetaryAstronomy",
         "qaFileName": "qaPlanetaryAstronomy.json",
         "qaFilePath": "qaJsonFiles/qaPlanetaryAstronomy.json",
@@ -39,6 +45,6 @@
         "qaCategory": "Psychology",
         "qaFileName": "qaPsychology.json",
         "qaFilePath": "qaJsonFiles/qaPsychology.json",
-        "Number of questions to pick": 15
+        "Number of questions to pick": 3
     }
 ]

@@ -79,8 +79,8 @@
     {
         "question": "What does epigenetic mean?",
         "answer": "Epigenetic means relating to or arising from non-genetic influences on gene expression.",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "dictionary00012"
     },
     {
@@ -93,8 +93,8 @@
     {
         "question": "What is the definition of provisionally?",
         "answer": "Provisionally means for the present; temporarily.",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "dictionary00014"
     },
     {
@@ -107,8 +107,8 @@
     {
         "question": "What is the definition of isomorphic?",
         "answer": "isomorphic.md",
-        "correct_attempts": 0,
-        "total_attempts": 1,
+        "correct_attempts": 1,
+        "total_attempts": 2,
         "unique_id": "dictionary00016"
     },
     {
@@ -149,8 +149,22 @@
     {
         "question": "What is the definition of juxtaposition?",
         "answer": "juxtaposition.md",
-        "correct_attempts": 0,
-        "total_attempts": 0,
+        "correct_attempts": 1,
+        "total_attempts": 1,
         "unique_id": "dictionary00022"
+    },
+    {
+        "question": "What is the definition of methodological?",
+        "answer": "methodological.md",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "anthropology00007"
+    },
+    {
+        "question": "What is the definition of pedagogical?",
+        "answer": "padagogical.md",
+        "correct_attempts": 0,
+        "total_attempts": 1,
+        "unique_id": "anthropology00007"
     }
 ]

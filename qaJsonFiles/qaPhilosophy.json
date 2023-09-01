@@ -1,0 +1,240 @@
+[
+    {
+        "question": "What does empirical questions mean?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00001"
+    },
+    {
+        "question": "What is a reflective question?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00002"
+    },
+    {
+        "question": "What are the 'Big themes' in philosophy?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00003"
+    },
+    {
+        "question": "What negative connotations does the word philosophy carry?",
+        "answer": "Impractical, unworldly, weird. I suspect that all philosophers and philosophy students share that moment of silent embarrassment when someone innocently asks us what we do.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00004"
+    },
+    {
+        "question": "What do philosophers aim at when we investigate the structures that shape our view of the world?",
+        "answer": "Knowing what would happen for better or worse if changes were made, to understand whether we should be proud of the structures we've built or whether we believe that they need dismantling and starting afresh.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00005"
+    },
+    {
+        "question": "Why is there something and not nothing?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00006"
+    },
+    {
+        "question": "What is the difference between past and future?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00007"
+    },
+    {
+        "question": "Why does causation run always from past to future, or does it make sense to think that the future might influence the past?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00008"
+    },
+    {
+        "question": "Why does nature keep on in a regular way?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00009"
+    },
+    {
+        "question": "Does the world presuppose a Creator? And if so, can we understand why he (or she or they) created it?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00010"
+    },
+    {
+        "question": "What am I?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00011"
+    },
+    {
+        "question": "What is consciousness?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00012"
+    },
+    {
+        "question": "Could I survive my bodily death?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00013"
+    },
+    {
+        "question": "Can I be sure that other people's experiences and sensations are like mine?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00014"
+    },
+    {
+        "question": "If I can't share the experience of others, can I communicate with them?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00015"
+    },
+    {
+        "question": "Do we always act out of self-interest?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00016"
+    },
+    {
+        "question": "Might I be a kind of puppet, programmed to do the things that I believe I do out of my own free will?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00017"
+    },
+    {
+        "question": "How can we be sure that the world is really like we take it to be?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00018"
+    },
+    {
+        "question": "What is knowledge, and how much do we have?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00019"
+    },
+    {
+        "question": "What makes a field of inquiry a science? (is psychoanalysis a science? Is Economics?)",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00020"
+    },
+    {
+        "question": "How do we know about abstract objects, like numbers?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00021"
+    },
+    {
+        "question": "How do we know about values and duties?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00022"
+    },
+    {
+        "question": "How are we to tell whether our opinions are objective, or just subjective?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00023"
+    },
+    {
+        "question": "What is self-reflection?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00024"
+    },
+    {
+        "question": "Why are humans relentlessly capable of reflecting on themselves?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00025"
+    },
+    {
+        "question": "What do we get out of self-reflection?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00026"
+    },
+    {
+        "question": "How can thinking skills be acquired?",
+        "answer": "The thinking in questions involves attending to basic structures of thought. This can be done well or badly, intelligently or ineptly. see page 12 of 278 of the Think pdf",
+        "correct_attempts": 1,
+        "total_attempts": 1,
+        "unique_id": "philosophy00027"
+    },
+    {
+        "question": "In regards to acquiring thinking skills, expound on 'It is a 'knowing how' as much as a 'knowing that'.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00028"
+    },
+    {
+        "question": "How could we describe what good thinking skills are?",
+        "answer": "To process thoughts well is a matter of being able to avoid confusion, detect ambiguities, keep things in mind one at a time, make reliable arguments, become aware of alternatives, and so on.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00029"
+    },
+    {
+        "question": "What is the point? Why bother asking reflective questions? Name a few different arguments.",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00030"
+    },
+    {
+        "question": "What is the economic man?",
+        "answer": "Homo economicus - Economic man looks after himself, in competitive struggle with others.",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00031"
+    },
+    {
+        "question": "What is an epistemological injury?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00032"
+    },
+    {
+        "question": "What does epistemological mean?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00033"
+    },
+    {
+        "question": "How has philosophy advanced the major sciences, such as astronomy, physics, and other such sciences?",
+        "answer": "",
+        "correct_attempts": 0,
+        "total_attempts": 0,
+        "unique_id": "philosophy00034"
+    }
+]

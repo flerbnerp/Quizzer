@@ -1,9 +1,14 @@
 import tkinter as tk
 from .guiTestYourself import TestYourself
+from .guiQuestionsConfig import question_config_interface
+from .guiQuestionsConfig import create_question_config_interface
+
 
 
 def create_test_interface(master):
     test_frame = TestYourself(master)
+def create_question_config_interface(master):
+    question_config_interface()
 def create_buttons(master):
     """
     Create and place the buttons on the master window/frame
@@ -22,5 +27,8 @@ def create_buttons(master):
     # Test Yourself button
     test_button = tk.Button(master, text="Test Yourself", command=lambda: create_test_interface(master))  # We will bind functionality to this button later
     test_button.grid(row=0, column=1, sticky='w')  # 'w' means align left
+    # Questions Config Button
+    config_button = tk.Button(master, text="Questions Config", command=lambda: create_question_config_interface(master))
+    config_button.grid(row=0, column=2, sticky='w')  # 'w' means align left
 
     return quit_button, test_button
