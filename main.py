@@ -6,30 +6,36 @@ def populate_question_list(concepts, questions):
     question_list = [] # empty the question list, prevents need to pass question_list into the function
     number_of_concepts = 18
     number_of_questions = 25
-    while len(question_list) < number_of_concepts: # populates int(concepts) into the question list 
+    while len(question_list) < number_of_concepts: # populates int(number_of_concepts) into the question list 
         rand = random.randint(0, len(concepts))
         question_list.append(concepts[rand])
-    while len(question_list) < number_of_questions: # populates the difference betwene num_concepts and num_questions if 18 and 20, this populates 2 questions into the list
+    while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
         rand = random.randint(0, len(questions))
         question_list.append(questions[rand])
-    random.shuffle(question_list)
-    return question_list   
+    random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
+    return question_list
+####################################################   
 def begin_quiz(concepts, questions):
-    question_list = []
+    question_list = populate_question_list # Initialize question_list with questions
     while True:
-        if len(question_list) > 0:
+        if len(question_list) > 0: # Check to see if the question_list is empty
             user_input = input("\n\nEnter any key to continue: ")
             os.system("clear")
             if user_input == "exit":
                 os.system("clear")
                 break
             # Quiz Interface
+            # All question prompts will show the user the file name, the sub-type, and the subject being quizzed on:
             print(f"File name: {question_list[0]['file_name']}")
-            try:
+            try: # not all notes have a sub-type
                 print(f"Type: {question_list[0]['sub-type']}")
             except:
                 pass
-            print(f"Subject Matter: {question_list[0]['subject']}")
+            try: # quizzer crashed after presenting a note with no subject value, also this was a note of type: event which was not specificied to be pulled:
+                print(f"Subject Matter: {question_list[0]['subject']}")
+            except:
+                pass
+            ## Output will vary slightly based on the type value of the note:
             # For concept notes:
             if f"{question_list[0]['type']}" == "Concept":
                 print(f"\nPlease explain the following concept and what concepts might related to it: {question_list[0]['file_name']}")
@@ -51,14 +57,16 @@ def begin_quiz(concepts, questions):
             question_list = populate_question_list(concepts, questions)
         else:
             pass
-
+####################################################################
 if __name__ == "__main__":
     # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
     # takes longer than a minute, then likely it would be beneficial to optimize.
     # Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
-    concepts, questions = scan_directory()
-    error = False
+    concepts, questions = scan_directory() # Scan Obsidian vault for questions, generates a list of dictionaries
+    error = False # for use if the user enters an invalid input
     while True:
+        ### Main Interface:
+        #### Options and other configuration stuff can be added here for the user.
         print("Welcome to Quizzer")
         print(f"There are {len(concepts)} concept notes and {len(questions)} question notes")
         print("You will be tested on a mixture of concepts and questions")
@@ -76,7 +84,7 @@ if __name__ == "__main__":
             break
         else:
             error = True
-        os.system("clear")  
+        os.system("clear") # Since this is a CLI program, the interface is designed to be cleaned after every input, so the error variable is used to print the error message after this runs.  
         
 # Planned changes:
 ## add in historical_person notes to quizzer, this list will quiz on birth and death dates
