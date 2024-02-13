@@ -21,22 +21,22 @@
         "unique_id": "math0003"
     },
     {
-        "question": "Solve for x:\n\n3581 + 1462 = x",
-        "answer": "5043",
+        "question": "Solve for x:\n\n992 + 7971 = x",
+        "answer": "8963",
         "correct_attempts": 6,
         "total_attempts": 9,
         "unique_id": "math0004"
     },
     {
-        "question": "Please write the following number as a rational number:\n\n6138",
-        "answer": "6138\n---\n  1",
+        "question": "Please write the following number as a rational number:\n\n3526",
+        "answer": "3526\n---\n  1",
         "correct_attempts": 7,
         "total_attempts": 7,
         "unique_id": "math0005"
     },
     {
-        "question": "Please write the following number as either a terminating or repeating decimal:\n\n26 \n --- \n 4",
-        "answer": "terminating",
+        "question": "Please write the following number as either a terminating or repeating decimal:\n\n7 \n --- \n 31",
+        "answer": "repeating",
         "correct_attempts": 4,
         "total_attempts": 4,
         "unique_id": "math0006"
@@ -70,8 +70,8 @@
         "unique_id": "math0010"
     },
     {
-        "question": "Solve for x:\n\n1 x 8 = x",
-        "answer": "8",
+        "question": "Solve for x:\n\n6 x 2 = x",
+        "answer": "12",
         "correct_attempts": 2,
         "total_attempts": 2,
         "unique_id": "math0011"
