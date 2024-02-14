@@ -62,7 +62,8 @@ if __name__ == "__main__":
     # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
     # takes longer than a minute, then likely it would be beneficial to optimize.
     # Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
-    concepts, questions = scan_directory() # Scan Obsidian vault for questions, generates a list of dictionaries
+    vault_path = "/home/karibar/Documents/Education"
+    concepts, questions = scan_directory(vault_path) # Scan Obsidian vault for questions, generates a list of dictionaries
     error = False # for use if the user enters an invalid input
     while True:
         ### Main Interface:

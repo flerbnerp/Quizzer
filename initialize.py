@@ -3,11 +3,10 @@ import yaml
 import json
 # use a dictionary
 # Concept/question, subject, related
-def scan_directory(): # Returns a list(s) of dictionaries
-    questions = []
+vault_path = "/home/karibar/Documents/Education"
+def scan_directory(vault_path): # Returns a list(s) of dictionaries
     concepts = []
-    people = []
-    for root,dirs, files in os.walk("/home/karibar/Documents/Education"):
+    for root, dirs, files in os.walk(vault_path):
         for file in files:
             if file.endswith(".md"):
                 with open(os.path.join(root,file), "r", encoding="utf-8") as f:
@@ -23,21 +22,37 @@ def scan_directory(): # Returns a list(s) of dictionaries
                             filename, extension = os.path.splitext(os.path.basename(file))
                             full_filename = f"{filename}.{extension}"
                             note_dict["file_name"] = full_filename
+                            note_dict["file_path"] = os.path.join(root,file)
                             concepts.append(note_dict)
                         except:
                             pass
-    return concepts, questions, people
+    return concepts
+
 def initialize_config_json():
-    concepts, questions, people = scan_directory()
-    try:
-        with open ("config.json", "r") as f:
-            print(f)
-    except:
-        f = open("config.json", "x")
-        
+    concepts = scan_directory(vault_path)
+    main_dictionary_list = []
+    with open("config.json", "w+") as f:
+        for i in concepts:
+            temp_dictionary = {"file_name": i["file_name"],"file_path": i["file_path"],"type": "", "subject": "", "related": ""}
+            try:
+                temp_dictionary["type"] = i["type"]
+            except KeyError:
+                print("??")
+            try:
+                temp_dictionary["subject"] = i["subject"]
+            except KeyError:
+                print("??")
+            try:
+                temp_dictionary["related"] = i["related"]
+            except KeyError:
+                print("??")
+            main_dictionary_list.append(temp_dictionary)
+        json.dump(main_dictionary_list, f)
+    # attempt_to_fill_data(concepts)   
 
 
 # For testing, run this individual .py 
-concepts = scan_directory()
-print(concepts)
+# concepts = scan_directory()
+# print(concepts)
+# initialize_config_json()
 initialize_config_json()
