@@ -1,4 +1,5 @@
 from initialize import initialize_config_json
+from scoring_algorithm import generate_revision_schedule
 import subprocess
 import os
 import random
@@ -76,7 +77,10 @@ if __name__ == "__main__":
     # takes longer than a minute, then likely it would be beneficial to optimize.
     # Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
     vault_path = "/home/karibar/Documents/Education"
+    ## Calling Initalization functions
     initialize_config_json() # Scan Obsidian vault for questions, generates a list of dictionaries
+    generate_revision_schedule()
+    
     error = False # for use if the user enters an invalid input
     while True:
         ### Main Interface:
