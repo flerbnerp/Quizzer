@@ -1,4 +1,4 @@
-from initialize import scan_directory
+from initialize import initialize_config_json
 import subprocess
 import os
 import random
@@ -9,7 +9,10 @@ def populate_question_list():
     with open("config.json", "r") as f:
         list_of_dictionaries = json.load(f)
     for i in list_of_dictionaries:
-        if i["type"]:
+        if i["type"] == "Concept":
+            concepts.append(i)
+        if i["type"] == "question":
+            questions.append(i)
     question_list = [] # empty the question list, prevents need to pass question_list into the function
     number_of_concepts = 18
     number_of_questions = 25
@@ -22,8 +25,8 @@ def populate_question_list():
     random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
     return question_list
 ####################################################   
-def begin_quiz(concepts, questions):
-    question_list = populate_question_list # Initialize question_list with questions
+def begin_quiz():
+    question_list = populate_question_list() # Initialize question_list with questions
     while True:
         if len(question_list) > 0: # Check to see if the question_list is empty
             user_input = input("\n\nEnter any key to continue: ")
@@ -59,9 +62,10 @@ def begin_quiz(concepts, questions):
                     print(f"no defined answer, check concept file")
             # Remove the item from the list.
             question_list.pop(0)
+
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             print("Getting new set of questions. . .")
-            question_list = populate_question_list(concepts, questions)
+            question_list = populate_question_list()
         else:
             pass
 ####################################################################
@@ -70,13 +74,12 @@ if __name__ == "__main__":
     # takes longer than a minute, then likely it would be beneficial to optimize.
     # Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
     vault_path = "/home/karibar/Documents/Education"
-    concepts, questions = scan_directory(vault_path) # Scan Obsidian vault for questions, generates a list of dictionaries
+    initialize_config_json() # Scan Obsidian vault for questions, generates a list of dictionaries
     error = False # for use if the user enters an invalid input
     while True:
         ### Main Interface:
         #### Options and other configuration stuff can be added here for the user.
         print("Welcome to Quizzer")
-        print(f"There are {len(concepts)} concept notes and {len(questions)} question notes")
         print("You will be tested on a mixture of concepts and questions")
         print("Please select a menu option to begin")
         print("1: begin quiz")
@@ -87,7 +90,7 @@ if __name__ == "__main__":
         user_input = input("User: ")
         if user_input == "1":
             os.system("clear")
-            begin_quiz(concepts, questions)
+            begin_quiz()
         elif user_input == "2":
             break
         else:

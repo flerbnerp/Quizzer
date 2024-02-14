@@ -1,6 +1,7 @@
 import os
 import yaml
 import json
+import random
 # use a dictionary
 # Concept/question, subject, related
 vault_path = "/home/karibar/Documents/Education"
@@ -46,6 +47,15 @@ def initialize_config_json():
                 temp_dictionary["related"] = i["related"]
             except KeyError:
                 print("??")
+            if temp_dictionary["type"] == "question":
+                try:
+                    temp_dictionary["question_text"] = i["question_text"]
+                except:
+                    print("No question text")
+                try:
+                    temp_dictionary["answer_text"] = i["answer_text"]
+                except:
+                    print("no answer text")
             main_dictionary_list.append(temp_dictionary)
         json.dump(main_dictionary_list, f)
     # attempt_to_fill_data(concepts)   
@@ -55,4 +65,26 @@ def initialize_config_json():
 # concepts = scan_directory()
 # print(concepts)
 # initialize_config_json()
-initialize_config_json()
+def populate_question_list():
+    concepts = []
+    questions = []
+    with open("config.json", "r") as f:
+        list_of_dictionaries = json.load(f)
+    for i in list_of_dictionaries:
+        if i["type"] == "Concept":
+            concepts.append(i)
+        if i["type"] == "question":
+            questions.append(i)
+    question_list = [] # empty the question list, prevents need to pass question_list into the function
+    number_of_concepts = 18
+    number_of_questions = 25
+    while len(question_list) < number_of_concepts: # populates int(number_of_concepts) into the question list 
+        rand = random.randint(0, len(concepts))
+        question_list.append(concepts[rand])
+    while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
+        rand = random.randint(0, len(questions))
+        question_list.append(questions[rand])
+    random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
+    return question_list
+    
+populate_question_list()
