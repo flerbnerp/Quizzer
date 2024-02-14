@@ -2,7 +2,14 @@ from initialize import scan_directory
 import subprocess
 import os
 import random
-def populate_question_list(concepts, questions):
+import json
+def populate_question_list():
+    concepts = []
+    questions = []
+    with open("config.json", "r") as f:
+        list_of_dictionaries = json.load(f)
+    for i in list_of_dictionaries:
+        if i["type"]:
     question_list = [] # empty the question list, prevents need to pass question_list into the function
     number_of_concepts = 18
     number_of_questions = 25
