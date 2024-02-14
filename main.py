@@ -14,13 +14,15 @@ def populate_question_list():
         if i["type"] == "question":
             questions.append(i)
     question_list = [] # empty the question list, prevents need to pass question_list into the function
-    number_of_concepts = 18
+    number_of_concepts = 5
     number_of_questions = 25
+    len_concepts = len(concepts) - 1
+    len_questions = len(questions) - 1
     while len(question_list) < number_of_concepts: # populates int(number_of_concepts) into the question list 
-        rand = random.randint(0, len(concepts))
+        rand = random.randint(0, len_concepts)
         question_list.append(concepts[rand])
     while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
-        rand = random.randint(0, len(questions))
+        rand = random.randint(0, len_questions)
         question_list.append(questions[rand])
     random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
     return question_list
