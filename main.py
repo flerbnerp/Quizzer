@@ -96,30 +96,4 @@ if __name__ == "__main__":
         else:
             error = True
         os.system("clear") # Since this is a CLI program, the interface is designed to be cleaned after every input, so the error variable is used to print the error message after this runs.  
-        
-# Planned changes:
-## add in historical_person notes to quizzer, this list will quiz on birth and death dates
-### Who the person was and why they were important:
-
-## add in config options
-### First option to tell quizzer, how many of each type of question to present in each quiz
-
-## Scoring methodology
-### get filename.md
-### add scoring metrics
-### add above to json file for permanent storage
-### Scan will check whether filename.md in concepts, questions, people, 
-### already exists in the scoreboard.json. If not, add in new json object to represent the file:
-### every object will contain the yaml properties, subject, related, question_text, answer_text, 
-#### Scores should never be overwritten, but json objects should update based when 
-#### files in obsidian changes
-
-## Update quiz function to take advantage of scoring metrics
-### this will require quizzer to pull questions from the .json file instead of from a prescanned list.
-### Updates quiz function will have an algorithm to determine how to populate the quiz based on current scoring metrics:
-
-## add in config option: questions by subject
-### Only effects the question type
-
-# Change Log
-## 
+    
