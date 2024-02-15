@@ -1,5 +1,5 @@
 from initialize import initialize_or_update_json
-from scoring_algorithm import generate_revision_schedule
+from scoring_algorithm import generate_revision_schedule, update_score
 import subprocess
 import os
 import random
@@ -59,14 +59,18 @@ def begin_quiz():
                     
             # Ask user whether they answered the question correct, then update score accordingly
             valid_response = False
+            file_name = f"{question_list[0][file_name]}"
+            status = ""
             while valid_response == False:
                 user_input = input("Got it? Question Correct?")
                 if user_input == "yes" or user_input == "y":
-                    #update_score(correct, question_list[0]["file_name"])
+                    status = "correct"
+                    update_score(status, file_name)
                     valid_response = True
                     os.system("clear")
                 elif user_input == "no" or user_input == "n":
-                    #update_score(correct, question_list[0]["file_name"])
+                    status = "incorrect"
+                    update_score(status, file_name)
                     valid_response = True
                     os.system("clear")
                 elif user_input == "exit":
@@ -74,7 +78,6 @@ def begin_quiz():
                     break
                 else:
                     print("enter either yes, y or no, n\n or type exit to quit")
-                
             # Remove the item from the list.
             question_list.pop(0)
 

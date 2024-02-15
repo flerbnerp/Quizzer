@@ -35,4 +35,5 @@ def generate_revision_schedule():
     with open("revision_schedule.md", "w+") as f:
         f.write(file_write)
     
-generate_revision_schedule()
+def update_score():
+    pass
