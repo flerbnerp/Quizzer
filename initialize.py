@@ -58,7 +58,6 @@ def initialize_or_update_json():
             new_data.append(temp_dictionary)
 ### append or update existing_data with new_data if config.json exists:
     counter = 0
-    missing_dictionaries = []
     try: # if the file is empty then we move to the except block:
         with open("config.json", "r") as f:
             existing_data = (json.load(f))

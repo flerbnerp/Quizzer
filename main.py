@@ -5,41 +5,36 @@ import os
 import random
 import json
 def populate_question_list():
-    concepts = []
     questions = []
     with open("config.json", "r") as f:
-        list_of_dictionaries = json.load(f)
-    for i in list_of_dictionaries:
-        if i["type"] == "Concept":
-            concepts.append(i)
+        database = json.load(f)
+    for i in database:
         if i["type"] == "question":
             questions.append(i)
     question_list = [] # empty the question list, prevents need to pass question_list into the function
-    number_of_concepts = 5
     number_of_questions = 25
-    len_concepts = len(concepts) - 1
     len_questions = len(questions) - 1
-    while len(question_list) < number_of_concepts: # populates int(number_of_concepts) into the question list 
-        rand = random.randint(0, len_concepts)
-        question_list.append(concepts[rand])
     while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
         rand = random.randint(0, len_questions)
         question_list.append(questions[rand])
     random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
     return question_list
-####################################################   
+
+
+
+##########################################################   
 def begin_quiz():
     question_list = populate_question_list() # Initialize question_list with questions
+    os.system("clear")
+    print("Welcome to Quizzer\nYou will be presented with a question, then prompted to either mark your answer right or wrong")
+    user_input = input("press enter to continue or type exit to go back to the main menu")
+    os.system("clear")
     while True:
         if len(question_list) > 0: # Check to see if the question_list is empty
-            user_input = input("\n\nEnter any key to continue: ")
-            os.system("clear")
+            # user_input = input("\n\nEnter any key to continue: ")
             if user_input == "exit":
                 os.system("clear")
                 break
-            
-            
-            
             # Quiz Interface
             # All question prompts will show the user the file name, the sub-type, and the subject being quizzed on:
             print(f"File name: {question_list[0]['file_name']}")
@@ -51,24 +46,35 @@ def begin_quiz():
                 print(f"Subject Matter: {question_list[0]['subject']}")
             except:
                 pass
-            
-            
-            
             ## Output will vary slightly based on the type value of the note:
-            # For concept notes:
-            if f"{question_list[0]['type']}" == "Concept":
-                print(f"\nPlease explain the following concept and what concepts might related to it: {question_list[0]['file_name']}")
-                input(f"Enter any key to reveal related concepts: ")
-                print(f"Related Concepts: {question_list[0]['related']}")
             # For question notes:
-            if f"{question_list[0]['type']}" == "question":
-                print(f"\nAnswer the following question:\n\n {question_list[0]['question_text']}")
-                input("\nEnter any key to reveal the answer: ")
-                print(f"\nRelated concepts: {question_list[0]['related']}")
-                try:
-                    print(f"{question_list[0]['answer_text']}")
-                except:
-                    print(f"no defined answer, check concept file")
+            print(f"\nAnswer the following question:\n\n {question_list[0]['question_text']}")
+            input("\nEnter any key to reveal the answer: ")
+            print(f"\nRelated concepts: {question_list[0]['related']}")
+            try:
+                print(f"{question_list[0]['answer_text']}")
+            except:
+                print(f"no defined answer, check concept file")
+                    
+                    
+            # Ask user whether they answered the question correct, then update score accordingly
+            valid_response = False
+            while valid_response == False:
+                user_input = input("Got it? Question Correct?")
+                if user_input == "yes" or user_input == "y":
+                    #update_score(correct, question_list[0]["file_name"])
+                    valid_response = True
+                    os.system("clear")
+                elif user_input == "no" or user_input == "n":
+                    #update_score(correct, question_list[0]["file_name"])
+                    valid_response = True
+                    os.system("clear")
+                elif user_input == "exit":
+                    os.system("clear")
+                    break
+                else:
+                    print("enter either yes, y or no, n\n or type exit to quit")
+                
             # Remove the item from the list.
             question_list.pop(0)
 
