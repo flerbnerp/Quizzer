@@ -1,4 +1,4 @@
-from initialize import initialize_config_json
+from initialize import initialize_or_update_json
 from scoring_algorithm import generate_revision_schedule
 import subprocess
 import os
@@ -37,6 +37,9 @@ def begin_quiz():
             if user_input == "exit":
                 os.system("clear")
                 break
+            
+            
+            
             # Quiz Interface
             # All question prompts will show the user the file name, the sub-type, and the subject being quizzed on:
             print(f"File name: {question_list[0]['file_name']}")
@@ -48,6 +51,9 @@ def begin_quiz():
                 print(f"Subject Matter: {question_list[0]['subject']}")
             except:
                 pass
+            
+            
+            
             ## Output will vary slightly based on the type value of the note:
             # For concept notes:
             if f"{question_list[0]['type']}" == "Concept":
@@ -66,6 +72,8 @@ def begin_quiz():
             # Remove the item from the list.
             question_list.pop(0)
 
+
+
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             print("Getting new set of questions. . .")
             question_list = populate_question_list()
@@ -76,14 +84,23 @@ if __name__ == "__main__":
     # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
     # takes longer than a minute, then likely it would be beneficial to optimize.
     # Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
+    #################################################################################################################################################
+    # Initialize variables
     vault_path = "/home/karibar/Documents/Education"
-    ## Calling Initalization functions
-    initialize_config_json() # Scan Obsidian vault for questions, generates a list of dictionaries
-    generate_revision_schedule()
-    
     error = False # for use if the user enters an invalid input
+    
+    
+    
+    #################################################################################################################################################
+    ## Calling Initalization functions
+    initialize_or_update_json() # Scan Obsidian vault for questions, generates a list of dictionaries
+    generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
+    
+    
+    
+    #############################################################################
+    ## Main Menu Interface:
     while True:
-        ### Main Interface:
         #### Options and other configuration stuff can be added here for the user.
         print("Welcome to Quizzer")
         print("You will be tested on a mixture of concepts and questions")

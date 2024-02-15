@@ -28,7 +28,7 @@ def generate_revision_schedule():
     file_write = ""
     x = 100
     while x > 0:
-        file_write = file_write + (f"Revision: {revision_number}, review again after {(base_time)/60:.3f} hours or {((base_time)/60)/24:.2f} days\n")
+        file_write = file_write + (f"revision: {revision_number}, review again after, hours: {(base_time)/60:.3f}, days: {((base_time)/60)/24:.2f}\n")
         base_time = base_time * time_increment_between_revisions
         x -= 1
         revision_number += 1

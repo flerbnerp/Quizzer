@@ -27,64 +27,135 @@ def scan_directory(vault_path): # Returns a list(s) of dictionaries
                             concepts.append(note_dict)
                         except:
                             pass
-    return concepts
-
-def initialize_config_json():
+    return concepts      
+def initialize_or_update_json():
+### Scan Vault and produce new data to append based on the data in the vault:
     concepts = scan_directory(vault_path)
-    main_dictionary_list = []
-    with open("config.json", "w+") as f:
-        for i in concepts:
+    new_data = []
+    for i in concepts:
             temp_dictionary = {"file_name": i["file_name"],"file_path": i["file_path"],"type": "", "subject": "", "related": ""}
             try:
                 temp_dictionary["type"] = i["type"]
             except KeyError:
-                print("??")
+                pass
             try:
                 temp_dictionary["subject"] = i["subject"]
             except KeyError:
-                print("??")
+                pass
             try:
                 temp_dictionary["related"] = i["related"]
             except KeyError:
-                print("??")
+                pass
             if temp_dictionary["type"] == "question":
                 try:
                     temp_dictionary["question_text"] = i["question_text"]
                 except:
-                    print("No question text")
+                    pass
                 try:
                     temp_dictionary["answer_text"] = i["answer_text"]
                 except:
-                    print("no answer text")
-            main_dictionary_list.append(temp_dictionary)
-        json.dump(main_dictionary_list, f)
+                    pass                
+            new_data.append(temp_dictionary)
+### append or update existing_data with new_data if config.json exists:
+    counter = 0
+    missing_dictionaries = []
+    try: # if the file is empty then we move to the except block:
+        with open("config.json", "r") as f:
+            existing_data = (json.load(f))
+            
+
+
+        # Update existing_data with newly scanned data:
+        for existing_dict in existing_data:
+            for updated_dict in new_data:
+                if existing_dict["file_name"] == updated_dict["file_name"]: #If the updated_dict we are iterating over is found, update the existing entry
+                    existing_dict.update(updated_dict)
+                    counter += 1
+                    break
+                
+        # counters for debugging purposes:
+        dicts_to_be_added = []
+        total_file_matches = 0
+        total_checks = 0
+        added_to_existing_data = 0
+        # Second Loop append any newly scanned data that doesn't exist in existing_data
+        # Since we can't check if data is new or old based on the length of the lists, we can manually check each with a Boolean
+        for updated_dict in new_data:
+            found = False
+            for existing_dict in existing_data:
+                total_checks += 1
+                if updated_dict["file_name"] == existing_dict["file_name"]:
+                    found = True
+            if found == True:
+                total_file_matches += 1
+            elif found == False:
+                dicts_to_be_added.append(updated_dict)
+        try: # if there is no new data to be added the following throws an error. I threw it in a try except block, because I don't care about that error:
+            for i in dicts_to_be_added:
+                existing_data.append(i)
+                added_to_existing_data += 1
+        except:
+            pass
+        with open("config.json", "w") as f: # Write the updated list of dictionaries to config.json
+            json.dump(existing_data, f)
+### Quality checks
+        print(f"Total items not found in existing items is: {len(dicts_to_be_added)}")
+        print(f"Added a total of {added_to_existing_data} new entries to config.json")
+        print(f"There are {len(new_data)} items in the most recent scan")
+        print(f"Total file matches is: {total_file_matches} compared to {len(existing_data)-added_to_existing_data} pre-existing files in Vault")
+        print(f"total operations to complete scan is: {total_checks:,}")
+        print(f"-------------------------------------------------------")
+    # If the file exists, create config.json and dump new_data into it:
+    except:
+        print("No File Exists, Initializing config.json")
+        with open("config.json", "w+") as f:
+            json.dump(new_data, f)
+
+                
+# def initialize_config_json():
+#     concepts = scan_directory(vault_path)
+#     main_dictionary_list = []
+#     try:
+#         with open("config.json", "r") as f:
+#             existing_data = (json.load(f))
+#             print(type(existing_data))
+#     except:
+#         print("file is empty")
+#     with open("config.json", "w+") as f:
+#         for i in concepts:
+#             temp_dictionary = {"file_name": i["file_name"],"file_path": i["file_path"],"type": "", "subject": "", "related": ""}
+#             try:
+#                 temp_dictionary["type"] = i["type"]
+#             except KeyError:
+#                 pass
+#             try:
+#                 temp_dictionary["subject"] = i["subject"]
+#             except KeyError:
+#                 pass
+#             try:
+#                 temp_dictionary["related"] = i["related"]
+#             except KeyError:
+#                 pass
+#             if temp_dictionary["type"] == "question":
+#                 try:
+#                     temp_dictionary["question_text"] = i["question_text"]
+#                 except:
+#                     pass
+#                 try:
+#                     temp_dictionary["answer_text"] = i["answer_text"]
+#                 except:
+#                     pass                
+#             main_dictionary_list.append(temp_dictionary)
+#         json.dump(main_dictionary_list, f)
+    # new_data = main_dictionary_list
+    # return new_data
+
+        
     # attempt_to_fill_data(concepts)   
 
 
 # For testing, run this individual .py 
 # concepts = scan_directory()
 # print(concepts)
-# initialize_config_json()
-def populate_question_list():
-    concepts = []
-    questions = []
-    with open("config.json", "r") as f:
-        list_of_dictionaries = json.load(f)
-    for i in list_of_dictionaries:
-        if i["type"] == "Concept":
-            concepts.append(i)
-        if i["type"] == "question":
-            questions.append(i)
-    question_list = [] # empty the question list, prevents need to pass question_list into the function
-    number_of_concepts = 18
-    number_of_questions = 25
-    while len(question_list) < number_of_concepts: # populates int(number_of_concepts) into the question list 
-        rand = random.randint(0, len(concepts))
-        question_list.append(concepts[rand])
-    while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
-        rand = random.randint(0, len(questions))
-        question_list.append(questions[rand])
-    random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
-    return question_list
-    
-populate_question_list()
+# initialize_or_update_json()
+# initialize_or_update_json()
