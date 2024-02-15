@@ -59,7 +59,7 @@ def begin_quiz():
                     
             # Ask user whether they answered the question correct, then update score accordingly
             valid_response = False
-            file_name = f"{question_list[0][file_name]}"
+            file_name = f"{question_list[0]['file_name']}"
             status = ""
             while valid_response == False:
                 user_input = input("Got it? Question Correct?")
@@ -103,7 +103,11 @@ if __name__ == "__main__":
     #################################################################################################################################################
     ## Calling Initalization functions
     initialize_or_update_json() # Scan Obsidian vault for questions, generates a list of dictionaries
-    generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
+    try: #Don't generate the revision schedule if it already exists:
+        with open("revision_schedule.json", "r") as f:
+            pass
+    except:
+        generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
     
     
     

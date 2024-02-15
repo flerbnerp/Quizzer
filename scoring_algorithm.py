@@ -1,3 +1,5 @@
+import json
+from datetime import datetime, timedelta
 # This will be based on the forgetting curve as first discovered by Ebbinghaus in 1880-1885
 # Psuedo code for now
 # scoring metrics
@@ -22,18 +24,83 @@
 
 def generate_revision_schedule():
     # Formula variables
-    time_increment_between_revisions = 1.08 # 10% increase in time between revisions
+    time_increment_between_revisions = 1.10 # 10% increase in time between revisions
     base_time = 60 * 24 # Initial time to second revision
     revision_number = 1
     file_write = ""
-    x = 100
+    x = 500
+    revision_schedule = []
+    revision_key_value = {}
     while x > 0:
-        file_write = file_write + (f"revision: {revision_number}, review again after, hours: {(base_time)/60:.3f}, days: {((base_time)/60)/24:.2f}\n")
+        revision_key_value = {"revision_number": revision_number, "time_till_next_review": base_time}
+        revision_schedule.append(revision_key_value)
         base_time = base_time * time_increment_between_revisions
         x -= 1
         revision_number += 1
-    with open("revision_schedule.md", "w+") as f:
-        f.write(file_write)
+    with open("revision_schedule.json", "w+") as f:
+        json.dump(revision_schedule, f)
     
-def update_score():
-    pass
+def update_score(status, file_name):
+    check_variable = ""
+    bad_matches = 0
+    # load config.json into memory, I get the feeling this is poor memory management, but it's only 1000 operations.
+    with open("config.json", "r") as f:
+        existing_data = (json.load(f))
+    for dictionary in existing_data:
+        if dictionary["file_name"] == file_name:
+            # Alternatively this could have been a seperate function for initializing, both work:
+            ############# We Have Three Values to Update ########################################
+            try: ###############################################
+                check_variable = dictionary["revision_streak"]
+                print(f"Revision streak was {check_variable}, streak is now {check_variable + 1}")
+                if status == "correct":
+                    dictionary["revision_streak"] = dictionary["revision_streak"] + 1
+                elif status == "incorrect":
+                    dictionary["revision_streak"] = 1
+            except KeyError:
+                print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                dictionary["revision_streak"] = 1
+            try: ###############################################
+                check_variable = dictionary["last_revised"]
+                print(f"This question was last revised on {check_variable}")
+                # Convert string json value back to a <class 'datetime.datetime'> type variable so it can be worked with:
+                dictionary["last_revised"] = datetime.datetime.strptime(dictionary["last_revised"], "%Y-%m-%d %H:%M:%S")
+                dictionary["last_revised"] = datetime.now()
+                # Convert value back to a string so it can be written back to the json file
+                dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")
+            except KeyError:
+                print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                dictionary["last_revised"] = datetime.now()
+                dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")
+            try: ###############################################
+                check_variable = dictionary["next_revision_due"]
+                print(f"The next revision is due on {check_variable}")
+                # Convert string json value back to a <class 'datetime.datetime'> type variable so it can be worked with:
+                dictionary["next_revision_due"] = datetime.datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
+                
+                # Next revision due is based on the schedule that was outputted from the generate_revision_schedule() function:
+                with open("revision_schedule.json", "r") as f:
+                    schedule = json.load(f)
+                for entry in schedule: # look up how long until we need to review again in the revision schedule:
+                    if entry["revision_number"] == dictionary["revision_streak"]:
+                        time_till_next_review = entry["time_till_next_review"]
+                    else:
+                        pass # Not the correct entry, keep searching
+                dictionary["next_revision_due"] = datetime.now() + timedelta(hours=time_till_next_review)
+                
+                # Convert value back to a string so it can be written back to the json file
+                dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
+            except KeyError:
+                print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                dictionary["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                # Convert value to a string, so it can be written to config.json
+                dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")     
+        else:
+            bad_matches += 1
+    with open("config.json", "w") as f:
+        json.dump(existing_data, f)
+    # Debug Statements:
+    # print(bad_matches)
+    # print(file_name)
+    # print(type(file_name))
+    input("Debug, press enter to continue:")
