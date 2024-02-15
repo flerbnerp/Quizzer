@@ -1,27 +1,10 @@
 from initialize import initialize_or_update_json
 from scoring_algorithm import generate_revision_schedule, update_score
+from quiz_functions import populate_question_list
 import subprocess
 import os
 import random
 import json
-def populate_question_list():
-    questions = []
-    with open("config.json", "r") as f:
-        database = json.load(f)
-    for i in database:
-        if i["type"] == "question":
-            questions.append(i)
-    question_list = [] # empty the question list, prevents need to pass question_list into the function
-    number_of_questions = 25
-    len_questions = len(questions) - 1
-    while len(question_list) < number_of_questions: # populates the difference betwene number_of_concepts and number_of_questions if 18 and 20, this populates 2 questions into the list
-        rand = random.randint(0, len_questions)
-        question_list.append(questions[rand])
-    random.shuffle(question_list) # Shuffles the order of the list, without this, only concept notes will be presented then only questions.
-    return question_list
-
-
-
 ##########################################################   
 def begin_quiz():
     question_list = populate_question_list() # Initialize question_list with questions

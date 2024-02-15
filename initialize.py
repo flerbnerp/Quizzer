@@ -1,7 +1,7 @@
 import os
 import yaml
 import json
-import random
+from datetime import datetime, timedelta
 # use a dictionary
 # Concept/question, subject, related
 vault_path = "/home/karibar/Documents/Education"
@@ -61,11 +61,28 @@ def initialize_or_update_json():
     try: # if the file is empty then we move to the except block:
         with open("config.json", "r") as f:
             existing_data = (json.load(f))
-            
-
-
         # Update existing_data with newly scanned data:
         for existing_dict in existing_data:
+            check_variable = ""
+            if existing_dict["type"] == "question":
+                try:
+                    check_variable = existing_dict["revision_streak"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["revision_streak"] = 1
+                try: 
+                    check_variable = existing_dict["last_revised"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["last_revised"] = datetime.now()
+                    existing_dict["last_revised"] = existing_dict["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
+                try:
+                    check_variable = existing_dict["next_revision_due"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                    # Convert value to a string, so it can be written to config.json
+                    existing_dict["next_revision_due"] = existing_dict["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")     
             for updated_dict in new_data:
                 if existing_dict["file_name"] == updated_dict["file_name"]: #If the updated_dict we are iterating over is found, update the existing entry
                     existing_dict.update(updated_dict)

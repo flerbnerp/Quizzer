@@ -1,19 +1,6 @@
 import json
 from datetime import datetime, timedelta
 # This will be based on the forgetting curve as first discovered by Ebbinghaus in 1880-1885
-# Psuedo code for now
-# scoring metrics
-## {revision_streak: 1}
-## {last_revised: YYYY-MM-DD-TTTT}
-## {next_revision_due: YYYY-MM-DD-TTTT}
-## If question correct
-##     revision_streak += 1
-##     last_revised = Current date and time
-##     next_revision_due: = current date and time + revision schedule defines
-## If question wrong
-##     revision_streak = 1
-##     last_revised = Current date and time
-##     next_revision_due = current date and time + revision schedule defines
 ####################################################################################
 ## Proposed update to populate_quiz_list
 ## gather questions in a list (as done already)
@@ -25,7 +12,7 @@ from datetime import datetime, timedelta
 def generate_revision_schedule():
     # Formula variables
     time_increment_between_revisions = 1.10 # 10% increase in time between revisions
-    base_time = 60 * 24 # Initial time to second revision
+    base_time = 24 # Initial time to second revision
     revision_number = 1
     file_write = ""
     x = 500
@@ -64,7 +51,7 @@ def update_score(status, file_name):
                 check_variable = dictionary["last_revised"]
                 print(f"This question was last revised on {check_variable}")
                 # Convert string json value back to a <class 'datetime.datetime'> type variable so it can be worked with:
-                dictionary["last_revised"] = datetime.datetime.strptime(dictionary["last_revised"], "%Y-%m-%d %H:%M:%S")
+                dictionary["last_revised"] = datetime.strptime(dictionary["last_revised"], "%Y-%m-%d %H:%M:%S")
                 dictionary["last_revised"] = datetime.now()
                 # Convert value back to a string so it can be written back to the json file
                 dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")
@@ -76,7 +63,7 @@ def update_score(status, file_name):
                 check_variable = dictionary["next_revision_due"]
                 print(f"The next revision is due on {check_variable}")
                 # Convert string json value back to a <class 'datetime.datetime'> type variable so it can be worked with:
-                dictionary["next_revision_due"] = datetime.datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
+                dictionary["next_revision_due"] = datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
                 
                 # Next revision due is based on the schedule that was outputted from the generate_revision_schedule() function:
                 with open("revision_schedule.json", "r") as f:
