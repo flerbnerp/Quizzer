@@ -29,6 +29,10 @@ def begin_quiz():
                 print(f"Subject Matter: {question_list[0]['subject']}")
             except:
                 pass
+            try:
+                print(f"Next revision is due: {question_list[0]['next_revision_due']}")
+            except:
+                pass
             ## Output will vary slightly based on the type value of the note:
             # For question notes:
             print(f"\nAnswer the following question:\n\n {question_list[0]['question_text']}")
@@ -59,6 +63,9 @@ def begin_quiz():
                 elif user_input == "exit":
                     os.system("clear")
                     break
+                elif user_input == "skip":
+                    os.system("clear")
+                    valid_response = True
                 else:
                     print("enter either yes, y or no, n\n or type exit to quit")
             # Remove the item from the list.
