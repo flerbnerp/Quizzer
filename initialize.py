@@ -62,7 +62,7 @@ def initialize_or_update_json():
         with open("config.json", "r") as f:
             existing_data = (json.load(f))
         # Update existing_data with newly scanned data:
-        for existing_dict in existing_data:
+        for existing_dict in existing_data: # Initialize score metrics if they don't exist: prevents issues in the quiz functions
             check_variable = ""
             if existing_dict["type"] == "question":
                 try:
@@ -88,7 +88,6 @@ def initialize_or_update_json():
                     existing_dict.update(updated_dict)
                     counter += 1
                     break
-                
         # counters for debugging purposes:
         dicts_to_be_added = []
         total_file_matches = 0
@@ -96,7 +95,7 @@ def initialize_or_update_json():
         added_to_existing_data = 0
         # Second Loop append any newly scanned data that doesn't exist in existing_data
         # Since we can't check if data is new or old based on the length of the lists, we can manually check each with a Boolean
-        for updated_dict in new_data:
+        for updated_dict in new_data: # check if new data exists in old data, if the file is not in old data it should be appended since there is nothing to update:
             found = False
             for existing_dict in existing_data:
                 total_checks += 1
@@ -106,42 +105,42 @@ def initialize_or_update_json():
                 total_file_matches += 1
             elif found == False:
                 dicts_to_be_added.append(updated_dict)
-        try: # if there is no new data to be added the following throws an error. I threw it in a try except block, because I don't care about that error:
-            for existing_dict in dicts_to_be_added:
-                check_variable = ""
-                if existing_dict["type"] == "question":
-                    try:
-                        check_variable = existing_dict["revision_streak"]
-                    except KeyError:
-                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
-                        existing_dict["revision_streak"] = 1
-                    try: 
-                        check_variable = existing_dict["last_revised"]
-                    except KeyError:
-                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
-                        existing_dict["last_revised"] = datetime.now()
-                        existing_dict["last_revised"] = existing_dict["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
-                    try:
-                        check_variable = existing_dict["next_revision_due"]
-                    except KeyError:
-                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
-                        existing_dict["next_revision_due"] = datetime.now() + timedelta(hours=24)
-                        # Convert value to a string, so it can be written to config.json
-                        existing_dict["next_revision_due"] = existing_dict["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")            
-                    existing_data.append(existing_dict)
-                    added_to_existing_data += 1
-        except:
-            pass
+        for existing_dict in dicts_to_be_added: # iterate through the list to be added and initialize score metrics if necessary
+            check_variable = ""
+            if existing_dict["type"] == "question":
+                try:
+                    check_variable = existing_dict["revision_streak"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["revision_streak"] = 1
+                try: 
+                    check_variable = existing_dict["last_revised"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["last_revised"] = datetime.now()
+                    existing_dict["last_revised"] = existing_dict["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
+                try:
+                    check_variable = existing_dict["next_revision_due"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                    # Convert value to a string, so it can be written to config.json
+                    existing_dict["next_revision_due"] = existing_dict["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")            
+            existing_data.append(existing_dict)
+            added_to_existing_data += 1
+            # We should now have an updated existing_data object to overwrite our config.json with
         with open("config.json", "w") as f: # Write the updated list of dictionaries to config.json
             json.dump(existing_data, f)
 ### Quality checks
         print(f"Total items not found in existing items is: {len(dicts_to_be_added)}")
+        for i in dicts_to_be_added:
+            print(f"{i}\n")
         print(f"Added a total of {added_to_existing_data} new entries to config.json")
         print(f"There are {len(new_data)} items in the most recent scan")
         print(f"Total file matches is: {total_file_matches} compared to {len(existing_data)-added_to_existing_data} pre-existing files in Vault")
         print(f"total operations to complete scan is: {total_checks:,}")
         print(f"-------------------------------------------------------")
-    # If the file exists, create config.json and dump new_data into it:
+    # If the file does not exist, create config.json and dump new_data into it:
     except:
         for existing_dict in new_data:
             check_variable = ""
