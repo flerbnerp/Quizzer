@@ -101,11 +101,13 @@ def initialize_or_update_json():
                 total_checks += 1
                 if updated_dict["file_name"] == existing_dict["file_name"]:
                     found = True
-            if found == True:
-                total_file_matches += 1
-            elif found == False:
+                    total_file_matches += 1
+                    existing_dict.update(updated_dict)
+            if not found:
                 dicts_to_be_added.append(updated_dict)
-        for existing_dict in dicts_to_be_added: # iterate through the list to be added and initialize score metrics if necessary
+            else:
+                pass
+        for existing_dict in dicts_to_be_added: # iterate through the list to be added, if its a question initialize score metrics, then append to existing_data:
             check_variable = ""
             if existing_dict["type"] == "question":
                 try:

@@ -30,8 +30,12 @@ def begin_quiz():
             except:
                 pass
             try:
-                print(f"This question was last revised on {question_list[0]['last_revision']}")
-            except:
+                print(f"Your revision streak on this question is {question_list[0]['revision_streak']}")
+            except KeyError:
+                pass
+            try:
+                print(f"This question was last revised on {question_list[0]['last_revised']}")
+            except KeyError:
                 pass
             try:
                 print(f"Next revision is due: {question_list[0]['next_revision_due']}")
