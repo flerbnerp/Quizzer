@@ -107,9 +107,29 @@ def initialize_or_update_json():
             elif found == False:
                 dicts_to_be_added.append(updated_dict)
         try: # if there is no new data to be added the following throws an error. I threw it in a try except block, because I don't care about that error:
-            for i in dicts_to_be_added:
-                existing_data.append(i)
-                added_to_existing_data += 1
+            for existing_dict in dicts_to_be_added:
+                check_variable = ""
+                if existing_dict["type"] == "question":
+                    try:
+                        check_variable = existing_dict["revision_streak"]
+                    except KeyError:
+                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                        existing_dict["revision_streak"] = 1
+                    try: 
+                        check_variable = existing_dict["last_revised"]
+                    except KeyError:
+                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                        existing_dict["last_revised"] = datetime.now()
+                        existing_dict["last_revised"] = existing_dict["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
+                    try:
+                        check_variable = existing_dict["next_revision_due"]
+                    except KeyError:
+                        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                        existing_dict["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                        # Convert value to a string, so it can be written to config.json
+                        existing_dict["next_revision_due"] = existing_dict["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")            
+                    existing_data.append(existing_dict)
+                    added_to_existing_data += 1
         except:
             pass
         with open("config.json", "w") as f: # Write the updated list of dictionaries to config.json
