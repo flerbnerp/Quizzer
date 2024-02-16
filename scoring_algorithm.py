@@ -90,4 +90,4 @@ def update_score(status, file_name):
     # print(bad_matches)
     # print(file_name)
     # print(type(file_name))
-    input("Debug, press enter to continue:")
+    # input("Debug, press enter to continue:")

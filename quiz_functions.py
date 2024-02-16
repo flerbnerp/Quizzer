@@ -1,6 +1,7 @@
 import json
 import random
 import datetime
+import os
 def populate_question_list_legacy():
     questions = []
     with open("config.json", "r") as f:
@@ -26,7 +27,6 @@ def populate_question_list():
     for dictionary in existing_data:
         if dictionary["type"] == "question":
             dictionary["next_revision_due"] = datetime.datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
-            print(type(dictionary["next_revision_due"]))
             questions.append(dictionary)
     # Sort question objects by next_revision_due key value
     questions = sorted(questions, key=lambda x: x['next_revision_due'])

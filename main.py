@@ -30,6 +30,10 @@ def begin_quiz():
             except:
                 pass
             try:
+                print(f"This question was last revised on {question_list[0]['last_revision']}")
+            except:
+                pass
+            try:
                 print(f"Next revision is due: {question_list[0]['next_revision_due']}")
             except:
                 pass
@@ -74,8 +78,15 @@ def begin_quiz():
 
 
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
-            print("Getting new set of questions. . .")
-            question_list = populate_question_list()
+            os.system("clear")
+            print("You've completed the first set of questions")
+            user_input = input("Would you like to continue?")
+            if user_input == "yes":
+                question_list = populate_question_list()
+            elif user_input == "no":
+                break
+            else:
+                print("Please enter a valid response")
         else:
             pass
 ####################################################################
