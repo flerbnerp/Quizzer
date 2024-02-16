@@ -123,6 +123,27 @@ def initialize_or_update_json():
         print(f"-------------------------------------------------------")
     # If the file exists, create config.json and dump new_data into it:
     except:
+        for existing_dict in new_data:
+            check_variable = ""
+            if existing_dict["type"] == "question":
+                try:
+                    check_variable = existing_dict["revision_streak"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["revision_streak"] = 1
+                try: 
+                    check_variable = existing_dict["last_revised"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["last_revised"] = datetime.now()
+                    existing_dict["last_revised"] = existing_dict["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
+                try:
+                    check_variable = existing_dict["next_revision_due"]
+                except KeyError:
+                    print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+                    existing_dict["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                    # Convert value to a string, so it can be written to config.json
+                    existing_dict["next_revision_due"] = existing_dict["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")        
         print("No File Exists, Initializing config.json")
         with open("config.json", "w+") as f:
             json.dump(new_data, f)
