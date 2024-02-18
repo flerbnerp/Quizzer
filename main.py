@@ -20,6 +20,7 @@ def begin_quiz():
                 break
             # Quiz Interface
             # All question prompts will show the user the file name, the sub-type, and the subject being quizzed on:
+            print(f"Questions remaining: {len(question_list)}")
             print(f"File name: {question_list[0]['file_name']}")
             try: # not all notes have a sub-type
                 print(f"Type: {question_list[0]['sub-type']}")

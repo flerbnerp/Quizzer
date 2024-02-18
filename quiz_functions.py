@@ -35,7 +35,7 @@ def populate_question_list():
 
     # Fill question list with desired number of questions for practice exam
     for i in questions:
-        if len(question_list) == 25:
+        if len(question_list) == 30:
             break
         else:
             question_list.append(i)

@@ -1,19 +1,15 @@
 # Planned changes:
 ## Core Functionality
+### Stats module
+- This module will be a menu option that shows the user a variety of states
+- Number of questions that are loaded in quizzer
+- Number of questions by subject type
+- Total number of questions they've answered
+- Total correct attempts
+- Total incorrect attempts
+- Longest Revision Streak
 ### add in config options
-First option to tell quizzer, how many of each type of question to present in each quiz
-### Scoring methodology
-- get filename.md
-- add scoring metrics
-- add above to json file for permanent storage (JSON exists now)
-- Scan will check whether filename.md in config.json (Just in case) 
-- already exists in the scoreboard.json. If not, add in new json object to represent the file:
-- every question object will contain the yaml properties, subject, related, question_text, answer_text, 
-#### Scores should never be overwritten, but json objects should update based on when files in obsidian change
-- This can be accomplished by updated the values with dict[k] = "value"
-### Update populate_quiz function to take advantage of scoring metrics
-this will require quizzer to pull questions from the .json file instead of from a prescanned list.
-Updates quiz function will have an algorithm to determine how to populate the quiz based on current scoring metrics:
+- First option to tell quizzer how many questions should be in each exam:
 ### add in config option: questions by subject
 - Only effects the question type
 - This option will allow the user to specify whether they want more or less questions from certain fields of study
