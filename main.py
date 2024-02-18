@@ -94,6 +94,13 @@ def begin_quiz():
                 print("Please enter a valid response")
         else:
             pass
+def initialize_quizzer():
+    initialize_or_update_json() # Scan Obsidian vault for questions, generates a list of dictionaries
+    try: #Don't generate the revision schedule if it already exists:
+        with open("revision_schedule.json", "r") as f:
+            pass
+    except:
+        generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
 ####################################################################
 if __name__ == "__main__":
     # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
@@ -103,20 +110,9 @@ if __name__ == "__main__":
     # Initialize variables
     vault_path = "/home/karibar/Documents/Education"
     error = False # for use if the user enters an invalid input
-    
-    
-    
     #################################################################################################################################################
     ## Calling Initalization functions
-    initialize_or_update_json() # Scan Obsidian vault for questions, generates a list of dictionaries
-    try: #Don't generate the revision schedule if it already exists:
-        with open("revision_schedule.json", "r") as f:
-            pass
-    except:
-        generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
-    
-    
-    
+    initialize_quizzer()
     #############################################################################
     ## Main Menu Interface:
     while True:
@@ -124,8 +120,10 @@ if __name__ == "__main__":
         print("Welcome to Quizzer")
         print("You will be tested on a mixture of concepts and questions")
         print("Please select a menu option to begin")
-        print("1: begin quiz")
-        print("2: exit program")
+        print("1: Begin quiz")
+        print("2: Update quizzer")
+        print("3: List Stats")
+        print("4: Exit program")
         if error == True:
             print("Enter a valid menu option:")
             error = False
@@ -134,6 +132,15 @@ if __name__ == "__main__":
             os.system("clear")
             begin_quiz()
         elif user_input == "2":
+            os.system("clear")
+            print("Updating Quizzer")
+            initialize_quizzer()
+            input("Press enter to continue")
+        elif user_input == "3":
+            os.system("clear")
+            print("No stats module yet. . . Feature coming soon")
+            input("Press enter to continue")
+        elif user_input == "4":
             break
         else:
             error = True

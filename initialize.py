@@ -7,8 +7,11 @@ from datetime import datetime, timedelta
 vault_path = "/home/karibar/Documents/Education"
 def scan_directory(vault_path): # Returns a list(s) of dictionaries
     concepts = []
+    total_checks = 0
     for root, dirs, files in os.walk(vault_path):
+        total_checks += 1
         for file in files:
+            total_checks += 1
             if file.endswith(".md"):
                 with open(os.path.join(root,file), "r", encoding="utf-8") as f:
                     content = f.read()  
@@ -27,15 +30,14 @@ def scan_directory(vault_path): # Returns a list(s) of dictionaries
                             concepts.append(note_dict)
                         except:
                             pass
-    return concepts      
+    return concepts, total_checks      
 def initialize_or_update_json():
 ### Scan Vault and produce new data to append based on the data in the vault:
-    concepts = scan_directory(vault_path)
+    concepts, total_checks = scan_directory(vault_path)
     new_data = []
     # counters for debugging purposes:
     dicts_to_be_added = []
     total_file_matches = 0
-    total_checks = 0
     added_to_existing_data = 0
     for i in concepts:
             total_checks += 1
@@ -175,52 +177,4 @@ def initialize_or_update_json():
         print("No File Exists, Initializing config.json")
         with open("config.json", "w+") as f:
             json.dump(new_data, f)
-
-                
-# def initialize_config_json():
-#     concepts = scan_directory(vault_path)
-#     main_dictionary_list = []
-#     try:
-#         with open("config.json", "r") as f:
-#             existing_data = (json.load(f))
-#             print(type(existing_data))
-#     except:
-#         print("file is empty")
-#     with open("config.json", "w+") as f:
-#         for i in concepts:
-#             temp_dictionary = {"file_name": i["file_name"],"file_path": i["file_path"],"type": "", "subject": "", "related": ""}
-#             try:
-#                 temp_dictionary["type"] = i["type"]
-#             except KeyError:
-#                 pass
-#             try:
-#                 temp_dictionary["subject"] = i["subject"]
-#             except KeyError:
-#                 pass
-#             try:
-#                 temp_dictionary["related"] = i["related"]
-#             except KeyError:
-#                 pass
-#             if temp_dictionary["type"] == "question":
-#                 try:
-#                     temp_dictionary["question_text"] = i["question_text"]
-#                 except:
-#                     pass
-#                 try:
-#                     temp_dictionary["answer_text"] = i["answer_text"]
-#                 except:
-#                     pass                
-#             main_dictionary_list.append(temp_dictionary)
-#         json.dump(main_dictionary_list, f)
-    # new_data = main_dictionary_list
-    # return new_data
-
-        
-    # attempt_to_fill_data(concepts)   
-
-
-# For testing, run this individual .py 
-# concepts = scan_directory()
-# print(concepts)
-# initialize_or_update_json()
-# initialize_or_update_json()
+    return total_checks

@@ -8,6 +8,9 @@
 - Total correct attempts
 - Total incorrect attempts
 - Longest Revision Streak
+- Average time per quiz (every quiz will append a time_taken float value to a list data_type stores inside stats.json), calling the option to list stats will get the average value of this key: value pair.
+### move storage of questions to a seperate questions.json, seperate from the primary config.json
+Initialize function then update config.json with data from the questions.json, if the config.json gets corrupted at any point, the scores are backed up in a separate .json file
 ### add in config options
 - First option to tell quizzer how many questions should be in each exam:
 ### add in config option: questions by subject
