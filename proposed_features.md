@@ -11,6 +11,9 @@
 - Average time per quiz (every quiz will append a time_taken float value to a list data_type stores inside stats.json), calling the option to list stats will get the average value of this key: value pair.
 ### move storage of questions to a seperate questions.json, seperate from the primary config.json
 Initialize function then update config.json with data from the questions.json, if the config.json gets corrupted at any point, the scores are backed up in a separate .json file
+### Backup storage module
+- In case data might get overwritten, a regular backup should be made. A function that can be called from within the program should help make this easy for the user to backup their files
+- A second function can be called that pulls the files from backups/ and overwrites the files in the main directory.
 ### add in config options
 - First option to tell quizzer how many questions should be in each exam:
 ### add in config option: questions by subject
