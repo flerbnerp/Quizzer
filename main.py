@@ -123,8 +123,26 @@ if __name__ == "__main__":
     error = False # for use if the user enters an invalid input
     #################################################################################################################################################
     ## Calling Initalization functions
-    initialize_quizzer()
+    config_file_exists = False
+    questions_file_exists = False
     
+    try:
+        with open("config.json", "r") as f:
+            config_file_exists = True
+    except:
+        pass
+    try:
+        with open("questions.json", "r") as f:
+            questions_file_exists = True
+    except:
+        pass
+    if (config_file_exists == False) or (questions_file_exists == False):
+        print("Missing files, long initialization in progress")
+        initialize_quizzer()
+        initialize_quizzer()
+        initialize_quizzer()
+    else:
+        initialize_quizzer()
     #############################################################################
     ## Main Menu Interface:
     while True:
