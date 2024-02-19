@@ -1,6 +1,7 @@
-from initialize import initialize_or_update_json
+from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
+from stats import initialize_stats_json
 import subprocess
 import os
 import random
@@ -97,15 +98,17 @@ def begin_quiz():
 def initialize_quizzer(): # This function will contain all the initialization functions from various modules:
     # Scan provided file directory for all .md files and store data in config.json
     initialize_or_update_json() 
-    
+    initialize_master_question_list()
     # Initialize revision schedule for scoring algorithm
     try: #Don't generate the revision schedule if it already exists:
         with open("revision_schedule.json", "r") as f:
             pass
     except:
         generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
-        
+    
     # Initialize stats.json (if stats.json does not exist)
+    initialize_stats_json()
+    
 ####################################################################
 if __name__ == "__main__":
     # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
