@@ -31,7 +31,7 @@ def update_score(status, file_name):
     check_variable = ""
     bad_matches = 0
     # load config.json into memory, I get the feeling this is poor memory management, but it's only 1000 operations.
-    with open("config.json", "r") as f:
+    with open("questions.json", "r") as f:
         existing_data = (json.load(f))
     for dictionary in existing_data:
         if dictionary["file_name"] == file_name:
@@ -84,7 +84,7 @@ def update_score(status, file_name):
                 dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")     
         else:
             bad_matches += 1
-    with open("config.json", "w") as f:
+    with open("questions.json", "w") as f:
         json.dump(existing_data, f)
     # Debug Statements:
     # print(bad_matches)

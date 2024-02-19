@@ -95,6 +95,9 @@ def begin_quiz():
                 print("Please enter a valid response")
         else:
             pass
+        
+        
+        
 def initialize_quizzer(): # This function will contain all the initialization functions from various modules:
     # Scan provided file directory for all .md files and store data in config.json
     initialize_or_update_json() 
@@ -121,6 +124,7 @@ if __name__ == "__main__":
     #################################################################################################################################################
     ## Calling Initalization functions
     initialize_quizzer()
+    
     #############################################################################
     ## Main Menu Interface:
     while True:
