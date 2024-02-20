@@ -20,7 +20,7 @@ def populate_question_list():
 
     # Fill question list with desired number of questions for practice exam
     for i in questions:
-        if len(question_list) == 30:
+        if len(question_list) == 35:
             break
         else:
             question_list.append(i)
@@ -28,6 +28,6 @@ def populate_question_list():
     # for i in questions:
     #     print(f"{i}\n")
     random.shuffle(question_list) # ensures there is some level of randomization, so users don't notice this is just a cycling list
-    question_list = question_list[::-1]
-    random.shuffle(question_list)
+    question_list = question_list[::-1] # Reverse the list
+    random.shuffle(question_list) # Shuffle it again
     return question_list

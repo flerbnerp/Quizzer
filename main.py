@@ -85,8 +85,8 @@ def begin_quiz():
 
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             os.system("clear")
-            print("You've completed the first set of questions")
-            user_input = input("Would you like to continue?")
+            print("You've completed a quiz!")
+            user_input = input("Would you like to continue with another one?")
             if user_input == "yes":
                 question_list = populate_question_list()
             elif user_input == "no":
@@ -153,7 +153,8 @@ if __name__ == "__main__":
         print("1: Begin quiz")
         print("2: Update quizzer")
         print("3: List Stats")
-        print("4: Exit program")
+        print("4: Settings")
+        print("5: Exit program")
         if error == True:
             print("Enter a valid menu option:")
             error = False
@@ -171,6 +172,10 @@ if __name__ == "__main__":
             print("No stats module yet. . . Feature coming soon")
             input("Press enter to continue")
         elif user_input == "4":
+            os.system("clear")
+            print("No settings module, yet. . . Feature coming soon")
+            input("Press enter to continue")
+        elif user_input == "5":
             break
         else:
             error = True

@@ -5,7 +5,9 @@ from datetime import datetime, timedelta
 # use a dictionary
 # Concept/question, subject, related
 vault_path = "/home/karibar/Documents/Education"
-def create_question_dot_json_if_doesnt_exist():
+def question_json_exists():
+    """Checks if question.json exists. If not, create it.
+    """
     try:
         with open("questions.json", "r"):
             pass
@@ -45,7 +47,7 @@ def initialize_score_metric_keys_if_they_dont_exist(dictionary):
         dictionary["next_revision_due"] = datetime.now() + timedelta(hours=24)
         # Convert value to a string, so it can be written to config.json
         dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
-    return dictionary    
+    return dictionary
 def scan_directory(vault_path): # Returns a list(s) of dictionaries
     concepts = []
     total_checks = 0
@@ -152,7 +154,7 @@ def initialize_or_update_json():
     return total_checks
 
 def initialize_master_question_list():
-    create_question_dot_json_if_doesnt_exist()
+    question_json_exists()
     with open("config.json", "r") as f:
         existing_database = json.load(f)
     # Parse out the question objects from our config.json file
