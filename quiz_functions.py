@@ -28,4 +28,6 @@ def populate_question_list():
     # for i in questions:
     #     print(f"{i}\n")
     random.shuffle(question_list) # ensures there is some level of randomization, so users don't notice this is just a cycling list
+    question_list = question_list[::-1]
+    random.shuffle(question_list)
     return question_list

@@ -1,5 +1,14 @@
 # Planned changes:
 ## Core Functionality
+### Picture and GUI module
+- CLI is useful, but doesn't allow for display of images for problems. If this is to be used for science and mathematics, support for latex and picture display needs to be added in:
+- I would say this is front end
+#### Modify quiz function (simple client-server architecture)
+- If we modify the generate quiz function to return only a single random question
+- Then
+- The client app will only need to do two things 
+- Make a server call for the question:
+- Make a server call to update the score for that particular user:
 ### Stats module
 - This module will be a menu option that shows the user a variety of states
 - Number of questions that are loaded in quizzer
