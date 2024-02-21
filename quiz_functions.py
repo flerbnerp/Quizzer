@@ -3,7 +3,7 @@ import random
 import datetime
 import os
 
-def populate_question_list():
+def populate_question_list(quiz_length):
     questions = []
     # load in config.json into memory
     with open("questions.json", "r") as f:
@@ -20,7 +20,7 @@ def populate_question_list():
 
     # Fill question list with desired number of questions for practice exam
     for i in questions:
-        if len(question_list) == 35:
+        if len(question_list) == quiz_length:
             break
         else:
             question_list.append(i)

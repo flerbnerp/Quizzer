@@ -1,14 +1,15 @@
 from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
-from stats import initialize_stats_json
+from stats import initialize_stats_json, print_and_update_revision_streak_stats, completed_quiz
 import subprocess
 import os
 import random
 import json
 ##########################################################   
 def begin_quiz():
-    question_list = populate_question_list() # Initialize question_list with questions
+    quiz_length = 35
+    question_list = populate_question_list(quiz_length) # Initialize question_list with questions
     os.system("clear")
     print("Welcome to Quizzer\nYou will be presented with a question, then prompted to either mark your answer right or wrong")
     user_input = input("press enter to continue or type exit to go back to the main menu")
@@ -86,6 +87,7 @@ def begin_quiz():
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             os.system("clear")
             print("You've completed a quiz!")
+            completed_quiz(quiz_length)
             user_input = input("Would you like to continue with another one?")
             if user_input == "yes":
                 question_list = populate_question_list()
@@ -169,7 +171,13 @@ if __name__ == "__main__":
             input("Press enter to continue")
         elif user_input == "3":
             os.system("clear")
-            print("No stats module yet. . . Feature coming soon")
+            print("Stats for Nerds!!!")
+            with open("stats.json", "r") as f:
+                stats = json.load(f)
+            for key in stats:
+                print(f"{key:<30}: {stats[key]}")
+            print()
+            print_and_update_revision_streak_stats()
             input("Press enter to continue")
         elif user_input == "4":
             os.system("clear")
