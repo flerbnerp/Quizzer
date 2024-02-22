@@ -57,3 +57,21 @@ def completed_quiz(quiz_length):
             json.dump(initialze_dict, f)
     add_time()
     add_quiz_size(quiz_length)
+    
+
+    
+def print_stats():
+    '''Collective function that prints all stats, which are based on individual functions'''
+    print("Stats for Nerds!!!")
+    with open("stats.json", "r") as f:
+        stats_data = json.load(f)
+    for key in stats_data:
+        # Certain stats would be an average stat, in that case printing out the value of the key does not work. for example: average quiz_length would be calculated based on the average of list
+        if key == "quiz_lengths": # One if statement for each specific stat that needs a calculation done to display:
+            text = "Average quiz length taken"
+            print(f"{text:<30}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
+        else:
+            print(f"{key:<30}: {stats_data[key]}")
+    print()
+    print_and_update_revision_streak_stats()
+    

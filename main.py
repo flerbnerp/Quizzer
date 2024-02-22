@@ -1,14 +1,17 @@
 from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
-from stats import initialize_stats_json, print_and_update_revision_streak_stats, completed_quiz
+from stats import initialize_stats_json, print_stats, completed_quiz
+from settings import initialize_settings_json, initialize_settings_json_keys
 import subprocess
 import os
 import random
 import json
 ##########################################################   
 def begin_quiz():
-    quiz_length = 35
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    quiz_length = settings["quiz_length"]
     question_list = populate_question_list(quiz_length) # Initialize question_list with questions
     os.system("clear")
     print("Welcome to Quizzer\nYou will be presented with a question, then prompted to either mark your answer right or wrong")
@@ -112,6 +115,8 @@ def initialize_quizzer(): # This function will contain all the initialization fu
         generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
     
     # Initialize stats.json (if stats.json does not exist)
+    initialize_settings_json()
+    initialize_settings_json_keys()
     initialize_stats_json()
     
 ####################################################################
@@ -171,13 +176,7 @@ if __name__ == "__main__":
             input("Press enter to continue")
         elif user_input == "3":
             os.system("clear")
-            print("Stats for Nerds!!!")
-            with open("stats.json", "r") as f:
-                stats = json.load(f)
-            for key in stats:
-                print(f"{key:<30}: {stats[key]}")
-            print()
-            print_and_update_revision_streak_stats()
+            print_stats()
             input("Press enter to continue")
         elif user_input == "4":
             os.system("clear")
