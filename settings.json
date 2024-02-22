@@ -1,1 +1,5 @@
-{"quiz_length": 35, "subject_computer_science_weight": 1, "subject_theology_weight": 1, "subject_biology_weight": 1, "subject_latin_weight": 1, "subject_astronomy_weight": 1, "subject_mythology_weight": 1, "subject_geology_weight": 1, "subject_psychology_weight": 1, "subject_philosophy_weight": 1, "subject_mathematics_weight": 1, "subject_ecology_weight": 1, "subject_english_weight": 1, "subject_communication_weight": 1, "subject_religion_weight": 1, "subject_writing_weight": 1, "subject_web_design_weight": 1, "subject_history_weight": 1}
+{"quiz_length": 35, "subject_computer_science_weight": 10, "subject_theology_weight": 1, "subject_biology_weight": 1, "subject_latin_weight": 1,
+ "subject_astronomy_weight": 1, "subject_mythology_weight": 1, "subject_geology_weight": 1, "subject_psychology_weight": 1,
+  "subject_philosophy_weight": 1, "subject_mathematics_weight": 10, "subject_ecology_weight": 1, "subject_english_weight": 1,
+   "subject_communication_weight": 1, "subject_religion_weight": 1, "subject_writing_weight": 1, "subject_web_design_weight": 5,
+    "subject_history_weight": 1}

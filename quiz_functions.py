@@ -94,5 +94,3 @@ def populate_question_list():
     for i in question_list:
         print(f"{i['subject']}")
     return question_list
-
-populate_question_list()

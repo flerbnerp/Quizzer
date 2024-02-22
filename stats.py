@@ -38,13 +38,13 @@ def add_quiz_size():
     quiz_length = settings["quiz_length"]
     with open("stats.json", "r") as f:
         stats_data = json.load(f)
-    if "quiz_lengths" in stats_data:
-        stats_data["quiz_lengths"] = stats_data["quiz_lengths"].append(quiz_length)
-    else:
+    try:
+        stats_data["quiz_lengths"] = list(stats_data["quiz_lengths"])
+        stats_data["quiz_lengths"].append(quiz_length)
+    except:
         stats_data["quiz_lengths"] = [quiz_length]
     with open("stats.json", "w") as f:
         json.dump(stats_data, f)
-        
         
         
 def completed_quiz():
