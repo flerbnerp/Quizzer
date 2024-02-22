@@ -9,14 +9,16 @@ import random
 import json
 ##########################################################   
 def begin_quiz():
-    with open("settings.json", "r") as f:
-        settings = json.load(f)
-    quiz_length = settings["quiz_length"]
-    question_list = populate_question_list(quiz_length) # Initialize question_list with questions
+    '''Quiz interface'''
+    ## This function should not contain any processing of data, it should only make function calls to get information and display it.
+    ## It is expected that this function will need to rewritten for every platform.
+    question_list = populate_question_list() # Initialize question_list with questions
     os.system("clear")
     print("Welcome to Quizzer\nYou will be presented with a question, then prompted to either mark your answer right or wrong")
     user_input = input("press enter to continue or type exit to go back to the main menu")
     os.system("clear")
+    
+    # General process is to display the data from the question in index 0, once answered the question is removed from the list, pushing the second question into index 0,
     while True:
         if len(question_list) > 0: # Check to see if the question_list is empty
             # user_input = input("\n\nEnter any key to continue: ")
@@ -90,7 +92,7 @@ def begin_quiz():
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             os.system("clear")
             print("You've completed a quiz!")
-            completed_quiz(quiz_length)
+            completed_quiz()
             user_input = input("Would you like to continue with another one?")
             if user_input == "yes":
                 question_list = populate_question_list()

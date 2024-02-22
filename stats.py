@@ -32,7 +32,10 @@ def add_time():
 
 
 
-def add_quiz_size(quiz_length):
+def add_quiz_size():
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    quiz_length = settings["quiz_length"]
     with open("stats.json", "r") as f:
         stats_data = json.load(f)
     if "quiz_lengths" in stats_data:
@@ -44,7 +47,7 @@ def add_quiz_size(quiz_length):
         
         
         
-def completed_quiz(quiz_length):
+def completed_quiz():
     try:
         with open("stats.json", "r") as f:
             stats_data = json.load(f)
@@ -56,7 +59,7 @@ def completed_quiz(quiz_length):
         with open("stats.json", "w") as f:
             json.dump(initialze_dict, f)
     add_time()
-    add_quiz_size(quiz_length)
+    add_quiz_size()
     
 
     

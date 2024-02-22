@@ -32,6 +32,17 @@ def initialize_settings_json_keys():
     except:
         print("settings.json is empty, initializing all keys")
         settings = {}
+        # this setting controls the length of each quiz
         settings["quiz_length"] = 35
+        
+        # this setting controls the weighting of questions for each quiz, default is an equal weighting across all subjects
+        # User is encouraged to change this based on current classes being taken, but a minimum value of 1 is recommended for each subject
+        subject_set = get_subjects() # this block will be reused in the get_quiz() function to easily parse out the settings data
+        for i in subject_set:
+            settings[f"subject_{i}_weight"] = 1
+            
+        # write settings data to questions.json file    
         with open("settings.json", "w") as f:
             json.dump(settings, f)
+
+initialize_settings_json_keys()
