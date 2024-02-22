@@ -1,6 +1,7 @@
 import json
 import random
 from datetime import datetime, timedelta
+from settings import get_subjects
 import os
 
 def populate_question_list():
@@ -17,23 +18,68 @@ def populate_question_list():
     # due date range, questions risk being repeated over and over and over again even though they may be due for revision much later than today's date + 24 hours.
     for question in questions:
         question["next_revision_due"] = datetime.strptime(question["next_revision_due"], "%Y-%m-%d %H:%M:%S")
-        if question["next_revision_due"] <= (datetime.now() + timedelta(hours=24)):
+        if question["next_revision_due"] <= (datetime.now() + timedelta(hours=24)) and question["subject"] != None:
             sorted_questions.append(question)
     # Sort question objects by next_revision_due key value
     sorted_questions = sorted(questions, key=lambda x: x['next_revision_due'])
-    
-    
+    temp_list = []
+    for question in sorted_questions:
+        if question["subject"] == None:
+            print(question["file_name"])
+        elif question["subject"] != None:
+            temp_list.append(question)
+    sorted_questions = temp_list
     
     # Initialize question list to be filled
     question_list = []
 
     # Fill question list with desired number of questions for practice exam, based on the questions inside the sorted_questions variable, not the master database
-    for i in sorted_questions:
-        if len(question_list) == quiz_length: #We break the loop once we have the desired number of questions
+    subject_set = get_subjects()
+    question_list_is_filled = False
+    subjects = list(subject_set)
+    subjects_list = []
+    subjects_by_count = {}
+    while question_list_is_filled == False:
+        print("--------------------------------")
+        if question_list_is_filled == True:
             break
-        else:
-            question_list.append(i)
+        # Gather all questions in a list so we can count total questions by subject
+        for question in sorted_questions:
+            if question["subject"] is not None:
+                subjects_list.extend(question["subject"])
+        # Get count of all questions
+        for subject in subjects:
+            count = subjects_list.count(subject)
+            subjects_by_count[subject] = count
             
+        # Iterate through each subject and add questions based on weighting
+        adding_questions = True
+        for key, value in subjects_by_count.items():
+            questions_to_add_to_list = settings[f"subject_{key}_weight"]
+            
+            for question in sorted_questions:
+                if questions_to_add_to_list <= 0:
+                    break
+                if len(question_list) == quiz_length:
+                    question_list_is_filled = True
+                    break
+                # check setting weight against total questions for subject:
+                if value < settings[f"subject_{key}_weight"]:
+                    print("value is less than desired amount, skipping subject")
+                    break
+                if value >= settings[f"subject_{key}_weight"]: # If there are enough we need to fill them
+                    if key in question["subject"]:                    
+                        question_list.append(question)
+                        print(f"added 1 question from {key}")
+                        print(f"question is list {len(question_list)} questions long")
+                        questions_to_add_to_list -= 1
+                        index = sorted_questions.index(question)
+                        sorted_questions.pop(index)
+                            
+                else:
+                    print("oops big loop went wrong?")
+
+                                
         # while loop for questions? provide a counter for each subject to be filled, stop adding questions of that type once the counter = the weight value?
         # when a question is added from sorted questions pop that question from the list
         
@@ -43,4 +89,10 @@ def populate_question_list():
     random.shuffle(question_list) # ensures there is some level of randomization, so users don't notice this is just a cycling list
     question_list = question_list[::-1] # Reverse the list
     random.shuffle(question_list) # Shuffle it again
+    print(len(question_list))
+    print(type(question_list))
+    for i in question_list:
+        print(f"{i['subject']}")
     return question_list
+
+populate_question_list()
