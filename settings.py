@@ -11,9 +11,7 @@ def get_subjects():
             temp_list = i["subject"]
             for i in temp_list:
                 subject_set.add(i)
-    print(subject_set)
-    print(type(subject_set))
-                
+    return subject_set         
                 
 def initialize_settings_json():
     '''creates settings.json if it doesn't exist'''
@@ -37,5 +35,3 @@ def initialize_settings_json_keys():
         settings["quiz_length"] = 35
         with open("settings.json", "w") as f:
             json.dump(settings, f)
-            
-get_subjects()
