@@ -1,4 +1,5 @@
 import json
+from quiz_functions import populate_question_list
 def initialize_stats_json():
     try:
         with open("stats.json", "r") as f:
@@ -75,6 +76,8 @@ def print_stats():
             print(f"{text:<30}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
         else:
             print(f"{key:<30}: {stats_data[key]}")
-    print()
+    print("--------------------------------")
+    populate_question_list()
+    print("--------------------------------")
     print_and_update_revision_streak_stats()
     

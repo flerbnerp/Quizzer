@@ -16,20 +16,31 @@ def populate_question_list():
     # If overdue or due within 24 hours, question is appended to the sorted_questions variable
     # This check function is required for an edge case where only a couple questions exist under a given subject, without removing questions outside of the normal 
     # due date range, questions risk being repeated over and over and over again even though they may be due for revision much later than today's date + 24 hours.
+    # for question in questions:
+    #     question["next_revision_due"] = datetime.strptime(question["next_revision_due"], "%Y-%m-%d %H:%M:%S")
+    #     if question["next_revision_due"] <= (datetime.now() + timedelta(hours=1)):
+    #         sorted_questions.append(question)
     for question in questions:
         question["next_revision_due"] = datetime.strptime(question["next_revision_due"], "%Y-%m-%d %H:%M:%S")
-        if question["next_revision_due"] <= (datetime.now() + timedelta(hours=24)) and question["subject"] != None:
+        if question["next_revision_due"] < (datetime.now() + timedelta(hours=24)):
+            # print(question["next_revision_due"], (datetime.now() + timedelta(hours=24)))
             sorted_questions.append(question)
+            continue
+    
+    
     # Sort question objects by next_revision_due key value
-    sorted_questions = sorted(questions, key=lambda x: x['next_revision_due'])
+    sorted_questions = sorted(sorted_questions, key=lambda x: x['next_revision_due'])
     temp_list = []
+    print(f"number of questions: {len(questions)}")
+    print(f"number of sorted_questions: {len(sorted_questions)}")
+    print(f"The following files do not have subject value")
     for question in sorted_questions:
         if question["subject"] == None:
             print(question["file_name"])
         elif question["subject"] != None:
             temp_list.append(question)
     sorted_questions = temp_list
-    
+    sorted_questions = sorted(sorted_questions, key=lambda x: x['next_revision_due'])
     # Initialize question list to be filled
     question_list = []
 
@@ -40,7 +51,7 @@ def populate_question_list():
     subjects_list = []
     subjects_by_count = {}
     while question_list_is_filled == False:
-        print("--------------------------------")
+        # print("--------------------------------")
         if question_list_is_filled == True:
             break
         # Gather all questions in a list so we can count total questions by subject
@@ -65,13 +76,13 @@ def populate_question_list():
                     break
                 # check setting weight against total questions for subject:
                 if value < settings[f"subject_{key}_weight"]:
-                    print("value is less than desired amount, skipping subject")
+                    # print("value is less than desired amount, skipping subject")
                     break
                 if value >= settings[f"subject_{key}_weight"]: # If there are enough we need to fill them
                     if key in question["subject"]:                    
                         question_list.append(question)
-                        print(f"added 1 question from {key}")
-                        print(f"question is list {len(question_list)} questions long")
+                        # print(f"added 1 question from {key}")
+                        # print(f"question is list {len(question_list)} questions long")
                         questions_to_add_to_list -= 1
                         index = sorted_questions.index(question)
                         sorted_questions.pop(index)
@@ -89,8 +100,4 @@ def populate_question_list():
     random.shuffle(question_list) # ensures there is some level of randomization, so users don't notice this is just a cycling list
     question_list = question_list[::-1] # Reverse the list
     random.shuffle(question_list) # Shuffle it again
-    print(len(question_list))
-    print(type(question_list))
-    for i in question_list:
-        print(f"{i['subject']}")
     return question_list

@@ -186,6 +186,11 @@ if __name__ == "__main__":
             input("Press enter to continue")
         elif user_input == "5":
             break
+        elif user_input == "debug":
+            question_list = populate_question_list()
+            print(len(question_list))
+            input("Press enter to continue")
+            
         else:
             error = True
         os.system("clear") # Since this is a CLI program, the interface is designed to be cleaned after every input, so the error variable is used to print the error message after this runs.  
