@@ -12,9 +12,10 @@ def begin_quiz():
     '''Quiz interface'''
     ## This function should not contain any processing of data, it should only make function calls to get information and display it.
     ## It is expected that this function will need to rewritten for every platform.
-    question_list = populate_question_list() # Initialize question_list with questions
+    question_list, returned_sorted_questions = populate_question_list() # Initialize question_list with questions
     os.system("clear")
     print("Welcome to Quizzer\nYou will be presented with a question, then prompted to either mark your answer right or wrong")
+    print(f"This quiz contains {len(question_list)} questions out of {len(returned_sorted_questions)} available for review")
     user_input = input("press enter to continue or type exit to go back to the main menu")
     os.system("clear")
     
@@ -91,11 +92,14 @@ def begin_quiz():
 
         elif len(question_list) <= 0: #Once the list is empty, go back and grab a new set of questions:
             os.system("clear")
+            question_list, returned_sorted_questions = populate_question_list()
             print("You've completed a quiz!")
+            print(f"The next quiz contains {len(question_list)} questions out of {len(returned_sorted_questions)} available for review")
             completed_quiz()
             user_input = input("Would you like to continue with another one?")
             if user_input == "yes":
-                question_list = populate_question_list()
+                print("DID YOU SEE ME?")
+                os.system("clear")
             elif user_input == "no":
                 break
             else:
@@ -112,8 +116,8 @@ def initialize_quizzer(): # This function will contain all the initialization fu
     # Initialize revision schedule for scoring algorithm
     try: #Don't generate the revision schedule if it already exists:
         with open("revision_schedule.json", "r") as f:
-            pass
-    except:
+            print("revision schedule exists")
+    except FileNotFoundError:
         generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
     
     # Initialize stats.json (if stats.json does not exist)
@@ -187,8 +191,7 @@ if __name__ == "__main__":
         elif user_input == "5":
             break
         elif user_input == "debug":
-            question_list = populate_question_list()
-            print(len(question_list))
+            print("You've entered the secret admin debug area, no bugs here :D")
             input("Press enter to continue")
             
         else:

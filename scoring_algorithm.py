@@ -11,7 +11,9 @@ from datetime import datetime, timedelta
 
 def generate_revision_schedule():
     # Formula variables
-    time_increment_between_revisions = 1.10 # 10% increase in time between revisions
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    time_increment_between_revisions = settings["time_between_revisions"] # 10% increase in time between revisions
     base_time = 24 # Initial time to second revision
     revision_number = 1
     file_write = ""
