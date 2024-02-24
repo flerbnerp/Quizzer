@@ -32,18 +32,18 @@ def initialize_score_metric_keys_if_they_dont_exist(dictionary):
     try:
         check_variable = dictionary["revision_streak"]
     except KeyError:
-        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
         dictionary["revision_streak"] = 1
     try: 
         check_variable = dictionary["last_revised"]
     except KeyError:
-        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
         dictionary["last_revised"] = datetime.now()
         dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
     try:
         check_variable = dictionary["next_revision_due"]
     except KeyError:
-        print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
         dictionary["next_revision_due"] = datetime.now() + timedelta(hours=24)
         # Convert value to a string, so it can be written to config.json
         dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")

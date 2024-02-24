@@ -26,6 +26,8 @@ def initialize_settings_json():
             
 def initialize_settings_json_keys():
     '''Checks settings keys and initializes each key if it doesn't exist'''
+    # Load all data into memory first:
+    subject_set = get_subjects()
     try:
         with open("settings.json", "r") as f:
             settings = json.load(f)
@@ -37,14 +39,21 @@ def initialize_settings_json_keys():
             print("time_between_revisions setting already exists")
             
         if settings.get("due_date_sensitivity") == None:
+            print("due_date_sensitivity setting does not exist, initializing to 24")
             settings["due_date_sensitivity"] = 24
         else:
-            print("due_date_sensitivity settings exists")    
-        
+            print("due_date_sensitivity settings exists")
+                
+        for i in subject_set:
+            if settings.get(f"subject_{i}_weight") == None:
+                print(f"key subject_{i}_weight missing, initializing key to 1")
+                settings[f"subject_{i}_weight"] = 1
+            else:
+                print(f"subject_{i}_weight exists in settings.json")
         
         with open("settings.json", "w") as f:
             json.dump(settings, f)
-    except:
+    except FileNotFoundError:
         print("settings.json is empty, initializing all keys")
         settings = {}
         # this setting controls the length of each quiz
@@ -52,7 +61,7 @@ def initialize_settings_json_keys():
         settings["time_between_revisions"] = 1.10
         # this setting controls the weighting of questions for each quiz, default is an equal weighting across all subjects
         # User is encouraged to change this based on current classes being taken, but a minimum value of 1 is recommended for each subject
-        subject_set = get_subjects() # this block will be reused in the get_quiz() function to easily parse out the settings data
+         # this block will be reused in the get_quiz() function to easily parse out the settings data
         for i in subject_set:
             settings[f"subject_{i}_weight"] = 1
             
