@@ -104,12 +104,12 @@ def initialize_or_update_json():
             if temp_dictionary["type"] == "question":
                 try:
                     temp_dictionary["question_text"] = i["question_text"]
-                except:
+                except KeyError:
                     pass
                 try:
                     temp_dictionary["answer_text"] = i["answer_text"]
-                except:
-                    pass                
+                except KeyError:
+                    pass  
             new_data.append(temp_dictionary)
 ### append or update existing_data with new_data if config.json has existing data in it
     try:
