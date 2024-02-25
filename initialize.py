@@ -109,6 +109,10 @@ def initialize_or_update_json():
                 try:
                     temp_dictionary["answer_text"] = i["answer_text"]
                 except KeyError:
+                    pass
+                try:
+                    temp_dictionary["media_content"] = i["media_content"]
+                except KeyError:
                     pass  
             new_data.append(temp_dictionary)
 ### append or update existing_data with new_data if config.json has existing data in it
