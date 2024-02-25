@@ -111,7 +111,11 @@ def initialize_or_update_json():
                 except KeyError:
                     pass
                 try:
-                    temp_dictionary["media_content"] = i["media_content"]
+                    temp_dictionary["question_media"] = i["question_media"]
+                except KeyError:
+                    pass
+                try:
+                    temp_dictionary["answer_media"] = i["answer_media"]
                 except KeyError:
                     pass  
             new_data.append(temp_dictionary)
