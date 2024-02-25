@@ -40,6 +40,9 @@ def populate_question_list():
             temp_list.append(question)
     sorted_questions = temp_list
     sorted_questions = sorted(sorted_questions, key=lambda x: x['next_revision_due']) # sort again for redundancy
+    # check to ensure there is enough available questions to fill the quiz
+    if len(sorted_questions) < quiz_length:
+        quiz_length = len(sorted_questions)
     # Initialize question list to be filled
     question_list = []
 
