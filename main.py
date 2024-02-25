@@ -186,7 +186,12 @@ if __name__ == "__main__":
             input("Press enter to continue")
         elif user_input == "4":
             os.system("clear")
-            print("No settings module, yet. . . Feature coming soon")
+            with open("settings.json", "r") as f:
+                settings = json.load(f)
+            for key, value in settings.items():
+                string = f"{key} is set to:"
+                underline = "_" * 50
+                print(f"{string:<50} {value}\n{underline}")
             input("Press enter to continue")
         elif user_input == "5":
             break

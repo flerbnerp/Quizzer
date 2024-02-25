@@ -30,6 +30,8 @@ def generate_revision_schedule():
         json.dump(revision_schedule, f)
     
 def update_score(status, file_name):
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
     check_variable = ""
     bad_matches = 0
     # load config.json into memory, I get the feeling this is poor memory management, but it's only 1000 operations.
@@ -68,15 +70,20 @@ def update_score(status, file_name):
                 dictionary["next_revision_due"] = datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
                 
                 # Next revision due is based on the schedule that was outputted from the generate_revision_schedule() function:
-                with open("revision_schedule.json", "r") as f:
-                    schedule = json.load(f)
-                for entry in schedule: # look up how long until we need to review again in the revision schedule:
-                    if entry["revision_number"] == dictionary["revision_streak"]:
-                        time_till_next_review = entry["time_till_next_review"]
-                    else:
-                        pass # Not the correct entry, keep searching
-                dictionary["next_revision_due"] = datetime.now() + timedelta(hours=time_till_next_review)
-                
+                # If question was correct, update according to schedule, otherwise set next due date according to sensitivity settings so question is immediately available again for review regardless of what the user enters
+                if status == "correct":
+                    with open("revision_schedule.json", "r") as f:
+                        schedule = json.load(f)
+                    for entry in schedule: # look up how long until we need to review again in the revision schedule:
+                        if entry["revision_number"] == dictionary["revision_streak"]:
+                            time_till_next_review = entry["time_till_next_review"]
+                        else:
+                            pass # Not the correct entry, keep searching
+                    dictionary["next_revision_due"] = datetime.now() + timedelta(hours=time_till_next_review)
+                else: # if not correct then incorrect, function should error out if status is not fed into properly:
+                    if settings["due_date_sensitivity"] >= 24: # If the user sets a very high value for sensitivity, ensure that the value is no greater than the revision schedules base time:
+                        settings["due_date_sensitivity"] = 24
+                    dictionary["next_revision_due"] = datetime.now() + timedelta(hours=settings["due_date_sensitivity"])
                 # Convert value back to a string so it can be written back to the json file
                 dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
             except KeyError:
