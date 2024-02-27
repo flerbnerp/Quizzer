@@ -14,11 +14,8 @@ import requests
 # print(data)
 # print(type(data))
 ##### Rebuilding Quizzer main interface in dummy_app:
-from initialize import initialize_or_update_json, initialize_master_question_list
-from scoring_algorithm import generate_revision_schedule, update_score
-from stats import initialize_stats_json, completed_quiz
-from settings import initialize_settings_json, initialize_settings_json_keys##
 import os
+import urllib.parse
 import json
 import subprocess
 ##########################################################
@@ -29,6 +26,9 @@ subprocess.Popen(command, shell=True)
 root = "http://127.0.0.1:8000/"
 command_pop_quiz = "populate_quiz"
 command_get_stats = "stats"
+command_initialize_quizzer = "initialize_quizzer"
+command_completed_quiz = "completed_quiz"
+command_update_score = "update_score"
 ##########################################################   
 def begin_quiz():
     '''Quiz interface'''
@@ -89,17 +89,22 @@ def begin_quiz():
             # Ask user whether they answered the question correct, then update score accordingly
             valid_response = False
             file_name = f"{question_list[0]['file_name']}"
-            status = ""
             while valid_response == False:
                 user_input = input("Got it? Question Correct?")
                 if user_input == "yes" or user_input == "y":
-                    status = "correct"
-                    update_score(status, file_name)
+                    first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
+                    encoded_file_name = urllib.parse.quote(file_name)
+                    query = first_part + encoded_file_name
+                    response = requests.get(f"{query}")
+                    print(response)
                     valid_response = True
                     os.system("clear")
                 elif user_input == "no" or user_input == "n":
-                    status = "incorrect"
-                    update_score(status, file_name)
+                    first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=incorrect&file_name="
+                    encoded_file_name = urllib.parse.quote(file_name)
+                    query = first_part + encoded_file_name
+                    response = requests.get(f"{query}")
+                    print(response)
                     valid_response = True
                     os.system("clear")
                 elif user_input == "exit":
@@ -123,7 +128,7 @@ def begin_quiz():
             returned_sorted_questions = data["sorted_questions"]
             print("You've completed a quiz!")
             print(f"The next quiz contains {len(question_list)} questions out of {len(returned_sorted_questions)} available for review")
-            completed_quiz()
+            requests.get(f"{root}{command_completed_quiz}")
             user_input = input("Would you like to continue with another one?")
             if user_input == "yes":
                 print("DID YOU SEE ME?")
@@ -133,58 +138,18 @@ def begin_quiz():
             else:
                 print("Please enter a valid response")
         else:
-            pass
-        
-        
-        
-# def initialize_quizzer(): # This function will contain all the initialization functions from various modules:
-#     # Scan provided file directory for all .md files and store data in config.json
-#     initialize_or_update_json() 
-#     initialize_master_question_list()
-#     # Initialize revision schedule for scoring algorithm
-#     try: #Don't generate the revision schedule if it already exists:
-#         with open("revision_schedule.json", "r") as f:
-#             print("revision schedule exists")
-#     except FileNotFoundError:
-#         generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
-    
-#     # Initialize stats.json (if stats.json does not exist)
-#     initialize_settings_json()
-#     initialize_settings_json_keys()
-#     initialize_stats_json()
-    
+            pass  
 ####################################################################
 # If it takes an excessively long time to scan_directory, then we can simply add in the scan_directory as a menu option and update scan to write to file, for now it's only a few seconds to scan, If
 # takes longer than a minute, then likely it would be beneficial to optimize.
-# Currently its about 2000 notes and only a few seconds to initialize. Given this it would require 10's of thousands of notes to become a problem
+# Currently its about 2000 notes and only a second to initialize. Given this it would require 10's of thousands of notes to become a problem
 #################################################################################################################################################
-# Initialize variables
-vault_path = "/home/karibar/Documents/Education"
-error = False # for use if the user enters an invalid input
-#################################################################################################################################################
-## Calling Initalization functions
-config_file_exists = False
-questions_file_exists = False
+# Initialize Quizzer using API
+start_quizzer = requests.get(f"{root}{command_initialize_quizzer}")
 
-try:
-    with open("config.json", "r") as f:
-        config_file_exists = True
-except:
-    pass
-try:
-    with open("questions.json", "r") as f:
-        questions_file_exists = True
-except:
-    pass
-if (config_file_exists == False) or (questions_file_exists == False):
-    print("Missing files, long initialization in progress")
-    initialize_quizzer()
-    initialize_quizzer()
-    initialize_quizzer()
-else:
-    initialize_quizzer()
 #############################################################################
 ## Main Menu Interface:
+error = False
 while True:
     #### Options and other configuration stuff can be added here for the user.
     print("Welcome to Quizzer")
@@ -205,7 +170,7 @@ while True:
     elif user_input == "2":
         os.system("clear")
         print("Updating Quizzer")
-        initialize_quizzer()
+        start_quizzer = requests.get(f"{root}{command_initialize_quizzer}")
         input("Press enter to continue")
     elif user_input == "3":
         os.system("clear")

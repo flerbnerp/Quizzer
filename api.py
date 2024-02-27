@@ -9,6 +9,7 @@
 from typing import Union
 from fastapi import FastAPI
 import json
+import urllib.parse
 from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
@@ -33,7 +34,7 @@ def return_question_list():
     question_list, returned_sorted_questions = populate_question_list()
     return {"question_list": question_list, "sorted_questions": returned_sorted_questions}
 
-# example
+# example (I'll be reading from this example for the update score call)
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
     if q == "test" and item_id == 5:
@@ -42,7 +43,20 @@ def read_item(item_id: int, q: Union[str, None] = None):
         response = "try again"
     return response
 
-@app.get("/initialize_quiz")
+@app.get("/update_score/{status, file_name}")
+def question_answer_update_score(status: str, file_name: str):
+    decoded_file_name = urllib.parse.unquote(file_name)
+    file_name = decoded_file_name
+    if status == "correct":
+        update_score(status, file_name)
+    elif status == "incorrect":
+        update_score(status, file_name)
+    else:
+        response = "Please enter a valid status, 'correct' or 'incorrect'"
+        return response
+    
+
+@app.get("/initialize_quizzer")
 def initialize_quizzer(): # This function will contain all the initialization functions from various modules:
     def initialization():
     # Scan provided file directory for all .md files and store data in config.json
@@ -53,7 +67,6 @@ def initialize_quizzer(): # This function will contain all the initialization fu
         initialize_settings_json_keys()
         initialize_stats_json()
     vault_path = "/home/karibar/Documents/Education"
-    error = False # for use if the user enters an invalid input
     #################################################################################################################################################
     ## Calling Initalization functions
     config_file_exists = False
@@ -75,3 +88,11 @@ def initialize_quizzer(): # This function will contain all the initialization fu
         initialization()
     else:
         initialization()
+        
+@app.get("/completed_quiz")
+def update_completed_quiz_stat():
+    '''
+    Tells Quizzer that a quiz is completed and to update stats.json, among other general stats
+    '''
+    completed_quiz()
+    

@@ -4,3 +4,940 @@ INFO:     Will watch for changes in these directories: ['/home/karibar/Documents
 ERROR:    [Errno 98] Address already in use
 INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
 ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [5732] using WatchFiles
+INFO:     Started server process [5752]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_ecology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_theology_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:49756 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:35968 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53994 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=%22In%20HTML,%20what%20does%20the%20name%20attribute%20do?%20and%20What%20is%20the%20proper%20syntax%20for%20the%20name%20attribute?..md%22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47230 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5752]
+INFO:     Started server process [8901]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8901]
+INFO:     Started server process [9073]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_web_design_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:34494 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:41274 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41282 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=%22tan%5Cu207b%5Cu00b9(%5Cu03b1)%20has%20domain%20what?%20and%20range%20what?..md%22 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'builtin_function_or_method' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 327, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 301, in jsonable_encoder
+    jsonable_encoder(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 331, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 331, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 287, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [TypeError("'builtin_function_or_method' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9073]
+INFO:     Started server process [9980]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9980]
+INFO:     Started server process [10597]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10597]
+INFO:     Started server process [10756]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10756]
+INFO:     Started server process [10843]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10843]
+INFO:     Started server process [11168]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11168]
+INFO:     Started server process [11236]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11236]
+INFO:     Started server process [11667]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11667]
+INFO:     Started server process [11904]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11904]
+INFO:     Started server process [11987]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_history_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:55114 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:55118 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55134 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20complex%20equation%20001..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11987]
+INFO:     Started server process [12852]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_ecology_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:55930 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:32800 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32814 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20HTML,%20what%20does%20the%20name%20attribute%20do?%20and%20What%20is%20the%20proper%20syntax%20for%20the%20name%20attribute?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12852]
+INFO:     Started server process [13370]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13370]
+INFO:     Started server process [13833]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_astronomy_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_english_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:47516 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:34866 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34872 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20and%20where%20did%20John%20Locke%20die?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43086 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20coined%20the%20term%20theodicy?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53368 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20HTML,%20what%20does%20the%20name%20attribute%20do?%20and%20What%20is%20the%20proper%20syntax%20for%20the%20name%20attribute?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39478 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20correct%20HTML%20for%20creating%20a%20hyperlink%20to%20another%20website?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41518 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20what%20two%20ways%20do%20images%20appear%20on%20websites?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49438 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20degree%20character-%20%C2%B0..md HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_astronomy_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_english_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:49448 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:49458 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40820 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20and%20where%20did%20John%20Locke%20die?..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:59846 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57488 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20degree%20character-%20%C2%B0..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13833]
+INFO:     Started server process [14901]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_computer_science_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:43882 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 203
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:43894 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56312 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20subscript%201%20or%20%E2%82%81?..md HTTP/1.1" 200 OK
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-24 18:30:47
+The next revision is due on 2024-02-25 20:54:47
+INFO:     127.0.0.1:37118 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=The%20inverse%20of%20cos(%CE%B8)%20is%20limited%20to%20what?..md HTTP/1.1" 200 OK
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-24 09:23:12
+The next revision is due on 2024-02-25 20:31:30
+INFO:     127.0.0.1:45882 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=another%20name%20for%20horizontal%20shift%20is%20what?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14901]
+INFO:     Started server process [16817]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:44662 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20subscript%202%20or%20%E2%82%82?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16817]
+INFO:     Started server process [17687]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17687]
+INFO:     Started server process [17858]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17858]
+INFO:     Started server process [17985]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_psychology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_history_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:60878 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 201
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:60886 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45160 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=solve%20for%20%CE%B8-%20cos(%CE%B8)%20=%209%12..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17985]
+INFO:     Started server process [19533]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19533]
+INFO:     Started server process [20110]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 201
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:57382 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49344 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20subscript%202%20or%20%E2%82%82?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20110]
+INFO:     Started server process [21495]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21495]
+INFO:     Started server process [21584]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-24 08:04:13
+The next revision is due on 2024-02-25 13:06:37
+INFO:     127.0.0.1:45882 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20what%20two%20ways%20do%20images%20appear%20on%20websites?..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:45200 - "GET /populate_quiz HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21584]
+INFO:     Started server process [21972]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21972]
+INFO:     Started server process [22350]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22350]
+INFO:     Started server process [22781]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22781]
+INFO:     Started server process [22990]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_psychology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_writing_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:53226 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:53238 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60546 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20subscript%201%20or%20%E2%82%81?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22990]
+INFO:     Started server process [24706]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24706]
+INFO:     Started server process [24810]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24810]
+INFO:     Started server process [25500]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25500]
+INFO:     Started server process [25572]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_computer_science_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:53888 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:53894 - "GET /populate_quiz HTTP/1.1" 200 OK
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-25 14:31:56
+The next revision is due on 2024-02-26 16:55:56
+INFO:     127.0.0.1:56172 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u%2B%20code%20for%20subscript%201%20or%20%E2%82%81%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 199
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:58910 - "GET /populate_quiz HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25572]
+INFO:     Started server process [26383]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26383]
+INFO:     Started server process [26609]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26609]
+INFO:     Started server process [26999]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-24 18:48:23
+The next revision is due on 2024-02-25 21:12:23
+INFO:     127.0.0.1:50926 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=For%20angles%20in%20the%20interval%2C%20if%20sin%28%CE%B8%29%20%3D%20%CE%B1%2C%20then%20what%20is%20the%20inverse%20function%3F..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26999]
+INFO:     Started server process [27877]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27877]
+INFO:     Started server process [27940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27940]
+INFO:     Started server process [27978]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27978]
+INFO:     Started server process [28011]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28011]
+INFO:     Started server process [28439]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28439]
+INFO:     Started server process [29345]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29345]
+INFO:     Started server process [29505]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29505]
+INFO:     Started server process [29675]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
