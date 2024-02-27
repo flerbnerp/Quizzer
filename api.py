@@ -46,6 +46,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 @app.get("/update_score/{status, file_name}")
 def question_answer_update_score(status: str, file_name: str):
     decoded_file_name = urllib.parse.unquote(file_name)
+    response = f"{decoded_file_name}, {file_name}"
     file_name = decoded_file_name
     if status == "correct":
         update_score(status, file_name)
@@ -53,7 +54,7 @@ def question_answer_update_score(status: str, file_name: str):
         update_score(status, file_name)
     else:
         response = "Please enter a valid status, 'correct' or 'incorrect'"
-        return response
+    return response
     
 
 @app.get("/initialize_quizzer")

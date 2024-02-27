@@ -1,19 +1,5 @@
-import requests
-# root = "http://127.0.0.1:8000/"
-
-# test_dict = {
-#     "item_id": 5,
-#     "q": "test"
-# }
-# params={"q": "test"}
-# path = f"items/{test_dict['item_id']}"
-
-# req = requests.get(url=f"{root}{path}", params=params)
-# data = req.json()
-
-# print(data)
-# print(type(data))
 ##### Rebuilding Quizzer main interface in dummy_app:
+import requests
 import os
 import urllib.parse
 import json
@@ -94,9 +80,13 @@ def begin_quiz():
                 if user_input == "yes" or user_input == "y":
                     first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
                     encoded_file_name = urllib.parse.quote(file_name)
+                    print(encoded_file_name)
+                    print(urllib.parse.unquote(encoded_file_name))
                     query = first_part + encoded_file_name
                     response = requests.get(f"{query}")
                     print(response)
+                    print(response.text)
+                    input()
                     valid_response = True
                     os.system("clear")
                 elif user_input == "no" or user_input == "n":

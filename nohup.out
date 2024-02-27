@@ -941,3 +941,795 @@ INFO:     Finished server process [29505]
 INFO:     Started server process [29675]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29675]
+INFO:     Started server process [31245]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31245]
+INFO:     Started server process [35538]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35538]
+INFO:     Started server process [35846]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35846]
+INFO:     Started server process [35892]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_philosophy_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_english_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:42332 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:42342 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40298 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20coined%20the%20term%20theodicy%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+INFO:     127.0.0.1:35284 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=You%20have%20an%20html%20form%20and%20would%20like%20to%20provide%20suggested%20options%20for%20an%20input%20field.%20How%20should%20you%20accomplish%20this%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_philosophy_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_english_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:56002 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:56006 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43368 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20are%20five%20broad%20categories%20of%20informative%20speaking%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35892]
+INFO:     Started server process [36868]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_mythology_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:58514 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:58520 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58532 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20coined%20the%20term%20theodicy%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [36868]
+INFO:     Started server process [37432]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_ecology_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:51796 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:51800 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39914 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20correct%20HTML%20for%20creating%20a%20hyperlink%20to%20another%20website%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37432]
+INFO:     Started server process [37706]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37706]
+INFO:     Started server process [37727]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_philosophy_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:58826 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:58842 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58856 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=You%20have%20an%20html%20form%20and%20would%20like%20to%20provide%20suggested%20options%20for%20an%20input%20field.%20How%20should%20you%20accomplish%20this%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 48, in question_answer_update_score
+    response = f"{decoded_file_name}, {file_name}"
+UnboundLocalError: local variable 'decoded_file_name' referenced before assignment
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37727]
+INFO:     Started server process [38153]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_communication_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_biology_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:54618 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 198
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:54624 - "GET /populate_quiz HTTP/1.1" 200 OK
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-23 08:41:51
+The next revision is due on 2024-02-24 08:41:51
+INFO:     127.0.0.1:59086 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=What%20are%20five%20broad%20categories%20of%20informative%20speaking%3F..md HTTP/1.1" 200 OK
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-21 19:49:54
+The next revision is due on 2024-02-22 19:49:54
+INFO:     127.0.0.1:59534 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Is%20materialism%20consistent%20with%20modern%20science%3F%20Why%20or%20why%20not%3F..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38153]
+INFO:     Started server process [38887]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-24 18:22:58
+The next revision is due on 2024-02-25 18:22:58
+INFO:     127.0.0.1:59278 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20and%20where%20did%20John%20Locke%20die%3F..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38887]
+INFO:     Started server process [39395]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-21 10:33:33
+The next revision is due on 2024-02-22 15:35:57
+INFO:     127.0.0.1:36584 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Sometimes%20arguments%20have%20an%20implicit%20premise.%20What%20does%20this%20mean%3F..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 57, in question_answer_update_score
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39395]
+INFO:     Started server process [40033]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40033]
+INFO:     Started server process [40542]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-24 09:40:21
+The next revision is due on 2024-02-25 12:04:21
+INFO:     127.0.0.1:42066 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=You%20have%20an%20html%20form%20and%20would%20like%20to%20provide%20suggested%20options%20for%20an%20input%20field.%20How%20should%20you%20accomplish%20this%3F..md HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1250 items in the most recent scan
+Total file matches is: 1250 compared to 1255 pre-existing files in Vault
+total operations to complete scan is: 790,200
+-------------------------------------------------------
+questions.json exists
+There are 387 questions loaded into Quizzer.
+There are 387 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_psychology_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_latin_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_communication_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:50368 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 387
+number of questions up for review: 194
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 42
+Average quiz length taken  : 20.12
+Total Questions answered   : 845
+--------------------------------
+Questions Stats:
+Total Questions in database: 387
+Questions up for review    : 194
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 68
+Questions with revision streak of 2 is 44
+Questions with revision streak of 3 is 83
+Questions with revision streak of 4 is 94
+Questions with revision streak of 5 is 57
+Questions with revision streak of 6 is 33
+Questions with revision streak of 7 is 8
+INFO:     127.0.0.1:50380 - "GET /stats HTTP/1.1" 200 OK
