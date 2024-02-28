@@ -46,7 +46,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 @app.get("/update_score/{status, file_name}")
 def question_answer_update_score(status: str, file_name: str):
-    decoded_file_name = urllib.parse.unquote(file_name)
+    decoded_file_name = base64.b64decode(file_name.encode('utf-8')).decode('utf-8')
     response = f"{decoded_file_name}, {file_name}"
     file_name = decoded_file_name
     if status == "correct":
