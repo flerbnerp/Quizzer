@@ -10,6 +10,7 @@ from typing import Union
 from fastapi import FastAPI
 import json
 import urllib.parse
+import base64
 from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
@@ -45,7 +46,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 @app.get("/update_score/{status, file_name}")
 def question_answer_update_score(status: str, file_name: str):
-    decoded_file_name = urllib.parse.unquote(file_name)
+    decoded_file_name = base64.b64decode(file_name.encode('utf-8')).decode('utf-8')
     response = f"{decoded_file_name}, {file_name}"
     file_name = decoded_file_name
     if status == "correct":

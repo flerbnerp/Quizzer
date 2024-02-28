@@ -50,6 +50,19 @@ def populate_question_list():
     subject_set = get_subjects()
     question_list_is_filled = False
     subjects = list(subject_set)
+    # In order to add a priority ranking for which subjects get priority for being filled, we'll have to sort the subjects variable which contains our set of subjects to iterate over
+    #########################################
+    # Sort subject list by priority setting for each subject
+    # for i in subjectss
+    #   i = settings[priority_setting_{i}] + i
+    # 
+    # subjects.sort()
+    # for i in subjects:
+    #   i = i[len(settings[priority_setting_{i}]):]
+    # List is now sorted by priority defined in settings
+    
+    
+    #########################################
     subjects_list = []
     subjects_by_count = {}
     while question_list_is_filled == False:

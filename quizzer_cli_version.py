@@ -2,6 +2,7 @@
 import requests
 import os
 import urllib.parse
+import base64
 import json
 import subprocess
 ##########################################################
@@ -76,22 +77,21 @@ def begin_quiz():
             valid_response = False
             file_name = f"{question_list[0]['file_name']}"
             while valid_response == False:
+                print("________________________________________________")
                 user_input = input("Got it? Question Correct?")
                 if user_input == "yes" or user_input == "y":
                     first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
-                    encoded_file_name = urllib.parse.quote(file_name)
+                    encoded_file_name = base64.b64encode(file_name.encode('utf-8')).decode('utf-8')
                     print(encoded_file_name)
-                    print(urllib.parse.unquote(encoded_file_name))
                     query = first_part + encoded_file_name
                     response = requests.get(f"{query}")
                     print(response)
                     print(response.text)
-                    input()
                     valid_response = True
                     os.system("clear")
                 elif user_input == "no" or user_input == "n":
                     first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=incorrect&file_name="
-                    encoded_file_name = urllib.parse.quote(file_name)
+                    encoded_file_name = base64.b64encode(file_name.encode('utf-8')).decode('utf-8')
                     query = first_part + encoded_file_name
                     response = requests.get(f"{query}")
                     print(response)
