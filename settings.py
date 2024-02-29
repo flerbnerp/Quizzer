@@ -45,11 +45,20 @@ def initialize_settings_json_keys():
             print("due_date_sensitivity settings exists")
                 
         for i in subject_set:
+            ##################################################
+            # initialize subject weighting
             if settings.get(f"subject_{i}_weight") == None:
-                print(f"key subject_{i}_weight missing, initializing key to 1")
+                print(f"key subject_{i}_weight missing, initializing key value to 1")
                 settings[f"subject_{i}_weight"] = 1
             else:
                 print(f"subject_{i}_weight exists in settings.json")
+            ##################################################
+            # initialize subject priority
+            if settings.get(f"subject_{i}_priority") == None:
+                print(f"key subject_{i}_weight missing, initializing key value to 1")
+                settings[f"subject_{i}_priority"] = 1
+            else:
+                print(f"subject_{i}_priority exists in settings.json")
         
         with open("settings.json", "w") as f:
             json.dump(settings, f)
