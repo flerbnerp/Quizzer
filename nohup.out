@@ -1,0 +1,69 @@
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [6177] using WatchFiles
+INFO:     Started server process [6179]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1282 items in the most recent scan
+Total file matches is: 1282 compared to 1290 pre-existing files in Vault
+total operations to complete scan is: 831,536
+-------------------------------------------------------
+questions.json exists
+There are 416 questions loaded into Quizzer.
+There are 416 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_computer_science_weight exists in settings.json
+subject_english_weight exists in settings.json
+subject_religion_weight exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_biology_weight exists in settings.json
+subject_geology_weight exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_communication_weight exists in settings.json
+subject_theology_weight exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_history_weight exists in settings.json
+subject_writing_weight exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_latin_weight exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:54572 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 416
+number of questions up for review: 300
+The following files do not have subject value: 
+question_template..md
+current quiz length is set to: 10
+INFO:     127.0.0.1:53468 - "GET /populate_quiz HTTP/1.1" 200 OK
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-27 18:03:11
+The next revision is due on 2024-02-28 23:37:25
+INFO:     127.0.0.1:41132 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3Vic2NyaXB0IDIgb3Ig4oKCPy4ubWQ= HTTP/1.1" 200 OK
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-26 10:08:45
+The next revision is due on 2024-02-27 15:11:09
+INFO:     127.0.0.1:36648 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3FydCBjaGFyYWN0ZXItIOKImi4ubWQ= HTTP/1.1" 200 OK
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-26 10:12:33
+The next revision is due on 2024-02-27 18:09:11
+INFO:     127.0.0.1:51618 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCB3aGF0IGlzIHRoZSBzdGFuZGFyZCBhbW91bnQgb2Ygc3BhY2VzIHRvIHVzZSBmb3IgaW5kZW50YXRpb24/Li5tZA== HTTP/1.1" 200 OK

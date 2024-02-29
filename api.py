@@ -8,8 +8,6 @@
 #How to run the server component
 from typing import Union
 from fastapi import FastAPI
-import json
-import urllib.parse
 import base64
 from initialize import initialize_or_update_json, initialize_master_question_list
 from scoring_algorithm import generate_revision_schedule, update_score
