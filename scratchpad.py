@@ -1,8 +1,2 @@
-import math
-import json
-dictionary = {"name": "thing"}
-string_dict = str(dictionary)
-
-print(type(dictionary))
-print(type(string_dict))
-print(string_dict)
+smallest_two = sorted(map(int, input().split()))[:2]
+print(f"{smallest_two[0]} and {smallest_two[1]}")

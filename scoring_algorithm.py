@@ -64,8 +64,7 @@ def update_score(status, file_name):
                 dictionary["last_revised"] = datetime.now()
                 dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")
             try: ###############################################
-                check_variable = dictionary["next_revision_due"]
-                print(f"The next revision is due on {check_variable}")
+                
                 # Convert string json value back to a <class 'datetime.datetime'> type variable so it can be worked with:
                 dictionary["next_revision_due"] = datetime.strptime(dictionary["next_revision_due"], "%Y-%m-%d %H:%M:%S")
                 
@@ -86,6 +85,8 @@ def update_score(status, file_name):
                     dictionary["next_revision_due"] = datetime.now() + timedelta(hours=settings["due_date_sensitivity"])
                 # Convert value back to a string so it can be written back to the json file
                 dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
+                check_variable = dictionary["next_revision_due"]
+                print(f"The next revision is due on {check_variable}")
             except KeyError:
                 print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
                 dictionary["next_revision_due"] = datetime.now() + timedelta(hours=24)
