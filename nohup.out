@@ -254,3 +254,533 @@ Questions with revision streak of 7 is 31
 Questions with revision streak of 8 is 5
 Questions with revision streak of 9 is 8
 INFO:     127.0.0.1:58834 - "GET /stats HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1333 items in the most recent scan
+Total file matches is: 1333 compared to 1343 pre-existing files in Vault
+total operations to complete scan is: 899,792
+-------------------------------------------------------
+questions.json exists
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:44820 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 252
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 94
+Average quiz length taken  : 14.52
+Total Questions answered   : 1365
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 252
+Average Questions per day  : 295.382
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 78
+Questions with revision streak of 2 is 44
+Questions with revision streak of 3 is 44
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 108
+Questions with revision streak of 6 is 61
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 5
+Questions with revision streak of 9 is 8
+INFO:     127.0.0.1:44834 - "GET /stats HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [6624] using WatchFiles
+INFO:     Started server process [6626]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 1 new entries to config.json
+There are 1334 items in the most recent scan
+Total file matches is: 1333 compared to 1343 pre-existing files in Vault
+total operations to complete scan is: 901,138
+-------------------------------------------------------
+questions.json exists
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:60448 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 260
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:40354 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45594 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20greek%20letter%20alpha?..md HTTP/1.1" 200 OK
+Revision streak was 7, streak is now 8
+This question was last revised on 2024-02-29 08:46:04
+The next revision is due on 2024-03-04 09:39:13
+INFO:     127.0.0.1:46416 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20are%20the%20several%20strategies%20to%20generate%20ideas?..md HTTP/1.1" 200 OK
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-27 14:41:20
+The next revision is due on 2024-03-03 20:15:54
+INFO:     127.0.0.1:34668 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20creating%20a%20table%20in%20html,%20how%20do%20you%20describe%20rows%20or%20groups%20of%20rows%20as%20belonging%20to%20header,%20footer%20or%20the%20body%20of%20a%20table?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34680 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20unicode%20u+%20code%20for%20the%20%5Cu22c3%20symbol?%20big%20cup%20or%20union..md HTTP/1.1" 200 OK
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 14:34:50
+The next revision is due on 2024-03-04 04:43:30
+INFO:     127.0.0.1:58218 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20coined%20the%20term%20theodicy?..md HTTP/1.1" 200 OK
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-27 14:42:31
+The next revision is due on 2024-03-03 13:24:29
+INFO:     127.0.0.1:54444 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20contemporary%20philosophy,%20what%20has%20the%20theory%20of%20materialism%20been%20replaced%20with?..md HTTP/1.1" 200 OK
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 12:54:12
+The next revision is due on 2024-03-02 13:50:42
+INFO:     127.0.0.1:44046 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=What%20are%20five%20broad%20categories%20of%20informative%20speaking?..md HTTP/1.1" 200 OK
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-26 17:29:37
+The next revision is due on 2024-03-03 13:25:36
+INFO:     127.0.0.1:36128 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Is%20materialism%20consistent%20with%20modern%20science?%20Why%20or%20why%20not?..md HTTP/1.1" 200 OK
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-27 14:43:49
+The next revision is due on 2024-03-03 20:17:48
+INFO:     127.0.0.1:48322 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20using%20the%20input%20form%20element,%20if%20you%20don't%20include%20the%20type=%22%22%20attribute,%20what%20value%20does%20input%20default%20to?..md HTTP/1.1" 200 OK
+Revision streak was 8, streak is now 9
+This question was last revised on 2024-02-29 08:43:31
+The next revision is due on 2024-03-04 15:10:22
+INFO:     127.0.0.1:60614 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20is%20the%20Roman%20God%20of%20the%20Underworld?..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 253
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:60628 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60630 - "GET /completed_quiz HTTP/1.1" 200 OK
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-29 14:51:48
+The next revision is due on 2024-03-03 16:42:13
+INFO:     127.0.0.1:56754 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20python%20what%20is%20a%20docstring?..md HTTP/1.1" 200 OK
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 15:09:03
+The next revision is due on 2024-03-02 13:53:06
+INFO:     127.0.0.1:56704 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=In%20philosophy,%20what%20is%20a%20theory?..md HTTP/1.1" 200 OK
+Revision streak was 8, streak is now 9
+This question was last revised on 2024-02-29 09:01:06
+The next revision is due on 2024-03-04 15:11:42
+INFO:     127.0.0.1:58836 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20was%20the%20ancient%20Greek%20God%20of%20opportunity%20and%20perfect%20timing?..md HTTP/1.1" 200 OK
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-29 14:42:15
+The next revision is due on 2024-03-03 16:42:45
+INFO:     127.0.0.1:46958 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20difference%20between%20a%20denotative%20definition%20and%20a%20connotative%20definition?..md HTTP/1.1" 200 OK
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-27 14:42:53
+The next revision is due on 2024-03-03 20:19:30
+INFO:     127.0.0.1:46964 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20correct%20HTML%20for%20creating%20a%20hyperlink%20to%20another%20website?..md HTTP/1.1" 200 OK
+Revision streak was 8, streak is now 9
+This question was last revised on 2024-02-29 09:02:51
+The next revision is due on 2024-03-04 15:12:25
+INFO:     127.0.0.1:46346 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20makes%20something%20memorable?..md HTTP/1.1" 200 OK
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 14:42:09
+The next revision is due on 2024-03-04 00:20:55
+INFO:     127.0.0.1:50530 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20scope%20attribute%20in%20an%20HTML%20table%20do?..md HTTP/1.1" 200 OK
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-26 16:04:34
+The next revision is due on 2024-03-04 04:48:21
+INFO:     127.0.0.1:41864 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Can%20you%20think%20of%20other%20ways%20of%20defending%20human%20dignity%20and%20sacredness,%20that%20aren't%20Reason?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45682 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u+%20code%20for%20greek%20letter%20alpha?..md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47466 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20unicode%20u+%20code%20for%20the%20%5Cu22c3%20symbol?%20big%20cup%20or%20union..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 246
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:47476 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47482 - "GET /completed_quiz HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6626]
+INFO:     Started server process [8305]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8305]
+INFO:     Started server process [8411]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 246
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:35784 - "GET /populate_quiz HTTP/1.1" 200 OK
+What is a deductive argument?..md
+What is a deductive argument?..md
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-28 07:33:10
+The next revision is due on 2024-03-03 13:32:04
+INFO:     127.0.0.1:60874 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20a%20deductive%20argument?..md HTTP/1.1" 200 OK
+Evaluate the following statements in Python 0002..md
+Evaluate the following statements in Python 0002..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:45:14
+The next revision is due on 2024-03-04 00:24:39
+INFO:     127.0.0.1:54580 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20the%20following%20statements%20in%20Python%200002..md HTTP/1.1" 200 OK
+What does the randint() function do?..md
+What does the randint() function do?..md
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-29 14:53:48
+The next revision is due on 2024-03-03 16:48:15
+INFO:     127.0.0.1:58234 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20does%20the%20randint()%20function%20do?..md HTTP/1.1" 200 OK
+True or False, An <iframe> is used to. . ...md
+True or False, An <iframe> is used to. . ...md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 14:41:34
+The next revision is due on 2024-03-04 00:25:34
+INFO:     127.0.0.1:39144 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=True%20or%20False,%20An%20%3Ciframe%3E%20is%20used%20to.%20.%20...md HTTP/1.1" 200 OK
+In Python what does the term Object identity refer to? What operator checks whether two variables share the same object identity?..md
+In Python what does the term Object identity refer to? What operator checks whether two variables share the same object identity?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:44:57
+The next revision is due on 2024-03-04 00:26:03
+INFO:     127.0.0.1:32866 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%20what%20does%20the%20term%20Object%20identity%20refer%20to?%20What%20operator%20checks%20whether%20two%20variables%20share%20the%20same%20object%20identity?..md HTTP/1.1" 200 OK
+What does the identity operators do?..md
+What does the identity operators do?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:46:17
+The next revision is due on 2024-03-04 00:26:13
+INFO:     127.0.0.1:53880 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20does%20the%20identity%20operators%20do?..md HTTP/1.1" 200 OK
+What is the unicode u  code for the \u22c3 symbol? big cup or union..md
+What is the unicode u  code for the ⋃ symbol? big cup or union..md
+INFO:     127.0.0.1:51892 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20unicode%20u+%20code%20for%20the%20%5Cu22c3%20symbol?%20big%20cup%20or%20union..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 240
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 96
+Average quiz length taken  : 14.43
+Total Questions answered   : 1385
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 240
+Average Questions per day  : 293.870
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 78
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 44
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 106
+Questions with revision streak of 6 is 64
+Questions with revision streak of 7 is 32
+Questions with revision streak of 8 is 3
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:50402 - "GET /stats HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8411]
+INFO:     Started server process [13271]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13271]
+INFO:     Started server process [13321]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13321]
+INFO:     Started server process [13705]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13705]
+INFO:     Started server process [13763]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13763]
+INFO:     Started server process [13928]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13928]
+INFO:     Started server process [14147]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14147]
+INFO:     Started server process [14451]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14451]
+INFO:     Started server process [14555]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14555]
+INFO:     Started server process [14703]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14703]
+INFO:     Started server process [15196]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1334 items in the most recent scan
+Total file matches is: 1334 compared to 1344 pre-existing files in Vault
+total operations to complete scan is: 901,139
+-------------------------------------------------------
+questions.json exists
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:49542 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 240
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 96
+Average quiz length taken  : 14.43
+Total Questions answered   : 1385
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 240
+Average Questions per day  : 293.870
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 78
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 44
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 106
+Questions with revision streak of 6 is 64
+Questions with revision streak of 7 is 32
+Questions with revision streak of 8 is 3
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:53100 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 240
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:58622 - "GET /populate_quiz HTTP/1.1" 200 OK
+What is the unicode u+ code for the ⋃ symbol? big cup or union..md
+What is the unicode u+ code for the ⋃ symbol? big cup or union..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 14:24:11
+The next revision is due on 2024-03-04 00:36:41
+INFO:     127.0.0.1:35024 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20unicode%20u%2B%20code%20for%20the%20%E2%8B%83%20symbol%3F%20big%20cup%20or%20union..md HTTP/1.1" 200 OK
+What is the proper structure for the table element in HTML?..md
+What is the proper structure for the table element in HTML?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 14:43:04
+The next revision is due on 2024-03-04 00:37:25
+INFO:     127.0.0.1:52998 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20proper%20structure%20for%20the%20table%20element%20in%20HTML%3F..md HTTP/1.1" 200 OK
+Chalmers' thought experiment about zombies is a challenge to what theory?..md
+Chalmers' thought experiment about zombies is a challenge to what theory?..md
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-28 07:33:29
+The next revision is due on 2024-03-03 13:45:27
+INFO:     127.0.0.1:38044 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Chalmers%27%20thought%20experiment%20about%20zombies%20is%20a%20challenge%20to%20what%20theory%3F..md HTTP/1.1" 200 OK
+What is an inductive argument?..md
+What is an inductive argument?..md
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-27 14:43:25
+The next revision is due on 2024-03-03 13:46:07
+INFO:     127.0.0.1:40128 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20an%20inductive%20argument%3F..md HTTP/1.1" 200 OK
+What is tan(2π over 3)?..md
+What is tan(2π over 3)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 10:26:50
+The next revision is due on 2024-03-03 10:50:39
+INFO:     127.0.0.1:35428 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan%282%CF%80%20over%203%29%3F..md HTTP/1.1" 200 OK
