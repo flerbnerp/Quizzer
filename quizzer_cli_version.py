@@ -1,8 +1,7 @@
 ##### Rebuilding Quizzer main interface in dummy_app:
 import requests
 import os
-import urllib.parse
-import base64
+import codecs
 import json
 import subprocess
 ##########################################################
@@ -81,7 +80,7 @@ def begin_quiz():
                 user_input = input("Got it? Question Correct?")
                 if user_input == "yes" or user_input == "y":
                     first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
-                    encoded_file_name = base64.b64encode(file_name.encode('utf-8')).decode('utf-8')
+                    encoded_file_name = codecs.encode(file_name, 'unicode_escape').decode('utf8')
                     print(encoded_file_name)
                     query = first_part + encoded_file_name
                     response = requests.get(f"{query}")
@@ -91,7 +90,7 @@ def begin_quiz():
                     os.system("clear")
                 elif user_input == "no" or user_input == "n":
                     first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=incorrect&file_name="
-                    encoded_file_name = base64.b64encode(file_name.encode('utf-8')).decode('utf-8')
+                    encoded_file_name = codecs.encode(file_name, 'unicode_escape').decode('utf8')
                     query = first_part + encoded_file_name
                     response = requests.get(f"{query}")
                     print(response)

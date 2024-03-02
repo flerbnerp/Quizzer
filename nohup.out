@@ -1,15 +1,9 @@
 INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
 ERROR:    [Errno 98] Address already in use
 INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
-ERROR:    [Errno 98] Address already in use
-INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
-ERROR:    [Errno 98] Address already in use
-INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
-ERROR:    [Errno 98] Address already in use
-INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [6177] using WatchFiles
-INFO:     Started server process [6179]
+INFO:     Started reloader process [4816] using WatchFiles
+INFO:     Started server process [4818]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
@@ -17,481 +11,164 @@ ERROR:    [Errno 98] Address already in use
 config.json exists
 Total items not found in existing items is: 0
 Added a total of 0 new entries to config.json
-There are 1282 items in the most recent scan
-Total file matches is: 1282 compared to 1290 pre-existing files in Vault
-total operations to complete scan is: 831,536
+There are 1333 items in the most recent scan
+Total file matches is: 1333 compared to 1343 pre-existing files in Vault
+total operations to complete scan is: 899,792
 -------------------------------------------------------
 questions.json exists
-There are 416 questions loaded into Quizzer.
-There are 416 questions with valid keys, and 0 with invalid keys.
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
 settings.json exists
 time_between_revisions setting already exists
 due_date_sensitivity settings exists
-subject_computer_science_weight exists in settings.json
-subject_english_weight exists in settings.json
-subject_religion_weight exists in settings.json
-subject_astronomy_weight exists in settings.json
-subject_biology_weight exists in settings.json
-subject_geology_weight exists in settings.json
-subject_unicode_weight exists in settings.json
-subject_psychology_weight exists in settings.json
-subject_communication_weight exists in settings.json
-subject_theology_weight exists in settings.json
-subject_mathematics_weight exists in settings.json
-subject_web_design_weight exists in settings.json
-subject_history_weight exists in settings.json
-subject_writing_weight exists in settings.json
-subject_philosophy_weight exists in settings.json
-subject_mythology_weight exists in settings.json
-subject_ecology_weight exists in settings.json
 subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
 stats.json already exists
 -------------------------------------------------------
-INFO:     127.0.0.1:54572 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51636 - "GET /initialize_quizzer HTTP/1.1" 200 OK
 Question Population Stats: 
-number of questions in database: 416
-number of questions up for review: 300
-The following files do not have subject value: 
-question_template..md
-current quiz length is set to: 10
-INFO:     127.0.0.1:53468 - "GET /populate_quiz HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-27 18:03:11
-The next revision is due on 2024-02-28 23:37:25
-INFO:     127.0.0.1:41132 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3Vic2NyaXB0IDIgb3Ig4oKCPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-26 10:08:45
-The next revision is due on 2024-02-27 15:11:09
-INFO:     127.0.0.1:36648 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3FydCBjaGFyYWN0ZXItIOKImi4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:12:33
-The next revision is due on 2024-02-27 18:09:11
-INFO:     127.0.0.1:51618 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCB3aGF0IGlzIHRoZSBzdGFuZGFyZCBhbW91bnQgb2Ygc3BhY2VzIHRvIHVzZSBmb3IgaW5kZW50YXRpb24/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:13:08
-The next revision is due on 2024-02-27 18:09:46
-INFO:     127.0.0.1:51370 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0IG9mIG51bWJlcnMsIGhvdyB3b3VsZCB5b3UgZ2V0IHRoZSBzdW0gb2YgdGhlIHZhbHVlcyBpbnNpZGUgdGhlIGxpc3Q/Li5tZA== HTTP/1.1" 200 OK
-WARNING:  WatchFiles detected changes in 'settings.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [6179]
-INFO:     Started server process [35441]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'settings.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [35441]
-INFO:     Started server process [36340]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'settings.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [36340]
-INFO:     Started server process [36527]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scoring_algorithm.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [36527]
-INFO:     Started server process [46212]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
-ERROR:    [Errno 98] Address already in use
-config.json exists
-Total items not found in existing items is: 0
-Added a total of 14 new entries to config.json
-There are 1296 items in the most recent scan
-Total file matches is: 1282 compared to 1290 pre-existing files in Vault
-total operations to complete scan is: 849,730
--------------------------------------------------------
-questions.json exists
-There are 430 questions loaded into Quizzer.
-There are 430 questions with valid keys, and 0 with invalid keys.
-settings.json exists
-time_between_revisions setting already exists
-due_date_sensitivity settings exists
-subject_psychology_weight exists in settings.json
-key subject_psychology_weight missing, initializing key value to 1
-subject_ecology_weight exists in settings.json
-key subject_ecology_weight missing, initializing key value to 1
-subject_web_design_weight exists in settings.json
-key subject_web_design_weight missing, initializing key value to 1
-subject_astronomy_weight exists in settings.json
-key subject_astronomy_weight missing, initializing key value to 1
-subject_computer_science_weight exists in settings.json
-key subject_computer_science_weight missing, initializing key value to 1
-subject_mythology_weight exists in settings.json
-key subject_mythology_weight missing, initializing key value to 1
-subject_latin_weight exists in settings.json
-key subject_latin_weight missing, initializing key value to 1
-subject_unicode_weight exists in settings.json
-key subject_unicode_weight missing, initializing key value to 1
-subject_religion_weight exists in settings.json
-key subject_religion_weight missing, initializing key value to 1
-subject_english_weight exists in settings.json
-key subject_english_weight missing, initializing key value to 1
-subject_history_weight exists in settings.json
-key subject_history_weight missing, initializing key value to 1
-subject_philosophy_weight exists in settings.json
-key subject_philosophy_weight missing, initializing key value to 1
-subject_biology_weight exists in settings.json
-key subject_biology_weight missing, initializing key value to 1
-subject_mathematics_weight exists in settings.json
-key subject_mathematics_weight missing, initializing key value to 1
-subject_writing_weight exists in settings.json
-key subject_writing_weight missing, initializing key value to 1
-subject_theology_weight exists in settings.json
-key subject_theology_weight missing, initializing key value to 1
-subject_geology_weight exists in settings.json
-key subject_geology_weight missing, initializing key value to 1
-subject_communication_weight exists in settings.json
-key subject_communication_weight missing, initializing key value to 1
-stats.json already exists
--------------------------------------------------------
-INFO:     127.0.0.1:47754 - "GET /initialize_quizzer HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 350
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:36942 - "GET /populate_quiz HTTP/1.1" 200 OK
-Revision streak was 7, streak is now 8
-This question was last revised on 2024-02-27 14:44:06
-The next revision is due on 2024-02-29 11:37:30
-INFO:     127.0.0.1:46098 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hvIGlzIHRoZSBSb21hbiBHb2Qgb2YgdGhlIFVuZGVyd29ybGQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-25 13:26:11
-The next revision is due on 2024-02-26 13:26:11
-INFO:     127.0.0.1:60076 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hhdCBlbGVtZW50IGlzIHVzZWQgdG8gZW5jYXBzdWxhdGUgYW4gc3ZnIGltYWdlIGluc2lkZSBhbiBpbWcgZWxlbWVudD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-25 13:26:11
-The next revision is due on 2024-02-26 13:26:11
-INFO:     127.0.0.1:38756 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RXhhbWluZSB0aGUgZm9sbG93aW5nIGh0bWwwMDQsIHdoYXQgZG9lcyBpdCBkbz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:15:12
-The next revision is due on 2024-02-27 18:11:51
-INFO:     127.0.0.1:49366 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uIHdoYXQgZG9lcyB0aGUgdGVybSBPYmplY3QgaWRlbnRpdHkgcmVmZXIgdG8/IFdoYXQgb3BlcmF0b3IgY2hlY2tzIHdoZXRoZXIgdHdvIHZhcmlhYmxlcyBzaGFyZSB0aGUgc2FtZSBvYmplY3QgaWRlbnRpdHk/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:10:06
-The next revision is due on 2024-02-27 18:06:44
-INFO:     127.0.0.1:52466 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RXZhbHVhdGUgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIGluIFB5dGhvbiAwMDAzLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:14:34
-The next revision is due on 2024-02-27 18:11:13
-INFO:     127.0.0.1:52478 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RXZhbHVhdGUgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIGluIFB5dGhvbiAwMDAyLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:12:58
-The next revision is due on 2024-02-27 18:09:36
-INFO:     127.0.0.1:56052 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0LCBob3cgZG8geW91IHJldmVyc2UgdGhlIG9yZGVyIG9mIHRoZSBsaXN0Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:10:55
-The next revision is due on 2024-02-28 00:50:03
-INFO:     127.0.0.1:35664 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgVSsgY29kZSBmb3IgR3JlZWsgTGV0dGVyIFRoZXRhPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-27 18:08:08
-The next revision is due on 2024-02-28 23:42:22
-INFO:     127.0.0.1:47996 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3VwZXJzY3JpcHQgMj8uLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-27 14:44:35
-The next revision is due on 2024-02-29 07:11:04
-INFO:     127.0.0.1:46332 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhlIHNldmVyYWwgc3RyYXRlZ2llcyB0byBnZW5lcmF0ZSBpZGVhcz8uLm1k HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 341
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:46344 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46356 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:16:51
-The next revision is due on 2024-02-27 18:13:30
-INFO:     127.0.0.1:49244 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIHRoZSBpZGVudGl0eSBvcGVyYXRvcnMgZG8/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:32:38
-The next revision is due on 2024-02-27 18:29:16
-INFO:     127.0.0.1:35780 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCB5b3UgYXJlIGF0dGVtcHRpbmcgdG8gcmV0cmlldmUgYWxsIHRoZSB2YWx1ZXMgb2YgZWFjaCBrZXksIG5vdCBpbmNsdWRpbmcgdGhlIGtleSBpdHNlbGYuIFdoYXQgbWV0aG9kIGRvIHlvdSBuZWVkPyBIb3cgZG8geW91IHVzZSBpdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:28:05
-The next revision is due on 2024-02-27 18:24:44
-INFO:     127.0.0.1:54182 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLEhvdyBkbyB5b3UgYWRkIGEgbmV3IGtleSB2YWx1ZSBwYWlyIHRvIGEgZGljdGlvbmFyeT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-27 18:08:24
-The next revision is due on 2024-02-29 10:34:53
-INFO:     127.0.0.1:38602 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgdW5pY29kZSBVKyBjb2RlIGZvciB0aGUg4omgIHN5bWJvbD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-27 18:08:16
-The next revision is due on 2024-02-29 02:57:39
-INFO:     127.0.0.1:38618 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3IgZGVncmVlIGNoYXJhY3Rlci0gwrAuLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-25 13:26:11
-The next revision is due on 2024-02-26 13:26:11
-INFO:     127.0.0.1:46102 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIHRoZSB0ZXJtIGRldmljZS1waXhlbC1yYXRpbyBtZWFuPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-26 10:29:41
-The next revision is due on 2024-02-26 16:29:41
-INFO:     127.0.0.1:37600 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBkaWQgQmFydWNoIFNwaW5vemEgZGllPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:13:30
-The next revision is due on 2024-02-27 18:10:08
-INFO:     127.0.0.1:52554 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gcHl0aG9uLCBnaXZlbiBhIGxpc3QsIGhvdyBkbyB5b3UgZmluZCBpZiB2YWx1ZSBpcyBub3QgaW4gdGhlIGxpc3Q/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-27 14:38:45
-The next revision is due on 2024-02-29 07:05:14
-INFO:     127.0.0.1:50418 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hvIHdlcmUgdGhlIGFuYWJhcHRpc3RzLCB3aG8gbGVkIHRoaXMgbW92ZW1lbnQgYW5kIHdoZW4/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-25 14:13:19
-The next revision is due on 2024-02-26 16:37:19
-INFO:     127.0.0.1:32986 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgY29ycmVjdCBIVE1MIGVsZW1lbnQgZm9yIHBsYXlpbmcgYXVkaW8gZmlsZXM/Li5tZA== HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 331
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:32996 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:33008 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 09:57:35
-The next revision is due on 2024-02-27 21:05:54
-INFO:     127.0.0.1:60428 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hlbiBtYW5pcHVsYXRpbmcgbGlzdHMsIHlvdSBjYW4gdXNlIHRoZSBpbnNlcnQgbWV0aG9kLCB3aGF0IGRvZXMgaXQgZG8/IGFuZCBIb3cgZG8geW91IHVzZSBpdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 7, streak is now 8
-This question was last revised on 2024-02-27 14:44:03
-The next revision is due on 2024-02-29 11:37:27
-INFO:     127.0.0.1:41282 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBkaWQgdGhlIHByb3Rlc3RhbnQgcmVmb3JtYXRpb24gc3RhcnQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-22 08:01:38
-The next revision is due on 2024-02-23 08:01:38
-INFO:     127.0.0.1:47236 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=UGFucHN5Y2hpc20gY2xhaW1zIHdoYXQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-21 19:49:54
-The next revision is due on 2024-02-22 19:49:54
-INFO:     127.0.0.1:37960 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hhdCBhcmUgdGhlIHRocmVlIGJyb2FkIHR5cGVzIG9mIGFyZ3VtZW50cz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:14:43
-The next revision is due on 2024-02-27 18:11:22
-INFO:     127.0.0.1:49186 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RXZhbHVhdGUgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIGluIFB5dGhvbiAwMDAxLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 09:54:33
-The next revision is due on 2024-02-27 21:02:51
-INFO:     127.0.0.1:42652 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gc2xpY2Ugbm90YXRpb24sIHdoYXQgaGFwcGVucyBpZiB5b3UgZW50ZXIgYSBuZWdhdGl2ZSB2YWx1ZSBmb3IgdGhlIHNsaWNlIHN0cmlkZSBhcmd1bWVudD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-26 10:39:04
-The next revision is due on 2024-02-26 16:39:04
-INFO:     127.0.0.1:45668 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBkaWQgdGhlIHNjaWVudGlmaWMgcmV2b2x1dGlvbiBlbmQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:29:14
-The next revision is due on 2024-02-27 18:25:52
-INFO:     127.0.0.1:47546 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBzaG91bGQgeW91IHVzZSB0aGUgaWRlbnRpdHkgb3BlcmF0b3JzIGlzIG9yIGlzIG5vdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-25 14:22:57
-The next revision is due on 2024-02-26 16:46:57
-INFO:     127.0.0.1:37944 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIHRoZSBkYXRhbGlzdCBlbGVtZW50IGRvPyBXaGF0IGlzIHRoZSBwcm9wZXIgaHRtbCBzeW50YXggZm9yIHRoZSBkYXRhbGlzdCBmb3JtIGVsZW1lbnQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-25 13:26:11
-The next revision is due on 2024-02-26 13:26:11
-INFO:     127.0.0.1:52104 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGRldmljZSBwaXhlbHMgYW5kIGRldmljZSByZXNvbHV0aW9uPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 323
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:52118 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52128 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:07:43
-The next revision is due on 2024-02-27 21:16:01
-INFO:     127.0.0.1:52444 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=aG93IGRvIHlvdSBhc3NpZ24gYSB2YXJpYWJsZSB3aXRoIGEgYm9vbGVhbiBkYXRhIHR5cGU/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 13:51:49
-The next revision is due on 2024-02-26 21:48:27
-INFO:     127.0.0.1:46366 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBpcyB0YW4ozrgpIHVuZGVmaW5lZD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-21 20:05:56
-The next revision is due on 2024-02-23 01:08:20
-INFO:     127.0.0.1:33706 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=QW55IHByb2JsZW1zIHdpdGggdGhpbmtpbmcgaXQncyByZWFzb24gdGhhdCBtYWtlcyBodW1hbnMgdmFsdWFibGU/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-25 14:14:11
-The next revision is due on 2024-02-26 16:38:11
-INFO:     127.0.0.1:51482 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=WW91IGhhdmUgYW4gaHRtbCBmb3JtIGFuZCB3b3VsZCBsaWtlIHRvIHJlc3RyaWN0IHRoZSB1c2VyIGlucHV0IHRvIHNwZWNpZmllZCBsaXN0IG9mIG9wdGlvbnMsIGhvdyBkbyB5b3UgZG8gdGhpcz8gUHJvdmlkZSB0aGUgcHJvcGVyIHN5bnRheCBmb3IgdGhlIHJlcXVpcmVkIG1ldGhvZC4uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:16:12
-The next revision is due on 2024-02-27 21:24:30
-INFO:     127.0.0.1:51488 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCB3aGF0IGlzIHRoZSBwcm9wZXIgd2F5IHRvIGNyZWF0ZSBhIHNpbmdsZSBlbGVtZW50IHR1cGxlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 09:57:13
-The next revision is due on 2024-02-27 21:05:31
-INFO:     127.0.0.1:39270 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBjcmVhdGUgYW4gZW1wdHkgZGljdGlvbmFyeT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-26 10:17:37
-The next revision is due on 2024-02-27 18:14:15
-INFO:     127.0.0.1:55334 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0IG9mIHZhbHVlcywgaG93IGRvIHlvdSBmaW5kIHRoZSBpbmRleCBvZiBhIHNwZWNpZmljIHZhbHVlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-25 14:27:21
-The next revision is due on 2024-02-26 16:51:21
-INFO:     127.0.0.1:55438 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdGhlIGlucHV0IGZvcm0gZWxlbWVudCwgd2hhdCBkb2VzIHRoZSBtYXhsZW5ndGggYW5kIG1pbmxlbmd0aCBhdHRyaWJ1dGVzIGRvPyBXaGF0IGlzIHRoZSBwcm9wZXIgc3ludGF4IGZvciB0aGVzZSBhdHRyaWJ1dGVzPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-22 08:01:38
-The next revision is due on 2024-02-23 08:01:38
-INFO:     127.0.0.1:38292 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=QmFydWNoIFNwaW5vemEgYW5kIExlaWJuaXogaGVsZCB2ZXJzaW9ucyBvZiB3aGF0IG1ldGFwaHlzaWNhbCB0aGVvcnk/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-26 10:48:48
-The next revision is due on 2024-02-26 16:48:48
-INFO:     127.0.0.1:36000 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hlbiBhbmQgd2hlcmUgd2FzIEpvaG4gTG9ja2UgYm9ybj8uLm1k HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 315
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:36006 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:36012 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:08:06
-The next revision is due on 2024-02-27 21:16:24
-INFO:     127.0.0.1:45454 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyBhIHJlbGF0aW9uYWwgb3BlcmF0b3I/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:19:16
-The next revision is due on 2024-02-27 21:27:34
-INFO:     127.0.0.1:49808 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCBob3cgZG8geW91IGNyZWF0ZSBhIHR1cGxlIHZhcmlhYmxlLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:18:35
-The next revision is due on 2024-02-27 21:26:53
-INFO:     127.0.0.1:40280 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBjcmVhdGUgYSBuZXcgZmlsZSB1c2luZyBQeXRob24/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-26 10:14:25
-The next revision is due on 2024-02-27 12:38:25
-INFO:     127.0.0.1:46694 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkaWQgUGxhdG8gbWVhbiBieSB0aGUgVHJpcGFydGl0ZSBzb3VsPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:35:36
-The next revision is due on 2024-02-27 00:43:54
-INFO:     127.0.0.1:58126 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=QSByaWdodCB0cmlhbmdsZSBpcyBkcmF3biB3aXRoIGFuZ2xlIMmRIG9wcG9zaXRlIGEgc2lkZSB3aXRoIGxlbmd0aCAzMywgYW5nbGUgzrggb3Bwc2l0ZSBhIHNpZGUgd2l0aCBsZW5ndGggNTYsIGFuZCBoeXBvdGVudXNlIDY1LiBGaW5kIHRoZSBzaW4gYW5kIGNvc2luZSBvZiDJkSBhbmQgzrguLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:18:07
-The next revision is due on 2024-02-27 21:26:25
-INFO:     127.0.0.1:60294 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0IG9mIHZhbHVlcywgaG93IGRvIHlvdSBmaW5kIHRoZSBudW1iZXIgb2YgdGltZXMgYSBjZXJ0YWluIHZhbHVlIGV4YW1wbGVfdmFyaWFibGUgYXBwZWFycyBpbnNpZGUgb2YgZXhhbXBsZV9saXN0Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-25 14:20:54
-The next revision is due on 2024-02-26 19:23:18
-INFO:     127.0.0.1:34882 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgY29ycmVjdCBIVE1MIGZvciBtYWtpbmcgYSBkcm9wLWRvd24gbGlzdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-25 14:25:17
-The next revision is due on 2024-02-26 19:27:41
-INFO:     127.0.0.1:51652 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdGhlIGZvcm0gZWxlbWVudCwgd2hhdCBkb2VzIHRoZSBhY3Rpb24gYXR0cmlidXRlIGRvPyBXaGF0IGlzIHRoZSBwcm9wZXIgc3ludGF4IGZvciB0aGlzIGF0dHJpYnV0ZT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-22 08:17:13
-The next revision is due on 2024-02-23 13:19:37
-INFO:     127.0.0.1:46416 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=ZGljdGlvbmFyeS4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-22 08:01:38
-The next revision is due on 2024-02-23 08:01:38
-INFO:     127.0.0.1:54642 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=RHVhbGlzbSBpcyB0aGUgY29uanVuY3Rpb24gb2Ygd2hhdCBmb3VyIGNsYWltcz8uLm1k HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 308
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:54650 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54652 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 7, streak is now 8
-This question was last revised on 2024-02-27 18:03:41
-The next revision is due on 2024-02-29 14:57:05
-INFO:     127.0.0.1:42120 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hvIHdhcyB0aGUgYW5jaWVudCBHcmVlayBHb2Qgb2Ygb3Bwb3J0dW5pdHkgYW5kIHBlcmZlY3QgdGltaW5nPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-25 14:26:34
-The next revision is due on 2024-02-26 19:28:58
-INFO:     127.0.0.1:32806 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBjcmVhdGluZyBhIHRhYmxlIGluIGh0bWwsIGhvdyBkbyB5b3UgbWFrZSBhbiBlbGVtZW50IHNwYW4geCBhbW91bnQgb2Ygcm93cz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:17:13
-The next revision is due on 2024-02-27 21:25:31
-INFO:     127.0.0.1:44566 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0LCBob3cgZG8geW91IHNvcnQgaXQgaW4gYXNjZW5kaW5nIG9yIGRlc2NlbmRpbmcgb3JkZXI/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:18:46
-The next revision is due on 2024-02-27 21:27:04
-INFO:     127.0.0.1:55346 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V3JpdGUgYSByZWxhdGlvbmFsIGV4cHJlc3Npb24gdXNpbmcgb3BlcmF0b3IgY2hhaW5pbmcgLSAwMS4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:19:37
-The next revision is due on 2024-02-27 21:27:55
-INFO:     127.0.0.1:55356 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyBtZWFudCBieSBvcGVyYXRvciBjaGFpbmluZyBpbiBQeXRob24/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-26 10:18:54
-The next revision is due on 2024-02-27 12:42:54
-INFO:     127.0.0.1:47820 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiB3YXMgQmFydWNoIFNwaW5vemEgYm9ybj8uLm1k HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-22 09:04:42
-The next revision is due on 2024-02-23 11:28:42
-INFO:     127.0.0.1:47836 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhlIGNvbW1vbiBhcmd1bWVudCBwYXR0ZXJuc3M/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 7, streak is now 8
-This question was last revised on 2024-02-27 18:05:59
-The next revision is due on 2024-02-29 14:59:23
-INFO:     127.0.0.1:53170 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBtYWtlcyBzb21ldGhpbmcgbWVtb3JhYmxlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:16:30
-The next revision is due on 2024-02-28 00:55:38
-INFO:     127.0.0.1:53366 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBjb252ZXJ0IG9uZSBkYXRhIHR5cGUgaW4gUHl0aG9uIHRvIGFub3RoZXIgZGF0YSB0eXBlPyBIb3cgdG8gY29udmVydD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-25 14:31:26
-The next revision is due on 2024-02-26 19:33:50
-INFO:     127.0.0.1:39478 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhlIGFjY2VwdGVkIGlucHV0cyB0byB0aGUgc2NvcGUgYXR0cmlidXRlPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 299
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:39482 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39498 - "GET /completed_quiz HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 299
+number of questions in database: 460
+number of questions up for review: 152
 The following files do not have subject value: 
 question_template..md
 You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
 current quiz length is set to: 10
 This is where text starts_________________________
 Stats for Nerds!!!
-number_of_quizzes_completed: 63
-Average quiz length taken  : 16.75
-Total Questions answered   : 1055
+number_of_quizzes_completed: 94
+Average quiz length taken  : 14.52
+Total Questions answered   : 1365
 --------------------------------
 Questions Stats:
-Total Questions in database: 430
-Questions up for review    : 299
+Total Questions in database: 460
+Questions up for review    : 152
+Average Questions per day  : 295.482
 --------------------------------
 Revision Streak Stats:
 Questions with revision streak of 1 is 80
-Questions with revision streak of 2 is 45
-Questions with revision streak of 3 is 72
-Questions with revision streak of 4 is 91
-Questions with revision streak of 5 is 83
-Questions with revision streak of 6 is 41
-Questions with revision streak of 7 is 6
-Questions with revision streak of 8 is 12
-INFO:     127.0.0.1:39514 - "GET /stats HTTP/1.1" 200 OK
-WARNING:  WatchFiles detected changes in 'scoring_algorithm.py'. Reloading...
+Questions with revision streak of 2 is 42
+Questions with revision streak of 3 is 44
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 108
+Questions with revision streak of 6 is 61
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 5
+Questions with revision streak of 9 is 8
+INFO:     127.0.0.1:51644 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 152
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:40292 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39354 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20negative%20identity%20of%20cosine?..md HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/karibar/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/karibar/.local/lib/python3.10/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/karibar/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    return await future
+  File "/home/karibar/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "/home/karibar/Documents/coding-projects/apps/study_tools/quizzer/api.py", line 47, in question_answer_update_score
+    decoded_file_name = codecs.decode(file_name.encode('utf-8'), 'unicode_escape').decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+WARNING:  WatchFiles detected changes in 'api.py'. Reloading...
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [46212]
-INFO:     Started server process [115339]
+INFO:     Finished server process [4818]
+INFO:     Started server process [7795]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 10:26:50
+The next revision is due on 2024-03-02 23:27:58
+INFO:     127.0.0.1:47124 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan(3%5Cu03c0%20over%204)?..md HTTP/1.1" 200 OK
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 12:53:45
+The next revision is due on 2024-03-02 23:28:19
+INFO:     127.0.0.1:52050 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=in%20python,%20what%20does%20the%20chr()%20function%20do?..md HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'quizzer_cli_version.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7795]
+INFO:     Started server process [8699]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
@@ -499,693 +176,81 @@ ERROR:    [Errno 98] Address already in use
 config.json exists
 Total items not found in existing items is: 0
 Added a total of 0 new entries to config.json
-There are 1296 items in the most recent scan
-Total file matches is: 1296 compared to 1304 pre-existing files in Vault
-total operations to complete scan is: 849,744
+There are 1333 items in the most recent scan
+Total file matches is: 1333 compared to 1343 pre-existing files in Vault
+total operations to complete scan is: 899,792
 -------------------------------------------------------
 questions.json exists
-There are 430 questions loaded into Quizzer.
-There are 430 questions with valid keys, and 0 with invalid keys.
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
 settings.json exists
 time_between_revisions setting already exists
 due_date_sensitivity settings exists
-subject_latin_weight exists in settings.json
-subject_latin_priority exists in settings.json
-subject_astronomy_weight exists in settings.json
-subject_astronomy_priority exists in settings.json
-subject_unicode_weight exists in settings.json
-subject_unicode_priority exists in settings.json
-subject_computer_science_weight exists in settings.json
-subject_computer_science_priority exists in settings.json
-subject_geology_weight exists in settings.json
-subject_geology_priority exists in settings.json
-subject_web_design_weight exists in settings.json
-subject_web_design_priority exists in settings.json
-subject_ecology_weight exists in settings.json
-subject_ecology_priority exists in settings.json
-subject_psychology_weight exists in settings.json
-subject_psychology_priority exists in settings.json
-subject_theology_weight exists in settings.json
-subject_theology_priority exists in settings.json
-subject_biology_weight exists in settings.json
-subject_biology_priority exists in settings.json
-subject_communication_weight exists in settings.json
-subject_communication_priority exists in settings.json
-subject_mathematics_weight exists in settings.json
-subject_mathematics_priority exists in settings.json
-subject_philosophy_weight exists in settings.json
-subject_philosophy_priority exists in settings.json
-subject_english_weight exists in settings.json
-subject_english_priority exists in settings.json
-subject_mythology_weight exists in settings.json
-subject_mythology_priority exists in settings.json
-subject_history_weight exists in settings.json
-subject_history_priority exists in settings.json
-subject_writing_weight exists in settings.json
-subject_writing_priority exists in settings.json
 subject_religion_weight exists in settings.json
 subject_religion_priority exists in settings.json
-stats.json already exists
--------------------------------------------------------
-INFO:     127.0.0.1:48224 - "GET /initialize_quizzer HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 299
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-This is where text starts_________________________
-Stats for Nerds!!!
-number_of_quizzes_completed: 63
-Average quiz length taken  : 16.75
-Total Questions answered   : 1055
---------------------------------
-Questions Stats:
-Total Questions in database: 430
-Questions up for review    : 299
---------------------------------
-Revision Streak Stats:
-Questions with revision streak of 1 is 80
-Questions with revision streak of 2 is 45
-Questions with revision streak of 3 is 72
-Questions with revision streak of 4 is 91
-Questions with revision streak of 5 is 83
-Questions with revision streak of 6 is 41
-Questions with revision streak of 7 is 6
-Questions with revision streak of 8 is 12
-INFO:     127.0.0.1:48230 - "GET /stats HTTP/1.1" 200 OK
-INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
-ERROR:    [Errno 98] Address already in use
-config.json exists
-Total items not found in existing items is: 0
-Added a total of 3 new entries to config.json
-There are 1299 items in the most recent scan
-Total file matches is: 1296 compared to 1304 pre-existing files in Vault
-total operations to complete scan is: 853,923
--------------------------------------------------------
-questions.json exists
-There are 430 questions loaded into Quizzer.
-There are 430 questions with valid keys, and 0 with invalid keys.
-settings.json exists
-time_between_revisions setting already exists
-due_date_sensitivity settings exists
-subject_latin_weight exists in settings.json
-subject_latin_priority exists in settings.json
-subject_astronomy_weight exists in settings.json
-subject_astronomy_priority exists in settings.json
-subject_unicode_weight exists in settings.json
-subject_unicode_priority exists in settings.json
-subject_computer_science_weight exists in settings.json
-subject_computer_science_priority exists in settings.json
-subject_geology_weight exists in settings.json
-subject_geology_priority exists in settings.json
-subject_web_design_weight exists in settings.json
-subject_web_design_priority exists in settings.json
-subject_ecology_weight exists in settings.json
-subject_ecology_priority exists in settings.json
 subject_psychology_weight exists in settings.json
 subject_psychology_priority exists in settings.json
-subject_theology_weight exists in settings.json
-subject_theology_priority exists in settings.json
-subject_biology_weight exists in settings.json
-subject_biology_priority exists in settings.json
-subject_communication_weight exists in settings.json
-subject_communication_priority exists in settings.json
-subject_mathematics_weight exists in settings.json
-subject_mathematics_priority exists in settings.json
-subject_philosophy_weight exists in settings.json
-subject_philosophy_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
 subject_english_weight exists in settings.json
 subject_english_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
 subject_mythology_weight exists in settings.json
 subject_mythology_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
 subject_history_weight exists in settings.json
 subject_history_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
 subject_writing_weight exists in settings.json
 subject_writing_priority exists in settings.json
-subject_religion_weight exists in settings.json
-subject_religion_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
 stats.json already exists
 -------------------------------------------------------
-INFO:     127.0.0.1:58452 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58826 - "GET /initialize_quizzer HTTP/1.1" 200 OK
 Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 335
+number of questions in database: 460
+number of questions up for review: 154
 The following files do not have subject value: 
 question_template..md
 You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
 current quiz length is set to: 10
 This is where text starts_________________________
 Stats for Nerds!!!
-number_of_quizzes_completed: 63
-Average quiz length taken  : 16.75
-Total Questions answered   : 1055
+number_of_quizzes_completed: 94
+Average quiz length taken  : 14.52
+Total Questions answered   : 1365
 --------------------------------
 Questions Stats:
-Total Questions in database: 430
-Questions up for review    : 335
+Total Questions in database: 460
+Questions up for review    : 154
+Average Questions per day  : 295.382
 --------------------------------
 Revision Streak Stats:
-Questions with revision streak of 1 is 80
-Questions with revision streak of 2 is 45
-Questions with revision streak of 3 is 72
-Questions with revision streak of 4 is 91
-Questions with revision streak of 5 is 83
-Questions with revision streak of 6 is 41
-Questions with revision streak of 7 is 6
-Questions with revision streak of 8 is 12
-INFO:     127.0.0.1:48070 - "GET /stats HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 335
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:48082 - "GET /populate_quiz HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:16:55
-The next revision is due on 2024-03-02 02:46:44
-INFO:     127.0.0.1:40596 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIEhUTUwgc3RhbmQgZm9yPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:22:38
-The next revision is due on 2024-03-02 11:14:26
-INFO:     127.0.0.1:47484 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=VGhlIHJlc3VsdCBvZiBldmFsdWF0aW5nIG51bXMgLSBzbGljZSBub3RhdGlvbjEuLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-28 07:34:12
-The next revision is due on 2024-03-02 02:47:11
-INFO:     127.0.0.1:47486 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3IgZ3JlZWsgbGV0dGVyIGFscGhhPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:21:53
-The next revision is due on 2024-03-02 11:14:41
-INFO:     127.0.0.1:51148 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IHRvIGFkZCBsaW5rcyB0byBhIHdlYnNpdGU/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:26:24
-The next revision is due on 2024-03-02 06:47:53
-INFO:     127.0.0.1:35606 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBwdXQgYW4gdWJ1bnR1IHN5c3RlbSB0byBzbGVlcCB1c2luZyB0aGUgQ0xJPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 8, streak is now 9
-This question was last revised on 2024-02-27 14:39:04
-The next revision is due on 2024-03-02 21:40:01
-INFO:     127.0.0.1:35612 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhlIHR3byB0eXBlcyBvZiBpZ25lb3VzIHJvY2s/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 8, streak is now 9
-This question was last revised on 2024-02-27 18:06:02
-The next revision is due on 2024-03-02 21:40:03
-INFO:     127.0.0.1:35622 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2h5IGFyZSBVcmFudXMgYW5kIE5lcHR1bmUgc28gYmx1ZT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:12:47
-The next revision is due on 2024-03-02 02:48:20
-INFO:     127.0.0.1:53498 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgY29ycmVjdCBIVE1MIGZvciBtYWtpbmcgYSB0ZXh0IGlucHV0IGZpZWxkPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:18:20
-The next revision is due on 2024-03-02 06:49:42
-INFO:     127.0.0.1:38360 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V3JpdGUgYSByZWxhdGlvbmFsIGV4cHJlc3Npb24gdXNpbmcgb3BlcmF0b3IgY2hhaW5pbmcgLSAwMi4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-28 08:47:11
-The next revision is due on 2024-03-02 02:50:13
-INFO:     127.0.0.1:52096 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgdW5pY29kZSB1KyBjb2RlIGZvciB0aGUg4ouDIHN5bWJvbD8gYmlnIGN1cCBvciB1bmlvbi4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 325
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:52108 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52114 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-23 06:27:49
-The next revision is due on 2024-03-01 23:24:04
-INFO:     127.0.0.1:56056 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyBtZWFudCBieSBhdWRpZW5jZSBhbmFseXNpcz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-24 08:00:40
-The next revision is due on 2024-03-02 07:01:20
-INFO:     127.0.0.1:52780 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hvIGNvaW5lZCB0aGUgdGVybSB0aGVvZGljeT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:15:02
-The next revision is due on 2024-03-02 03:01:15
-INFO:     127.0.0.1:60912 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBmb3JtIGNvbnRyb2wgZWxlbWVudHMgYXJlIHJlcXVpcmVkIHRvIGFsbG93IHRoZSB1c2VyIHRvIGVpdGhlciBjbGVhciB0aGUgZm9ybSBvciBzdWJtaXQgaXQgdG8gdGhlIHNlcnZlcj8uLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:24:49
-The next revision is due on 2024-03-02 11:28:49
-INFO:     127.0.0.1:43490 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IHRvIGluc3RhbGwgYSAuZGViIHBhY2thZ2U/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-26 10:19:26
-The next revision is due on 2024-03-02 07:02:08
-INFO:     127.0.0.1:53892 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhyZWUgYXJndW1lbnRzIHlvdSBjYW4gcHJvdmlkZSB0byBhIHNsaWNlIG5vdGF0aW9uPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:23:50
-The next revision is due on 2024-03-02 11:29:09
-INFO:     127.0.0.1:33260 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=QXNrIHRoZSB1c2VyIHRvIGlucHV0IHR3byBmbG9hdGluZy1wb2ludCBudW1iZXJzLiBDYWxjdWxhdGVzIHRoZSBzdW0sIHByb2R1Y3QsIGFuZCBhdmVyYWdlIG9mIHRoZXNlIG51bWJlcnMuIFJvdW5kcyB0aGUgcmVzdWx0cyB0byAyIGRlY2ltYWwgcGxhY2VzIGJlZm9yZSBwcmludGluZyB0aGVtIG91dC4uLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:22:01
-The next revision is due on 2024-03-02 11:29:20
-INFO:     127.0.0.1:35050 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gYSBwcm9ncmFtIHdoYXQgaXMgYSBicmFuY2ggZGVmaW5lZCBhcz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-28 07:34:40
-The next revision is due on 2024-03-02 03:02:07
-INFO:     127.0.0.1:58620 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3VwZXJzY3JpcHQgMT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:19:04
-The next revision is due on 2024-03-02 03:02:30
-INFO:     127.0.0.1:36294 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=VGhlcmUgYXJlIHR3byBwYXJ0cyB0byBhIHdvcmtpbmcgZm9ybSBvbiBhIHdlYnNpdGUsIHdoYXQgYXJlIHRoZXNlIHR3byBwYXJ0cz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-28 09:37:42
-The next revision is due on 2024-03-02 03:02:37
-INFO:     127.0.0.1:39708 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=d2hhdCBpcyB0aGUgdSsgY29kZSBmb3Igc3VwZXJzY3JpcHQgLT8uLm1k HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 315
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:39722 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:39726 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:23:08
-The next revision is due on 2024-03-02 11:30:08
-INFO:     127.0.0.1:46274 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiB1c2luZyB0aGUgcG9wIG1ldGhvZCBvbiBsaXN0LCB3aGljaCBpbmRleCBudW1iZXIgaXMgcmVtb3ZlZD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-23 12:27:00
-The next revision is due on 2024-02-29 20:37:11
-INFO:     127.0.0.1:46838 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hhdCBkb2VzIHRoZSBDUkFBUCBUZXN0IHN0YW5kIGZvciB3aGVuIGV2YWx1YXRpbmcgYSBzb3VyY2U/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:26:19
-The next revision is due on 2024-03-02 11:30:43
-INFO:     127.0.0.1:49552 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZXF1YWxpdHkgb3BlcmF0b3I/IFdoZW4gZG8geW91IHVzZSBpdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:25:55
-The next revision is due on 2024-03-02 11:31:10
-INFO:     127.0.0.1:60450 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=QXNrIHRoZSB1c2VyIGZvciBhIGZsb2F0aW5nLXBvaW50IG51bWJlci4gUHJpbnRzIHRoZSBudW1iZXIgaW4gZGVjaW1hbCBmb3JtIHdpdGggNCBkZWNpbWFsIHBsYWNlcy4gUHJpbnRzIHRoZSBudW1iZXIgaW4gc2NpZW50aWZpYyBub3RhdGlvbiB3aXRoIDIgZGVjaW1hbCBwbGFjZXMuLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:41:00
-The next revision is due on 2024-03-02 07:04:24
-INFO:     127.0.0.1:45994 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=VGhlIGFuZ2xlIG9mIGVsZXZhdGlvbiB0byB0aGUgdG9wIG9mIGEgYnVpbGRpbmcgaW4gTmV3IFlvcmsgaXMgZm91bmQgdG8gYmUgOSBkZWdyZWVzIGZyb20gdGhlIGdyb3VuZCBhdCBhIGRpc3RhbmNlIG9mIDEgbWlsZSBmcm9tIHRoZSBiYXNlIG9mIHRoZSBidWlsZGluZy4gVXNpbmcgdGhpcyBpbmZvcm1hdGlvbiwgZmluZCB0aGUgaGVpZ2h0IG9mIHRoZSBidWlsZGluZy4uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:36:28
-The next revision is due on 2024-03-02 07:06:38
-INFO:     127.0.0.1:52002 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdGhlIG5lZ2F0aXZlIGFuZ2xlIGlkZW50aXRpZXMgb2Ygc2luZSBhbmQgY29zaW5lPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:25:03
-The next revision is due on 2024-03-02 11:33:44
-INFO:     127.0.0.1:42150 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBjb21wYXJpbmcgY2hhcmFjdGVycyBpbiBQeXRob24sIHRoZSBvcmRlciBvZiB0aG9zZSBjaGFyYWN0ZXJzIGlzIGJhc2VkIG9uIHdoYXQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:18:42
-The next revision is due on 2024-03-02 03:06:33
-INFO:     127.0.0.1:46522 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW5saW5lIEVsZW1lbnRzIGFyZSBub3JtYWxseSBkaXNwbGF5ZWQgd2l0aG91dCBzdGFydGluZyBhIG5ldyBsaW5lPyBUIG9yIEYuLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:39:27
-The next revision is due on 2024-03-02 07:07:48
-INFO:     127.0.0.1:38062 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZGlzdGFuY2UgZm9ybXVsYT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:21:36
-The next revision is due on 2024-03-02 03:07:39
-INFO:     127.0.0.1:41184 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdGhlIGlucHV0IGZvcm0gZWxlbWVudCwgd2hhdCBkb2VzIHRoZSBzaXplIGF0dHJpYnV0ZSBkbz8gV2hhdCBpcyB0aGUgcHJvcGVyIHN5bnRheCBmb3IgdGhlIHNpemUgYXR0cmlidXRlPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 306
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:41196 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:41202 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:50:50
-The next revision is due on 2024-03-02 07:08:16
-INFO:     127.0.0.1:42150 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgbmVnYXRpdmUgaWRlbnRpdHkgb2Ygc2luPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-23 12:34:06
-The next revision is due on 2024-03-01 20:16:28
-INFO:     127.0.0.1:51302 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGEgZGVub3RhdGl2ZSBkZWZpbml0aW9uIGFuZCBhIGNvbm5vdGF0aXZlIGRlZmluaXRpb24/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:42:59
-The next revision is due on 2024-03-02 07:08:48
-INFO:     127.0.0.1:51306 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=cXVlc3Rpb24gYWJvdXQgbWlkbGluZS4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:23:14
-The next revision is due on 2024-03-02 03:08:51
-INFO:     127.0.0.1:57754 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdGhlIEhUTUwgZm9ybSBlbGVtZW50LCB3aGF0IGRvZXMgdGhlIG1ldGhvZCBhdHRyaWJ1dGUgZG8/IFdoYXQgaXMgdGhlIHByb3BlciBzeW50YXggZm9yIHRoaXMgYXR0cmlidXRlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:27:54
-The next revision is due on 2024-03-02 11:36:24
-INFO:     127.0.0.1:43120 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgc3RyaWRlIGFyZ3VtZW50IGluIGEgc3RyaW5nIHNsaWNlPyBXaGF0IGRvZXMgaXQgZG8/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:27:14
-The next revision is due on 2024-03-02 11:36:45
-INFO:     127.0.0.1:41286 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgaW5lcXVhbGl0eSBvcGVyYXRvcj8gV2hlbiBkbyB5b3UgdXNlIGl0Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:24:37
-The next revision is due on 2024-03-02 11:36:59
-INFO:     127.0.0.1:47762 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0IHdpdGggZHVwbGljYXRlIHZhbHVlcywgaG93IGRvIHlvdSBmaW5kIHRoZSB0b3RhbCBudW1iZXIgb2YgdGltZXMgYSB2YWx1ZSBhcHBlYXJzIGluIHRoZSBsaXN0Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:20:15
-The next revision is due on 2024-03-02 03:09:59
-INFO:     127.0.0.1:60834 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIHRoZSBjb2xncm91cCBlbGVtZW50IGRvPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:37:31
-The next revision is due on 2024-03-02 07:10:48
-INFO:     127.0.0.1:53020 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZm9ybXVsYSBmb3IgQXJlYSBvZiBzZWN0b3I/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:25:59
-The next revision is due on 2024-03-02 11:37:46
-INFO:     127.0.0.1:43716 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hpY2ggYXBwcm9hY2ggZGV0ZWN0cyBpZiB4IGlzIGluIHRoZSByYW5nZSAtNCB0byArND8uLm1k HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 297
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:43724 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:43726 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:36:13
-The next revision is due on 2024-03-02 11:37:53
-INFO:     127.0.0.1:43728 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SXMgeCA9PCB5IGEgdmFsaWQgZXhwcmVzc2lvbj8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:25:51
-The next revision is due on 2024-03-02 03:10:43
-INFO:     127.0.0.1:34678 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBtYWtlIGEgYnVsbGV0ZWQgbGlzdCBpbiBhbiBIVE1MIGRvY3VtZW50Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:28:15
-The next revision is due on 2024-03-02 11:38:11
-INFO:     127.0.0.1:34690 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgdW5pY29kZSBjaGFyYWN0ZXIgZm9yIGluZmluaXR5Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:39:37
-The next revision is due on 2024-03-02 07:11:53
-INFO:     127.0.0.1:57260 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=QSAyM2Z0IGxhZGRlciBsZWFucyB1cCBhZ2FpbnN0IGEgYnVpbGRpbmcgc28gdGhhdCB0aGUgYW5nbGUgYmV0d2VlbiB0aGUgZ3JvdW5kIGFuZCB0aGUgbGFkZGVyIGlzIDczwrAuIEhvdyBoaWdoIGRvZXMgdGhlIGxhZGRlciByZWFjaCB1cCB0aGUgYnVpbGRpbmc/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-23 20:49:29
-The next revision is due on 2024-02-29 20:46:08
-INFO:     127.0.0.1:47570 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hhdCBhcmUgdGhlIHRocmVlIHByaW1hcnkgcmVhc29ucyB0aGF0IGlkZWFzIGNhbiBiZSBkaWZmaWN1bHQgdG8gdW5kZXJzdGFuZD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:02:06
-The next revision is due on 2024-03-02 07:12:46
-INFO:     127.0.0.1:41984 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBjaXJjbGUsIGhvdyB3b3VsZCB5b3UgZmluZCB0aGUgYXJlYSBvZiBhIHNlY3RvciBvZiBpdCwgZ2l2ZW4gYW4gYW5nbGU/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:25:07
-The next revision is due on 2024-03-02 11:39:46
-INFO:     127.0.0.1:55094 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Q2hhbm5lbHMgMDAtNTk5IGFyZSBwYXkgY2hhbm5lbHMgRG9lcyB0aGlzIGV4cHJlc3Npb24gZGV0ZWN0IHRoYXQgcmFuZ2U/IC0gLSAtLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:01:13
-The next revision is due on 2024-03-02 07:13:15
-INFO:     127.0.0.1:53784 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgZG9tYWluIG9mIHNpbmUgYW5kIGNvc2luZT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:21:48
-The next revision is due on 2024-03-02 03:12:56
-INFO:     127.0.0.1:47800 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgY29ycmVjdCBIVE1MIGVsZW1lbnQgZm9yIGluc2VydGluZyBhIGxpbmUgYnJlYWs/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:28:27
-The next revision is due on 2024-03-02 11:40:24
-INFO:     127.0.0.1:47806 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkbyB5b3UgYWx3YXlzIHB1dCBhZnRlciBhbiBpZiBzdGF0ZW1lbnQgaW4gcHl0aG9uPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 288
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:47810 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47814 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:03:30
-The next revision is due on 2024-03-02 07:13:36
-INFO:     127.0.0.1:35724 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SXMgc2luKM64KSBldmVuIG9yIG9kZD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-27 18:02:58
-The next revision is due on 2024-02-29 20:47:24
-INFO:     127.0.0.1:60880 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=VGhlIHByb2dyYW1tZXIgY2FuIHVzZSBhIHZhcmlhYmxlIHRvIGNvdW50IHRoZSBudW1iZXIgb2YgaXRlcmF0aW9ucyBvZiBhIGxvb3AuIFdoYXQgaXMgdGhpcyB2YXJpYWJsZSBjYWxsZWQ/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-24 08:07:46
-The next revision is due on 2024-02-29 20:48:03
-INFO:     127.0.0.1:59772 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=V2hhdCBhcmUgZm91ciBzdGVwcyB0byB0YWtlIHdoZW4gc3BlYWtpbmcgb24gYW4gaWRlYSB0aGF0IGlzIGRpZmZpY3VsdCB0byBiZWxpZXZlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-27 18:02:58
-The next revision is due on 2024-02-29 20:48:37
-INFO:     127.0.0.1:40858 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=WW91IGFyZSBpdGVyYXRpbmcgdGhyb3VnaCBhIHZhcmlhYmxlIHVzaW5nIGEgZm9yIGxvb3AsIGhvdyBkbyB5b3UgaXRlcmF0ZSB0aGUgdmFyaWFibGUgaW4gcmV2ZXJzZSBvcmRlcj8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:25:43
-The next revision is due on 2024-03-02 03:14:46
-INFO:     127.0.0.1:57340 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdmlzdWFsIGJyb3dzZXJzLCB0aGUgYXJyYW5nZW1lbnQgb2YgZGF0YSBpbiByb3dzIGFuZCBjb2x1bW5zIGdpdmVzIHJlYWRlcnMgd2hhdCBhZHZhbnRhZ2U/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:26:54
-The next revision is due on 2024-03-02 11:42:19
-INFO:     127.0.0.1:55000 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBzdHJpbmcgb2YgbGVuZ3RoIHgsIGhvdyB3b3VsZCB5b3UgZ2V0IHRoZSBsYXN0IGNoYXJhY3RlciBpbiB0aGUgc3RyaW5nIHVzaW5nIHNsaWNlIG5vdGF0aW9uPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:02:26
-The next revision is due on 2024-03-02 07:16:29
-INFO:     127.0.0.1:51132 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RmluZCB0aGUgZGlzdGFuY2UgYmV0d2VlbiBwb2ludHMgKDEsNikgYW5kICgzLCAtNSkuLm1k HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:28:19
-The next revision is due on 2024-03-02 11:43:30
-INFO:     127.0.0.1:48502 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Q29udmVydCBhIGZsb2F0aW5nLXBvaW50IG51bWJlciBwcm92aWRlZCBieSB0aGUgdXNlciBmcm9tIHNjaWVudGlmaWMgbm90YXRpb24gdG8gaXRzIGRlY2ltYWwgZXF1aXZhbGVudC4gVGhlbiwgY29udmVydHMgaXQgYmFjayB0byBzY2llbnRpZmljIG5vdGF0aW9uIHVzaW5nIHN0cmluZyBmb3JtYXR0aW5nLi4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:30:02
-The next revision is due on 2024-03-02 03:16:12
-INFO:     127.0.0.1:48504 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SG93IGRvIHlvdSBtYWtlIGEgbnVtYmVyZWQgbGlzdCBpbiBhbiBIVE1MIGRvY3VtZW50Py4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 13:43:03
-The next revision is due on 2024-03-02 07:16:43
-INFO:     127.0.0.1:47772 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgSFRNTCBlbGVtZW50IGZvciB0aGUgbGFyZ2VzdCBoZWFkaW5nPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 281
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:47788 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:47802 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:27:07
-The next revision is due on 2024-03-02 03:16:24
-INFO:     127.0.0.1:46984 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgcHJvcGVyIGh0bWwgbWFya2Rvd24gdG8gdXNlIHRoZSB0aGVhZCwgdGZvb3QsIGFuZCB0Ym9keSBlbGVtZW50cz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:06:31
-The next revision is due on 2024-03-02 07:17:01
-INFO:     127.0.0.1:37188 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgcGVyaW9kIG9mIGNvdCjOuCk/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 6, streak is now 7
-This question was last revised on 2024-02-26 10:30:12
-The next revision is due on 2024-03-02 11:44:05
-INFO:     127.0.0.1:49210 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBzdHJpbmcgc2xpY2Ugbm90YXRpb24gb2YgLiAuIC4uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-24 08:58:12
-The next revision is due on 2024-03-01 17:29:16
-INFO:     127.0.0.1:46072 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiB3ZSBleHBsYWluIHNvbWV0aGluZywgd2hhdCBzaG91bGQgd2UgZm9jdXMgb24/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:01:35
-The next revision is due on 2024-03-02 07:17:48
-INFO:     127.0.0.1:41180 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=ZGVncmVlcyB0byByYWRpYW5zLCBzaXN0ZXIgcXVlc3Rpb24uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-27 18:02:58
-The next revision is due on 2024-03-01 17:30:05
-INFO:     127.0.0.1:43338 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gcHl0aG9uLCB3aGF0IGFyZSB0aGUgc2hvcnRoYW5kIG9wZXJhdG9ycz8gV2h5IHdvdWxkIHlvdSB1c2UgdGhlbT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-27 18:12:51
-The next revision is due on 2024-03-01 20:26:01
-INFO:     127.0.0.1:41468 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gcHl0aG9uIHdoYXQgaXMgYSBkb2NzdHJpbmc/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:06:16
-The next revision is due on 2024-03-02 07:18:50
-INFO:     127.0.0.1:42744 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0YW5nZW50IGRlZmluZWQgYXMgaW4gdGVybXMgb2YgeS14IGFuZCBzaW5lLWNvc2luZT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:31:08
-The next revision is due on 2024-03-02 03:18:34
-INFO:     127.0.0.1:46656 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBjcmVhdGluZyBhIHRhYmxlIGluIGh0bWwsIGhvdyB5b3UgdXNlIHRoZSBjb2xncm91cCBhbmQgY29sIGVsZW1lbnRzPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-27 18:14:09
-The next revision is due on 2024-03-01 20:28:01
-INFO:     127.0.0.1:57428 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBkb2VzIHRoZSByYW5kaW50KCkgZnVuY3Rpb24gZG8/Li5tZA== HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 271
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:57444 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57456 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-24 09:10:10
-The next revision is due on 2024-03-01 17:36:27
-INFO:     127.0.0.1:54058 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBhcmUgdHdvIHN0cmF0ZWdpZXMgZm9yIGV4cGxhaW5pbmcgYW4gaWRlYSB0aGF0IGlzIGRpZmZpY3VsdCB0byBwaWN0dXJlPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:02:58
-The next revision is due on 2024-03-02 07:25:09
-INFO:     127.0.0.1:53754 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=RGVzY3JpYmUgdGhlIGdyYXBoIGJlaGF2aW9yIG9mIHRoZSBzZWMozrgpIGZ1bmN0aW9uLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 08:45:51
-The next revision is due on 2024-03-01 17:37:22
-INFO:     127.0.0.1:34746 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=aW4gcHl0aG9uLCB3aGF0IGRvZXMgdGhlIGNocigpIGZ1bmN0aW9uIGRvPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-27 18:13:12
-The next revision is due on 2024-03-01 20:33:25
-INFO:     127.0.0.1:46678 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gUHl0aG9uLCB3aGF0IGlzIGEgc2VudGluZWwgdmFsdWUgcmVmZXIgdG8/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:30:45
-The next revision is due on 2024-03-02 03:25:36
-INFO:     127.0.0.1:52736 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiB3b3VsZCB5b3UgdXNlIHRoZSBjb2wgKGNvbHVtbikgZWxlbWVudD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 08:45:51
-The next revision is due on 2024-03-01 17:38:25
-INFO:     127.0.0.1:39508 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gcHl0aG9uLCB3cml0ZSBhbiBleHByZXNzaW9uIHVzaW5nIHRoZSByYW5nZSBmdW5jdGlvbiB0aGF0IHJldHVybnMgZXZlcnkgb2RkIGludGVnZXIgZnJvbSAxIHRvIDI3Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-27 18:14:19
-The next revision is due on 2024-03-01 23:50:25
-INFO:     127.0.0.1:44780 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=R2l2ZW4gYSBsaXN0IG9mIHZhbHVlcywgaG93IGRvIHlvdSBkZWxldGUgYSBnaXZlbiB2YWx1ZSBmcm9tIHRoYXQgbGlzdD8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:06:57
-The next revision is due on 2024-03-02 07:27:46
-INFO:     127.0.0.1:33576 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgcGVyaW9kIG9mIHRoZSB0YW5nZW50IGZ1bmN0aW9uIG0ozrgpID0gdGFuKM64KT8uLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:06:44
-The next revision is due on 2024-03-02 07:28:01
-INFO:     127.0.0.1:36372 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hhdCBpcyB0aGUgcGVyaW9kIG9mIHRoZSBmdW5jdGlvbiBmKHQpID0gc2luKCjPgCBvdmVyIDYgdGltZXMgdCkuLm1k HTTP/1.1" 200 OK
-Revision streak was 2, streak is now 3
-This question was last revised on 2024-02-26 10:41:31
-The next revision is due on 2024-03-01 20:36:06
-INFO:     127.0.0.1:54796 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gdGhlIGlucHV0IGZvcm0gZWxlbWVudCwgd2hhdCBkb2VzIHRoZSBzaXplIGF0dHJpYnV0ZSBkZWZhdWx0IHRvPy4ubWQ= HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 261
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:54800 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54808 - "GET /completed_quiz HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:06:20
-The next revision is due on 2024-03-02 07:28:29
-INFO:     127.0.0.1:54824 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gQWxnZWJyYSB3aGF0IGRvZXMgY29uY2F2ZSBkb3duIHJlZmVyIHRvPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 3, streak is now 4
-This question was last revised on 2024-02-26 10:43:08
-The next revision is due on 2024-03-01 23:51:37
-INFO:     127.0.0.1:38448 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SWYgeW91IHdhbnQgdG8gZGlzYWJsZSBjb250cm9scyB0byBhbiBIVE1MIGZvcm0sIHdoYXQgYXR0cmlidXRlKHMpIG1pZ2h0IHlvdSB1c2U/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 08:45:51
-The next revision is due on 2024-02-29 21:02:40
-INFO:     127.0.0.1:45558 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=SW4gcHl0aG9uLCB3cml0ZSBhbiBleHByZXNzaW9uIHdpdGggdGhlIHJhbmdlIGZ1bmN0aW9uIHRoYXQgcmV0dXJuIGV2ZXJ5IGludGVnZXIgZnJvbSA1IGRvd24gdG8gLTUuLi5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-24 09:22:41
-The next revision is due on 2024-02-29 21:03:30
-INFO:     127.0.0.1:41092 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=SW4gYSBwdWJsaWMgc3BlZWNoIC0gTmFtZSB0aGUgc2l4IGNvcmUgZXhwbGFuYXRvcnkgc3RyYXRlZ2llcyBmb3IgaGVscGluZyBhbiBhdWRpZW5jZSB1bmRlcnN0YW5kIGEgY29uY2VwdC4uLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 09:35:54
-The next revision is due on 2024-03-01 17:42:11
-INFO:     127.0.0.1:42624 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=aW4gcHl0aG9uLCB5b3Ugd2FudCB0byBpbmNsdWRlIGEgc3RhdGVtZW50IHRoYXQgYnJlYWtzIGEgbG9vcCBnaXZlbiBhIGNlcnRhaW4gY29uZGl0aW9uLiBIb3cgZG8geW91IGFjaGlldmUgdGhpcz8uLm1k HTTP/1.1" 200 OK
-Revision streak was 4, streak is now 5
-This question was last revised on 2024-02-25 14:31:48
-The next revision is due on 2024-03-02 03:29:58
-INFO:     127.0.0.1:51996 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V2hlbiBjcmVhdGluZyBhIHRhYmxlIGluIGh0bWwsIGhvdyBkbyB5b3UgY3JlYXRlIHggYW1vdW50IG9mIHJvd3M/Li5tZA== HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 08:45:51
-The next revision is due on 2024-03-01 17:42:40
-INFO:     127.0.0.1:58314 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=aW4gcHl0aG9uLCB3aGF0IGRvZXMgdGhlIG9yZCgpIGZ1bmN0aW9uIGRvPy4ubWQ= HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:08:09
-The next revision is due on 2024-03-02 07:31:08
-INFO:     127.0.0.1:36348 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=V3JpdGUgYW4gZXF1YXRpb24gZm9yIGEgY2lyY2xlIGNlbnRlcmVkIGF0IHRoZSBwb2ludCAoLTMsIDIpIHdpdGggcmFkaXVzIDQuLm1k HTTP/1.1" 200 OK
-Revision streak was 5, streak is now 6
-This question was last revised on 2024-02-25 14:07:08
-The next revision is due on 2024-03-02 07:32:40
-INFO:     127.0.0.1:58134 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=UHJvdmUgdGhhdCB0YW4ozrgpID0gLWNvdCjOuCAtIHBpIG92ZXIgMikuLm1k HTTP/1.1" 200 OK
-Revision streak was 1, streak is now 2
-This question was last revised on 2024-02-28 08:45:51
-The next revision is due on 2024-03-01 17:44:44
-INFO:     127.0.0.1:58144 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=SW4gcHl0aG9uLCBXaGF0IHNlcXVlbmNlIGlzIGdlbmVyYXRlZCBieSByYW5nZSgxMCk/Li5tZA== HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 253
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-INFO:     127.0.0.1:58158 - "GET /populate_quiz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58166 - "GET /completed_quiz HTTP/1.1" 200 OK
-Question Population Stats: 
-number of questions in database: 430
-number of questions up for review: 253
-The following files do not have subject value: 
-question_template..md
-You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
-current quiz length is set to: 10
-This is where text starts_________________________
-Stats for Nerds!!!
-number_of_quizzes_completed: 72
-Average quiz length taken  : 15.90
-Total Questions answered   : 1145
---------------------------------
-Questions Stats:
-Total Questions in database: 430
-Questions up for review    : 253
---------------------------------
-Revision Streak Stats:
-Questions with revision streak of 1 is 72
-Questions with revision streak of 2 is 48
-Questions with revision streak of 3 is 74
-Questions with revision streak of 4 is 74
-Questions with revision streak of 5 is 78
-Questions with revision streak of 6 is 46
-Questions with revision streak of 7 is 26
-Questions with revision streak of 8 is 10
-Questions with revision streak of 9 is 2
-INFO:     127.0.0.1:34420 - "GET /stats HTTP/1.1" 200 OK
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [115339]
-INFO:     Started server process [328869]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [328869]
-INFO:     Started server process [328920]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [328920]
-INFO:     Started server process [329063]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [329063]
-INFO:     Started server process [336819]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [336819]
-INFO:     Started server process [337063]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [337063]
-INFO:     Started server process [337501]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  WatchFiles detected changes in 'scratchpad.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [337501]
-INFO:     Started server process [341125]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
+Questions with revision streak of 1 is 78
+Questions with revision streak of 2 is 44
+Questions with revision streak of 3 is 44
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 108
+Questions with revision streak of 6 is 61
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 5
+Questions with revision streak of 9 is 8
+INFO:     127.0.0.1:58834 - "GET /stats HTTP/1.1" 200 OK

@@ -1,4 +1,5 @@
 import json
+import math
 from quiz_functions import populate_question_list
 def initialize_stats_json():
     try:
@@ -16,6 +17,8 @@ def print_and_update_revision_streak_stats():
     # Load in data from json
     with open("questions.json", "r") as f:
         questions_data = json.load(f)
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
     revision_stat_list = []
     revision_stat_set = set(revision_stat_list)
     for i in questions_data:
@@ -24,11 +27,16 @@ def print_and_update_revision_streak_stats():
     # print("Revision Streak Stats:")
     revision_return_value = []
     revision_return_value.append("Revision Streak Stats:")
+    total = len(questions_data)
+    count_var = 0
     for i in revision_stat_set:
         count = revision_stat_list.count(i)
+        count_var += count * math.pow(settings["time_between_revisions"],i)
         # print(f"Questions with revision streak of {i} is {count}")
         revision_return_value.append(f"Questions with revision streak of {i} is {count}")   
-    return revision_return_value
+    average_time_between_revisions = count_var / total
+    average_questions_per_day = total / average_time_between_revisions
+    return revision_return_value, average_questions_per_day
         
         
 def add_time():
@@ -72,6 +80,7 @@ def print_stats():
     # print("Stats for Nerds!!!")
     stat_list = []
     stat_list.append("Stats for Nerds!!!")
+    return_list, average_questions_per_day = print_and_update_revision_streak_stats()
     with open("stats.json", "r") as f:
         stats_data = json.load(f)
     for key in stats_data:
@@ -90,11 +99,12 @@ def print_stats():
     question_list, sorted_questions = populate_question_list()
     with open("questions.json", "r") as f:
         questions_raw_data = json.load(f)
+    
     stat_list.append(f"Questions Stats:")
     stat_list.append(f"Total Questions in database: {len(questions_raw_data)}")
     stat_list.append(f"Questions up for review    : {len(sorted_questions)}")
+    stat_list.append(f"Average Questions per day  : {average_questions_per_day:.3f}")
     stat_list.append("--------------------------------")
-    return_list = print_and_update_revision_streak_stats()
     stat_list = stat_list + return_list
     print("This is where text starts_________________________")
     for i in stat_list:
