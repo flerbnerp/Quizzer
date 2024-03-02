@@ -784,3 +784,833 @@ Revision streak was 1, streak is now 2
 This question was last revised on 2024-02-28 10:26:50
 The next revision is due on 2024-03-03 10:50:39
 INFO:     127.0.0.1:35428 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan%282%CF%80%20over%203%29%3F..md HTTP/1.1" 200 OK
+Who were the anabaptists, who led this movement and when?..md
+Who were the anabaptists, who led this movement and when?..md
+Revision streak was 7, streak is now 8
+This question was last revised on 2024-02-29 08:48:03
+The next revision is due on 2024-03-04 10:03:56
+INFO:     127.0.0.1:34450 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20were%20the%20anabaptists%2C%20who%20led%20this%20movement%20and%20when%3F..md HTTP/1.1" 200 OK
+What is tan(π over 4)?..md
+What is tan(π over 4)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 10:26:50
+The next revision is due on 2024-03-03 10:52:44
+INFO:     127.0.0.1:43020 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan%28%CF%80%20over%204%29%3F..md HTTP/1.1" 200 OK
+What is meant by audience analysis?..md
+What is meant by audience analysis?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-29 14:34:40
+The next revision is due on 2024-03-03 20:41:10
+INFO:     127.0.0.1:45662 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20meant%20by%20audience%20analysis%3F..md HTTP/1.1" 200 OK
+In an HTML form, what does the term "form controls" refer to?..md
+In an HTML form, what does the term "form controls" refer to?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 18:03:24
+The next revision is due on 2024-03-04 00:41:48
+INFO:     127.0.0.1:60758 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20an%20HTML%20form%2C%20what%20does%20the%20term%20%22form%20controls%22%20refer%20to%3F..md HTTP/1.1" 200 OK
+what is the u+ code for greek letter alpha?..md
+what is the u+ code for greek letter alpha?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 14:21:10
+The next revision is due on 2024-03-04 00:41:54
+INFO:     127.0.0.1:35260 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u%2B%20code%20for%20greek%20letter%20alpha%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 230
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:35266 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35282 - "GET /completed_quiz HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 230
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 97
+Average quiz length taken  : 14.38
+Total Questions answered   : 1395
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 230
+Average Questions per day  : 293.197
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 76
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 80
+Questions with revision streak of 5 is 103
+Questions with revision streak of 6 is 68
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 4
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:47108 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 230
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:53372 - "GET /populate_quiz HTTP/1.1" 200 OK
+Dualism is the conjunction of what four claims?..md
+Dualism is the conjunction of what four claims?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-29 09:00:56
+The next revision is due on 2024-03-02 14:28:00
+INFO:     127.0.0.1:41054 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=Dualism%20is%20the%20conjunction%20of%20what%20four%20claims%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 230
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 97
+Average quiz length taken  : 14.38
+Total Questions answered   : 1395
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 230
+Average Questions per day  : 293.197
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 76
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 80
+Questions with revision streak of 5 is 103
+Questions with revision streak of 6 is 68
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 4
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:41068 - "GET /stats HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1334 items in the most recent scan
+Total file matches is: 1334 compared to 1344 pre-existing files in Vault
+total operations to complete scan is: 901,139
+-------------------------------------------------------
+questions.json exists
+There are 460 questions loaded into Quizzer.
+There are 460 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:54808 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 230
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 97
+Average quiz length taken  : 14.38
+Total Questions answered   : 1395
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 230
+Average Questions per day  : 293.197
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 76
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 80
+Questions with revision streak of 5 is 103
+Questions with revision streak of 6 is 68
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 4
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:41924 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 460
+number of questions up for review: 245
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 97
+Average quiz length taken  : 14.38
+Total Questions answered   : 1395
+--------------------------------
+Questions Stats:
+Total Questions in database: 460
+Questions up for review    : 245
+Average Questions per day  : 293.197
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 76
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 80
+Questions with revision streak of 5 is 103
+Questions with revision streak of 6 is 68
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 4
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:54426 - "GET /stats HTTP/1.1" 200 OK
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 54 new entries to config.json
+There are 1388 items in the most recent scan
+Total file matches is: 1334 compared to 1344 pre-existing files in Vault
+total operations to complete scan is: 975,308
+-------------------------------------------------------
+questions.json exists
+There are 514 questions loaded into Quizzer.
+There are 514 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:54440 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 245
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 97
+Average quiz length taken  : 14.38
+Total Questions answered   : 1395
+--------------------------------
+Questions Stats:
+Total Questions in database: 514
+Questions up for review    : 245
+Average Questions per day  : 338.002
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 130
+Questions with revision streak of 2 is 41
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 80
+Questions with revision streak of 5 is 103
+Questions with revision streak of 6 is 68
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 4
+Questions with revision streak of 9 is 11
+INFO:     127.0.0.1:49024 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 245
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:33008 - "GET /populate_quiz HTTP/1.1" 200 OK
+What is tan(5π over 6)?..md
+What is tan(5π over 6)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 10:26:50
+The next revision is due on 2024-03-03 14:18:26
+INFO:     127.0.0.1:55648 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan%285%CF%80%20over%206%29%3F..md HTTP/1.1" 200 OK
+What are the three broad types of arguments?..md
+What are the three broad types of arguments?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-29 08:49:30
+The next revision is due on 2024-03-02 17:42:13
+INFO:     127.0.0.1:42720 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=What%20are%20the%20three%20broad%20types%20of%20arguments%3F..md HTTP/1.1" 200 OK
+what is the u+ code for superscript 1?..md
+what is the u+ code for superscript 1?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 14:36:06
+The next revision is due on 2024-03-04 04:09:09
+INFO:     127.0.0.1:37186 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u%2B%20code%20for%20superscript%201%3F..md HTTP/1.1" 200 OK
+In Social Judgement Theory, there are four terms that make up the theory. What are they and explain what they mean...md
+In Social Judgement Theory, there are four terms that make up the theory. What are they and explain what they mean...md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 19:07:24
+The next revision is due on 2024-03-03 14:21:21
+INFO:     127.0.0.1:37266 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Social%20Judgement%20Theory%2C%20there%20are%20four%20terms%20that%20make%20up%20the%20theory.%20What%20are%20they%20and%20explain%20what%20they%20mean...md HTTP/1.1" 200 OK
+What is the most effective way to give sight-impaired users an overview of your html table?..md
+What is the most effective way to give sight-impaired users an overview of your html table?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 14:44:19
+The next revision is due on 2024-03-04 04:10:03
+INFO:     127.0.0.1:57164 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20most%20effective%20way%20to%20give%20sight-impaired%20users%20an%20overview%20of%20your%20html%20table%3F..md HTTP/1.1" 200 OK
+sin⁻¹(x) has domain what? and range what?..md
+sin⁻¹(x) has domain what? and range what?..md
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-28 10:15:11
+The next revision is due on 2024-03-03 20:33:23
+INFO:     127.0.0.1:39358 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=sin%E2%81%BB%C2%B9%28x%29%20has%20domain%20what%3F%20and%20range%20what%3F..md HTTP/1.1" 200 OK
+How do you critique a deductive argument?..md
+How do you critique a deductive argument?..md
+Revision streak was 2, streak is now 3
+This question was last revised on 2024-02-28 13:36:35
+The next revision is due on 2024-03-03 17:18:24
+INFO:     127.0.0.1:42234 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=How%20do%20you%20critique%20a%20deductive%20argument%3F..md HTTP/1.1" 200 OK
+When did the protestant reformation start?..md
+When did the protestant reformation start?..md
+Revision streak was 8, streak is now 9
+This question was last revised on 2024-02-29 08:49:01
+The next revision is due on 2024-03-04 19:02:55
+INFO:     127.0.0.1:36646 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20did%20the%20protestant%20reformation%20start%3F..md HTTP/1.1" 200 OK
+Who is making the Web standards?..md
+Who is making the Web standards?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-27 18:03:37
+The next revision is due on 2024-03-04 04:11:13
+INFO:     127.0.0.1:60620 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Who%20is%20making%20the%20Web%20standards%3F..md HTTP/1.1" 200 OK
+what is the u+ code for superscript -?..md
+what is the u+ code for superscript -?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 14:36:36
+The next revision is due on 2024-03-04 04:11:25
+INFO:     127.0.0.1:57314 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=what%20is%20the%20u%2B%20code%20for%20superscript%20-%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 236
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:57316 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57326 - "GET /completed_quiz HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 236
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 98
+Average quiz length taken  : 14.34
+Total Questions answered   : 1405
+--------------------------------
+Questions Stats:
+Total Questions in database: 514
+Questions up for review    : 236
+Average Questions per day  : 337.344
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 128
+Questions with revision streak of 2 is 42
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 99
+Questions with revision streak of 6 is 72
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 3
+Questions with revision streak of 9 is 12
+INFO:     127.0.0.1:44048 - "GET /stats HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'stats.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15196]
+INFO:     Started server process [132552]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'stats.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [132552]
+INFO:     Started server process [132633]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['/home/karibar/Documents/coding-projects/apps/study_tools/quizzer']
+ERROR:    [Errno 98] Address already in use
+config.json exists
+Total items not found in existing items is: 0
+Added a total of 0 new entries to config.json
+There are 1388 items in the most recent scan
+Total file matches is: 1388 compared to 1398 pre-existing files in Vault
+total operations to complete scan is: 975,362
+-------------------------------------------------------
+questions.json exists
+There are 514 questions loaded into Quizzer.
+There are 514 questions with valid keys, and 0 with invalid keys.
+settings.json exists
+time_between_revisions setting already exists
+due_date_sensitivity settings exists
+subject_psychology_weight exists in settings.json
+subject_psychology_priority exists in settings.json
+subject_theology_weight exists in settings.json
+subject_theology_priority exists in settings.json
+subject_unicode_weight exists in settings.json
+subject_unicode_priority exists in settings.json
+subject_ecology_weight exists in settings.json
+subject_ecology_priority exists in settings.json
+subject_communication_weight exists in settings.json
+subject_communication_priority exists in settings.json
+subject_computer_science_weight exists in settings.json
+subject_computer_science_priority exists in settings.json
+subject_biology_weight exists in settings.json
+subject_biology_priority exists in settings.json
+subject_mathematics_weight exists in settings.json
+subject_mathematics_priority exists in settings.json
+subject_geology_weight exists in settings.json
+subject_geology_priority exists in settings.json
+subject_history_weight exists in settings.json
+subject_history_priority exists in settings.json
+subject_mythology_weight exists in settings.json
+subject_mythology_priority exists in settings.json
+subject_astronomy_weight exists in settings.json
+subject_astronomy_priority exists in settings.json
+subject_philosophy_weight exists in settings.json
+subject_philosophy_priority exists in settings.json
+subject_writing_weight exists in settings.json
+subject_writing_priority exists in settings.json
+subject_english_weight exists in settings.json
+subject_english_priority exists in settings.json
+subject_web_design_weight exists in settings.json
+subject_web_design_priority exists in settings.json
+subject_religion_weight exists in settings.json
+subject_religion_priority exists in settings.json
+subject_latin_weight exists in settings.json
+subject_latin_priority exists in settings.json
+stats.json already exists
+-------------------------------------------------------
+INFO:     127.0.0.1:58132 - "GET /initialize_quizzer HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 236
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 98
+Average quiz length taken  : 14.34
+Total Questions answered   : 1405
+--------------------------------
+Questions Stats:
+Total Questions in database: 514
+Questions up for review    : 236
+Average Questions per day  : 354.566
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 128
+Questions with revision streak of 2 is 42
+Questions with revision streak of 3 is 46
+Questions with revision streak of 4 is 81
+Questions with revision streak of 5 is 99
+Questions with revision streak of 6 is 72
+Questions with revision streak of 7 is 31
+Questions with revision streak of 8 is 3
+Questions with revision streak of 9 is 12
+INFO:     127.0.0.1:58140 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 236
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:38934 - "GET /populate_quiz HTTP/1.1" 200 OK
+What are strategies for speaking where difficult language makes an idea hard for your audience to understand? How do you effectively overcome this barrier?..md
+What are strategies for speaking where difficult language makes an idea hard for your audience to understand? How do you effectively overcome this barrier?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 20:02:22
+The next revision is due on 2024-03-02 17:48:03
+INFO:     127.0.0.1:44286 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=What%20are%20strategies%20for%20speaking%20where%20difficult%20language%20makes%20an%20idea%20hard%20for%20your%20audience%20to%20understand%3F%20How%20do%20you%20effectively%20overcome%20this%20barrier%3F..md HTTP/1.1" 200 OK
+What is the negative identity of cosine?..md
+What is the negative identity of cosine?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-27 18:26:07
+The next revision is due on 2024-03-04 08:41:31
+INFO:     127.0.0.1:44290 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20negative%20identity%20of%20cosine%3F..md HTTP/1.1" 200 OK
+What is sec(3π over 4)?..md
+What is sec(3π over 4)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 16:05:27
+The next revision is due on 2024-03-03 14:26:53
+INFO:     127.0.0.1:32984 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20sec%283%CF%80%20over%204%29%3F..md HTTP/1.1" 200 OK
+In Python, you are attempting to retrieve all the values of each key, not including the key itself. What method do you need? How do you use it?..md
+In Python, you are attempting to retrieve all the values of each key, not including the key itself. What method do you need? How do you use it?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:46:32
+The next revision is due on 2024-03-04 04:15:19
+INFO:     127.0.0.1:41562 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%2C%20you%20are%20attempting%20to%20retrieve%20all%20the%20values%20of%20each%20key%2C%20not%20including%20the%20key%20itself.%20What%20method%20do%20you%20need%3F%20How%20do%20you%20use%20it%3F..md HTTP/1.1" 200 OK
+Evaluate the following statements in Python 0003..md
+Evaluate the following statements in Python 0003..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:45:08
+The next revision is due on 2024-03-04 04:15:25
+INFO:     127.0.0.1:41576 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20the%20following%20statements%20in%20Python%200003..md HTTP/1.1" 200 OK
+The domain of tan(θ) is all real numbers. True or False?..md
+The domain of tan(θ) is all real numbers. True or False?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 16:05:27
+The next revision is due on 2024-03-02 17:49:11
+INFO:     127.0.0.1:39156 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=The%20domain%20of%20tan%28%CE%B8%29%20is%20all%20real%20numbers.%20True%20or%20False%3F..md HTTP/1.1" 200 OK
+What is tan(5π over 4)?..md
+What is tan(5π over 4)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 16:05:27
+The next revision is due on 2024-03-03 14:27:44
+INFO:     127.0.0.1:38604 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20tan%285%CF%80%20over%204%29%3F..md HTTP/1.1" 200 OK
+What is the U+ code for Greek Letter Theta?..md
+What is the U+ code for Greek Letter Theta?..md
+Revision streak was 7, streak is now 8
+This question was last revised on 2024-02-29 08:45:30
+The next revision is due on 2024-03-04 13:39:05
+INFO:     127.0.0.1:38614 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20U%2B%20code%20for%20Greek%20Letter%20Theta%3F..md HTTP/1.1" 200 OK
+In Python, what is a sentinel value refer to?..md
+In Python, what is a sentinel value refer to?..md
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-29 14:59:12
+The next revision is due on 2024-03-03 20:38:57
+INFO:     127.0.0.1:50954 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%2C%20what%20is%20a%20sentinel%20value%20refer%20to%3F..md HTTP/1.1" 200 OK
+In python, given a list, how do you find if value is not in the list?..md
+In python, given a list, how do you find if value is not in the list?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:47:49
+The next revision is due on 2024-03-04 04:16:17
+INFO:     127.0.0.1:57998 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20python%2C%20given%20a%20list%2C%20how%20do%20you%20find%20if%20value%20is%20not%20in%20the%20list%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 228
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:58008 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "GET /completed_quiz HTTP/1.1" 200 OK
+Given a list, how do you reverse the order of the list?..md
+Given a list, how do you reverse the order of the list?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:45:25
+The next revision is due on 2024-03-04 04:16:28
+INFO:     127.0.0.1:44422 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Given%20a%20list%2C%20how%20do%20you%20reverse%20the%20order%20of%20the%20list%3F..md HTTP/1.1" 200 OK
+What does the CRAAP Test stand for when evaluating a source?..md
+What does the CRAAP Test stand for when evaluating a source?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 20:08:11
+The next revision is due on 2024-03-02 17:50:20
+INFO:     127.0.0.1:50420 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=What%20does%20the%20CRAAP%20Test%20stand%20for%20when%20evaluating%20a%20source%3F..md HTTP/1.1" 200 OK
+Given a list of values, how do you delete a given value from that list?..md
+Given a list of values, how do you delete a given value from that list?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-29 15:01:01
+The next revision is due on 2024-03-04 00:16:42
+INFO:     127.0.0.1:58504 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Given%20a%20list%20of%20values%2C%20how%20do%20you%20delete%20a%20given%20value%20from%20that%20list%3F..md HTTP/1.1" 200 OK
+What is the reciprocal identity of csc(θ)?..md
+What is the reciprocal identity of csc(θ)?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:14:02
+The next revision is due on 2024-03-04 00:16:58
+INFO:     127.0.0.1:39630 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20reciprocal%20identity%20of%20csc%28%CE%B8%29%3F..md HTTP/1.1" 200 OK
+Evaluate sin⁻¹(1%2)..md
+Evaluate sin⁻¹(1%2)..md
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-02-28 10:36:35
+The next revision is due on 2024-03-03 20:40:35
+INFO:     127.0.0.1:33810 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20sin%E2%81%BB%C2%B9%281%252%29..md HTTP/1.1" 200 OK
+What is the unicode U+ code for the ≠ symbol?..md
+What is the unicode U+ code for the ≠ symbol?..md
+Revision streak was 7, streak is now 8
+This question was last revised on 2024-02-29 08:46:49
+The next revision is due on 2024-03-04 13:40:57
+INFO:     127.0.0.1:33824 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20unicode%20U%2B%20code%20for%20the%20%E2%89%A0%20symbol%3F..md HTTP/1.1" 200 OK
+Given a list of values, how do you find the index of a specific value?..md
+Given a list of values, how do you find the index of a specific value?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:54:05
+The next revision is due on 2024-03-04 04:18:00
+INFO:     127.0.0.1:43630 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Given%20a%20list%20of%20values%2C%20how%20do%20you%20find%20the%20index%20of%20a%20specific%20value%3F..md HTTP/1.1" 200 OK
+Evaluate the following statements in Python 0001..md
+Evaluate the following statements in Python 0001..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:50:00
+The next revision is due on 2024-03-04 04:18:07
+INFO:     127.0.0.1:43636 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20the%20following%20statements%20in%20Python%200001..md HTTP/1.1" 200 OK
+For angles in the interval, if cos(θ) = α, then what is the inverse function?..md
+For angles in the interval, if cos(θ) = α, then what is the inverse function?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:15:32
+The next revision is due on 2024-03-04 00:17:47
+INFO:     127.0.0.1:36444 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=For%20angles%20in%20the%20interval%2C%20if%20cos%28%CE%B8%29%20%3D%20%CE%B1%2C%20then%20what%20is%20the%20inverse%20function%3F..md HTTP/1.1" 200 OK
+What is csc(5π over 6)?..md
+What is csc(5π over 6)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 16:05:27
+The next revision is due on 2024-03-03 14:30:31
+INFO:     127.0.0.1:56124 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20csc%285%CF%80%20over%206%29%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 219
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:56128 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56138 - "GET /completed_quiz HTTP/1.1" 200 OK
+When did the scientific revolution end?..md
+When did the scientific revolution end?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 20:08:38
+The next revision is due on 2024-03-03 14:30:50
+INFO:     127.0.0.1:56392 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20did%20the%20scientific%20revolution%20end%3F..md HTTP/1.1" 200 OK
+Sketch a graph of f(θ) = 3tan( (π-6) θ..md
+Sketch a graph of f(θ) = 3tan( (π-6) θ..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:18:26
+The next revision is due on 2024-03-04 00:18:50
+INFO:     127.0.0.1:55678 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Sketch%20a%20graph%20of%20f%28%CE%B8%29%20%3D%203tan%28%20%28%CF%80-6%29%20%CE%B8..md HTTP/1.1" 200 OK
+State the period, amplitude, phase shift, and horizontal shift of the following function 001..md
+State the period, amplitude, phase shift, and horizontal shift of the following function 001..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:35:34
+The next revision is due on 2024-03-04 00:19:54
+INFO:     127.0.0.1:33852 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=State%20the%20period%2C%20amplitude%2C%20phase%20shift%2C%20and%20horizontal%20shift%20of%20the%20following%20function%20001..md HTTP/1.1" 200 OK
+What is cot(π over 4)?..md
+What is cot(π over 4)?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-02-28 16:05:27
+The next revision is due on 2024-03-03 14:32:22
+INFO:     127.0.0.1:33868 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20cot%28%CF%80%20over%204%29%3F..md HTTP/1.1" 200 OK
+In Python, what is the proper way to create a single element tuple?..md
+In Python, what is the proper way to create a single element tuple?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:53:32
+The next revision is due on 2024-03-04 08:47:30
+INFO:     127.0.0.1:51278 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%2C%20what%20is%20the%20proper%20way%20to%20create%20a%20single%20element%20tuple%3F..md HTTP/1.1" 200 OK
+In a public speech - Name the six core explanatory strategies for helping an audience understand a concept...md
+In a public speech - Name the six core explanatory strategies for helping an audience understand a concept...md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 20:18:43
+The next revision is due on 2024-03-02 17:55:51
+INFO:     127.0.0.1:56366 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=incorrect&file_name=In%20a%20public%20speech%20-%20Name%20the%20six%20core%20explanatory%20strategies%20for%20helping%20an%20audience%20understand%20a%20concept...md HTTP/1.1" 200 OK
+In Python,How do you add a new key value pair to a dictionary?..md
+In Python,How do you add a new key value pair to a dictionary?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:46:44
+The next revision is due on 2024-03-04 04:22:30
+INFO:     127.0.0.1:40444 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%2CHow%20do%20you%20add%20a%20new%20key%20value%20pair%20to%20a%20dictionary%3F..md HTTP/1.1" 200 OK
+What is a relational operator?..md
+What is a relational operator?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:55:46
+The next revision is due on 2024-03-04 08:49:34
+INFO:     127.0.0.1:51088 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20a%20relational%20operator%3F..md HTTP/1.1" 200 OK
+In slice notation, what happens if you enter a negative value for the slice stride argument?..md
+In slice notation, what happens if you enter a negative value for the slice stride argument?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:50:09
+The next revision is due on 2024-03-04 08:49:44
+INFO:     127.0.0.1:34976 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20slice%20notation%2C%20what%20happens%20if%20you%20enter%20a%20negative%20value%20for%20the%20slice%20stride%20argument%3F..md HTTP/1.1" 200 OK
+Another name for the sin⁻¹(x) is? How is it notated?..md
+Another name for the sin⁻¹(x) is? How is it notated?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:14:22
+The next revision is due on 2024-03-04 00:22:32
+INFO:     127.0.0.1:33642 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Another%20name%20for%20the%20sin%E2%81%BB%C2%B9%28x%29%20is%3F%20How%20is%20it%20notated%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 210
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:33648 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33662 - "GET /completed_quiz HTTP/1.1" 200 OK
+In 1667, John Locke moved into Anthony Ashley Cooper "Lord Ashley"'s home in London. There he resumed his medical studies under the tutalage of whom?..md
+In 1667, John Locke moved into Anthony Ashley Cooper "Lord Ashley"'s home in London. There he resumed his medical studies under the tutalage of whom?..md
+Revision streak was 1, streak is now 2
+This question was last revised on 2024-03-01 20:20:46
+The next revision is due on 2024-03-03 14:35:15
+INFO:     127.0.0.1:59444 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%201667%2C%20John%20Locke%20moved%20into%20Anthony%20Ashley%20Cooper%20%22Lord%20Ashley%22%27s%20home%20in%20London.%20There%20he%20resumed%20his%20medical%20studies%20under%20the%20tutalage%20of%20whom%3F..md HTTP/1.1" 200 OK
+What is the reciprocal identity of sec(θ)?..md
+What is the reciprocal identity of sec(θ)?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-28 10:28:02
+The next revision is due on 2024-03-04 04:23:32
+INFO:     127.0.0.1:46534 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20reciprocal%20identity%20of%20sec%28%CE%B8%29%3F..md HTTP/1.1" 200 OK
+Sketch a graph of $$(x-2)^2 + (y+3)^2 = 9$$..md
+Sketch a graph of $$(x-2)^2 + (y+3)^2 = 9$$..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:36:22
+The next revision is due on 2024-03-04 00:23:21
+INFO:     127.0.0.1:43484 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Sketch%20a%20graph%20of%20%24%24%28x-2%29%5E2%20%2B%20%28y%2B3%29%5E2%20%3D%209%24%24..md HTTP/1.1" 200 OK
+In Python, how do you create a tuple variable..md
+In Python, how do you create a tuple variable..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:55:53
+The next revision is due on 2024-03-04 08:50:50
+INFO:     127.0.0.1:43490 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=In%20Python%2C%20how%20do%20you%20create%20a%20tuple%20variable..md HTTP/1.1" 200 OK
+Evaluate tan⁻¹(1)..md
+Evaluate tan⁻¹(1)..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 10:16:12
+The next revision is due on 2024-03-04 00:23:42
+INFO:     127.0.0.1:36016 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Evaluate%20tan%E2%81%BB%C2%B9%281%29..md HTTP/1.1" 200 OK
+Given a list of values, how do you find the number of times a certain value example_variable appears inside of example_list?..md
+Given a list of values, how do you find the number of times a certain value example_variable appears inside of example_list?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:58:24
+The next revision is due on 2024-03-04 08:51:47
+INFO:     127.0.0.1:50208 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=Given%20a%20list%20of%20values%2C%20how%20do%20you%20find%20the%20number%20of%20times%20a%20certain%20value%20example_variable%20appears%20inside%20of%20example_list%3F..md HTTP/1.1" 200 OK
+What is the negative identity of csc(θ)?..md
+What is the negative identity of csc(θ)?..md
+Revision streak was 4, streak is now 5
+This question was last revised on 2024-02-28 12:46:06
+The next revision is due on 2024-03-04 00:24:33
+INFO:     127.0.0.1:48316 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20negative%20identity%20of%20csc%28%CE%B8%29%3F..md HTTP/1.1" 200 OK
+What is the key difference between explaining and informing?..md
+What is the key difference between explaining and informing?..md
+Revision streak was 3, streak is now 4
+This question was last revised on 2024-03-01 07:27:24
+The next revision is due on 2024-03-03 20:48:10
+INFO:     127.0.0.1:53494 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=What%20is%20the%20key%20difference%20between%20explaining%20and%20informing%3F..md HTTP/1.1" 200 OK
+how do you assign a variable with a boolean data type?..md
+how do you assign a variable with a boolean data type?..md
+Revision streak was 6, streak is now 7
+This question was last revised on 2024-02-29 08:51:54
+The next revision is due on 2024-03-04 08:52:32
+INFO:     127.0.0.1:56498 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=how%20do%20you%20assign%20a%20variable%20with%20a%20boolean%20data%20type%3F..md HTTP/1.1" 200 OK
+When should you use the identity operators is or is not?..md
+When should you use the identity operators is or is not?..md
+Revision streak was 5, streak is now 6
+This question was last revised on 2024-02-29 08:50:31
+The next revision is due on 2024-03-04 04:25:43
+INFO:     127.0.0.1:59714 - "GET /update_score/%7Bstatus%2C%20file_name%7D?status=correct&file_name=When%20should%20you%20use%20the%20identity%20operators%20is%20or%20is%20not%3F..md HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:59724 - "GET /populate_quiz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59726 - "GET /completed_quiz HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+This is where text starts_________________________
+Stats for Nerds!!!
+number_of_quizzes_completed: 102
+Average quiz length taken  : 14.17
+Total Questions answered   : 1445
+--------------------------------
+Questions Stats:
+Total Questions in database: 514
+Questions up for review    : 200
+Average Questions per day  : 352.229
+--------------------------------
+Revision Streak Stats:
+Questions with revision streak of 1 is 122
+Questions with revision streak of 2 is 48
+Questions with revision streak of 3 is 43
+Questions with revision streak of 4 is 75
+Questions with revision streak of 5 is 99
+Questions with revision streak of 6 is 74
+Questions with revision streak of 7 is 36
+Questions with revision streak of 8 is 5
+Questions with revision streak of 9 is 12
+INFO:     127.0.0.1:59734 - "GET /stats HTTP/1.1" 200 OK
+Question Population Stats: 
+number of questions in database: 514
+number of questions up for review: 200
+The following files do not have subject value: 
+question_template..md
+You are coding a script that computes compound interest and would like to print the yearly projects balance, How do you achieve this? Write a sample code block to achieve this...md
+current quiz length is set to: 10
+INFO:     127.0.0.1:42688 - "GET /populate_quiz HTTP/1.1" 200 OK

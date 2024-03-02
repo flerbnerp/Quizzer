@@ -27,15 +27,12 @@ def print_and_update_revision_streak_stats():
     # print("Revision Streak Stats:")
     revision_return_value = []
     revision_return_value.append("Revision Streak Stats:")
-    total = len(questions_data)
-    count_var = 0
+    average_questions_per_day = 0
     for i in revision_stat_set:
         count = revision_stat_list.count(i)
-        count_var += count * math.pow(settings["time_between_revisions"],i)
+        average_questions_per_day += count * (1 / math.pow(settings["time_between_revisions"],i))
         # print(f"Questions with revision streak of {i} is {count}")
         revision_return_value.append(f"Questions with revision streak of {i} is {count}")   
-    average_time_between_revisions = count_var / total
-    average_questions_per_day = total / average_time_between_revisions
     return revision_return_value, average_questions_per_day
         
         
