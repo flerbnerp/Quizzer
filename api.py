@@ -45,8 +45,9 @@ def read_item(item_id: int, q: Union[str, None] = None):
 @app.get("/update_score/{status, file_name}")
 def question_answer_update_score(status: str, file_name: str):
     print(file_name)
-    decoded_file_name = unquote(file_name)
-    print(decoded_file_name)
+    decoded_file_name = file_name
+    # decoded_file_name = unquote(file_name)
+    # print(decoded_file_name)
     response = f"{decoded_file_name}, {file_name}"
     file_name = decoded_file_name
     if status == "correct":
