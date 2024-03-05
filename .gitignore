@@ -3,3 +3,5 @@ config.json
 questions.json
 stats.json
 settings.json
+revision_schedule.json
+nohup.out
