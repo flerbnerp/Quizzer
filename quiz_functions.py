@@ -3,6 +3,24 @@ import random
 from datetime import datetime, timedelta
 from settings import get_subjects
 import os
+def sort_subject_list(subjects):
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    print(type(settings))
+    temporary_dict = {}
+    sorted_list = []
+    for setting in settings.keys():
+        if setting.endswith("priority"):
+            temporary_dict[setting] = settings[setting]
+    
+    for i in range(len(temporary_dict)):
+        highest_key = min(temporary_dict, key=temporary_dict.get)
+        subject = highest_key[(len("subject_")):highest_key.find("_priority")]
+        sorted_list.append(subject)
+        del temporary_dict[highest_key]
+    subjects = sorted_list
+    print(subjects)
+    return subjects
 
 def populate_question_list():
     with open("settings.json", "r") as f:
@@ -53,13 +71,7 @@ def populate_question_list():
     # In order to add a priority ranking for which subjects get priority for being filled, we'll have to sort the subjects variable which contains our set of subjects to iterate over
     #########################################
     # Sort subject list by priority setting for each subject
-    # for i in subjects
-    #   i = settings[priority_setting_{i}] + i
-    # 
-    # subjects.sort()
-    # for i in subjects:
-    #   i = i[len(settings[priority_setting_{i}]):]
-    # List is now sorted by priority defined in settings
+    sort_subject_list(subjects)
     
     
     #########################################

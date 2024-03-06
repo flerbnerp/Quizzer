@@ -1,6 +1,20 @@
 # This module holds functions relating to the updating of settings and configurations
 # Currently we need to be able to update the quiz length, and subject weighting for quizzes
 import json
+def update_setting(key, value):
+    # First load in settings.json
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    # Check if passed key is in the settings, if setting does not exist return an error
+    old_value = settings[key]
+    if key in settings:
+        settings[key] = value
+        with open("settings.json", "w") as f:
+            json.dump(settings, f)
+        return f"Updated setting:{key} to {settings[key]}"
+    else:
+        return "That setting does not exist in settings file"
+
 def get_subjects():
     '''returns a set of subjects based on the subject key in questions.json'''
     with open("questions.json", "r") as f:
