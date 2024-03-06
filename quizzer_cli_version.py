@@ -189,9 +189,8 @@ while True:
                 if len(split_input) == 2:
                     print(split_input)
                     try:
-                        key = str(split_input[0])
-                        value = float(split_input[1])
-                        value = str(value)
+                        key = (split_input[0])
+                        value = (split_input[1])
                         print("success")
                         print(f"{key}, {value}")
                         

@@ -5,14 +5,28 @@ def update_setting(key, value):
     # First load in settings.json
     with open("settings.json", "r") as f:
         settings = json.load(f)
-    # Change value to int for specific settings:
+    bad_value = False
+    # Check functions for specific settings:
     if key == "quiz_length": # For now only quiz_length needs to be an integer, ie you can't have a fractional number of questions
-        value = int(value)
-        
-        
+        print("key is quiz_length")
+        try:
+            value = float(value)
+            value = int(value)
+        except ValueError:
+            bad_value = True
+    elif key == "vault_path":
+        print("key is vault_path")
+        if ("/" in value) or ("\\" in value):
+            print("valid directory")
+        else:
+            print("invalid directory")
+            bad_value = True
+            return f"vault_path must be a directory path."
+    else:
+        value = float(value)
         
     # Check if passed key is in the settings, if setting does not exist return an error
-    if key in settings:
+    if (key in settings) and bad_value == False:
         settings[key] = value
         with open("settings.json", "w") as f:
             json.dump(settings, f)

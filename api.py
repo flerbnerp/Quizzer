@@ -60,7 +60,8 @@ def question_answer_update_score(status: str, file_name: str):
 
 @app.get("/update_setting/{key, value}")
 def update_a_setting_value(key=str, value=str):
-	value = float(value)
+	print(key)
+	print(value)
 	response = update_setting(key, value)
 	return response
 
