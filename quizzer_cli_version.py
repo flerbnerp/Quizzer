@@ -175,11 +175,41 @@ while True:
             with open("settings.json", "r") as f:
                 settings = json.load(f)
             os.system("clear")
+            #############################################
+            # Display of setting and values
             print(f'{"Setting:":_<50}', f'{"Value":_<7}')
-            for key, value in settings.items():
-                string = f"{key} is set to:"
-                underline = "_" * 50
-                print(f"{string:_<50} {value:_<7}")
+            for i in range(len(settings)):
+                if "quiz_length" in settings:
+                    print(f"{'General settings':_<50}")
+                    print(f"{'quiz_length':_<50} {settings['quiz_length']}")
+                    del settings["quiz_length"]
+                elif "due_date_sensitivity" in settings:
+                    print(f"{'due_date_sensitivity':_<50} {settings['due_date_sensitivity']}")
+                    del settings["due_date_sensitivity"]
+                elif "time_between_revisions" in settings:
+                    print(f"{'time_between_revisions':_<50} {settings['time_between_revisions']}")
+                    del settings["time_between_revisions"]
+                elif "vault_path" in settings:
+                    print(f"{'vault_path':_<50} {settings['vault_path']}")
+                    print(f"{'Subject Weight and Priority':_<50}")
+                    del settings["vault_path"]
+                else:
+                    pass
+            query = root + "get_subjects"
+            response = requests.get(query)
+            subjects = response.json()
+            subjects = list(subjects)
+            subjects = sorted(subjects)
+            for i in range(0, (len(subjects)-1)):
+                for key, value in settings.items():
+                    if subjects[i] in key:
+                        print(f"{key:_<50} {value:_<7}")
+                        
+                
+            # for key, value in settings.items():
+            #     string = f"{key} is set to:"
+            #     print(f"{string:_<50} {value:_<7}")
+            #############################################
             user_input = input("Enter a setting and a new value to update a setting, else type exit to go back to the main menu: \n")
             if user_input == "exit":
                 settings_menu == False

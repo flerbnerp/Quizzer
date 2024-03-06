@@ -13,7 +13,7 @@ from initialize import initialize_or_update_json, initialize_master_question_lis
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
 from stats import initialize_stats_json, print_stats, completed_quiz
-from settings import update_setting
+from settings import update_setting, get_subjects
 # To start API
 
 app = FastAPI()
@@ -102,3 +102,9 @@ def update_completed_quiz_stat():
 	Tells Quizzer that a quiz is completed and to update stats.json, among other general stats
 	'''
 	completed_quiz()
+@app.get("/get_subjects")
+def api_get_subjects():
+	'''Returns a set of all subjects in quizzer'''
+	subjects = get_subjects()
+	return subjects
+    
