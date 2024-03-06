@@ -2,9 +2,9 @@ import os
 import yaml
 import json
 from datetime import datetime, timedelta
+from settings import initialize_settings_json_keys, initialize_settings_json
 # use a dictionary
 # Concept/question, subject, related
-vault_path = "/home/karibar/Documents/Education"
 def question_json_exists():
     """Checks if question.json exists. If not, create it.
     """
@@ -77,6 +77,11 @@ def scan_directory(vault_path): # Returns a list(s) of dictionaries
 def initialize_or_update_json():
 ### Scan Vault and produce new data to append based on the data in the vault:
     create_config_dot_json_if_doesnt_exist()
+    initialize_settings_json()
+    initialize_settings_json_keys()
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    vault_path = settings["vault_path"]
     concepts, total_checks = scan_directory(vault_path)
     new_data = []
     # counters for debugging purposes:
