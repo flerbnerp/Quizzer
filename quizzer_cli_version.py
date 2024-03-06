@@ -170,14 +170,49 @@ while True:
                 print(i_line)
         input("Press enter to continue")
     elif user_input == "4":
-        os.system("clear")
-        with open("settings.json", "r") as f:
-            settings = json.load(f)
-        for key, value in settings.items():
-            string = f"{key} is set to:"
-            underline = "_" * 50
-            print(f"{string:<50} {value}\n{underline}")
-        input("Press enter to continue")
+        settings_menu = True
+        while settings_menu == True:
+            with open("settings.json", "r") as f:
+                settings = json.load(f)
+            os.system("clear")
+            print(f'{"Setting:":_<50}', f'{"Value":_<7}')
+            for key, value in settings.items():
+                string = f"{key} is set to:"
+                underline = "_" * 50
+                print(f"{string:_<50} {value:_<7}")
+            user_input = input("Enter a setting and a new value to update a setting, else type exit to go back to the main menu: \n")
+            if user_input == "exit":
+                settings_menu == False
+                break
+            else:
+                split_input = (user_input.split())
+                if len(split_input) == 2:
+                    print(split_input)
+                    try:
+                        key = str(split_input[0])
+                        value = float(split_input[1])
+                        value = str(value)
+                        print("success")
+                        print(f"{key}, {value}")
+                        
+                        query = "http://127.0.0.1:8000/update_setting/{key, value}?key=" + f"{key}" + "&value=" + f"{value}"
+                        response = requests.get(f"{query}")
+                        print(response)
+                    except TypeError:
+                        print("Enter the setting followed by a single space, followed by the new value \n", "value should be a float or int")                    
+                else:
+                    print("Enter setting followed by one space then the new value, input should be two items")
+                input("enter to continue")
+                
+                    #             first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
+                    # encoded_file_name = quote(file_name)
+                    # print(encoded_file_name)
+                    # query = first_part + encoded_file_name
+                    # response = requests.get(f"{query}")
+            
+            
+            
+            
     elif user_input == "5":
         break
     elif user_input == "debug":

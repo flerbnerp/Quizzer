@@ -13,7 +13,7 @@ from initialize import initialize_or_update_json, initialize_master_question_lis
 from scoring_algorithm import generate_revision_schedule, update_score
 from quiz_functions import populate_question_list
 from stats import initialize_stats_json, print_stats, completed_quiz
-from settings import initialize_settings_json, initialize_settings_json_keys
+from settings import initialize_settings_json, initialize_settings_json_keys, update_setting
 # To start API
 
 app = FastAPI()
@@ -57,7 +57,12 @@ def question_answer_update_score(status: str, file_name: str):
     else:
         response = "Please enter a valid status, 'correct' or 'incorrect'"
     return response
-    
+
+@app.get("/update_setting/{key, value}")
+def update_a_setting_value(key=str, value=str):
+	value = float(value)
+	response = update_setting(key, value)
+	return response
 
 @app.get("/initialize_quizzer")
 def initialize_quizzer(): # This function will contain all the initialization functions from various modules:

@@ -5,14 +5,20 @@ def update_setting(key, value):
     # First load in settings.json
     with open("settings.json", "r") as f:
         settings = json.load(f)
+    # Change value to int for specific settings:
+    if key == "quiz_length": # For now only quiz_length needs to be an integer, ie you can't have a fractional number of questions
+        value = int(value)
+        
+        
+        
     # Check if passed key is in the settings, if setting does not exist return an error
-    old_value = settings[key]
     if key in settings:
         settings[key] = value
         with open("settings.json", "w") as f:
             json.dump(settings, f)
         return f"Updated setting:{key} to {settings[key]}"
     else:
+        print("That setting does not exist in settings file")
         return "That setting does not exist in settings file"
 
 def get_subjects():
