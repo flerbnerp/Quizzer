@@ -204,6 +204,7 @@ while True:
                 for key, value in settings.items():
                     if subjects[i] in key:
                         print(f"{key:_<50} {value:_<7}")
+                print(f"{'':_<57}")
                         
                 
             # for key, value in settings.items():
