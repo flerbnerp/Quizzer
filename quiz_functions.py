@@ -4,15 +4,29 @@ from datetime import datetime, timedelta
 from settings import get_subjects
 import os
 def sort_subject_list(subjects):
+    ###################################
+    # Load data
     with open("settings.json", "r") as f:
         settings = json.load(f)
-    print(type(settings))
     temporary_dict = {}
     sorted_list = []
+    ###################################
+    # Build temporary_dict with only priority setting values
     for setting in settings.keys():
         if setting.endswith("priority"):
             temporary_dict[setting] = settings[setting]
+            
+            
+    ###################################        
+    # random order for equal priorities
+    # Use count function with dict.values() to check which one's have equal priority
+    # Random selection between each set of equal priority
+    # add 0.1 to value before sending to sort function
+    # Sort by lowest number of priority
     
+    
+    ###################################
+    # build sorted_list based on priority values
     for i in range(len(temporary_dict)):
         highest_key = min(temporary_dict, key=temporary_dict.get)
         subject = highest_key[(len("subject_")):highest_key.find("_priority")]
