@@ -74,7 +74,6 @@ def initialize_quizzer(): # This function will contain all the initialization fu
 		initialize_settings_json()
 		initialize_settings_json_keys()
 		initialize_stats_json()
-	vault_path = "/home/karibar/Documents/Education"
 	#################################################################################################################################################
 	## Calling Initalization functions
 	

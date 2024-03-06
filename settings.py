@@ -51,19 +51,21 @@ def initialize_settings_json_keys():
     try:
         with open("settings.json", "r") as f:
             settings = json.load(f)
-            
+        # Setting check
         if settings.get("time_between_revisions") == None:
             settings["time_between_revisions"] = 1.10
             print("Initializing time between revisions setting key")
         else:
             print("time_between_revisions setting already exists")
-            
+        # Setting check    
         if settings.get("due_date_sensitivity") == None:
             print("due_date_sensitivity setting does not exist, initializing to 24")
             settings["due_date_sensitivity"] = 24
         else:
             print("due_date_sensitivity settings exists")
-                
+        # Setting check
+        if settings.get("vault_path") == None:
+            settings["vault_path"] = "/home/karibar/Documents/Education"   
         for i in subject_set:
             ##################################################
             # initialize subject weighting
@@ -88,11 +90,14 @@ def initialize_settings_json_keys():
         # this setting controls the length of each quiz
         settings["quiz_length"] = 35
         settings["time_between_revisions"] = 1.10
+        settings["due_date_sensitivity"] = 6
+        settings["vault_path"] = "/home/karibar/Documents/Education"
         # this setting controls the weighting of questions for each quiz, default is an equal weighting across all subjects
         # User is encouraged to change this based on current classes being taken, but a minimum value of 1 is recommended for each subject
          # this block will be reused in the get_quiz() function to easily parse out the settings data
         for i in subject_set:
             settings[f"subject_{i}_weight"] = 1
+            settings[f"subject_{i}_priority"] = 1
             
         # write settings data to questions.json file    
         with open("settings.json", "w") as f:
