@@ -232,17 +232,7 @@ while True:
                         print("Enter the setting followed by a single space, followed by the new value \n", "value should be a float or int")                    
                 else:
                     print("Enter setting followed by one space then the new value, input should be two items")
-                input("enter to continue")
-                
-                    #             first_part = "http://127.0.0.1:8000/update_score/{status, file_name}?status=correct&file_name="
-                    # encoded_file_name = quote(file_name)
-                    # print(encoded_file_name)
-                    # query = first_part + encoded_file_name
-                    # response = requests.get(f"{query}")
-            
-            
-            
-            
+
     elif user_input == "5":
         break
     elif user_input == "debug":

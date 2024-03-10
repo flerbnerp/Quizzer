@@ -2,7 +2,6 @@ import json
 import random
 from datetime import datetime, timedelta
 from settings import get_subjects
-import os
 def sort_subject_list(subjects):
     ###################################
     # Load data
@@ -56,7 +55,7 @@ def populate_question_list():
             sorted_questions.append(question)
             continue
     
-    
+    #############################################
     # Sort question objects by next_revision_due key value
     sorted_questions = sorted(sorted_questions, key=lambda x: x['next_revision_due'])
     temp_list = []
@@ -72,9 +71,15 @@ def populate_question_list():
             temp_list.append(question)
     sorted_questions = temp_list
     sorted_questions = sorted(sorted_questions, key=lambda x: x['next_revision_due']) # sort again for redundancy
+    #############################################
     # check to ensure there is enough available questions to fill the quiz
     if len(sorted_questions) < quiz_length:
         quiz_length = len(sorted_questions)
+    if quiz_length <= 0: # If there are no questions up for review, then we need to exit the function:
+        print("There are no questions up for review, Good Job!")
+        input()
+        return
+    #############################################
     # Initialize question list to be filled
     question_list = []
 

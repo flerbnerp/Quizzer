@@ -89,7 +89,7 @@ def update_score(status, file_name):
                 print(f"The next revision is due on {check_variable}")
             except KeyError:
                 print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
-                dictionary["next_revision_due"] = datetime.now() + timedelta(hours=24)
+                dictionary["next_revision_due"] = datetime.now()
                 # Convert value to a string, so it can be written to config.json
                 dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")     
         else:

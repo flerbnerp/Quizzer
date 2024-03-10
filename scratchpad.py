@@ -1,5 +1,5 @@
 from urllib.parse import quote, unquote
+import math
 
-key = "no words"
-if ("/" in key) or ("\\" in key):
-    print("valid directory")
+
+
