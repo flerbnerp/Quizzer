@@ -22,9 +22,13 @@ def update_setting(key, value):
             print("invalid directory")
             bad_value = True
             return f"vault_path must be a directory path."
-    else:
+    elif key == "time_between_revisions":
         value = float(value)
-        
+    else:
+        try:
+            value = int(value)
+        except ValueError:
+            bad_value = True
     # Check if passed key is in the settings, if setting does not exist return an error
     if (key in settings) and bad_value == False:
         settings[key] = value
