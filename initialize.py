@@ -5,6 +5,42 @@ from datetime import datetime, timedelta
 from settings import initialize_settings_json_keys, initialize_settings_json
 # use a dictionary
 # Concept/question, subject, related
+def is_media(file):
+    '''Takes a string file_name as an argument, returns True if the file is an image, else returns False'''
+    if file.endswith(".md"):
+        return False
+    if file.endswith(".txt"):
+        return False
+    if file.endswith(".pdf"):
+        return False
+    if file.endswith(".doc"):
+        return False
+    if file.endswith(".docx"):
+        return False
+    if file.endswith(".js"):
+        return False
+    if file.endswith(".css"):
+        return False
+    if file.endswith(".mjs"):
+        return False
+    if file.endswith(".html"):
+        return False
+    if file.endswith(".woff"):
+        return False
+    if file.endswith(".ttf"):
+        return False
+    else:
+        return True
+def initialize_media_paths_json():
+    '''Checks whether the media_paths.json exists, and creates media_paths.json if it doesn't exit'''
+    try:
+        with open("media_paths.json", "r") as f:
+            media_paths = json.load(f)
+    except FileNotFoundError:
+        with open("media_paths.json", "w+") as f:
+            json.dump({"file_paths": ["initialize_vale"]}, f)
+        
+    
 def question_json_exists():
     """Checks if question.json exists. If not, create it.
     """
@@ -51,6 +87,7 @@ def initialize_score_metric_keys_if_they_dont_exist(dictionary):
 def scan_directory(vault_path): # Returns a list(s) of dictionaries
     concepts = []
     total_checks = 0
+    media_paths = {"file_paths": []}
     for root, dirs, files in os.walk(vault_path):
         total_checks += 1
         for file in files:
@@ -73,6 +110,15 @@ def scan_directory(vault_path): # Returns a list(s) of dictionaries
                             concepts.append(note_dict)
                         except:
                             pass
+            elif is_media(file):
+                initialize_media_paths_json()
+                media_paths["file_paths"].append(os.path.join(root,file))
+                with open("media_paths.json", "w") as f:
+                    json.dump(media_paths, f)
+                    
+                    
+                        
+                
     return concepts, total_checks      
 def initialize_or_update_json():
 ### Scan Vault and produce new data to append based on the data in the vault:
