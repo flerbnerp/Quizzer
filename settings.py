@@ -38,7 +38,6 @@ def update_setting(key, value):
     else:
         print("That setting does not exist in settings file")
         return "That setting does not exist in settings file"
-
 def get_subjects():
     '''returns a set of subjects based on the subject key in questions.json'''
     with open("questions.json", "r") as f:
@@ -49,8 +48,7 @@ def get_subjects():
             temp_list = i["subject"]
             for i in temp_list:
                 subject_set.add(i)
-    return subject_set         
-                
+    return subject_set
 def initialize_settings_json():
     '''creates settings.json if it doesn't exist'''
     try:
@@ -83,7 +81,7 @@ def initialize_settings_json_keys():
             print("due_date_sensitivity settings exists")
         # Setting check
         if settings.get("vault_path") == None:
-            settings["vault_path"] = "/home/karibar/Documents/Education"   
+            settings["vault_path"] = ["/home/karibar/Documents/Education"]   
         for i in subject_set:
             ##################################################
             # initialize subject weighting
@@ -109,7 +107,7 @@ def initialize_settings_json_keys():
         settings["quiz_length"] = 35
         settings["time_between_revisions"] = 1.10
         settings["due_date_sensitivity"] = 6
-        settings["vault_path"] = "/home/karibar/Documents/Education"
+        settings["vault_path"] = ["/home/karibar/Documents/Education"]
         # this setting controls the weighting of questions for each quiz, default is an equal weighting across all subjects
         # User is encouraged to change this based on current classes being taken, but a minimum value of 1 is recommended for each subject
          # this block will be reused in the get_quiz() function to easily parse out the settings data

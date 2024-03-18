@@ -3,10 +3,11 @@ import yaml
 import json
 from datetime import datetime, timedelta
 from settings import initialize_settings_json_keys, initialize_settings_json
+from stats import initialize_stats_json
 # use a dictionary
 # Concept/question, subject, related
 def is_media(file):
-    '''Takes a string file_name as an argument, returns True if the file is an image, else returns False'''
+    '''Takes a string file_name.extension as an argument, returns True if the file is an image, else returns False'''
     if file.endswith(".md"):
         return False
     if file.endswith(".txt"):
@@ -53,178 +54,131 @@ def question_json_exists():
         print("creating questions.json")
         with open("questions.json", "x"):
             pass
-def create_config_dot_json_if_doesnt_exist():
+def create_data_dot_json_if_doesnt_exist():
+    '''checks if data.json exists or not, then creates data.json if does exist'''
     try:
-        with open("config.json", "r"):
+        with open("data.json", "r"):
             pass
-        print("config.json exists")
+        print("data.json exists")
     except:
-        print("config.json doesn't exist")
-        print("creating config.json")
-        with open("config.json", "x"):
+        print("data.json doesn't exist")
+        print("creating data.json")
+        with open("data.json", "x"):
             pass
-def initialize_score_metric_keys_if_they_dont_exist(dictionary):    
-    check_variable = ""
-    try:
-        check_variable = dictionary["revision_streak"]
-    except KeyError:
-        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+def initialize_question_metric_keys_if_they_dont_exist(dictionary):
+    '''
+    takes a dictionary as an argument, then creates the key value pairs if they don't exist:
+    "revision_streak" : 1
+    "last_revised": datetime.now()
+    "next_revision_due": datetime.now()
+    returns a dictionary with the updated values, if they don't exist already
+    '''
+    if dictionary.get("revision_streak") == None:
+        print("key 'revision_streak' does not exist, initializing key to 1")
         dictionary["revision_streak"] = 1
-    try: 
-        check_variable = dictionary["last_revised"]
-    except KeyError:
-        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+    if dictionary.get("last_revised") == None:
+        print("key 'last_revised' does not exist, initializing key to datetime.now()")
         dictionary["last_revised"] = datetime.now()
-        dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S")             
-    try:
-        check_variable = dictionary["next_revision_due"]
-    except KeyError:
-        # print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
+        dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S") # stringify for storage into .json
+    if dictionary.get("next_revision_due") == None:
+        print("key 'next_revision_due' does not exist, initializing key to datetime.now()")
         dictionary["next_revision_due"] = datetime.now()
-        # Convert value to a string, so it can be written to config.json
-        dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
+        dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S") # stringify for storage into .json
+    if dictionary.get("question_text") == None:
+        dictionary["question_text"] = "Error"
+    if dictionary.get("answer_text") == None:
+        dictionary["answer_text"] = "Error"
+    if dictionary.get("question_media") == None:
+        dictionary["question_media"] = "Error"
+    if dictionary.get("answer_media") == None:
+        dictionary["answer_media"] = "Error"
+    if dictionary.get("subject") == None:
+        dictionary["subject"] = "no_subject"
+    if dictionary.get("related") == None:
+        dictionary["related"] = "no_relations"
+    if dictionary.get("type") == None:
+        dictionary["type"] = "no_type"
+    
     return dictionary
+# def add_key_values():
+
 def scan_directory(vault_path): # Returns a list(s) of dictionaries
-    concepts = []
-    total_checks = 0
-    media_paths = {"file_paths": []}
-    for root, dirs, files in os.walk(vault_path):
-        total_checks += 1
-        for file in files:
+    '''
+    takes a list of file_paths as an argument
+    scans the vault_path directory and stores the results in two seperate .json
+    data.json contains a raw_list of all .md files
+    media_paths.json contains the filepaths for all media in the provided directories
+    '''
+    create_data_dot_json_if_doesnt_exist() # Internal function check, make sure data.json actually exists before trying to write to it:
+    for path in vault_path:
+        concepts = []
+        total_checks = 0
+        media_paths = {"file_paths": []}
+        for root, dirs, files in os.walk(path):
+            # print(f"Scanning root: {root}")
             total_checks += 1
-            if file.endswith(".md"):
-                with open(os.path.join(root,file), "r", encoding="utf-8") as f:
-                    content = f.read()  
-                start_delimiter, end_delimiter = "---", "---\n"
-                if start_delimiter and end_delimiter:
-                    start_index = content.find(start_delimiter) + len(start_delimiter)
-                    end_index = content.find(end_delimiter, start_index)
-                    if start_index > -1 and end_index > -1:
-                        yaml_properties = content[start_index:end_index].strip()
-                        try:
-                            note_dict = yaml.safe_load(yaml_properties)
-                            filename, extension = os.path.splitext(os.path.basename(file))
-                            full_filename = f"{filename}.{extension}"
-                            note_dict["file_name"] = full_filename
-                            note_dict["file_path"] = os.path.join(root,file)
-                            concepts.append(note_dict)
-                        except:
-                            pass
-            elif is_media(file):
-                initialize_media_paths_json()
-                media_paths["file_paths"].append(os.path.join(root,file))
-                with open("media_paths.json", "w") as f:
-                    json.dump(media_paths, f)
-                    
-                    
-                        
-                
-    return concepts, total_checks      
-def initialize_or_update_json():
-### Scan Vault and produce new data to append based on the data in the vault:
-    create_config_dot_json_if_doesnt_exist()
-    initialize_settings_json()
-    initialize_settings_json_keys()
-    with open("settings.json", "r") as f:
-        settings = json.load(f)
-    vault_path = settings["vault_path"]
-    concepts, total_checks = scan_directory(vault_path)
-    new_data = []
-    # counters for debugging purposes:
-    dicts_to_be_added = []
-    total_file_matches = 0
-    added_to_existing_data = 0
-    
-    
-    # this loop ensures all keys exist in each dictionary object, prevents keyerrors, most users will likely not have any valid properties attached already:
-    for i in concepts:
-            total_checks += 1
-            temp_dictionary = {"file_name": i["file_name"],"file_path": i["file_path"],"type": "", "subject": "", "related": ""}
-            try:
-                temp_dictionary["type"] = i["type"]
-            except KeyError:
-                pass
-            try:
-                temp_dictionary["subject"] = i["subject"]
-            except KeyError:
-                pass
-            try:
-                temp_dictionary["related"] = i["related"]
-            except KeyError:
-                pass
-            if temp_dictionary["type"] == "question":
-                try:
-                    temp_dictionary["question_text"] = i["question_text"]
-                except KeyError:
-                    pass
-                try:
-                    temp_dictionary["answer_text"] = i["answer_text"]
-                except KeyError:
-                    pass
-                try:
-                    temp_dictionary["question_media"] = i["question_media"]
-                except KeyError:
-                    pass
-                try:
-                    temp_dictionary["answer_media"] = i["answer_media"]
-                except KeyError:
-                    pass  
-            new_data.append(temp_dictionary)
-### append or update existing_data with new_data if config.json has existing data in it
-    try:
-        with open("config.json", "r") as f:
-            existing_data = (json.load(f))
-
-        # Second Loop append any newly scanned data that doesn't exist in existing_data
-        # Since we can't check if data is new or old based on the length of the lists, we can manually check each with a Boolean
-        for updated_dict in new_data: # check if new data exists in old data, if the file is not in old data it should be appended since there is nothing to update:
-            found = False
-            total_checks += 1
-            for existing_dict in existing_data:
+            for file in files:
                 total_checks += 1
-                if updated_dict["file_name"] == existing_dict["file_name"]:
-                    found = True
-                    existing_dict.update(updated_dict)
-                    break
-            if found == True:
-                total_file_matches += 1
-            elif found == False:
-                existing_data.append(updated_dict)
-                added_to_existing_data += 1
-            else:
-                print("This went wrong?")
-            
-            # We should now have an updated existing_data object to overwrite our config.json with
-        with open("config.json", "w") as f: # Write the updated list of dictionaries to config.json
-            json.dump(existing_data, f)
-### Quality checks
-        print(f"Total items not found in existing items is: {len(dicts_to_be_added)}")
-        for i in dicts_to_be_added:
-            print(f"{i['question_text']}\n")
-        print(f"Added a total of {added_to_existing_data} new entries to config.json")
-        print(f"There are {len(new_data)} items in the most recent scan")
-        print(f"Total file matches is: {total_file_matches} compared to {len(existing_data)-added_to_existing_data} pre-existing files in Vault")
-        print(f"total operations to complete scan is: {total_checks:,}")
-        print(f"-------------------------------------------------------")
-    except:
-        with open("config.json", "w") as f:
-            json.dump(new_data, f)
-    # If the file does not exist, create config.json and dump new_data into it:
-    return total_checks
-
-def initialize_master_question_list():
+                # If a known text file, store in data.json (for now only .md)
+                if file.endswith(".md"):
+                    with open(os.path.join(root,file), "r", encoding="utf-8") as f:
+                        content = f.read()  
+                    start_delimiter, end_delimiter = "---", "---\n"
+                    if start_delimiter and end_delimiter:
+                        start_index = content.find(start_delimiter) + len(start_delimiter)
+                        end_index = content.find(end_delimiter, start_index)
+                        if start_index > -1 and end_index > -1:
+                            yaml_properties = content[start_index:end_index].strip()
+                            try:
+                                note_dict = yaml.safe_load(yaml_properties)
+                                filename, extension = os.path.splitext(os.path.basename(file))
+                                full_filename = f"{filename}.{extension}"
+                                note_dict["file_name"] = full_filename
+                                note_dict["file_path"] = os.path.join(root,file)
+                                #This check was added during the strip down phase
+                                # convert datetime types to a json compatible type, otherwise scan fails with an error
+                                if note_dict["due_date"] != None: 
+                                    try:
+                                        note_dict["due_date"] = note_dict["due_date"].strftime("%Y-%m-%d %H:%M:%S")
+                                    except: #FIXME I have no idea what type of error this would produce?
+                                        print("no idea?")
+                                concepts.append(note_dict)
+                            except:
+                                pass
+                # If file is not a known document or script file type, it is treated as media, missed checks do not effect integrity of data. Only contribute to storage size bloat
+                elif is_media(file):
+                    initialize_media_paths_json()
+                    media_paths["file_paths"].append(os.path.join(root,file))
+        with open("media_paths.json", "w") as f:
+            json.dump(media_paths, f)
+        with open("data.json", "w") as f:
+            json.dump(concepts, f)    
+        
+    return concepts, total_checks
+def extract_questions_from_raw_data():
+    '''
+    returns questions_list based on any question objects found in data.json
+    checks the questions_list and intializes metrics for question objects
+    '''
     question_json_exists()
-    with open("config.json", "r") as f:
+    with open("data.json", "r") as f:
         existing_database = json.load(f)
-    # Parse out the question objects from our config.json file
-    questions_in_existing_database = []
+    questions_list = []
     for i in existing_database:
-            if i['type'] == "question":
-                questions_in_existing_database.append(i)  
-                
-                
-                
-    # Check to see if questions.json has data in it:
+        # print(f"question object: {i}")
+        if i["type"] == "question":
+            questions_list.append(i)
+    for i in questions_list:
+        initialize_question_metric_keys_if_they_dont_exist()
+    return questions_list
+
+def update_questions_json():
+    '''
+    checks new_questions against existing question objects in questions.json, then updates or adds the questions as necessary
+    '''
+    questions_list = extract_questions_from_raw_data() 
+    ##################################################
+    # Check to see if questions.json has data in it, if questions.json has no data, then we do a data dump of all new question objects: (could be abstracted) #FIXME
     try:
         with open("questions.json", "r") as f:
             questions_json = json.load(f)
@@ -233,20 +187,21 @@ def initialize_master_question_list():
         questions_json_has_data = False
         print("questions.json is empty")
         print("appending all questions from database to questions.json")
-        print(f"There are {len(questions_in_existing_database)} questions in questions.json")
+        print(f"There are {len(questions_list)} questions in questions.json")
         with open("questions.json", "w") as f:
-            json.dump(questions_in_existing_database, f)
+            json.dump(questions_list, f)
     
+    ##################################################
     # If questions.json has data we can initialize keys / scoring metric keys
     if questions_json_has_data == True:
     # At this step we have two lists of question type objects. Now we need to compare them and act accordingly
-        for new_question in questions_in_existing_database:
+        for new_question in questions_list:
             found = False
             for existing_question in questions_json:
                 # If we find a match, update the existing entry with the new entry, but only certain keys, this retains the scores while keeping updates working
                 if new_question["file_name"] == existing_question["file_name"]:
                     found = True
-                    existing_question = initialize_score_metric_keys_if_they_dont_exist(existing_question)
+                    existing_question = initialize_question_metric_keys_if_they_dont_exist(existing_question)
                     existing_question.update(new_question)
                     break
                 # If there is no match, that means the question does not exist in our current questions.json
@@ -254,7 +209,7 @@ def initialize_master_question_list():
                 pass
             elif found == False:
                 # For new entries, no scoring metrics will exist in that dictionary, we don't need to check if it's a question type since this function handles that already
-                new_question = initialize_score_metric_keys_if_they_dont_exist(new_question)
+                new_question = initialize_question_metric_keys_if_they_dont_exist(new_question)
                 questions_json.append(new_question)
             else:
                 print("oops something went wrong")
@@ -275,15 +230,27 @@ def initialize_master_question_list():
         with open("questions.json", "w")as f:
             json.dump(questions_json, f)    
             
-    # If file is empty get all question objects and append them to the file, job done.
-
-    
-    # Debug values against expected values:
-    # total_questions = 0
-    # for i in questions_in_existing_database:
-    #     if i['type'] == "question":
-    #         total_questions += 1
-    # is_working = total_questions == len(questions_in_existing_database)
-    # print(f"There are {len(questions_in_existing_database)} dict objects in questions.json")
-    # print(f"There are {total_questions} question type dict objects in questions.json")
-    # print(f"The question list initialization is working as expected: {is_working}")
+def initialize_quizzer():
+    # To initialize the program:
+    # Step 1: load our settings.json
+    timer_start = datetime.now()
+    try: #FIXME not sure about the initialization for first time
+        with open("settings.json", "r") as f:
+            settings = json.load(f)
+        vault_path = settings["vault_path"]
+    except KeyError:
+        vault_path = ["/home/karibar/Documents/Education"]
+    # Step 2: Scan the provided directories, storing the data in json format (this is a raw dump so data is overwritten every time)
+    scan_directory(vault_path)
+    # Step 3: from the data.json data_dump extract the questions and modify the existing questions.json
+    update_questions_json()
+    # Step 4: Initialize settings file
+    initialize_settings_json()
+    initialize_settings_json_keys()
+    # Step 5: Initialize stats.json file
+    initialize_stats_json()
+    timer_end = datetime.now()
+    elapsed_time = timer_end - timer_start
+    total_seconds = elapsed_time.total_seconds()
+    minutes, seconds = divmod(total_seconds, 60)
+    print(f"Success: initialization takes {int(minutes)} minutes and {int(seconds)} seconds.")

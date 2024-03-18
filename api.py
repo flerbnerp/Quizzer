@@ -8,11 +8,10 @@
 #How to run the server component
 from typing import Union
 from fastapi import FastAPI
-from urllib.parse import unquote
-from initialize import initialize_or_update_json, initialize_master_question_list
-from scoring_algorithm import generate_revision_schedule, update_score
+from initialize import initialize_quizzer
+from scoring_algorithm import update_score
 from quiz_functions import populate_question_list
-from stats import initialize_stats_json, print_stats, completed_quiz
+from stats import print_stats, completed_quiz
 from settings import update_setting, get_subjects
 # To start API
 
@@ -66,35 +65,8 @@ def update_a_setting_value(key=str, value=str):
 	return response
 
 @app.get("/initialize_quizzer")
-def initialize_quizzer(): # This function will contain all the initialization functions from various modules:
-	def initialization():
-	# Scan provided file directory for all .md files and store data in config.json
-		initialize_or_update_json() # this also updates setting now, utilize vault_path setting
-		initialize_master_question_list()
-		generate_revision_schedule() # generates the revision schedule that will determine when notes will be served to the user
-		initialize_stats_json()
-	#################################################################################################################################################
-	## Calling Initalization functions
-	
-	try:
-		with open("config.json", "r") as f:
-			config_file_exists = True
-	except FileNotFoundError:
-		config_file_exists = False
-
-	try:
-		with open("questions.json", "r") as f:
-			questions_file_exists = True
-	except FileNotFoundError:
-		questions_file_exists = False
-
-	if (config_file_exists == False) or (questions_file_exists == False):
-		print("Missing files, long initialization in progress")
-		initialization()
-		initialization()
-		initialization()
-	else:
-		initialization()
+def initialization(): # This function will contain all the initialization functions from various modules:
+	initialize_quizzer()
 
 @app.get("/completed_quiz")
 def update_completed_quiz_stat():
