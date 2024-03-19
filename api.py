@@ -8,6 +8,7 @@
 #How to run the server component
 from typing import Union
 from fastapi import FastAPI
+import json
 from initialize import initialize_quizzer
 from scoring_algorithm import update_score
 from quiz_functions import populate_question_list
@@ -64,6 +65,17 @@ def update_a_setting_value(key=str, value=str):
 	response = update_setting(key, value)
 	return response
 
+@app.get("/get_media_path/{media_file_name}")
+def return_file_path(media_file_name=str):
+    '''Takes a file name string as input, returns the location of the media'''
+    print(media_file_name)
+    with open("media_paths.json", "r") as f:
+        media_paths = json.load(f)
+    print(len(media_paths["file_paths"]))
+    for path in media_paths["file_paths"]: # Iterate through the existing media
+        if str(path).endswith(media_file_name):
+            return path		
+
 @app.get("/initialize_quizzer")
 def initialization(): # This function will contain all the initialization functions from various modules:
 	initialize_quizzer()
@@ -74,7 +86,9 @@ def update_completed_quiz_stat():
 	Tells Quizzer that a quiz is completed and to update stats.json, among other general stats
 	'''
 	completed_quiz()
+ 
 @app.get("/get_subjects")
+
 def api_get_subjects():
 	'''Returns a set of all subjects in quizzer'''
 	subjects = get_subjects()
