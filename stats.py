@@ -1,5 +1,6 @@
 import json
 import math
+from datetime import date
 from quiz_functions import populate_question_list
 def initialize_stats_json():
     try:
@@ -10,7 +11,31 @@ def initialize_stats_json():
         with open("stats.json", "x") as f:
             print("Creating stats.json")
             print("-------------------------------------------------------")
-
+def increment_questions_answered():
+    '''
+    Embeds inside the update score function, increments the questions answered stat. Questions answered is stored by date, so the user can see a record of usage over time.
+    '''
+    todays_date = date.today()
+    todays_date = str(todays_date)
+    try:
+        with open("stats.json", "r") as f:
+            file = json.load(f)
+        print("stats has data")
+    except:
+        print("stats has no data whatsoever")
+        file = {}
+    if file.get("questions_answered_by_date") == None: # First check, if the variable isn't there at all create the questioned answer dict stat
+        print("questions_answered object does not exist, creating entry")
+        file["questions_answered_by_date"] = {todays_date: 1}
+    elif todays_date not in file["questions_answered_by_date"]: # Second check, if the user hasn't answered a questioned today then todays date will not be in the dictionary
+        print("first question of the day, initializing new key: value for today's date")
+        file["questions_answered_by_date"][todays_date] = 1
+    else: # No check needed here, if the variable exists and the todays date exists as key we can safely access the key
+        print("incrementing score for today")
+        file["questions_answered_by_date"][todays_date] += 1
+    file["total_questions_answered"] = sum(file["questions_answered_by_date"].values())
+    with open("stats.json", "w") as f:
+        json.dump(file, f)
 
 
 def print_and_update_revision_streak_stats():

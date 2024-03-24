@@ -88,9 +88,26 @@ def update_completed_quiz_stat():
 	completed_quiz()
  
 @app.get("/get_subjects")
-
 def api_get_subjects():
 	'''Returns a set of all subjects in quizzer'''
 	subjects = get_subjects()
 	return subjects
+
+@app.get("/get_subject_settings")
+def get_subject_settings():
+    root = "http://127.0.0.1:8000/"
+    settings_menu = True
+    subject_settings = {}
+    with open("settings.json", "r") as f:
+        settings = json.load(f)
+    query = root + "get_subjects"
+    subjects = get_subjects()
+    subjects = list(subjects)
+    subjects = sorted(subjects)
+    for i in range(0, (len(subjects)-1)):
+        for key, value in settings.items():
+            if subjects[i] in key:
+                subject_settings[key] = value
+    return subject_settings
+
     

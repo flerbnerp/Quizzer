@@ -1,4 +1,5 @@
 import json
+from stats import increment_questions_answered
 from datetime import datetime, timedelta
 # This will be based on the forgetting curve as first discovered by Ebbinghaus in 1880-1885
 ####################################################################################
@@ -48,6 +49,7 @@ def update_score(status, file_name):
                     dictionary["revision_streak"] = dictionary["revision_streak"] + 1
                 elif status == "incorrect":
                     dictionary["revision_streak"] = 1
+                increment_questions_answered()
             except KeyError:
                 print("Key does not exist, Initializing Key") # Initialiaze key, since it doesn't exist
                 dictionary["revision_streak"] = 1
