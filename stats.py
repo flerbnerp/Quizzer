@@ -103,21 +103,21 @@ def print_stats():
     stat_list = []
     stat_list.append("Stats for Nerds!!!")
     return_list, average_questions_per_day = print_and_update_revision_streak_stats()
-    with open("stats.json", "r") as f:
-        stats_data = json.load(f)
-    for key in stats_data:
-        # Certain stats would be an average stat, in that case printing out the value of the key does not work. for example: average quiz_length would be calculated based on the average of list
-        if key == "quiz_lengths": # One if statement for each specific stat that needs a calculation done to display:
-            text = "Average quiz length taken"
-            # print(f"{text:<30}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
-            stat_list.append(f"{text:<27}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
-        else:
-            # print(f"{key:<27}: {stats_data[key]}")
-            stat_list.append(f"{key:<27}: {stats_data[key]}")
-    text = "Total Questions answered"
-    # print(f"{text:<30}: {sum(stats_data['quiz_lengths'])}")
-    stat_list.append(f"{text:<27}: {sum(stats_data['quiz_lengths'])}")
-    stat_list.append("--------------------------------")
+    # with open("stats.json", "r") as f:
+    #     stats_data = json.load(f)
+    # for key in stats_data:
+    #     # Certain stats would be an average stat, in that case printing out the value of the key does not work. for example: average quiz_length would be calculated based on the average of list
+    #     if key == "quiz_lengths": # One if statement for each specific stat that needs a calculation done to display:
+    #         text = "Average quiz length taken"
+    #         # print(f"{text:<30}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
+    #         stat_list.append(f"{text:<27}: {sum(stats_data[key]) / len(stats_data[key]):.2f}")
+    #     else:
+    #         # print(f"{key:<27}: {stats_data[key]}")
+    #         stat_list.append(f"{key:<27}: {stats_data[key]}")
+    # text = "Total Questions answered"
+    # # print(f"{text:<30}: {sum(stats_data['quiz_lengths'])}")
+    # stat_list.append(f"{text:<27}: {sum(stats_data['quiz_lengths'])}")
+    # stat_list.append("--------------------------------")
     question_list, sorted_questions = populate_question_list()
     with open("questions.json", "r") as f:
         questions_raw_data = json.load(f)
@@ -132,3 +132,4 @@ def print_stats():
     for i in stat_list:
         print(i)
     return stat_list
+
