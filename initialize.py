@@ -85,7 +85,7 @@ def initialize_question_metric_keys_if_they_dont_exist():
             dictionary["last_revised"] = dictionary["last_revised"].strftime("%Y-%m-%d %H:%M:%S") # stringify for storage into .json
         if dictionary.get("next_revision_due") == None:
             print("key 'next_revision_due' does not exist, initializing key to datetime.now()")
-            dictionary["next_revision_due"] = datetime.now()
+            dictionary["next_revision_due"] = datetime.now() - timedelta(hours=8760) # This is due immediately and of the highest priority
             dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S") # stringify for storage into .json
         if dictionary.get("question_text") == None:
             dictionary["question_text"] = "Error"

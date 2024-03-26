@@ -82,9 +82,8 @@ def update_score(status, file_name):
                             pass # Not the correct entry, keep searching
                     dictionary["next_revision_due"] = datetime.now() + timedelta(hours=time_till_next_review)
                 else: # if not correct then incorrect, function should error out if status is not fed into properly:
-                    if settings["due_date_sensitivity"] >= 24: # If the user sets a very high value for sensitivity, ensure that the value is no greater than the revision schedules base time:
-                        settings["due_date_sensitivity"] = 24
-                    dictionary["next_revision_due"] = datetime.now() + timedelta(hours=settings["due_date_sensitivity"])
+                    # Intent is to make an incorrect question due immediately and of top priority
+                    dictionary["next_revision_due"] = datetime.now() - timedelta(hours=8760)
                 # Convert value back to a string so it can be written back to the json file
                 dictionary["next_revision_due"] = dictionary["next_revision_due"].strftime("%Y-%m-%d %H:%M:%S")
                 check_variable = dictionary["next_revision_due"]
