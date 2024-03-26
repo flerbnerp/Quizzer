@@ -2,6 +2,11 @@ import json
 import math
 from datetime import date
 from quiz_functions import populate_question_list
+#FIXME
+# One function per stat should exist
+# each function should print the value of that stat to stats.jon
+# API Calls should then only need to reference stats.json for statistics information.
+#FIXME
 def initialize_stats_json():
     try:
         with open("stats.json", "r") as f:
@@ -44,21 +49,27 @@ def print_and_update_revision_streak_stats():
         questions_data = json.load(f)
     with open("settings.json", "r") as f:
         settings = json.load(f)
+    with open("stats.json", "r") as f:
+        stats = json.load(f)
+    # Get each level of revision that exists:
     revision_stat_list = []
     revision_stat_set = set(revision_stat_list)
     for i in questions_data:
         revision_stat_list.append(i["revision_streak"])
         revision_stat_set.add(i["revision_streak"])
-    # print("Revision Streak Stats:")
-    revision_return_value = []
-    revision_return_value.append("Revision Streak Stats:")
+    # Initialize variables
     average_questions_per_day = 0
+    stats["revision_streak_stats"] = {}
+    # loop through each unique level of revision and get the total questions with that level of revision
     for i in revision_stat_set:
         count = revision_stat_list.count(i)
+        # In order to save memory, we gather this stat while were looping through each level of revision.
         average_questions_per_day += count * (1 / math.pow(settings["time_between_revisions"],i))
-        # print(f"Questions with revision streak of {i} is {count}")
-        revision_return_value.append(f"Questions with revision streak of {i} is {count}")   
-    return revision_return_value, average_questions_per_day
+        stats["revision_streak_stats"][i] = count
+    stats["average_questions_per_day"] = average_questions_per_day
+    # Update stats.json with new information
+    with open("stats.json", "w") as f:
+        json.dump(stats, f)
         
         
 def add_time():

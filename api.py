@@ -12,7 +12,7 @@ import json
 from initialize import initialize_quizzer
 from scoring_algorithm import update_score
 from quiz_functions import populate_question_list
-from stats import print_stats, completed_quiz
+from stats import print_stats, completed_quiz,print_and_update_revision_streak_stats
 from settings import update_setting, get_subjects
 # To start API
 
@@ -109,5 +109,14 @@ def get_subject_settings():
             if subjects[i] in key:
                 subject_settings[key] = value
     return subject_settings
-
-    
+############################################################
+# One api call for each stat that could be displayed
+# One general api call that returns a list of all stats in string (with line breaks)
+@app.get("/get_average_questions_per_day")
+def get_average_questions_per_day():
+    # Make sure to update stats.json before returning data
+    print_and_update_revision_streak_stats()
+    with open("stats.json", "r") as f:
+        stats = json.load(f)
+    average_questions = stats["average_questions_per_day"]
+    return average_questions
