@@ -8,3 +8,6 @@ revision_schedule.json
 media_paths.json
 nohup.out
 scratchpad.py
+
+venv
+env
