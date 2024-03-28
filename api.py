@@ -12,7 +12,7 @@ import json
 from initialize import initialize_quizzer
 from scoring_algorithm import update_score
 from quiz_functions import populate_question_list
-from stats import print_stats, completed_quiz,print_and_update_revision_streak_stats
+from stats import print_stats, update_stats
 from settings import update_setting, get_subjects
 # To start API
 
@@ -22,11 +22,6 @@ app = FastAPI()
 def read_root():
 	data = {"Hello": "World"}
 	return data
-
-@app.get("/stats")
-def return_stats():
-	stats_list = print_stats()
-	return {"stat_list": stats_list}
 
 @app.get("/populate_quiz")
 def return_question_list():
@@ -79,13 +74,6 @@ def return_file_path(media_file_name=str):
 @app.get("/initialize_quizzer")
 def initialization(): # This function will contain all the initialization functions from various modules:
 	initialize_quizzer()
-
-@app.get("/completed_quiz")
-def update_completed_quiz_stat():
-	'''
-	Tells Quizzer that a quiz is completed and to update stats.json, among other general stats
-	'''
-	completed_quiz()
  
 @app.get("/get_subjects")
 def api_get_subjects():
@@ -115,7 +103,7 @@ def get_subject_settings():
 @app.get("/get_average_questions_per_day")
 def get_average_questions_per_day():
     # Make sure to update stats.json before returning data
-    print_and_update_revision_streak_stats()
+    update_stats()
     with open("stats.json", "r") as f:
         stats = json.load(f)
     average_questions = stats["average_questions_per_day"]

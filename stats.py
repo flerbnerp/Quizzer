@@ -70,44 +70,30 @@ def print_and_update_revision_streak_stats():
     # Update stats.json with new information
     with open("stats.json", "w") as f:
         json.dump(stats, f)
-        
-        
-def add_time():
-    pass
-
-
-
-def add_quiz_size():
-    with open("settings.json", "r") as f:
-        settings = json.load(f)
-    quiz_length = settings["quiz_length"]
+    
+def update_stat_total_questions_in_database():
+    with open("questions.json", "r") as f:
+        questions = json.load(f)
     with open("stats.json", "r") as f:
-        stats_data = json.load(f)
-    try:
-        stats_data["quiz_lengths"] = list(stats_data["quiz_lengths"])
-        stats_data["quiz_lengths"].append(quiz_length)
-    except:
-        stats_data["quiz_lengths"] = [quiz_length]
+        stats = json.load(f)
+    todays_date = date.today()
+    todays_date = str(todays_date)
+    total_questions_in_database = len(questions)
+    metric = {todays_date: total_questions_in_database}
+    if stats.get("total_questions_in_database") == None:
+        print("initializing first intance of stat 'total_questions_in_database'")
+        stats["total_questions_in_database"] = metric
+    else:
+        print("updating total_questions_in_database stat")
+        stats["total_questions_in_database"][todays_date] = total_questions_in_database
+    
     with open("stats.json", "w") as f:
-        json.dump(stats_data, f)
-        
-        
-def completed_quiz():
-    try:
-        with open("stats.json", "r") as f:
-            stats_data = json.load(f)
-        stats_data["number_of_quizzes_completed"] += 1
-        with open("stats.json", "w") as f:
-            json.dump(stats_data, f)
-    except:
-        initialze_dict = {"number_of_quizzes_completed": 1}
-        with open("stats.json", "w") as f:
-            json.dump(initialze_dict, f)
-    add_time()
-    add_quiz_size()
-    
+        json.dump(stats, f)
+    print(stats)
+def update_stats():
+    update_stat_total_questions_in_database()
+    print_and_update_revision_streak_stats()
 
-    
 def print_stats():
     '''Collective function that prints all stats, which are based on individual functions'''
     # print("Stats for Nerds!!!")
